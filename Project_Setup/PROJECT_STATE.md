@@ -1,14 +1,32 @@
 # MMA3001 project state
 
-Revision: 018 | Updated: 2026-10-05 | Status: frozen 300-row refits and once-only 100-case final evaluation complete
+Revision: 019 | Updated: 2026-10-05 | Status: physical interpretation reviewed; bounded runtime comparison planned, not run
 
 ## Current stage
 
 The nominal simulation, bounded nine-pilot verification, 400-setup dataset, ML development comparison and refined-validation check are complete. The development-selected SVR and linear comparator have now been refitted on the same 300 original development rows and evaluated once on all 100 reserved cases. The final test is consumed; no settings or model preference changed after access. These are working implementation/evidence records, not the assessed report.
 
+The subsequent physical interpretation and runtime-planning stage is complete. It analysed saved results only and produced P009, a proposed timing protocol. No new benchmark, simulation, fitting or prediction evaluation occurred in that stage.
+
 D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. D004 later authorised bounded verification, D006 dataset generation, D008 the ML development comparison and D010 final refitting/evaluation. Assessed report writing and GitHub publication remain outside this completed stage. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
 
-Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D011 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D012 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+
+## Interpretation and runtime plan, 2026-10-05
+
+D012 / U015 - The student's "ok proceed" followed the proposed review of physical meaning, especially post-bump movement/settling, then planning a fair runtime comparison. Completed that review and plan. This does not claim that the newly specified benchmark has been authorised, implemented or run. The full-response primary target and frozen model/test status are preserved; no assessed report or GitHub publication was begun.
+
+- Read guide 003 and newer records 018, existing physical/ML outputs, actual Week02_1 timing/profiling cells and brief pp5-7 through the course-audit assistant. No required file missing or conflicting newer project record found. The course's cell 90 throughput heading says Gvalues/s, while its counts/times imply Mvalues/s; recorded this factor-of-1000 source error and did not reuse those example numbers. Original course files remain unchanged; no notebook code, installation or linked video was executed/viewed.
+- Explained that the nominal full peak is 40.571155 mm at 0.442 s, while post-bump peak is 31.891620 mm at exit and relative settling is 1.269332 s afterward. The full state survives exit; energy dissipation permits continuing oscillation and a later last band crossing. The chosen band describes relative displacement, not all body/wheel motion or comfort.
+- Reviewed the 225 original training samples only for grid trends. All full peaks are extension before exit; all A_post peaks occur at the inclusive exit boundary. Increasing damping reduces A, A_post and recorded settling in all 210 adjacent pairs at fixed stiffness. Stiffness effects differ: A_post decreases in all pairs, while full A and settling are not monotone across the whole grid. Small A downturns are not established fine physical detail without additional refinement.
+- Concrete baseline example at cs=2126.4 N s/m: ks 24000 to 30000 N/m changes A 40.571155 to 40.848021 mm, A_post 31.891621 to 28.673449 mm and settling 1.269332 to 1.445348 s. Lower post-bump maximum can therefore accompany longer settling. Minimum sampled A, A_post and settling occur at different grid locations; these are not continuous-domain optima or real-vehicle setup recommendations.
+- Saved PHYSICS_REVIEW.md, RUNTIME_PLAN.md and interpretation_v1/review_saved.py, review.json and generated HTML. The reader recomputes saved-data facts without a simulator or learned-model call. Six data checks pass; its audit reproduces every recorded fact and input fingerprint exactly. The separate final-evaluation audit also passes, preserving fixed models/results. The earlier 385-test result is retained; no fresh full-suite run is claimed for this documentation/analysis stage. Independent numerical review agrees with the grid counts and examples; the existing physics map was visually inspected.
+
+P009 - Proposed bounded timing protocol in RUNTIME_PLAN.md: same nine previously verified pilot inputs; unchanged baseline solver, float64, 5 s horizon and 1 ms observations; frozen final linear/SVR models. Compare A-only warm single-query and nine-query batches with guards/scaling included. Record full diagnostic simulation cost separately because the regressors do not return settling/contact/tail outputs. One simulator warm-up plus five measured rounds yields 162 repeated integrations across the defined workloads; short ML calls use three warm-ups and five blocks of 1000 real calls. No pilot answer caching, fitting, extra dataset or final-test access. Save raw timings, variability, work counts and before/after fingerprints. These are proposed counts and checks, not measured results or course-mandated values.
+
+The plan distinguishes query cost from historical preparation costs and prevents double-counting nested integration/row-loop/fit totals or reused pilot trajectories. It gives a conditional break-even formula but no numeric break-even or overall speedup: full preparation cost and comparable repeated-query timing are not yet measured. Profiler use or a complete fresh-build benchmark would be a separate justified step; no package installation or optimisation is proposed now.
+
+Reproduce the saved interpretation with `python interpretation_v1/review_saved.py` from Suspension_Model in the recorded environment. Local records are saved at revision 019 and the local checkpoint is AI-attributed. Student explanation/reproduction and overall AI contribution remain unassessed. Submission stays 23 October 2026 at 23:59 Australia/Sydney; presentation-date planning remains deferred.
 
 ## Final evaluation checkpoint, 2026-10-05
 
@@ -366,9 +384,9 @@ Primary authority: MMA3001_2026_Project_Brief.pdf. The checklist below is a work
 ## Current setup files
 
 - PROJECT_GUIDE.md — revision 003: working instructions and opening prompt.
-- PROJECT_STATE.md — revision 018: simulation, dataset, ML development and final-evaluation checkpoints, decisions and next actions.
-- EVIDENCE.md — revision 018: sources, numerical verification, dataset, development/reference and final-test evidence.
-- AI_USE_LOG.md — revision 018: implementation, final-evaluation/checking assistance and outstanding student contribution review.
+- PROJECT_STATE.md — revision 019: completed checkpoints, physical interpretation, proposed runtime protocol and next actions.
+- EVIDENCE.md — revision 019: sources, numerical/ML evidence, saved-data interpretation and timing-source audit.
+- AI_USE_LOG.md — revision 019: implementation, interpretation/planning assistance and outstanding student contribution review.
 - HANDOFF.md — revision 001: new-chat reading instructions, scope, completion criteria and copyable prompt; does not grant coding permission.
 
 These local files are in Project_Setup under the existing MMA3001 notebook folder. Uploaded copies must be refreshed when their authoritative local versions change.
@@ -383,6 +401,6 @@ These local files are in Project_Setup under the existing MMA3001 notebook folde
 
 ## Next three actions
 
-1. Review FINAL_EVALUATION_GUIDE, final residuals and preserved training-only post-bump/settling maps with the student. Explain numerical-label agreement versus real-vehicle validation; student understanding/reproduction remain unassessed.
-2. When requested, design a fair bounded runtime comparison including data-generation/refit costs and repeated-query costs. Keep the final test consumed and fixed; do not retune from its scores or make an overall speedup claim from current timing diagnostics.
+1. Review PHYSICS_REVIEW with the student, particularly why lower A_post can coexist with longer settling and why accurate A prediction does not supply post-bump dynamics. Student understanding/reproduction remain unassessed.
+2. When requested, implement and run proposed P009 in RUNTIME_PLAN: bounded matched-output runtime comparison, separate diagnostic-workflow timing and explicit cost accounting. Keep the consumed final test and fixed models unchanged; no numeric speedup/break-even claim until supporting measurements exist.
 3. Arrange student Git identity, licence and GitHub publication separately when requested; continue source/decision/AI records. Assessed report writing and presentation-date planning remain outside this completed final-evaluation stage.

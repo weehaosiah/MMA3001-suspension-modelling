@@ -4,6 +4,17 @@ The nominal checkpoint is preserved below. Begin with the
 [physical/code walkthrough](WALKTHROUGH.md), then see the
 [nine-pilot check results](verification_results/CHECK_RESULTS.md).
 
+## Physical interpretation and next experiment
+
+Read [PHYSICS_REVIEW.md](PHYSICS_REVIEW.md) for the difference between full peak,
+post-bump movement and settling. The saved cases show that a smaller post-bump
+maximum can accompany longer settling. A read-only calculation checks the grid
+comparisons in `interpretation_v1/`; it creates no new simulation or ML results.
+
+[RUNTIME_PLAN.md](RUNTIME_PLAN.md) proposes a bounded timing experiment, separating
+peak-only queries from the fuller physical diagnostics and from model preparation
+costs. The benchmark is not yet implemented or run; no speedup is claimed.
+
 ## Final evaluation stage
 
 Both declared models have now been refitted on the same 300 development cases
