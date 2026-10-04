@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: quarter_car</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">quarter_car</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdedvu%5Conedrive%5Cdocuments%5Cmma3001%20jupiter%20notebooks%5Csuspension_model%5Cquarter_car.py">c:\users\dedvu\onedrive\documents\mma3001 jupiter notebooks\suspension_model\quarter_car.py</a></td></tr></table>
+    <p><span class="code">Passive&nbsp;quarter-car&nbsp;about&nbsp;static&nbsp;equilibrium;&nbsp;all&nbsp;calculations&nbsp;use&nbsp;SI&nbsp;units.<br>
+&nbsp;<br>
+Sources:&nbsp;Project_Setup/EVIDENCE.md&nbsp;S002&nbsp;(forces),&nbsp;S003&nbsp;(bump&nbsp;shape),&nbsp;S004<br>
+(nominal&nbsp;parameters),&nbsp;C001/C002&nbsp;(vector&nbsp;RK45).&nbsp;Original&nbsp;course&nbsp;files&nbsp;are&nbsp;intact.<br>
+State&nbsp;order&nbsp;is&nbsp;ALWAYS&nbsp;[body&nbsp;position,&nbsp;body&nbsp;velocity,&nbsp;wheel&nbsp;position,&nbsp;wheel&nbsp;velocity].</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="numpy.html">numpy</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="quarter_car.html#Bump">Bump</a>
+</dt><dt class="heading-text"><a href="quarter_car.html#Parameters">Parameters</a>
+</dt><dt class="heading-text"><a href="quarter_car.html#SolverSettings">SolverSettings</a>
+</dt><dt class="heading-text"><a href="quarter_car.html#Trajectory">Trajectory</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Bump">class <strong>Bump</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Bump">Bump</a>(height_m:&nbsp;float&nbsp;=&nbsp;0.05,&nbsp;duration_s:&nbsp;float&nbsp;=&nbsp;0.5)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+Raised-cosine&nbsp;height&nbsp;[m]&nbsp;and&nbsp;crossing&nbsp;duration&nbsp;[s].<br>
+&nbsp;<br>
+Height&nbsp;may&nbsp;be&nbsp;zero&nbsp;for&nbsp;the&nbsp;equilibrium&nbsp;check;&nbsp;negative/nonfinite&nbsp;heights&nbsp;or<br>
+nonpositive/nonfinite&nbsp;durations&nbsp;raise&nbsp;ValueError.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Bump-__delattr__"><strong>__delattr__</strong></a>(self, name)</dt><dd><span class="code">Implement&nbsp;delattr(self,&nbsp;name).</span></dd></dl>
+
+<dl><dt><a name="Bump-__eq__"><strong>__eq__</strong></a>(self, other)</dt><dd><span class="code">Return&nbsp;self==value.</span></dd></dl>
+
+<dl><dt><a name="Bump-__hash__"><strong>__hash__</strong></a>(self)</dt><dd><span class="code">Return&nbsp;hash(self).</span></dd></dl>
+
+<dl><dt><a name="Bump-__init__"><strong>__init__</strong></a>(self, height_m: float = 0.05, duration_s: float = 0.5) -&gt; None</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Bump-__post_init__"><strong>__post_init__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Bump-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><span class="code">Return&nbsp;repr(self).</span></dd></dl>
+
+<dl><dt><a name="Bump-__setattr__"><strong>__setattr__</strong></a>(self, name, value)</dt><dd><span class="code">Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__annotations__</strong> = {'duration_s': &lt;class 'float'&gt;, 'height_m': &lt;class 'float'&gt;}</dl>
+
+<dl><dt><strong>__dataclass_fields__</strong> = {'duration_s': Field(name='duration_s',type=&lt;class 'float'&gt;,def...appingproxy({}),kw_only=False,_field_type=_FIELD), 'height_m': Field(name='height_m',type=&lt;class 'float'&gt;,defau...appingproxy({}),kw_only=False,_field_type=_FIELD)}</dl>
+
+<dl><dt><strong>__dataclass_params__</strong> = _DataclassParams(init=True,repr=True,eq=True,ord...rue,kw_only=False,slots=False,weakref_slot=False)</dl>
+
+<dl><dt><strong>__match_args__</strong> = ('height_m', 'duration_s')</dl>
+
+<dl><dt><strong>duration_s</strong> = 0.5</dl>
+
+<dl><dt><strong>height_m</strong> = 0.05</dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Parameters">class <strong>Parameters</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Parameters">Parameters</a>(ms:&nbsp;float&nbsp;=&nbsp;365.4,&nbsp;mu:&nbsp;float&nbsp;=&nbsp;43.0,&nbsp;ks:&nbsp;float&nbsp;=&nbsp;24000.0,&nbsp;cs:&nbsp;float&nbsp;=&nbsp;2126.4,&nbsp;kt:&nbsp;float&nbsp;=&nbsp;350000.0,&nbsp;g:&nbsp;float&nbsp;=&nbsp;9.81)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+Masses&nbsp;[kg],&nbsp;stiffnesses&nbsp;[N/m],&nbsp;damping&nbsp;[N&nbsp;s/m],&nbsp;gravity&nbsp;[m/s²].<br>
+&nbsp;<br>
+Positive&nbsp;finite&nbsp;values&nbsp;are&nbsp;required;&nbsp;invalid&nbsp;values&nbsp;raise&nbsp;ValueError.<br>
+These&nbsp;defaults&nbsp;describe&nbsp;a&nbsp;generic&nbsp;vehicle&nbsp;corner,&nbsp;not&nbsp;the&nbsp;Ferrari&nbsp;telemetry.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Parameters-__delattr__"><strong>__delattr__</strong></a>(self, name)</dt><dd><span class="code">Implement&nbsp;delattr(self,&nbsp;name).</span></dd></dl>
+
+<dl><dt><a name="Parameters-__eq__"><strong>__eq__</strong></a>(self, other)</dt><dd><span class="code">Return&nbsp;self==value.</span></dd></dl>
+
+<dl><dt><a name="Parameters-__hash__"><strong>__hash__</strong></a>(self)</dt><dd><span class="code">Return&nbsp;hash(self).</span></dd></dl>
+
+<dl><dt><a name="Parameters-__init__"><strong>__init__</strong></a>(self, ms: float = 365.4, mu: float = 43.0, ks: float = 24000.0, cs: float = 2126.4, kt: float = 350000.0, g: float = 9.81) -&gt; None</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Parameters-__post_init__"><strong>__post_init__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Parameters-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><span class="code">Return&nbsp;repr(self).</span></dd></dl>
+
+<dl><dt><a name="Parameters-__setattr__"><strong>__setattr__</strong></a>(self, name, value)</dt><dd><span class="code">Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__annotations__</strong> = {'cs': &lt;class 'float'&gt;, 'g': &lt;class 'float'&gt;, 'ks': &lt;class 'float'&gt;, 'kt': &lt;class 'float'&gt;, 'ms': &lt;class 'float'&gt;, 'mu': &lt;class 'float'&gt;}</dl>
+
+<dl><dt><strong>__dataclass_fields__</strong> = {'cs': Field(name='cs',type=&lt;class 'float'&gt;,default=212...appingproxy({}),kw_only=False,_field_type=_FIELD), 'g': Field(name='g',type=&lt;class 'float'&gt;,default=9.81...appingproxy({}),kw_only=False,_field_type=_FIELD), 'ks': Field(name='ks',type=&lt;class 'float'&gt;,default=240...appingproxy({}),kw_only=False,_field_type=_FIELD), 'kt': Field(name='kt',type=&lt;class 'float'&gt;,default=350...appingproxy({}),kw_only=False,_field_type=_FIELD), 'ms': Field(name='ms',type=&lt;class 'float'&gt;,default=365...appingproxy({}),kw_only=False,_field_type=_FIELD), 'mu': Field(name='mu',type=&lt;class 'float'&gt;,default=43....appingproxy({}),kw_only=False,_field_type=_FIELD)}</dl>
+
+<dl><dt><strong>__dataclass_params__</strong> = _DataclassParams(init=True,repr=True,eq=True,ord...rue,kw_only=False,slots=False,weakref_slot=False)</dl>
+
+<dl><dt><strong>__match_args__</strong> = ('ms', 'mu', 'ks', 'cs', 'kt', 'g')</dl>
+
+<dl><dt><strong>cs</strong> = 2126.4</dl>
+
+<dl><dt><strong>g</strong> = 9.81</dl>
+
+<dl><dt><strong>ks</strong> = 24000.0</dl>
+
+<dl><dt><strong>kt</strong> = 350000.0</dl>
+
+<dl><dt><strong>ms</strong> = 365.4</dl>
+
+<dl><dt><strong>mu</strong> = 43.0</dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="SolverSettings">class <strong>SolverSettings</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#SolverSettings">SolverSettings</a>(rtol:&nbsp;float&nbsp;=&nbsp;1e-06,&nbsp;atol:&nbsp;tuple&nbsp;=&nbsp;(1e-09,&nbsp;1e-08,&nbsp;1e-09,&nbsp;1e-08),&nbsp;max_step_s:&nbsp;float&nbsp;=&nbsp;0.005)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+RK45&nbsp;controls:&nbsp;dimensionless&nbsp;rtol,&nbsp;state-unit&nbsp;atol,&nbsp;max&nbsp;step&nbsp;[s].<br>
+&nbsp;<br>
+atol&nbsp;follows&nbsp;[m,&nbsp;m/s,&nbsp;m,&nbsp;m/s].&nbsp;Invalid&nbsp;settings&nbsp;raise&nbsp;ValueError.<br>
+These&nbsp;are&nbsp;local-error&nbsp;controls,&nbsp;not&nbsp;certified&nbsp;errors&nbsp;on&nbsp;the&nbsp;reported&nbsp;peaks.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="SolverSettings-__delattr__"><strong>__delattr__</strong></a>(self, name)</dt><dd><span class="code">Implement&nbsp;delattr(self,&nbsp;name).</span></dd></dl>
+
+<dl><dt><a name="SolverSettings-__eq__"><strong>__eq__</strong></a>(self, other)</dt><dd><span class="code">Return&nbsp;self==value.</span></dd></dl>
+
+<dl><dt><a name="SolverSettings-__hash__"><strong>__hash__</strong></a>(self)</dt><dd><span class="code">Return&nbsp;hash(self).</span></dd></dl>
+
+<dl><dt><a name="SolverSettings-__init__"><strong>__init__</strong></a>(self, rtol: float = 1e-06, atol: tuple = (1e-09, 1e-08, 1e-09, 1e-08), max_step_s: float = 0.005) -&gt; None</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="SolverSettings-__post_init__"><strong>__post_init__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SolverSettings-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><span class="code">Return&nbsp;repr(self).</span></dd></dl>
+
+<dl><dt><a name="SolverSettings-__setattr__"><strong>__setattr__</strong></a>(self, name, value)</dt><dd><span class="code">Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__annotations__</strong> = {'atol': &lt;class 'tuple'&gt;, 'max_step_s': &lt;class 'float'&gt;, 'rtol': &lt;class 'float'&gt;}</dl>
+
+<dl><dt><strong>__dataclass_fields__</strong> = {'atol': Field(name='atol',type=&lt;class 'tuple'&gt;,default=(...appingproxy({}),kw_only=False,_field_type=_FIELD), 'max_step_s': Field(name='max_step_s',type=&lt;class 'float'&gt;,def...appingproxy({}),kw_only=False,_field_type=_FIELD), 'rtol': Field(name='rtol',type=&lt;class 'float'&gt;,default=1...appingproxy({}),kw_only=False,_field_type=_FIELD)}</dl>
+
+<dl><dt><strong>__dataclass_params__</strong> = _DataclassParams(init=True,repr=True,eq=True,ord...rue,kw_only=False,slots=False,weakref_slot=False)</dl>
+
+<dl><dt><strong>__match_args__</strong> = ('rtol', 'atol', 'max_step_s')</dl>
+
+<dl><dt><strong>atol</strong> = (1e-09, 1e-08, 1e-09, 1e-08)</dl>
+
+<dl><dt><strong>max_step_s</strong> = 0.005</dl>
+
+<dl><dt><strong>rtol</strong> = 1e-06</dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Trajectory">class <strong>Trajectory</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Trajectory">Trajectory</a>(parameters:&nbsp;quarter_car.<a href="#Parameters">Parameters</a>,&nbsp;bump:&nbsp;quarter_car.<a href="#Bump">Bump</a>,&nbsp;settings:&nbsp;quarter_car.<a href="#SolverSettings">SolverSettings</a>,&nbsp;end_time_s:&nbsp;float,&nbsp;segments:&nbsp;tuple,&nbsp;elapsed_s:&nbsp;float)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+Two&nbsp;successful&nbsp;RK45&nbsp;segments&nbsp;sharing&nbsp;the&nbsp;same&nbsp;full&nbsp;state&nbsp;at&nbsp;bump&nbsp;exit.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Trajectory-__eq__"><strong>__eq__</strong></a>(self, other)</dt><dd><span class="code">Return&nbsp;self==value.</span></dd></dl>
+
+<dl><dt><a name="Trajectory-__init__"><strong>__init__</strong></a>(self, parameters: quarter_car.Parameters, bump: quarter_car.Bump, settings: quarter_car.SolverSettings, end_time_s: float, segments: tuple, elapsed_s: float) -&gt; None</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Trajectory-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><span class="code">Return&nbsp;repr(self).</span></dd></dl>
+
+<dl><dt><a name="Trajectory-sample"><strong>sample</strong></a>(self, dt_s)</dt><dd><span class="code">Return&nbsp;time&nbsp;[s]&nbsp;and&nbsp;state&nbsp;(4,n)&nbsp;on&nbsp;a&nbsp;grid&nbsp;no&nbsp;coarser&nbsp;than&nbsp;dt_s.<br>
+&nbsp;<br>
+Each&nbsp;segment&nbsp;includes&nbsp;its&nbsp;endpoints,&nbsp;including&nbsp;exact&nbsp;bump&nbsp;exit.&nbsp;dt_s&nbsp;must<br>
+be&nbsp;finite&nbsp;and&nbsp;positive,&nbsp;otherwise&nbsp;ValueError&nbsp;is&nbsp;raised.</span></dd></dl>
+
+<dl><dt><a name="Trajectory-state_at"><strong>state_at</strong></a>(self, times_s)</dt><dd><span class="code">Return&nbsp;states&nbsp;(4,n)&nbsp;at&nbsp;a&nbsp;finite&nbsp;1-D&nbsp;array&nbsp;of&nbsp;times&nbsp;within&nbsp;the&nbsp;run.<br>
+&nbsp;<br>
+Dense&nbsp;output&nbsp;interpolates&nbsp;the&nbsp;solver's&nbsp;trajectory&nbsp;without&nbsp;integrating&nbsp;again.<br>
+Out-of-range&nbsp;or&nbsp;malformed&nbsp;times&nbsp;raise&nbsp;ValueError;&nbsp;nonfinite&nbsp;output&nbsp;raises<br>
+RuntimeError.&nbsp;No&nbsp;extrapolation&nbsp;beyond&nbsp;the&nbsp;observed&nbsp;run&nbsp;is&nbsp;allowed.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>nfev</strong></dt>
+<dd><span class="code">Total&nbsp;derivative&nbsp;evaluations&nbsp;across&nbsp;both&nbsp;segments&nbsp;[count].</span></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__annotations__</strong> = {'bump': &lt;class 'quarter_car.Bump'&gt;, 'elapsed_s': &lt;class 'float'&gt;, 'end_time_s': &lt;class 'float'&gt;, 'parameters': &lt;class 'quarter_car.Parameters'&gt;, 'segments': &lt;class 'tuple'&gt;, 'settings': &lt;class 'quarter_car.SolverSettings'&gt;}</dl>
+
+<dl><dt><strong>__dataclass_fields__</strong> = {'bump': Field(name='bump',type=&lt;class 'quarter_car.Bump'...appingproxy({}),kw_only=False,_field_type=_FIELD), 'elapsed_s': Field(name='elapsed_s',type=&lt;class 'float'&gt;,defa...appingproxy({}),kw_only=False,_field_type=_FIELD), 'end_time_s': Field(name='end_time_s',type=&lt;class 'float'&gt;,def...appingproxy({}),kw_only=False,_field_type=_FIELD), 'parameters': Field(name='parameters',type=&lt;class 'quarter_car...appingproxy({}),kw_only=False,_field_type=_FIELD), 'segments': Field(name='segments',type=&lt;class 'tuple'&gt;,defau...appingproxy({}),kw_only=False,_field_type=_FIELD), 'settings': Field(name='settings',type=&lt;class 'quarter_car.S...appingproxy({}),kw_only=False,_field_type=_FIELD)}</dl>
+
+<dl><dt><strong>__dataclass_params__</strong> = _DataclassParams(init=True,repr=True,eq=True,ord...rue,kw_only=False,slots=False,weakref_slot=False)</dl>
+
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+<dl><dt><strong>__match_args__</strong> = ('parameters', 'bump', 'settings', 'end_time_s', 'segments', 'elapsed_s')</dl>
+
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-contact_force"><strong>contact_force</strong></a>(time_s, state, parameters, bump)</dt><dd><span class="code">Return&nbsp;total&nbsp;tyre&nbsp;normal&nbsp;force&nbsp;[N],&nbsp;including&nbsp;the&nbsp;static&nbsp;weight.<br>
+&nbsp;<br>
+time_s&nbsp;and&nbsp;state&nbsp;may&nbsp;describe&nbsp;one&nbsp;state&nbsp;or&nbsp;matching&nbsp;arrays.&nbsp;A&nbsp;nonpositive<br>
+force&nbsp;flags&nbsp;a&nbsp;failed&nbsp;contact&nbsp;assumption;&nbsp;it&nbsp;is&nbsp;never&nbsp;silently&nbsp;clipped.</span></dd></dl>
+ <dl><dt><a name="-perf_counter"><strong>perf_counter</strong></a>(...)</dt><dd><span class="code"><a href="#-perf_counter">perf_counter</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Performance&nbsp;counter&nbsp;for&nbsp;benchmarking.</span></dd></dl>
+ <dl><dt><a name="-post_bump_energy"><strong>post_bump_energy</strong></a>(state, parameters)</dt><dd><span class="code">Return&nbsp;flat-road&nbsp;mechanical&nbsp;energy&nbsp;[J]&nbsp;for&nbsp;state&nbsp;(4,)&nbsp;or&nbsp;(4,n).<br>
+&nbsp;<br>
+Valid&nbsp;only&nbsp;when&nbsp;road&nbsp;height&nbsp;is&nbsp;zero.&nbsp;Includes&nbsp;both&nbsp;masses&nbsp;and&nbsp;both&nbsp;springs.</span></dd></dl>
+ <dl><dt><a name="-rhs"><strong>rhs</strong></a>(time_s, state, parameters, bump)</dt><dd><span class="code">Return&nbsp;[vs,&nbsp;as,&nbsp;vu,&nbsp;au]&nbsp;in&nbsp;[m/s,&nbsp;m/s²,&nbsp;m/s,&nbsp;m/s²].<br>
+&nbsp;<br>
+state&nbsp;must&nbsp;be&nbsp;a&nbsp;finite&nbsp;four-vector&nbsp;[zs,&nbsp;vs,&nbsp;zu,&nbsp;vu];&nbsp;time&nbsp;is&nbsp;in&nbsp;seconds.<br>
+Invalid&nbsp;state/time&nbsp;raises&nbsp;ValueError.&nbsp;Positive&nbsp;zs-zu&nbsp;means&nbsp;extension.<br>
+Gravity&nbsp;is&nbsp;absent&nbsp;here&nbsp;because&nbsp;positions&nbsp;are&nbsp;measured&nbsp;from&nbsp;static&nbsp;equilibrium.</span></dd></dl>
+ <dl><dt><a name="-road_height"><strong>road_height</strong></a>(time_s, bump)</dt><dd><span class="code">Return&nbsp;road&nbsp;height&nbsp;[m]&nbsp;for&nbsp;scalar/array&nbsp;time&nbsp;[s]&nbsp;and&nbsp;a&nbsp;<a href="#Bump">Bump</a>.<br>
+&nbsp;<br>
+The&nbsp;road&nbsp;is&nbsp;flat&nbsp;outside&nbsp;[0,&nbsp;duration_s].&nbsp;Nonfinite&nbsp;times&nbsp;raise&nbsp;ValueError.</span></dd></dl>
+ <dl><dt><a name="-settling_candidate"><strong>settling_candidate</strong></a>(time_s, displacement_m, exit_s, band_m=0.001, confirmation_s=1.0)</dt><dd><span class="code">Find&nbsp;sustained&nbsp;sampled&nbsp;band&nbsp;entry;&nbsp;return&nbsp;absolute&nbsp;entry&nbsp;time&nbsp;[s]&nbsp;or&nbsp;None.<br>
+&nbsp;<br>
+time_s&nbsp;must&nbsp;increase&nbsp;strictly&nbsp;and&nbsp;contain&nbsp;exit_s&nbsp;exactly;&nbsp;displacement_m&nbsp;must<br>
+be&nbsp;a&nbsp;matching&nbsp;finite&nbsp;1-D&nbsp;array&nbsp;[m].&nbsp;Use&nbsp;the&nbsp;last&nbsp;outside-band&nbsp;excursion,<br>
+interpolating&nbsp;its&nbsp;signed&nbsp;boundary&nbsp;crossing.&nbsp;Require&nbsp;confirmation_s&nbsp;inside<br>
+the&nbsp;band&nbsp;after&nbsp;entry.&nbsp;Invalid&nbsp;inputs&nbsp;raise&nbsp;ValueError.&nbsp;This&nbsp;alone&nbsp;does&nbsp;not<br>
+certify&nbsp;settling:&nbsp;summarise&nbsp;adds&nbsp;an&nbsp;energy&nbsp;tail&nbsp;check,&nbsp;and&nbsp;the&nbsp;runner&nbsp;checks<br>
+grid,&nbsp;solver&nbsp;and&nbsp;horizon&nbsp;agreement.</span></dd></dl>
+ <dl><dt><a name="-simulate"><strong>simulate</strong></a>(parameters=Parameters(ms=365.4, mu=43.0, ks=24000.0, cs=2126.4, kt=350000.0, g=9.81), bump=Bump(height_m=0.05, duration_s=0.5), end_time_s=5.0, settings=SolverSettings(rtol=1e-06, atol=(1e-09, 1e-08, 1e-09, 1e-08), max_step_s=0.005), initial_state=None)</dt><dd><span class="code">Integrate&nbsp;one&nbsp;setup,&nbsp;returning&nbsp;a&nbsp;<a href="#Trajectory">Trajectory</a>&nbsp;with&nbsp;time/work&nbsp;measurements.<br>
+&nbsp;<br>
+end_time_s&nbsp;[s]&nbsp;must&nbsp;exceed&nbsp;bump&nbsp;duration.&nbsp;initial_state&nbsp;defaults&nbsp;to&nbsp;equilibrium<br>
+rest&nbsp;and&nbsp;otherwise&nbsp;must&nbsp;be&nbsp;a&nbsp;finite&nbsp;four-vector&nbsp;in&nbsp;[m,m/s,m,m/s].&nbsp;Invalid<br>
+inputs&nbsp;raise&nbsp;ValueError;&nbsp;failed/incomplete/nonfinite&nbsp;solves&nbsp;raise&nbsp;RuntimeError.<br>
+The&nbsp;complete&nbsp;exit&nbsp;state&nbsp;is&nbsp;passed&nbsp;unchanged&nbsp;to&nbsp;the&nbsp;flat-road&nbsp;segment.</span></dd></dl>
+ <dl><dt><a name="-summarise"><strong>summarise</strong></a>(trajectory, dt_s=0.001, band_m=0.001, confirmation_s=1.0)</dt><dd><span class="code">Return&nbsp;JSON-ready&nbsp;peak/contact/energy/settling&nbsp;diagnostics&nbsp;for&nbsp;one&nbsp;run.<br>
+&nbsp;<br>
+Peaks&nbsp;are&nbsp;sampled&nbsp;estimates&nbsp;in&nbsp;metres&nbsp;(including&nbsp;the&nbsp;complete&nbsp;post-bump<br>
+response).&nbsp;Settling&nbsp;stays&nbsp;'candidate'&nbsp;until&nbsp;independent&nbsp;refinement/extension<br>
+checks&nbsp;pass.&nbsp;An&nbsp;unresolved&nbsp;time&nbsp;is&nbsp;None,&nbsp;never&nbsp;the&nbsp;observation&nbsp;cutoff.<br>
+Tail&nbsp;bound&nbsp;B=sqrt(2H/ks)&nbsp;follows&nbsp;H'=-cs*(vs-vu)^2&nbsp;for&nbsp;the&nbsp;exact&nbsp;flat-road&nbsp;model;<br>
+evaluated&nbsp;on&nbsp;numerical&nbsp;states,&nbsp;it&nbsp;is&nbsp;a&nbsp;consistency&nbsp;check,&nbsp;not&nbsp;certification.</span></dd></dl>
+</td></tr></table>
+</body></html>
