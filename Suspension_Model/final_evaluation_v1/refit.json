@@ -1,0 +1,105 @@
+{
+  "stage": "models_frozen",
+  "refit_finished_utc": "2026-10-04T14:22:18.641311+00:00",
+  "training_count": 300,
+  "model_ids": [
+    "linear",
+    "svr"
+  ],
+  "fits": {
+    "linear": {
+      "spec": {
+        "model_id": "linear",
+        "family": "linear"
+      },
+      "training_count": 300,
+      "fit_seconds": 0.007213099997898098,
+      "fit_status": 0,
+      "scaler_mean": [
+        23992.643720439588,
+        2132.8089669871933
+      ],
+      "scaler_scale": [
+        3670.4934973412874,
+        323.10864616075634
+      ],
+      "scaler_variance": [
+        13472522.514024675,
+        104399.19722383683
+      ],
+      "development_fit_metrics": {
+        "n": 300,
+        "MAE_mm": 0.17038331645434282,
+        "RMSE_mm": 0.2152365685191085,
+        "max_absolute_error_mm": 0.5098161734971782,
+        "max_underprediction_mm": 0.48786286505573173,
+        "mean_residual_mm": -2.842170943040401e-16,
+        "R2": 0.9938445296630537
+      },
+      "support_vectors": null
+    },
+    "svr": {
+      "spec": {
+        "model_id": "svr",
+        "family": "rbf_svr",
+        "C": 100.0,
+        "gamma": 1.0,
+        "epsilon": 0.05
+      },
+      "training_count": 300,
+      "fit_seconds": 0.005709500001103152,
+      "fit_status": 0,
+      "scaler_mean": [
+        23992.643720439588,
+        2132.8089669871933
+      ],
+      "scaler_scale": [
+        3670.4934973412874,
+        323.10864616075634
+      ],
+      "scaler_variance": [
+        13472522.514024675,
+        104399.19722383683
+      ],
+      "development_fit_metrics": {
+        "n": 300,
+        "MAE_mm": 0.029188908169475145,
+        "RMSE_mm": 0.03336262455996985,
+        "max_absolute_error_mm": 0.05051194834383921,
+        "max_underprediction_mm": 0.05051194834383921,
+        "mean_residual_mm": -0.0022632250808900284,
+        "R2": 0.9998521063456477
+      },
+      "support_vectors": 45
+    }
+  },
+  "model_sha256": {
+    "linear": "3c29b6dfc6583ae6870b992e7ce084954624e46387bb113ff5e498acda7d3d22",
+    "svr": "2dd1780bf11591be3c42b7e0f61676f71bc784f8fcdfef810cc6c354922ecaa8"
+  },
+  "plan_sha256": "fe3aeebab3dc1333c7063ba50a37bbf914ada161cbf48d32c2bcd08c53b02adc",
+  "reload_max_difference_mm": {
+    "linear": 0.0,
+    "svr": 0.0
+  },
+  "prediction_timing_on_development": {
+    "linear": {
+      "batch_rows": 300,
+      "repeats": 30,
+      "warmups": 3,
+      "median_batch_seconds": 0.0001378499982820358,
+      "minimum_batch_seconds": 0.0001340000017080456,
+      "maximum_batch_seconds": 0.00017880000086734071,
+      "scope": "in-memory validation batch, including input guard, scaling and regression; no I/O"
+    },
+    "svr": {
+      "batch_rows": 300,
+      "repeats": 30,
+      "warmups": 3,
+      "median_batch_seconds": 0.0008386000008613337,
+      "minimum_batch_seconds": 0.0008271999977296218,
+      "maximum_batch_seconds": 0.0013840999963576905,
+      "scope": "in-memory validation batch, including input guard, scaling and regression; no I/O"
+    }
+  }
+}

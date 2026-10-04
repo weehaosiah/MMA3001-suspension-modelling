@@ -10,6 +10,11 @@ epsilon=0.05 mm, 49 support vectors). These are development scores, not final-te
 accuracy. The leading SVR settings were close, so a separate tighter-reference
 check is documented below.
 
+Current status (5 October 2026): this guide preserves the development-stage
+procedure and its 225-row models. The later 300-row refits and once-only final
+test are now complete; see [FINAL_EVALUATION_GUIDE.md](FINAL_EVALUATION_GUIDE.md).
+Statements below about a reserved test describe the earlier stage.
+
 ## What is being predicted?
 
 One sample is one full suspension setup, with stiffness `ks_N_m` and damping

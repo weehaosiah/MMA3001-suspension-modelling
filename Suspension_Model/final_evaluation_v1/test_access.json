@@ -1,0 +1,9 @@
+{
+  "first_access_started_utc": "2026-10-04T14:23:02.333225+00:00",
+  "frozen_plan_sha256": "fe3aeebab3dc1333c7063ba50a37bbf914ada161cbf48d32c2bcd08c53b02adc",
+  "frozen_model_sha256": {
+    "linear": "3c29b6dfc6583ae6870b992e7ce084954624e46387bb113ff5e498acda7d3d22",
+    "svr": "2dd1780bf11591be3c42b7e0f61676f71bc784f8fcdfef810cc6c354922ecaa8"
+  },
+  "purpose": "one final comparison; no later test-driven tuning"
+}

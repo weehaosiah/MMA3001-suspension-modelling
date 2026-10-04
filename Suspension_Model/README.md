@@ -1,17 +1,33 @@
-# Suspension simulation, verification, dataset and ML development
+# Suspension simulation, verification and evaluated ML models
 
 The nominal checkpoint is preserved below. Begin with the
 [physical/code walkthrough](WALKTHROUGH.md), then see the
 [nine-pilot check results](verification_results/CHECK_RESULTS.md).
 
+## Final evaluation stage
+
+Both declared models have now been refitted on the same 300 development cases
+and evaluated once on all 100 reserved test cases. Read the
+[final evaluation guide](FINAL_EVALUATION_GUIDE.md) and
+[actual final check results](final_evaluation_v1/CHECK_RESULTS.md).
+Test RMSE is 0.199436 mm for linear regression and 0.029796 mm for the
+development-selected SVR. Its largest observed absolute test error is 0.051826 mm.
+These measure agreement with numerical labels, not real-vehicle accuracy or a
+guarantee over every possible setup. No model choice was changed after test access.
+
+All 385 tests pass. The saved-result audit reproduces every final metric without
+refitting or reopening the original test responses. The test set has now been
+used; it cannot serve as a fresh independent test for changes chosen after seeing
+these scores. Original development models and data remain preserved.
+
 ## ML development stage
 
 Read [ML_GUIDE.md](ML_GUIDE.md) for the linear-regression versus RBF-SVR comparison.
 The [actual development results](ml_development_v1/CHECK_RESULTS.md) use only
-225 training and 75 validation setups. The 100 final-test responses remain reserved.
-Every scaler learns from training inputs only; the sole target is full-response
+225 training and 75 validation setups. That stage kept the final-test responses reserved.
+Every development-stage scaler learned from its 225 training inputs only; the sole target is full-response
 peak travel in millimetres. Post-bump movement and settling remain supporting
-physical diagnostics. No model has been refitted on all 300 development rows.
+physical diagnostics. The later 300-row refits are saved separately in the final checkpoint.
 
 `requirements-ml.txt` adds the installed ML versions to the unchanged simulation
 requirements. Use it for an environment intended to run the current complete
@@ -268,7 +284,8 @@ To regenerate the function documentation after later model edits, run from this 
 The subsequent nine-setup verification stage is documented above and in
 `verification_results/`; dataset generation and per-row contact/tail checks
 are documented in `DATASET.md` and `dataset_v1/`. The later trained development
-models are documented in `ML_GUIDE.md`; no final-test result, telemetry validation
+models are documented in `ML_GUIDE.md`; the final comparison is documented in
+`FINAL_EVALUATION_GUIDE.md` and `final_evaluation_v1/`. No telemetry validation
 or assessed report prose exists.
 Licence selection, GitHub hosting and final submission packaging remain later work.
 Student understanding and overall project AI contribution remain to be assessed.

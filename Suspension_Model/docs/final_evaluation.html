@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: final_evaluation</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">final_evaluation</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdedvu%5Conedrive%5Cdocuments%5Cmma3001%20jupiter%20notebooks%5Csuspension_model%5Cfinal_evaluation.py">c:\users\dedvu\onedrive\documents\mma3001 jupiter notebooks\suspension_model\final_evaluation.py</a></td></tr></table>
+    <p><span class="code">Freeze,&nbsp;refit&nbsp;on&nbsp;300&nbsp;development&nbsp;rows,&nbsp;then&nbsp;evaluate&nbsp;the&nbsp;reserved&nbsp;100&nbsp;once.<br>
+&nbsp;<br>
+Commands:&nbsp;python&nbsp;final_evaluation.py&nbsp;prepare&nbsp;/&nbsp;evaluate&nbsp;/&nbsp;audit<br>
+Preparation&nbsp;writes&nbsp;a&nbsp;plan&nbsp;and&nbsp;fitted-model&nbsp;seal&nbsp;before&nbsp;any&nbsp;test-response&nbsp;read.<br>
+Evaluation&nbsp;refuses&nbsp;a&nbsp;second&nbsp;access&nbsp;within&nbsp;that&nbsp;checkpoint.&nbsp;An&nbsp;audit&nbsp;recomputes<br>
+saved&nbsp;scores&nbsp;without&nbsp;refitting&nbsp;or&nbsp;opening&nbsp;the&nbsp;original&nbsp;held-out&nbsp;response&nbsp;files.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="argparse.html">argparse</a><br>
+<a href="csv.html">csv</a><br>
+<a href="importlib.html">importlib</a><br>
+</td><td class="multicolumn"><a href="joblib.html">joblib</a><br>
+<a href="json.html">json</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td class="multicolumn"><a href="subprocess.html">subprocess</a><br>
+<a href="sys.html">sys</a><br>
+<a href="warnings.html">warnings</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-audit"><strong>audit</strong></a>(output)</dt><dd><span class="code">Recompute&nbsp;saved&nbsp;final&nbsp;scores&nbsp;and&nbsp;hashes,&nbsp;without&nbsp;refitting&nbsp;or&nbsp;new&nbsp;test&nbsp;access.</span></dd></dl>
+ <dl><dt><a name="-combined_development"><strong>combined_development</strong></a>(data)</dt><dd><span class="code">Concatenate&nbsp;original&nbsp;training&nbsp;then&nbsp;original&nbsp;validation;&nbsp;no&nbsp;refined&nbsp;labels.</span></dd></dl>
+ <dl><dt><a name="-evaluate"><strong>evaluate</strong></a>(output)</dt><dd><span class="code">Open&nbsp;the&nbsp;reserved&nbsp;responses&nbsp;once&nbsp;for&nbsp;this&nbsp;checkpoint&nbsp;and&nbsp;report&nbsp;both&nbsp;models.</span></dd></dl>
+ <dl><dt><a name="-frozen_selection"><strong>frozen_selection</strong></a>(development, reference)</dt><dd><span class="code">Check&nbsp;stored&nbsp;development&nbsp;evidence&nbsp;and&nbsp;retain&nbsp;D009,&nbsp;never&nbsp;select&nbsp;on&nbsp;test.</span></dd></dl>
+ <dl><dt><a name="-load_heldout"><strong>load_heldout</strong></a>(dataset, checkpoint)</dt><dd><span class="code">Read&nbsp;test&nbsp;responses&nbsp;only&nbsp;after&nbsp;verifying&nbsp;a&nbsp;completed&nbsp;frozen&nbsp;refit.</span></dd></dl>
+ <dl><dt><a name="-perf_counter"><strong>perf_counter</strong></a>(...)</dt><dd><span class="code"><a href="#-perf_counter">perf_counter</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Performance&nbsp;counter&nbsp;for&nbsp;benchmarking.</span></dd></dl>
+ <dl><dt><a name="-prepare"><strong>prepare</strong></a>(output)</dt><dd><span class="code">Save&nbsp;final&nbsp;choices,&nbsp;test&nbsp;the&nbsp;implementation&nbsp;and&nbsp;refit,&nbsp;without&nbsp;test&nbsp;access.</span></dd></dl>
+ <dl><dt><a name="-read_json"><strong>read_json</strong></a>(path)</dt><dd><span class="code">Read&nbsp;a&nbsp;local&nbsp;UTF-8&nbsp;JSON&nbsp;record.</span></dd></dl>
+ <dl><dt><a name="-refit_models"><strong>refit_models</strong></a>(data, specs)</dt><dd><span class="code">Fit&nbsp;only&nbsp;two&nbsp;new&nbsp;scaler/regressor&nbsp;pipelines&nbsp;on&nbsp;all&nbsp;300&nbsp;original&nbsp;labels.</span></dd></dl>
+ <dl><dt><a name="-validate_test_rows"><strong>validate_test_rows</strong></a>(rows, diagnostics, manifest)</dt><dd><span class="code">Check&nbsp;all&nbsp;100&nbsp;frozen&nbsp;test&nbsp;identities,&nbsp;SI&nbsp;features,&nbsp;mm&nbsp;targets&nbsp;and&nbsp;flags.</span></dd></dl>
+ <dl><dt><a name="-verify_seal"><strong>verify_seal</strong></a>(checkpoint)</dt><dd><span class="code">Validate&nbsp;the&nbsp;saved&nbsp;pre-test&nbsp;plan,&nbsp;fitted&nbsp;models&nbsp;and&nbsp;source/data&nbsp;identities.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>CSV_COLUMNS</strong> = ['setup_id', 'split', 'ks_N_m', 'cs_N_s_m', 'A_mm', 'target_valid']<br>
+<strong>DEVELOPMENT_FILES</strong> = ('generation_plan.json', 'setup_manifest.csv', 'train.csv', 'validation.csv', 'train_diagnostics.jsonl', 'validation_diagnostics.jsonl')<br>
+<strong>FEATURES</strong> = ('ks_N_m', 'cs_N_s_m')<br>
+<strong>FINAL_SPECS</strong> = [{'family': 'linear', 'model_id': 'linear'}, {'C': 100.0, 'epsilon': 0.05, 'family': 'rbf_svr', 'gamma': 1.0, 'model_id': 'svr'}]<br>
+<strong>LINEAR_SPEC</strong> = {'family': 'linear', 'model_id': 'linear'}<br>
+<strong>ROOT</strong> = WindowsPath('C:/Users/dedvu/OneDrive/Documents/MMA3001 Jupiter notebooks/Suspension_Model')<br>
+<strong>TEST_FILES</strong> = ('heldout_test/test.csv', 'heldout_test/test_diagnostics.jsonl')</td></tr></table>
+</body></html>

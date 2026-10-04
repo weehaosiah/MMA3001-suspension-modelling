@@ -1,14 +1,31 @@
 # MMA3001 project state
 
-Revision: 017 | Updated: 2026-10-05 | Status: ML development comparison and refined-validation check complete; final test reserved
+Revision: 018 | Updated: 2026-10-05 | Status: frozen 300-row refits and once-only 100-case final evaluation complete
 
 ## Current stage
 
-The nominal simulation, bounded nine-pilot verification, 400-setup dataset and first ML development comparison are complete. One linear model and 18 RBF-SVR candidates were fitted on 225 training rows and compared on 75 validation rows. A supplementary tighter numerical check covers those 75 validation responses. No 300-row refit or final-test response access/prediction evaluation has occurred. These are working implementation/evidence records, not the assessed report.
+The nominal simulation, bounded nine-pilot verification, 400-setup dataset, ML development comparison and refined-validation check are complete. The development-selected SVR and linear comparator have now been refitted on the same 300 original development rows and evaluated once on all 100 reserved cases. The final test is consumed; no settings or model preference changed after access. These are working implementation/evidence records, not the assessed report.
 
-D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. D004 later authorised bounded verification, D006 dataset generation, and D008 the ML development comparison. Final refitting/evaluation, assessed report writing and GitHub publication remain outside this completed stage. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
+D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. D004 later authorised bounded verification, D006 dataset generation, D008 the ML development comparison and D010 final refitting/evaluation. Assessed report writing and GitHub publication remain outside this completed stage. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
 
-Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D009 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D011 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+
+## Final evaluation checkpoint, 2026-10-05
+
+D010 / U014 - The student said "proceed" after the proposed freeze, refit on all 300 development rows and once-only evaluation on the 100 reserved cases. Implemented that bounded stage without asking for the same permission again. No new dataset, tuning search, numerical-reference refinement, assessed report or GitHub publication occurred. The primary target remains full-response max abs(zs-zu), measured from static equilibrium, including after the bump. Post-bump movement/settling retain their supporting priority.
+
+D011 - Retained D009's preferred RBF SVR, C=100, gamma=1, epsilon=0.05 mm, and the declared linear comparator. A pre-test plan fixes the two specifications, original training-plus-validation labels, fresh 300-row feature scalers, metrics and four nominal-midpoint regions. Saved both refits and fingerprints before opening test-response files. The preferred model remains SVR; test results did not make a new selection.
+
+- Source audit: guide 003, handoff 001 and newer records 017 available; no missing required source or newer conflicting record found. Actual relevant Week05_5/6 cells were reread before adaptation, with independent brief pp5-6 review. No notebook execution or source modification, fresh full brief reread or dependency installation is claimed. See R007.
+- Both scalers and regressors fitted exactly the same 300 original development rows (225 training then 75 validation). Tighter validation labels remained verification-only. Both fits converged; both reload checks give zero prediction difference. The final SVR uses 45 support vectors. The prior 225-row fitted pipelines are preserved.
+- On all 100 final cases: linear RMSE 0.199435697164 mm, MAE 0.161225200746 mm, largest absolute error/underprediction 0.435026153003 mm, R2 0.994253867028. SVR RMSE 0.029796273842 mm, MAE 0.026310801804 mm, largest absolute error 0.051825992410 mm, largest underprediction 0.051696354817 mm, R2 0.999871739244. Positive residual means simulated A exceeds prediction. Observed errors support the retained choice on this sample; no engineering accuracy threshold or continuous-domain maximum-error guarantee has been invented.
+- Actual checks: 385 tests pass (353 existing plus 32 final-stage cases). All 100 test IDs, units, physical parameters, target validity and fingerprints agree; no rows dropped. Test prediction leaves both 300-row scalers unchanged. All predictions are finite and positive; all five evaluation checks pass. A separate saved-artifact audit reproduces every final metric without new fitting or original test-response reads. The final comparison figure was visually inspected.
+- Preparation completed at 2026-10-04 14:22:18.641311 UTC; first test access was 14:23:02.333225 UTC (5 October Sydney). Plan/model/source/data fingerprints and these times are saved in final_evaluation_v1. The checkpoint refuses repeated evaluation; audit reads saved outputs only. Numerical and ML source files plus prior result folders remain preserved.
+- Only two new real-data fits occurred, taking 0.007213100 s (linear) and 0.005709500 s (SVR). Median checked prediction times for 30 warmed 300-row development batches were 0.000137850 s and 0.000838600 s at one numerical thread. These precede test access and are limited diagnostics, not an end-to-end speedup estimate. The reused timing helper's generic scope string says "validation batch"; the actual batch is all 300 development inputs, as its field name, count and frozen plan specify.
+
+Read `Suspension_Model/FINAL_EVALUATION_GUIDE.md` and `final_evaluation_v1/CHECK_RESULTS.md`. Reproduce saved scores with `python final_evaluation.py audit` in Suspension_Model using the recorded environment. Preparation/evaluation each completed once; no second full final run or fresh-environment installation is claimed. Re-running with a new folder would be reproduction of known results, not a fresh independent test. Records are saved at revision 018 with an AI-attributed local Git checkpoint; no remote publication or uploaded-copy update is claimed.
+
+Remaining uncertainties: these labels approximate the chosen numerical model, not measured vehicle behaviour; refined validation did not certify errors at all final-test locations. Sample/split sufficiency, continuous-domain/contact behaviour, physical clearances and fair end-to-end runtime benefits remain unestablished. Student understanding and overall AI contribution remain unassessed. Next work should review the final comparison and post-bump/settling physics with the student, then agree a bounded runtime/repository task. Submission remains 23 October 2026 at 23:59 Australia/Sydney; presentation-date planning stays deferred.
 
 ## ML development checkpoint, 2026-10-05
 
@@ -349,9 +366,9 @@ Primary authority: MMA3001_2026_Project_Brief.pdf. The checklist below is a work
 ## Current setup files
 
 - PROJECT_GUIDE.md — revision 003: working instructions and opening prompt.
-- PROJECT_STATE.md — revision 017: simulation, dataset and ML development checkpoints, decisions and next actions.
-- EVIDENCE.md — revision 017: sources, numerical verification, dataset and ML/reference-sensitivity evidence.
-- AI_USE_LOG.md — revision 017: implementation, ML/checking assistance and outstanding student contribution review.
+- PROJECT_STATE.md — revision 018: simulation, dataset, ML development and final-evaluation checkpoints, decisions and next actions.
+- EVIDENCE.md — revision 018: sources, numerical verification, dataset, development/reference and final-test evidence.
+- AI_USE_LOG.md — revision 018: implementation, final-evaluation/checking assistance and outstanding student contribution review.
 - HANDOFF.md — revision 001: new-chat reading instructions, scope, completion criteria and copyable prompt; does not grant coding permission.
 
 These local files are in Project_Setup under the existing MMA3001 notebook folder. Uploaded copies must be refreshed when their authoritative local versions change.
@@ -360,12 +377,12 @@ These local files are in Project_Setup under the existing MMA3001 notebook folde
 
 1. All 400 sampled setups pass the adopted per-row checks; exact label error and contact between sampled times are not certified. Further sampled setups still need their own checks.
 2. Will P003 maintain tyre contact throughout the continuous domain, and will P007's 400 setups be sufficient for ML? These remain open despite the completed dataset screening.
-3. Selected SVR has lower error on the current validation sample, including after reference refinement. Will that hold on the reserved final test, and will any end-to-end speed benefit justify its cost? Those claims remain untested.
+3. Selected SVR has lower error on both the development validation sample and the final test. Will an end-to-end speed benefit justify its cost, and are results robust to other samples or refined training labels? Those claims remain untested.
 4. Can the student explain the state, force signs, equilibrium convention, full-response maximum, settling rule and checks independently? Understanding and the overall AI contribution estimate remain to be reviewed.
 5. Licence choice, student Git identity and GitHub publication remain future repository work; no remote has been created.
 
 ## Next three actions
 
-1. Review ML_GUIDE, validation residuals and training-only post-bump/settling maps with the student. Clarify selection evidence versus independent final-test evidence; student understanding/reproduction remain unassessed.
-2. When requested, freeze the development choice, refit both comparators/scalers on the same 300 development rows, then evaluate both once on the reserved 100 cases without further test-driven tuning. Preserve the development-only models/results and distinguish any later runtime comparison from the timing diagnostics already saved.
-3. Arrange student Git identity, licence and GitHub publication separately when requested; continue source/decision/AI records. Final refit/test, assessed report and presentation-date planning were outside this completed development stage.
+1. Review FINAL_EVALUATION_GUIDE, final residuals and preserved training-only post-bump/settling maps with the student. Explain numerical-label agreement versus real-vehicle validation; student understanding/reproduction remain unassessed.
+2. When requested, design a fair bounded runtime comparison including data-generation/refit costs and repeated-query costs. Keep the final test consumed and fixed; do not retune from its scores or make an overall speedup claim from current timing diagnostics.
+3. Arrange student Git identity, licence and GitHub publication separately when requested; continue source/decision/AI records. Assessed report writing and presentation-date planning remain outside this completed final-evaluation stage.
