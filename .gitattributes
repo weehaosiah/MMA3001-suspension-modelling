@@ -11,3 +11,4 @@
 .gitattributes text eol=lf
 *.png binary
 *.npz binary
+*.joblib binary

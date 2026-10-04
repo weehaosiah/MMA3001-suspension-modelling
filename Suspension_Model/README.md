@@ -1,8 +1,22 @@
-# Suspension simulation, verification and dataset
+# Suspension simulation, verification, dataset and ML development
 
 The nominal checkpoint is preserved below. Begin with the
 [physical/code walkthrough](WALKTHROUGH.md), then see the
 [nine-pilot check results](verification_results/CHECK_RESULTS.md).
+
+## ML development stage
+
+Read [ML_GUIDE.md](ML_GUIDE.md) for the linear-regression versus RBF-SVR comparison.
+The [actual development results](ml_development_v1/CHECK_RESULTS.md) use only
+225 training and 75 validation setups. The 100 final-test responses remain reserved.
+Every scaler learns from training inputs only; the sole target is full-response
+peak travel in millimetres. Post-bump movement and settling remain supporting
+physical diagnostics. No model has been refitted on all 300 development rows.
+
+`requirements-ml.txt` adds the installed ML versions to the unchanged simulation
+requirements. Use it for an environment intended to run the current complete
+test suite. No package installation was needed on this laptop. A clean-environment
+installation has not been tested.
 
 ## Dataset stage
 
@@ -17,7 +31,8 @@ The new modules are `dataset_design.py` (fixed setup identities and validity)
 and `generate_dataset.py` (simulation, exports, checks and provenance). They
 reuse nine verified baseline pilot runs only within training and integrate the
 remaining 391 setups. Existing dataset folders are preserved; reruns use a new
-output name. No preprocessing or regression model is fitted in this stage.
+output name. The dataset generator itself does not fit preprocessing or regression;
+the subsequent ML development stage is separate.
 
 ## Reproduce the bounded verification stage
 
@@ -252,7 +267,8 @@ To regenerate the function documentation after later model edits, run from this 
 
 The subsequent nine-setup verification stage is documented above and in
 `verification_results/`; dataset generation and per-row contact/tail checks
-are documented in `DATASET.md` and `dataset_v1/`. No learned model, telemetry
-validation or assessed report prose exists.
+are documented in `DATASET.md` and `dataset_v1/`. The later trained development
+models are documented in `ML_GUIDE.md`; no final-test result, telemetry validation
+or assessed report prose exists.
 Licence selection, GitHub hosting and final submission packaging remain later work.
 Student understanding and overall project AI contribution remain to be assessed.

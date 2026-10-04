@@ -1,0 +1,202 @@
+{
+  "created_utc": "2026-10-04T13:55:20.747915+00:00",
+  "stage": "training/validation only",
+  "features": [
+    "ks_N_m",
+    "cs_N_s_m"
+  ],
+  "target": "A_mm; full bump and post-bump response from static equilibrium",
+  "training_rows": 225,
+  "validation_rows": 75,
+  "heldout_response_reads": false,
+  "target_scaled": false,
+  "scaler": "StandardScaler, fit on training only per pipeline",
+  "linear": {
+    "model_id": "linear",
+    "family": "linear"
+  },
+  "svr_candidates": [
+    {
+      "model_id": "svr_01",
+      "family": "rbf_svr",
+      "C": 1.0,
+      "gamma": 0.1,
+      "epsilon": 0.05
+    },
+    {
+      "model_id": "svr_02",
+      "family": "rbf_svr",
+      "C": 1.0,
+      "gamma": 0.1,
+      "epsilon": 0.2
+    },
+    {
+      "model_id": "svr_03",
+      "family": "rbf_svr",
+      "C": 1.0,
+      "gamma": 1.0,
+      "epsilon": 0.05
+    },
+    {
+      "model_id": "svr_04",
+      "family": "rbf_svr",
+      "C": 1.0,
+      "gamma": 1.0,
+      "epsilon": 0.2
+    },
+    {
+      "model_id": "svr_05",
+      "family": "rbf_svr",
+      "C": 1.0,
+      "gamma": 10.0,
+      "epsilon": 0.05
+    },
+    {
+      "model_id": "svr_06",
+      "family": "rbf_svr",
+      "C": 1.0,
+      "gamma": 10.0,
+      "epsilon": 0.2
+    },
+    {
+      "model_id": "svr_07",
+      "family": "rbf_svr",
+      "C": 10.0,
+      "gamma": 0.1,
+      "epsilon": 0.05
+    },
+    {
+      "model_id": "svr_08",
+      "family": "rbf_svr",
+      "C": 10.0,
+      "gamma": 0.1,
+      "epsilon": 0.2
+    },
+    {
+      "model_id": "svr_09",
+      "family": "rbf_svr",
+      "C": 10.0,
+      "gamma": 1.0,
+      "epsilon": 0.05
+    },
+    {
+      "model_id": "svr_10",
+      "family": "rbf_svr",
+      "C": 10.0,
+      "gamma": 1.0,
+      "epsilon": 0.2
+    },
+    {
+      "model_id": "svr_11",
+      "family": "rbf_svr",
+      "C": 10.0,
+      "gamma": 10.0,
+      "epsilon": 0.05
+    },
+    {
+      "model_id": "svr_12",
+      "family": "rbf_svr",
+      "C": 10.0,
+      "gamma": 10.0,
+      "epsilon": 0.2
+    },
+    {
+      "model_id": "svr_13",
+      "family": "rbf_svr",
+      "C": 100.0,
+      "gamma": 0.1,
+      "epsilon": 0.05
+    },
+    {
+      "model_id": "svr_14",
+      "family": "rbf_svr",
+      "C": 100.0,
+      "gamma": 0.1,
+      "epsilon": 0.2
+    },
+    {
+      "model_id": "svr_15",
+      "family": "rbf_svr",
+      "C": 100.0,
+      "gamma": 1.0,
+      "epsilon": 0.05
+    },
+    {
+      "model_id": "svr_16",
+      "family": "rbf_svr",
+      "C": 100.0,
+      "gamma": 1.0,
+      "epsilon": 0.2
+    },
+    {
+      "model_id": "svr_17",
+      "family": "rbf_svr",
+      "C": 100.0,
+      "gamma": 10.0,
+      "epsilon": 0.05
+    },
+    {
+      "model_id": "svr_18",
+      "family": "rbf_svr",
+      "C": 100.0,
+      "gamma": 10.0,
+      "epsilon": 0.2
+    }
+  ],
+  "svr_solver": {
+    "kernel": "rbf",
+    "tol": 0.001,
+    "shrinking": true,
+    "cache_size": 200,
+    "max_iter": -1
+  },
+  "selection": "minimum validation RMSE; exact ties linear then ascending C/gamma/epsilon",
+  "region_boundaries": {
+    "ks_N_m": 24000,
+    "cs_N_s_m": 2126.4
+  },
+  "prediction_timing": {
+    "warmups": 3,
+    "repeats": 30,
+    "batch_rows": 75,
+    "threadpool_limit": 1
+  },
+  "no_extra_tuning_or_models": true,
+  "no_final_refit_or_test": true,
+  "source_sha256": {
+    "Suspension_Model\\ml_development.py": "c9fc4482ce2c5251f0efb7e73749603f02bf61d7d6964102e65c377fd7e40f69",
+    "Suspension_Model\\ml_plots.py": "48f2c161e0dfae29ffe20ecaaa92d6e9798abb17c4d9aa344f90c896eb157d44",
+    "Suspension_Model\\requirements-ml.txt": "823d6ea0861af85c5db96197859b1ecc500dd7be3aff89f1ce01732f99973b28",
+    "Suspension_Model\\dataset_design.py": "47da86deaeb67786813ef9633135d7c9c68857dc0e768c020718203b8c09bcec",
+    "Suspension_Model\\quarter_car.py": "66b67460a82b20732781147542ab41c1af08428cc8cde75400733b09d112bf17",
+    "Suspension_Model\\tests\\test_ml_development.py": "ab3c3f202ba0b4d2918b1f7d7e7ce72424e6ca42276ed509f95ed49ef0fc3d4d",
+    "MMA3001_2026_Project_Brief.pdf": "1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c",
+    "MMA3001_Notes_Week05_1_Linear_Regression.ipynb": "f6b6eca35627bc8f207d6c77f76890e6d8c13b722c2ea1672740af5a30f7503c",
+    "MMA3001_Notes_Week05_3_Support_Vector_Regression.ipynb": "5463ca6d493e3dd9008854a7e97757c687ef7247e06d6eab6f51ffd73f41a64d",
+    "MMA3001_Notes_Week05_5_Evaluating_Regression_Performance.ipynb": "b3dd29a48eea8b871d2410cdf5e59b90d623553e2605991b7a00f1f7e8796155",
+    "MMA3001_Notes_Week05_6_Training_Data_Evaluation_and_Selection.ipynb": "94a81726e26ba53b665f8ed29dabf9ebf089b2975808f30242f25f4a98684fc0"
+  },
+  "dataset_files_read_sha256": {
+    "summary.json": "ad4d628bda744e860e0722634600a6aceb5cd2056dd4ee65861db9ad94e77fcc",
+    "generation_plan.json": "046b327a50225d4dd25da4feb2586ca564e85ce35d6472cd0af4cc4ca9546e56",
+    "setup_manifest.csv": "4392961c276137f3c7fad472c0c3bb84f78267d4e6cb8e70977192a4528ef35f",
+    "train.csv": "a0760d9987d049411b835499146873931f47dd6665f4a13f396e1be23bc0f1c9",
+    "validation.csv": "8bc61589128e8d120393628548a326e910e79ace5919cf7d259ed0c85438e2e1",
+    "train_diagnostics.jsonl": "a3bce544a231551953bbcde917b5835fc26adb00fe0cd5f38e78c752fca29102",
+    "validation_diagnostics.jsonl": "8e34bc67e85bf3c08cdd1ca4d2d45a1800e77635441c8576d655db3d7267e215"
+  },
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "C:\\Users\\dedvu\\anaconda3\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "matplotlib": "3.9.2",
+      "pytest": "7.4.4",
+      "scikit-learn": "1.5.1",
+      "joblib": "1.4.2",
+      "threadpoolctl": "3.5.0"
+    }
+  }
+}

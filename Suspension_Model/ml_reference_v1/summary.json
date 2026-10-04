@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "checks": {
+    "all_75_reference_checks": true,
+    "ranking_preserved_between_references": true,
+    "sources_unchanged": true,
+    "plan_unchanged": true
+  },
+  "ranking": {
+    "label_change_rms_mm": 0.0003103996223048336,
+    "label_change_max_mm": 0.0006779111594852338,
+    "best_svr_gap_mm": 0.0013983524807849972,
+    "preferred_gap_mm": 0.0013983524807849972,
+    "best_svr_stable": true,
+    "preferred_stable": true,
+    "basis": "fixed predictions; strict original score gap > 2*RMS reference-label change"
+  },
+  "refined_reference_metrics": {
+    "linear": {
+      "n": 75,
+      "MAE_mm": 0.1597160851020926,
+      "RMSE_mm": 0.1994686422114199,
+      "max_absolute_error_mm": 0.4856487129099065,
+      "max_underprediction_mm": 0.4856487129099065,
+      "mean_residual_mm": 0.0010900135631833525,
+      "R2": 0.9942269780815917
+    },
+    "svr": {
+      "n": 75,
+      "MAE_mm": 0.027276745245889345,
+      "RMSE_mm": 0.031081326364170093,
+      "max_absolute_error_mm": 0.05981243726665042,
+      "max_underprediction_mm": 0.05981243726665042,
+      "mean_residual_mm": -0.003711472316577158,
+      "R2": 0.9998598306592558
+    }
+  },
+  "maximum_post_peak_change_mm": 7.174121817443702e-07,
+  "maximum_settling_change_s": 3.790332693487386e-06,
+  "minimum_sampled_contact_N": 2422.4751081369222,
+  "maximum_tail_bound_mm": 5.109841365645122e-07,
+  "verification_integrations_not_new_dataset_rows": 75,
+  "summed_integration_seconds": 60.116820799979905,
+  "derivative_evaluations": 1853748,
+  "heldout_responses_read": false,
+  "models_retrained": false,
+  "limits": "Agreement of approximate references is not a certified continuous-time/real-vehicle error bound.",
+  "artifact_sha256": {
+    "plan.json": "2a174418ee232cf5b9ae31597a79748bc05f302ff8c739d37fc6542509c41090",
+    "unit_tests.txt": "efdff9be473a5149f8a3b432924386850a86be2d16090c2368e99070e13dcb92",
+    "validation_references.jsonl": "4e57c492a195a72aef3cf02e55c47f2994f7783dbd27f77b1fec41ee946e84cb"
+  }
+}

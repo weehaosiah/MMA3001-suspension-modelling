@@ -1,0 +1,797 @@
+[
+  {
+    "model_id": "linear",
+    "family": "linear",
+    "status": "ok",
+    "fit_seconds": 0.0062873999995645136,
+    "validation_prediction_seconds_single_call": 0.00017389999993611127,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.17467957256365754,
+      "RMSE_mm": 0.2207780669457195,
+      "max_absolute_error_mm": 0.5076024227103417,
+      "max_underprediction_mm": 0.5076024227103417,
+      "mean_residual_mm": -6.536993168992922e-15,
+      "R2": 0.9936909196425259
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.15968981491198975,
+      "RMSE_mm": 0.19945587370866477,
+      "max_absolute_error_mm": 0.48528079303155636,
+      "max_underprediction_mm": 0.48528079303155636,
+      "mean_residual_mm": 0.0008529026880825086,
+      "R2": 0.9942275683936732
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": null,
+    "support_fraction": null,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_01",
+    "family": "rbf_svr",
+    "C": 1.0,
+    "gamma": 0.1,
+    "epsilon": 0.05,
+    "status": "ok",
+    "fit_seconds": 0.002957000004244037,
+    "validation_prediction_seconds_single_call": 0.0007757999992463738,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.11611797530574024,
+      "RMSE_mm": 0.16494734623942095,
+      "max_absolute_error_mm": 0.7041471893848978,
+      "max_underprediction_mm": 0.7041471893848978,
+      "mean_residual_mm": 0.00480027040329702,
+      "R2": 0.996478360702058
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.08791036383439092,
+      "RMSE_mm": 0.10709451004717291,
+      "max_absolute_error_mm": 0.29288481203653305,
+      "max_underprediction_mm": 0.29288481203653305,
+      "mean_residual_mm": -0.004527194814171007,
+      "R2": 0.998335822859693
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 157,
+    "support_fraction": 0.6977777777777778,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_02",
+    "family": "rbf_svr",
+    "C": 1.0,
+    "gamma": 0.1,
+    "epsilon": 0.2,
+    "status": "ok",
+    "fit_seconds": 0.0018181999985245056,
+    "validation_prediction_seconds_single_call": 0.00040269999590236694,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.15482699145203654,
+      "RMSE_mm": 0.20008860129943634,
+      "max_absolute_error_mm": 0.7806424372526379,
+      "max_underprediction_mm": 0.7489239962807659,
+      "mean_residual_mm": -0.0062479525967395946,
+      "R2": 0.9948179821736185
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.11907378481558577,
+      "RMSE_mm": 0.13980312717456594,
+      "max_absolute_error_mm": 0.27544795672180555,
+      "max_underprediction_mm": 0.2707421041063043,
+      "mean_residual_mm": -0.015498191176057408,
+      "R2": 0.9971640477936984
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 61,
+    "support_fraction": 0.27111111111111114,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_03",
+    "family": "rbf_svr",
+    "C": 1.0,
+    "gamma": 1.0,
+    "epsilon": 0.05,
+    "status": "ok",
+    "fit_seconds": 0.0028638000003411435,
+    "validation_prediction_seconds_single_call": 0.0005282999991322868,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.07246150049171411,
+      "RMSE_mm": 0.13488525560997858,
+      "max_absolute_error_mm": 0.8725722797285584,
+      "max_underprediction_mm": 0.8725722797285584,
+      "mean_residual_mm": 0.002885278892773834,
+      "R2": 0.9976450420081651
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.03526939975158285,
+      "RMSE_mm": 0.04552513601194339,
+      "max_absolute_error_mm": 0.1858854568829571,
+      "max_underprediction_mm": 0.1858854568829571,
+      "mean_residual_mm": 0.003970415020722555,
+      "R2": 0.9996992763115561
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 92,
+    "support_fraction": 0.4088888888888889,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_04",
+    "family": "rbf_svr",
+    "C": 1.0,
+    "gamma": 1.0,
+    "epsilon": 0.2,
+    "status": "ok",
+    "fit_seconds": 0.002267399999254849,
+    "validation_prediction_seconds_single_call": 0.0003671000013127923,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.1482804454073582,
+      "RMSE_mm": 0.18837410300814242,
+      "max_absolute_error_mm": 0.9560953687500415,
+      "max_underprediction_mm": 0.9267878969480208,
+      "mean_residual_mm": -0.006637827886863698,
+      "R2": 0.995406998358667
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.10945742213260312,
+      "RMSE_mm": 0.12798653368539456,
+      "max_absolute_error_mm": 0.2355597317716942,
+      "max_underprediction_mm": 0.21634999866550686,
+      "mean_residual_mm": -0.0023755640445132066,
+      "R2": 0.9976231942492528
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 52,
+    "support_fraction": 0.2311111111111111,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_05",
+    "family": "rbf_svr",
+    "C": 1.0,
+    "gamma": 10.0,
+    "epsilon": 0.05,
+    "status": "ok",
+    "fit_seconds": 0.006334800003969576,
+    "validation_prediction_seconds_single_call": 0.0009065999984159134,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.20777252553867148,
+      "RMSE_mm": 0.45158899736604796,
+      "max_absolute_error_mm": 2.3242449165880217,
+      "max_underprediction_mm": 2.3242449165880217,
+      "mean_residual_mm": 0.018800388255711672,
+      "R2": 0.9736038303948016
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.08181169404724936,
+      "RMSE_mm": 0.17021598491111117,
+      "max_absolute_error_mm": 1.045615425793855,
+      "max_underprediction_mm": 1.045615425793855,
+      "mean_residual_mm": 0.013722028830795334,
+      "R2": 0.9957959698726435
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 199,
+    "support_fraction": 0.8844444444444445,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_06",
+    "family": "rbf_svr",
+    "C": 1.0,
+    "gamma": 10.0,
+    "epsilon": 0.2,
+    "status": "ok",
+    "fit_seconds": 0.005415699997683987,
+    "validation_prediction_seconds_single_call": 0.0009027999985846691,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.33266891238985663,
+      "RMSE_mm": 0.5045013179682745,
+      "max_absolute_error_mm": 2.340959942256063,
+      "max_underprediction_mm": 2.340959942256063,
+      "mean_residual_mm": 0.013639081331205697,
+      "R2": 0.9670558113475188
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.21564820672842833,
+      "RMSE_mm": 0.26020602859115216,
+      "max_absolute_error_mm": 1.129267254876595,
+      "max_underprediction_mm": 1.129267254876595,
+      "mean_residual_mm": 0.0011045211913191604,
+      "R2": 0.9901757400786622
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 186,
+    "support_fraction": 0.8266666666666667,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_07",
+    "family": "rbf_svr",
+    "C": 10.0,
+    "gamma": 0.1,
+    "epsilon": 0.05,
+    "status": "ok",
+    "fit_seconds": 0.0032176999957300723,
+    "validation_prediction_seconds_single_call": 0.0003156000020680949,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.02962012031833164,
+      "RMSE_mm": 0.03548476112358442,
+      "max_absolute_error_mm": 0.11869120885766904,
+      "max_underprediction_mm": 0.11869120885766904,
+      "mean_residual_mm": -0.0012355848476201144,
+      "R2": 0.9998370186248045
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.029268716769380206,
+      "RMSE_mm": 0.032486041148807175,
+      "max_absolute_error_mm": 0.05110521182420058,
+      "max_underprediction_mm": 0.05105382029406513,
+      "mean_residual_mm": 0.0037271337820140122,
+      "R2": 0.9998468705524667
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 35,
+    "support_fraction": 0.15555555555555556,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_08",
+    "family": "rbf_svr",
+    "C": 10.0,
+    "gamma": 0.1,
+    "epsilon": 0.2,
+    "status": "ok",
+    "fit_seconds": 0.00204939999821363,
+    "validation_prediction_seconds_single_call": 0.00025599999935366213,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.1240792779902003,
+      "RMSE_mm": 0.13956157357451213,
+      "max_absolute_error_mm": 0.29346870559299276,
+      "max_underprediction_mm": 0.22122758461088665,
+      "mean_residual_mm": 0.0036168964616053105,
+      "R2": 0.9974789240988288
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.12067586692052733,
+      "RMSE_mm": 0.13417826859736437,
+      "max_absolute_error_mm": 0.20499974511517394,
+      "max_underprediction_mm": 0.2032343016668534,
+      "mean_residual_mm": 0.019182340612071205,
+      "R2": 0.9973876611895681
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 18,
+    "support_fraction": 0.08,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_09",
+    "family": "rbf_svr",
+    "C": 10.0,
+    "gamma": 1.0,
+    "epsilon": 0.05,
+    "status": "ok",
+    "fit_seconds": 0.003994899998360779,
+    "validation_prediction_seconds_single_call": 0.00037509999674512073,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.03165855043714228,
+      "RMSE_mm": 0.0368948476761822,
+      "max_absolute_error_mm": 0.10954514833230178,
+      "max_underprediction_mm": 0.10436852416482623,
+      "mean_residual_mm": -0.0026436097721557416,
+      "R2": 0.9998238082174892
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.029668264683436498,
+      "RMSE_mm": 0.03372141023527991,
+      "max_absolute_error_mm": 0.07315026833670402,
+      "max_underprediction_mm": 0.07315026833670402,
+      "mean_residual_mm": -0.002305093340453084,
+      "R2": 0.9998350027930072
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 50,
+    "support_fraction": 0.2222222222222222,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_10",
+    "family": "rbf_svr",
+    "C": 10.0,
+    "gamma": 1.0,
+    "epsilon": 0.2,
+    "status": "ok",
+    "fit_seconds": 0.003507499997795094,
+    "validation_prediction_seconds_single_call": 0.0005283999998937361,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.12756434288135032,
+      "RMSE_mm": 0.14221269902598913,
+      "max_absolute_error_mm": 0.20046919448603973,
+      "max_underprediction_mm": 0.20042171104373807,
+      "mean_residual_mm": -0.002778517296921008,
+      "R2": 0.9973822331499154
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.12250066918346345,
+      "RMSE_mm": 0.13851709059631062,
+      "max_absolute_error_mm": 0.23681349467408808,
+      "max_underprediction_mm": 0.21047762029327544,
+      "mean_residual_mm": -0.003386701712793941,
+      "R2": 0.9972159831615828
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 32,
+    "support_fraction": 0.14222222222222222,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_11",
+    "family": "rbf_svr",
+    "C": 10.0,
+    "gamma": 10.0,
+    "epsilon": 0.05,
+    "status": "ok",
+    "fit_seconds": 0.00556009999854723,
+    "validation_prediction_seconds_single_call": 0.0009011000001919456,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.04410590521412587,
+      "RMSE_mm": 0.04598703366078688,
+      "max_absolute_error_mm": 0.05049619308410769,
+      "max_underprediction_mm": 0.05049619308410769,
+      "mean_residual_mm": -0.004650693634364416,
+      "R2": 0.9997262683598571
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.06388139462329397,
+      "RMSE_mm": 0.07842520355946275,
+      "max_absolute_error_mm": 0.21933078010796692,
+      "max_underprediction_mm": 0.15143059373094303,
+      "mean_residual_mm": 0.0018138100164469507,
+      "R2": 0.9991075653074087
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 174,
+    "support_fraction": 0.7733333333333333,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_12",
+    "family": "rbf_svr",
+    "C": 10.0,
+    "gamma": 10.0,
+    "epsilon": 0.2,
+    "status": "ok",
+    "fit_seconds": 0.005292000001645647,
+    "validation_prediction_seconds_single_call": 0.0008306000017910264,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.18203626184240382,
+      "RMSE_mm": 0.18685260058926206,
+      "max_absolute_error_mm": 0.20047117828247707,
+      "max_underprediction_mm": 0.20046975122488675,
+      "mean_residual_mm": -0.011737251316100632,
+      "R2": 0.9954808943009082
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.1699225034199884,
+      "RMSE_mm": 0.1835980973314999,
+      "max_absolute_error_mm": 0.36432666478783915,
+      "max_underprediction_mm": 0.29399565423308616,
+      "mean_residual_mm": -0.014142220401420975,
+      "R2": 0.9951089569220144
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 166,
+    "support_fraction": 0.7377777777777778,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_13",
+    "family": "rbf_svr",
+    "C": 100.0,
+    "gamma": 0.1,
+    "epsilon": 0.05,
+    "status": "ok",
+    "fit_seconds": 0.0030006000015418977,
+    "validation_prediction_seconds_single_call": 0.00024399999529123306,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.028231967430769833,
+      "RMSE_mm": 0.03154572121159257,
+      "max_absolute_error_mm": 0.05040393628862461,
+      "max_underprediction_mm": 0.05019475225785186,
+      "mean_residual_mm": -0.008019962125801593,
+      "R2": 0.9998711942864826
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.03017422622628942,
+      "RMSE_mm": 0.032857113830040544,
+      "max_absolute_error_mm": 0.0510873439730446,
+      "max_underprediction_mm": 0.0510873439730446,
+      "mean_residual_mm": -0.0038404818561307745,
+      "R2": 0.9998433523225471
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 15,
+    "support_fraction": 0.06666666666666667,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_14",
+    "family": "rbf_svr",
+    "C": 100.0,
+    "gamma": 0.1,
+    "epsilon": 0.2,
+    "status": "ok",
+    "fit_seconds": 0.0019973000016761944,
+    "validation_prediction_seconds_single_call": 0.00022560000070370734,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.12326454261473291,
+      "RMSE_mm": 0.13784856077631874,
+      "max_absolute_error_mm": 0.20051287828803055,
+      "max_underprediction_mm": 0.20030346454131376,
+      "mean_residual_mm": 0.003919039759843548,
+      "R2": 0.9975404328821209
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.12522289404063305,
+      "RMSE_mm": 0.13659022343261096,
+      "max_absolute_error_mm": 0.20306439435817225,
+      "max_underprediction_mm": 0.20093908847371011,
+      "mean_residual_mm": 0.021143812196549164,
+      "R2": 0.9972928995790817
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 13,
+    "support_fraction": 0.057777777777777775,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_15",
+    "family": "rbf_svr",
+    "C": 100.0,
+    "gamma": 1.0,
+    "epsilon": 0.05,
+    "status": "ok",
+    "fit_seconds": 0.004463500001293141,
+    "validation_prediction_seconds_single_call": 0.00037119999615242705,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.030181276607411007,
+      "RMSE_mm": 0.03457915970629877,
+      "max_absolute_error_mm": 0.05038629216553403,
+      "max_underprediction_mm": 0.05038629216553403,
+      "mean_residual_mm": -0.003029038339294472,
+      "R2": 0.9998452313206014
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.02727725443617127,
+      "RMSE_mm": 0.031087688668022178,
+      "max_absolute_error_mm": 0.05960031983800462,
+      "max_underprediction_mm": 0.05960031983800462,
+      "mean_residual_mm": -0.003948583191678002,
+      "R2": 0.9998597696546933
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 49,
+    "support_fraction": 0.21777777777777776,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_16",
+    "family": "rbf_svr",
+    "C": 100.0,
+    "gamma": 1.0,
+    "epsilon": 0.2,
+    "status": "ok",
+    "fit_seconds": 0.0022724000009475276,
+    "validation_prediction_seconds_single_call": 0.00031239999952958897,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.12756434288135032,
+      "RMSE_mm": 0.14221269902598913,
+      "max_absolute_error_mm": 0.20046919448603973,
+      "max_underprediction_mm": 0.20042171104373807,
+      "mean_residual_mm": -0.002778517296921008,
+      "R2": 0.9973822331499154
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.12250066918346345,
+      "RMSE_mm": 0.13851709059631062,
+      "max_absolute_error_mm": 0.23681349467408808,
+      "max_underprediction_mm": 0.21047762029327544,
+      "mean_residual_mm": -0.003386701712793941,
+      "R2": 0.9972159831615828
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 32,
+    "support_fraction": 0.14222222222222222,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_17",
+    "family": "rbf_svr",
+    "C": 100.0,
+    "gamma": 10.0,
+    "epsilon": 0.05,
+    "status": "ok",
+    "fit_seconds": 0.005104600000777282,
+    "validation_prediction_seconds_single_call": 0.0008484999998472631,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.04410590521412587,
+      "RMSE_mm": 0.04598703366078688,
+      "max_absolute_error_mm": 0.05049619308410769,
+      "max_underprediction_mm": 0.05049619308410769,
+      "mean_residual_mm": -0.004650693634364416,
+      "R2": 0.9997262683598571
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.06388139462329397,
+      "RMSE_mm": 0.07842520355946275,
+      "max_absolute_error_mm": 0.21933078010796692,
+      "max_underprediction_mm": 0.15143059373094303,
+      "mean_residual_mm": 0.0018138100164469507,
+      "R2": 0.9991075653074087
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 174,
+    "support_fraction": 0.7733333333333333,
+    "fit_status": 0
+  },
+  {
+    "model_id": "svr_18",
+    "family": "rbf_svr",
+    "C": 100.0,
+    "gamma": 10.0,
+    "epsilon": 0.2,
+    "status": "ok",
+    "fit_seconds": 0.004856300001847558,
+    "validation_prediction_seconds_single_call": 0.0009104999990086071,
+    "training": {
+      "n": 225,
+      "MAE_mm": 0.18203626184240382,
+      "RMSE_mm": 0.18685260058926206,
+      "max_absolute_error_mm": 0.20047117828247707,
+      "max_underprediction_mm": 0.20046975122488675,
+      "mean_residual_mm": -0.011737251316100632,
+      "R2": 0.9954808943009082
+    },
+    "validation": {
+      "n": 75,
+      "MAE_mm": 0.1699225034199884,
+      "RMSE_mm": 0.1835980973314999,
+      "max_absolute_error_mm": 0.36432666478783915,
+      "max_underprediction_mm": 0.29399565423308616,
+      "mean_residual_mm": -0.014142220401420975,
+      "R2": 0.9951089569220144
+    },
+    "scaler_mean": [
+      24000.00000000001,
+      2126.400000000002
+    ],
+    "scaler_scale": [
+      3703.2803990902075,
+      328.11064335939255
+    ],
+    "scaler_training_count": 225,
+    "scaler_unchanged_after_prediction": true,
+    "validation_predictions_positive": true,
+    "support_vectors": 166,
+    "support_fraction": 0.7377777777777778,
+    "fit_status": 0
+  }
+]

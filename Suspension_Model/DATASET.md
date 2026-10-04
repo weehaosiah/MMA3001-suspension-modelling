@@ -8,9 +8,10 @@ combined test suite passed 280 cases. Read the
 [machine-readable status](dataset_v1/summary.json) for exact outcomes and limitations.
 Links in this guide refer to that preserved `dataset_v1` output folder.
 
-The current stage generates and checks simulation data. Fitting preprocessing,
-training ML models and evaluating final-test predictions require the later ML
-stage; they are not authorised by this dataset-generation step.
+The dataset generator's scope is simulation and checking. The subsequent
+training/validation comparison is documented in [ML_GUIDE.md](ML_GUIDE.md).
+Final-test prediction evaluation remains a later stage; it does not occur in
+the dataset generator or the development comparison.
 
 ## What one row means
 

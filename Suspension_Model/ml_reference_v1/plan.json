@@ -1,0 +1,62 @@
+{
+  "purpose": "P008 close-score numerical-reference sensitivity",
+  "validation_rows": 75,
+  "solver": {
+    "rtol": 1e-08,
+    "atol": [
+      1e-11,
+      1e-10,
+      1e-11,
+      1e-10
+    ],
+    "max_step_s": 0.0025
+  },
+  "horizon_s": 10,
+  "observation_dt_s": 0.00025,
+  "physical_model": {
+    "ms": 365.4,
+    "mu": 43.0,
+    "ks": 24000.0,
+    "cs": 2126.4,
+    "kt": 350000.0,
+    "g": 9.81
+  },
+  "bump": {
+    "height_m": 0.05,
+    "duration_s": 0.5
+  },
+  "initial_state": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "source_sha256": {
+    "ml_reference_check.py": "eb71783e8d8d0c220f69b748d494bed0cd00a6ce7b7a75e37616e745b5c41dff",
+    "quarter_car.py": "66b67460a82b20732781147542ab41c1af08428cc8cde75400733b09d112bf17",
+    "ml_development.py": "c9fc4482ce2c5251f0efb7e73749603f02bf61d7d6964102e65c377fd7e40f69",
+    "tests\\test_ml_reference.py": "c112a399a9089d60fe702fb9be2f6a667ed3a329700a7b91ecd86a2d9c702ed1",
+    "ml_development_v1\\summary.json": "c88118164221a0236587bf5e04afa9443578b7caaa1f9fc9d86e74504d60df87",
+    "ml_development_v1\\candidates.json": "976bf0adf8f16ce2b903e19fd0e0312452390539a46741370eaaa7460f9bfdb2",
+    "ml_development_v1\\validation_predictions.csv": "b1a0e08645ee7cf29aa499bc6b0764ae9bde745ef22b78a8d745ce7272a72b59",
+    "dataset_v1\\validation.csv": "8bc61589128e8d120393628548a326e910e79ace5919cf7d259ed0c85438e2e1",
+    "dataset_v1\\validation_diagnostics.jsonl": "8e34bc67e85bf3c08cdd1ca4d2d45a1800e77635441c8576d655db3d7267e215"
+  },
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "C:\\Users\\dedvu\\anaconda3\\python.exe",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "scikit-learn": "1.5.1",
+      "pytest": "7.4.4"
+    }
+  },
+  "new_training_or_tuning": false,
+  "heldout_responses_read": false,
+  "comparison_limits": {
+    "peak_mm": 0.05,
+    "settling_s": 0.01
+  },
+  "ranking_rule": "fixed-prediction RMSE change <= RMS reference-label change; strict gap > twice bound"
+}

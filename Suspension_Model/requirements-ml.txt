@@ -1,0 +1,5 @@
+# Adds ML packages to the unchanged simulation environment; versions actually used.
+-r requirements.txt
+scikit-learn==1.5.1
+joblib==1.4.2
+threadpoolctl==3.5.0

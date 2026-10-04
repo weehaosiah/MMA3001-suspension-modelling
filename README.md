@@ -1,7 +1,8 @@
 # MMA3001 suspension modelling
 
-Start with [the simulation guide](Suspension_Model/README.md) and
-[the dataset guide](Suspension_Model/DATASET.md).
+Start with [the simulation guide](Suspension_Model/README.md),
+[the dataset guide](Suspension_Model/DATASET.md), and
+[the ML development guide](Suspension_Model/ML_GUIDE.md).
 
 The authored project is in `Suspension_Model/`; decisions, sources and AI assistance
 are in `Project_Setup/`. The original course notebooks and brief are preserved in
@@ -12,8 +13,10 @@ dataset settings. The [walkthrough](Suspension_Model/WALKTHROUGH.md) connects co
 to physics; [verification results](Suspension_Model/verification_results/CHECK_RESULTS.md)
 show the numerical comparisons. See the
 [dataset checks](Suspension_Model/dataset_v1/CHECK_RESULTS.md) for the actual
-400-setup generation outcome. No machine-learning training or assessed report
-has been started.
+400-setup generation outcome. The
+[ML development comparison](Suspension_Model/ml_development_v1/CHECK_RESULTS.md)
+fits 225 training setups and selects using 75 validation setups. The 100 final-test
+responses remain reserved; no 300-row refit or assessed report has been started.
 Submission deadline supplied by the student: **23 October 2026, 23:59 Australia/Sydney**.
 Presentation-date planning remains deferred.
 

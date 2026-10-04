@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: ml_reference_check</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">ml_reference_check</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdedvu%5Conedrive%5Cdocuments%5Cmma3001%20jupiter%20notebooks%5Csuspension_model%5Cml_reference_check.py">c:\users\dedvu\onedrive\documents\mma3001 jupiter notebooks\suspension_model\ml_reference_check.py</a></td></tr></table>
+    <p><span class="code">Check&nbsp;development&nbsp;selection&nbsp;against&nbsp;tighter&nbsp;validation&nbsp;simulations&nbsp;only.<br>
+&nbsp;<br>
+P008&nbsp;requests&nbsp;closer&nbsp;numerical&nbsp;checks&nbsp;for&nbsp;small&nbsp;ML&nbsp;differences.&nbsp;Preserve&nbsp;the<br>
+original&nbsp;dataset&nbsp;and&nbsp;fitted&nbsp;models.&nbsp;No&nbsp;held-out&nbsp;response&nbsp;files&nbsp;are&nbsp;opened.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="argparse.html">argparse</a><br>
+<a href="csv.html">csv</a><br>
+</td><td class="multicolumn"><a href="json.html">json</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td class="multicolumn"><a href="subprocess.html">subprocess</a><br>
+<a href="sys.html">sys</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-ranking_check"><strong>ranking_check</strong></a>(records, baseline, refined)</dt><dd><span class="code">Bound&nbsp;score&nbsp;changes&nbsp;under&nbsp;replacement&nbsp;of&nbsp;the&nbsp;numerical&nbsp;reference.<br>
+&nbsp;<br>
+For&nbsp;fixed&nbsp;prediction&nbsp;vectors,&nbsp;reverse&nbsp;triangle&nbsp;inequality&nbsp;gives<br>
+|RMSE(old)-RMSE(new)|&nbsp;&lt;=&nbsp;RMS(new_label-old_label).&nbsp;A&nbsp;strict&nbsp;gap&nbsp;above&nbsp;twice<br>
+this&nbsp;value&nbsp;preserves&nbsp;the&nbsp;winner&nbsp;between&nbsp;these&nbsp;two&nbsp;numerical&nbsp;references.<br>
+This&nbsp;does&nbsp;not&nbsp;bound&nbsp;error&nbsp;against&nbsp;an&nbsp;exact&nbsp;physical&nbsp;solution.</span></dd></dl>
+ <dl><dt><a name="-reference_checks"><strong>reference_checks</strong></a>(raw, continuity, base)</dt><dd><span class="code">Return&nbsp;the&nbsp;adopted&nbsp;physical/numerical&nbsp;checks&nbsp;for&nbsp;a&nbsp;10&nbsp;s&nbsp;tight&nbsp;reference.</span></dd></dl>
+ <dl><dt><a name="-run"><strong>run</strong></a>(output)</dt><dd><span class="code">Generate&nbsp;a&nbsp;new&nbsp;supplementary&nbsp;reference&nbsp;check;&nbsp;never&nbsp;replace&nbsp;original&nbsp;data.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>ROOT</strong> = WindowsPath('C:/Users/dedvu/OneDrive/Documents/MMA3001 Jupiter notebooks/Suspension_Model')</td></tr></table>
+</body></html>

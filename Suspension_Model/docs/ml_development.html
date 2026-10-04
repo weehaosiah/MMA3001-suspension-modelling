@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: ml_development</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">ml_development</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdedvu%5Conedrive%5Cdocuments%5Cmma3001%20jupiter%20notebooks%5Csuspension_model%5Cml_development.py">c:\users\dedvu\onedrive\documents\mma3001 jupiter notebooks\suspension_model\ml_development.py</a></td></tr></table>
+    <p><span class="code">Training/validation&nbsp;comparison&nbsp;for&nbsp;P008;&nbsp;never&nbsp;open&nbsp;final-test&nbsp;responses.<br>
+&nbsp;<br>
+One&nbsp;sample&nbsp;is&nbsp;a&nbsp;full&nbsp;suspension&nbsp;setup.&nbsp;X=[ks,cs]&nbsp;in&nbsp;SI&nbsp;units,&nbsp;y=A&nbsp;in&nbsp;mm.<br>
+Course&nbsp;adaptations:&nbsp;Week05_1&nbsp;metrics;&nbsp;Week05_3&nbsp;scaler/SVR&nbsp;pipeline;<br>
+Week05_5&nbsp;validation&nbsp;selection;&nbsp;Week05_6&nbsp;leakage&nbsp;and&nbsp;fixed&nbsp;data&nbsp;roles.<br>
+Run:&nbsp;python&nbsp;ml_development.py&nbsp;--output&nbsp;ml_development_v1</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="argparse.html">argparse</a><br>
+<a href="csv.html">csv</a><br>
+<a href="importlib.html">importlib</a><br>
+</td><td class="multicolumn"><a href="itertools.html">itertools</a><br>
+<a href="joblib.html">joblib</a><br>
+<a href="json.html">json</a><br>
+</td><td class="multicolumn"><a href="numpy.html">numpy</a><br>
+<a href="platform.html">platform</a><br>
+<a href="subprocess.html">subprocess</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+<a href="warnings.html">warnings</a><br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-build_pipeline"><strong>build_pipeline</strong></a>(spec)</dt><dd><span class="code">Create&nbsp;an&nbsp;unfitted&nbsp;input-scaler/regressor&nbsp;pipeline;&nbsp;targets&nbsp;stay&nbsp;in&nbsp;mm.</span></dd></dl>
+ <dl><dt><a name="-candidate_specs"><strong>candidate_specs</strong></a>()</dt><dd><span class="code">Return&nbsp;exactly&nbsp;P008's&nbsp;18&nbsp;RBF&nbsp;settings&nbsp;in&nbsp;its&nbsp;declared&nbsp;tie-break&nbsp;order.</span></dd></dl>
+ <dl><dt><a name="-fit_candidates"><strong>fit_candidates</strong></a>(train, validation)</dt><dd><span class="code">Fit&nbsp;19&nbsp;separate&nbsp;pipelines&nbsp;on&nbsp;training&nbsp;only;&nbsp;return&nbsp;records&nbsp;and&nbsp;models.<br>
+&nbsp;<br>
+Record&nbsp;failed&nbsp;candidates&nbsp;rather&nbsp;than&nbsp;quietly&nbsp;selecting&nbsp;around&nbsp;a&nbsp;failure.<br>
+The&nbsp;selection&nbsp;step&nbsp;refuses&nbsp;any&nbsp;failure&nbsp;until&nbsp;investigated.&nbsp;Fit&nbsp;time&nbsp;includes<br>
+scaling;&nbsp;scoring&nbsp;time&nbsp;is&nbsp;a&nbsp;one-call&nbsp;diagnostic,&nbsp;not&nbsp;a&nbsp;speed&nbsp;benchmark.</span></dd></dl>
+ <dl><dt><a name="-load_development"><strong>load_development</strong></a>(dataset)</dt><dd><span class="code">Load&nbsp;only&nbsp;verified&nbsp;training/validation&nbsp;labels&nbsp;and&nbsp;common&nbsp;input&nbsp;metadata.<br>
+&nbsp;<br>
+Explicit&nbsp;paths&nbsp;prevent&nbsp;reads&nbsp;of&nbsp;heldout_test&nbsp;response&nbsp;files.&nbsp;Check&nbsp;saved<br>
+hashes,&nbsp;role&nbsp;identities,&nbsp;physics/validity&nbsp;and&nbsp;mm&nbsp;conversion;&nbsp;reject&nbsp;a&nbsp;bad<br>
+dataset&nbsp;rather&nbsp;than&nbsp;dropping,&nbsp;imputing,&nbsp;rounding&nbsp;or&nbsp;reassigning&nbsp;rows.</span></dd></dl>
+ <dl><dt><a name="-metrics"><strong>metrics</strong></a>(y, prediction)</dt><dd><span class="code">Dimensional&nbsp;errors,&nbsp;with&nbsp;residual&nbsp;=&nbsp;simulated&nbsp;A&nbsp;minus&nbsp;predicted&nbsp;A.<br>
+&nbsp;<br>
+Positive&nbsp;residual&nbsp;means&nbsp;underprediction.&nbsp;R2&nbsp;is&nbsp;undefined&nbsp;(None)&nbsp;for&nbsp;a<br>
+constant&nbsp;reference;&nbsp;extrema&nbsp;describe&nbsp;these&nbsp;samples,&nbsp;not&nbsp;a&nbsp;domain&nbsp;guarantee.</span></dd></dl>
+ <dl><dt><a name="-perf_counter"><strong>perf_counter</strong></a>(...)</dt><dd><span class="code"><a href="#-perf_counter">perf_counter</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Performance&nbsp;counter&nbsp;for&nbsp;benchmarking.</span></dd></dl>
+ <dl><dt><a name="-predict_checked"><strong>predict_checked</strong></a>(pipeline, X)</dt><dd><span class="code">Predict&nbsp;mm&nbsp;inside&nbsp;the&nbsp;study&nbsp;domain,&nbsp;rejecting&nbsp;nonfinite&nbsp;model&nbsp;output.</span></dd></dl>
+ <dl><dt><a name="-prediction_timing"><strong>prediction_timing</strong></a>(model, X, repeats=30)</dt><dd><span class="code">Warm&nbsp;up&nbsp;three&nbsp;times,&nbsp;then&nbsp;time&nbsp;checked&nbsp;whole-pipeline&nbsp;validation&nbsp;batches.</span></dd></dl>
+ <dl><dt><a name="-run"><strong>run</strong></a>(output, dataset=WindowsPath('C:/Users/dedvu/OneDrive/Documents/MMA3001 Jupiter notebooks/Suspension_Model/dataset_v1'))</dt><dd><span class="code">Save&nbsp;a&nbsp;new&nbsp;development&nbsp;checkpoint&nbsp;without&nbsp;modifying&nbsp;data&nbsp;or&nbsp;test&nbsp;responses.</span></dd></dl>
+ <dl><dt><a name="-select_models"><strong>select_models</strong></a>(records)</dt><dd><span class="code">Select&nbsp;by&nbsp;validation&nbsp;RMSE;&nbsp;exact&nbsp;ties&nbsp;follow&nbsp;the&nbsp;recorded&nbsp;P008&nbsp;rule.</span></dd></dl>
+ <dl><dt><a name="-validate_features"><strong>validate_features</strong></a>(X)</dt><dd><span class="code">Reject&nbsp;malformed/out-of-domain&nbsp;queries;&nbsp;do&nbsp;not&nbsp;silently&nbsp;extrapolate/clip.</span></dd></dl>
+ <dl><dt><a name="-write_json"><strong>write_json</strong></a>(path, data)</dt><dd><span class="code">Write&nbsp;finite&nbsp;JSON&nbsp;with&nbsp;stable&nbsp;line&nbsp;endings;&nbsp;invalid&nbsp;numbers&nbsp;raise&nbsp;errors.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>DEVELOPMENT_FILES</strong> = ('generation_plan.json', 'setup_manifest.csv', 'train.csv', 'validation.csv', 'train_diagnostics.jsonl', 'validation_diagnostics.jsonl')<br>
+<strong>FEATURES</strong> = ('ks_N_m', 'cs_N_s_m')<br>
+<strong>LINEAR_SPEC</strong> = {'family': 'linear', 'model_id': 'linear'}<br>
+<strong>ROOT</strong> = WindowsPath('C:/Users/dedvu/OneDrive/Documents/MMA3001 Jupiter notebooks/Suspension_Model')</td></tr></table>
+</body></html>

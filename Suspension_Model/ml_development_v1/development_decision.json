@@ -1,0 +1,11 @@
+{
+  "best_svr_id": "svr_15",
+  "preferred_model_id": "svr_15",
+  "criterion": "validation RMSE in mm; exact ties favour linear, then ascending C/gamma/epsilon",
+  "best_svr_settings": {
+    "C": 100.0,
+    "gamma": 1.0,
+    "epsilon": 0.05
+  },
+  "scope": "development selection only; no 300-row refit or final-test evaluation"
+}
