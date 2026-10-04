@@ -4,11 +4,13 @@
 <meta charset="utf-8">
 <title>Python: ml_development</title>
 </head><body>
+<p class="portable-note">Portable display: &lt;project&gt; means the Suspension_Model directory. Displayed Path values, including ROOT/HERE and path defaults, abbreviate the absolute paths resolved at runtime; the Python values are unchanged. Dependency names without bundled pages are plain text.</p>
+
 
 <table class="heading">
 <tr class="heading-text decor">
 <td class="title">&nbsp;<br><strong class="title">ml_development</strong></td>
-<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdedvu%5Conedrive%5Cdocuments%5Cmma3001%20jupiter%20notebooks%5Csuspension_model%5Cml_development.py">c:\users\dedvu\onedrive\documents\mma3001 jupiter notebooks\suspension_model\ml_development.py</a></td></tr></table>
+<td class="extra"><a href="index.html">Documentation index</a><br><a href="../ml_development.py">ml_development.py</a></td></tr></table>
     <p><span class="code">Training/validation&nbsp;comparison&nbsp;for&nbsp;P008;&nbsp;never&nbsp;open&nbsp;final-test&nbsp;responses.<br>
 &nbsp;<br>
 One&nbsp;sample&nbsp;is&nbsp;a&nbsp;full&nbsp;suspension&nbsp;setup.&nbsp;X=[ks,cs]&nbsp;in&nbsp;SI&nbsp;units,&nbsp;y=A&nbsp;in&nbsp;mm.<br>
@@ -21,17 +23,17 @@ Run:&nbsp;python&nbsp;ml_development.py&nbsp;--output&nbsp;ml_development_v1</sp
 <td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
 
 <tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
-<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="argparse.html">argparse</a><br>
-<a href="csv.html">csv</a><br>
-<a href="importlib.html">importlib</a><br>
-</td><td class="multicolumn"><a href="itertools.html">itertools</a><br>
-<a href="joblib.html">joblib</a><br>
-<a href="json.html">json</a><br>
-</td><td class="multicolumn"><a href="numpy.html">numpy</a><br>
-<a href="platform.html">platform</a><br>
-<a href="subprocess.html">subprocess</a><br>
-</td><td class="multicolumn"><a href="sys.html">sys</a><br>
-<a href="warnings.html">warnings</a><br>
+<td class="singlecolumn"><table><tr><td class="multicolumn">argparse<br>
+csv<br>
+importlib<br>
+</td><td class="multicolumn">itertools<br>
+joblib<br>
+json<br>
+</td><td class="multicolumn">numpy<br>
+platform<br>
+subprocess<br>
+</td><td class="multicolumn">sys<br>
+warnings<br>
 </td></tr></table></td></tr></table><p>
 <table class="section">
 <tr class="decor functions-decor heading-text">
@@ -59,7 +61,7 @@ constant&nbsp;reference;&nbsp;extrema&nbsp;describe&nbsp;these&nbsp;samples,&nbs
 Performance&nbsp;counter&nbsp;for&nbsp;benchmarking.</span></dd></dl>
  <dl><dt><a name="-predict_checked"><strong>predict_checked</strong></a>(pipeline, X)</dt><dd><span class="code">Predict&nbsp;mm&nbsp;inside&nbsp;the&nbsp;study&nbsp;domain,&nbsp;rejecting&nbsp;nonfinite&nbsp;model&nbsp;output.</span></dd></dl>
  <dl><dt><a name="-prediction_timing"><strong>prediction_timing</strong></a>(model, X, repeats=30)</dt><dd><span class="code">Warm&nbsp;up&nbsp;three&nbsp;times,&nbsp;then&nbsp;time&nbsp;checked&nbsp;whole-pipeline&nbsp;validation&nbsp;batches.</span></dd></dl>
- <dl><dt><a name="-run"><strong>run</strong></a>(output, dataset=WindowsPath('C:/Users/dedvu/OneDrive/Documents/MMA3001 Jupiter notebooks/Suspension_Model/dataset_v1'))</dt><dd><span class="code">Save&nbsp;a&nbsp;new&nbsp;development&nbsp;checkpoint&nbsp;without&nbsp;modifying&nbsp;data&nbsp;or&nbsp;test&nbsp;responses.</span></dd></dl>
+ <dl><dt><a name="-run"><strong>run</strong></a>(output, dataset=Path('&lt;project&gt;/dataset_v1'))</dt><dd><span class="code">Save&nbsp;a&nbsp;new&nbsp;development&nbsp;checkpoint&nbsp;without&nbsp;modifying&nbsp;data&nbsp;or&nbsp;test&nbsp;responses.</span></dd></dl>
  <dl><dt><a name="-select_models"><strong>select_models</strong></a>(records)</dt><dd><span class="code">Select&nbsp;by&nbsp;validation&nbsp;RMSE;&nbsp;exact&nbsp;ties&nbsp;follow&nbsp;the&nbsp;recorded&nbsp;P008&nbsp;rule.</span></dd></dl>
  <dl><dt><a name="-validate_features"><strong>validate_features</strong></a>(X)</dt><dd><span class="code">Reject&nbsp;malformed/out-of-domain&nbsp;queries;&nbsp;do&nbsp;not&nbsp;silently&nbsp;extrapolate/clip.</span></dd></dl>
  <dl><dt><a name="-write_json"><strong>write_json</strong></a>(path, data)</dt><dd><span class="code">Write&nbsp;finite&nbsp;JSON&nbsp;with&nbsp;stable&nbsp;line&nbsp;endings;&nbsp;invalid&nbsp;numbers&nbsp;raise&nbsp;errors.</span></dd></dl>
@@ -72,5 +74,5 @@ Performance&nbsp;counter&nbsp;for&nbsp;benchmarking.</span></dd></dl>
 <td class="singlecolumn"><strong>DEVELOPMENT_FILES</strong> = ('generation_plan.json', 'setup_manifest.csv', 'train.csv', 'validation.csv', 'train_diagnostics.jsonl', 'validation_diagnostics.jsonl')<br>
 <strong>FEATURES</strong> = ('ks_N_m', 'cs_N_s_m')<br>
 <strong>LINEAR_SPEC</strong> = {'family': 'linear', 'model_id': 'linear'}<br>
-<strong>ROOT</strong> = WindowsPath('C:/Users/dedvu/OneDrive/Documents/MMA3001 Jupiter notebooks/Suspension_Model')</td></tr></table>
+<strong>ROOT</strong> = Path(&#x27;&lt;project&gt;&#x27;)</td></tr></table>
 </body></html>

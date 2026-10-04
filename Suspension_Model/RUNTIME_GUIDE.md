@@ -104,6 +104,9 @@ These links identify the completed checkpoint. Its summary records all seven che
 
 ## Commands on this laptop
 
+See [REPRODUCING.md](REPRODUCING.md) for the Windows environment and local course
+files required by strict source checks. A repository copy alone omits those originals.
+
 The command interface is below. The default checkpoint already exists, so use audit for its saved results; run will refuse to overwrite it. Use a fresh output folder for an intentional repeat. No package installation is part of this stage.
 
 ```powershell

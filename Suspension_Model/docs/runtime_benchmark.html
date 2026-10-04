@@ -4,11 +4,13 @@
 <meta charset="utf-8">
 <title>Python: runtime_benchmark</title>
 </head><body>
+<p class="portable-note">Portable display: &lt;project&gt; means the Suspension_Model directory. Displayed Path values, including ROOT/HERE and path defaults, abbreviate the absolute paths resolved at runtime; the Python values are unchanged. Dependency names without bundled pages are plain text.</p>
+
 
 <table class="heading">
 <tr class="heading-text decor">
 <td class="title">&nbsp;<br><strong class="title">runtime_benchmark</strong></td>
-<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdedvu%5Conedrive%5Cdocuments%5Cmma3001%20jupiter%20notebooks%5Csuspension_model%5Cruntime_benchmark.py">c:\users\dedvu\onedrive\documents\mma3001 jupiter notebooks\suspension_model\runtime_benchmark.py</a></td></tr></table>
+<td class="extra"><a href="index.html">Documentation index</a><br><a href="../runtime_benchmark.py">runtime_benchmark.py</a></td></tr></table>
     <p><span class="code">Run&nbsp;or&nbsp;audit&nbsp;the&nbsp;bounded&nbsp;P009&nbsp;warm-query&nbsp;benchmark&nbsp;without&nbsp;fitting&nbsp;models.<br>
 &nbsp;<br>
 Usage:&nbsp;python&nbsp;runtime_benchmark.py&nbsp;run|audit&nbsp;--output&nbsp;runtime_benchmark_v2<br>
@@ -19,16 +21,16 @@ Existing&nbsp;result&nbsp;folders&nbsp;are&nbsp;preserved.&nbsp;Audit&nbsp;reads
 <td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
 
 <tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
-<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="argparse.html">argparse</a><br>
-<a href="ctypes.html">ctypes</a><br>
-<a href="importlib.html">importlib</a><br>
-</td><td class="multicolumn"><a href="joblib.html">joblib</a><br>
-<a href="json.html">json</a><br>
-<a href="numpy.html">numpy</a><br>
-</td><td class="multicolumn"><a href="os.html">os</a><br>
-<a href="platform.html">platform</a><br>
-<a href="subprocess.html">subprocess</a><br>
-</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+<td class="singlecolumn"><table><tr><td class="multicolumn">argparse<br>
+ctypes<br>
+importlib<br>
+</td><td class="multicolumn">joblib<br>
+json<br>
+numpy<br>
+</td><td class="multicolumn">os<br>
+platform<br>
+subprocess<br>
+</td><td class="multicolumn">sys<br>
 </td></tr></table></td></tr></table><p>
 <table class="section">
 <tr class="decor index-decor heading-text">
@@ -36,7 +38,7 @@ Existing&nbsp;result&nbsp;folders&nbsp;are&nbsp;preserved.&nbsp;Audit&nbsp;reads
 
 <tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
 <td class="singlecolumn"><dl>
-<dt class="heading-text"><a href="builtins.html#RuntimeError">builtins.RuntimeError</a>(<a href="builtins.html#Exception">builtins.Exception</a>)
+<dt class="heading-text">builtins.RuntimeError(builtins.Exception)
 </dt><dd>
 <dl>
 <dt class="heading-text"><a href="runtime_benchmark.html#QueryFailure">QueryFailure</a>
@@ -46,7 +48,7 @@ Existing&nbsp;result&nbsp;folders&nbsp;are&nbsp;preserved.&nbsp;Audit&nbsp;reads
  <p>
 <table class="section">
 <tr class="decor title-decor heading-text">
-<td class="section-title" colspan=3>&nbsp;<br><a name="QueryFailure">class <strong>QueryFailure</strong></a>(<a href="builtins.html#RuntimeError">builtins.RuntimeError</a>)</td></tr>
+<td class="section-title" colspan=3>&nbsp;<br><a name="QueryFailure">class <strong>QueryFailure</strong></a>(builtins.RuntimeError)</td></tr>
 
 <tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
 <td class="decor title-decor" colspan=2><span class="code"><a href="#QueryFailure">QueryFailure</a>(message,&nbsp;integrations=0,&nbsp;nfev=0,&nbsp;attempts=0)<br>
@@ -55,10 +57,10 @@ Query&nbsp;failure&nbsp;with&nbsp;completed/attempted&nbsp;integration&nbsp;work
 <tr><td>&nbsp;</td>
 <td class="singlecolumn"><dl><dt>Method resolution order:</dt>
 <dd><a href="runtime_benchmark.html#QueryFailure">QueryFailure</a></dd>
-<dd><a href="builtins.html#RuntimeError">builtins.RuntimeError</a></dd>
-<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
-<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
-<dd><a href="builtins.html#object">builtins.object</a></dd>
+<dd>builtins.RuntimeError</dd>
+<dd>builtins.Exception</dd>
+<dd>builtins.BaseException</dd>
+<dd>builtins.object</dd>
 </dl>
 <hr>
 Methods defined here:<br>
@@ -70,11 +72,11 @@ Data descriptors defined here:<br>
 <dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
 </dl>
 <hr>
-Static methods inherited from <a href="builtins.html#RuntimeError">builtins.RuntimeError</a>:<br>
-<dl><dt><a name="QueryFailure-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> class method of <a href="builtins.html#RuntimeError">builtins.RuntimeError</a></span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+Static methods inherited from builtins.RuntimeError:<br>
+<dl><dt><a name="QueryFailure-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> class method of builtins.RuntimeError</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
 
 <hr>
-Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+Methods inherited from builtins.BaseException:<br>
 <dl><dt><a name="QueryFailure-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><span class="code">Return&nbsp;getattr(self,&nbsp;name).</span></dd></dl>
 
 <dl><dt><a name="QueryFailure-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><span class="code">Helper&nbsp;for&nbsp;pickle.</span></dd></dl>
@@ -92,7 +94,7 @@ add&nbsp;a&nbsp;note&nbsp;to&nbsp;the&nbsp;exception</span></dd></dl>
 set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</span></dd></dl>
 
 <hr>
-Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+Data descriptors inherited from builtins.BaseException:<br>
 <dl><dt><strong>__cause__</strong></dt>
 <dd><span class="code">exception&nbsp;cause</span></dd>
 </dl>
@@ -159,5 +161,5 @@ The&nbsp;wrapper&nbsp;loop&nbsp;overhead&nbsp;is&nbsp;included;&nbsp;no&nbsp;gue
 <tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
 <td class="singlecolumn"><strong>CASE_IDS</strong> = ['train_001', 'train_008', 'train_015', 'train_106', 'train_113', 'train_120', 'train_211', 'train_218', 'train_225']<br>
 <strong>METHODS</strong> = ('simulation', 'linear', 'svr')<br>
-<strong>ROOT</strong> = WindowsPath('C:/Users/dedvu/OneDrive/Documents/MMA3001 Jupiter notebooks/Suspension_Model')</td></tr></table>
+<strong>ROOT</strong> = Path(&#x27;&lt;project&gt;&#x27;)</td></tr></table>
 </body></html>

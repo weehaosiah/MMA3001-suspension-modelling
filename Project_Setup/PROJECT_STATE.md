@@ -1,6 +1,6 @@
 # MMA3001 project state
 
-Revision: 020 | Updated: 2026-10-05 | Status: bounded warm-query runtime comparison complete and audited
+Revision: 021 | Updated: 2026-10-05 | Status: local repository readiness review complete; publication pending
 
 ## Current stage
 
@@ -10,7 +10,19 @@ The subsequent physical interpretation and runtime-planning stage is complete. T
 
 D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. D004 later authorised bounded verification, D006 dataset generation, D008 the ML development comparison and D010 final refitting/evaluation. Assessed report writing and GitHub publication remain outside this completed stage. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
 
-Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D013 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D014 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+
+## Local repository readiness, 2026-10-05
+
+D014 / U017 - The student's "proceed" accepted the proposed local readiness review: instructions, dependencies and organisation before publication. Completed that review and routine repairs. No new scientific experiment, dataset, fitting, test-set evaluation, full test-suite run, assessed report or GitHub publication occurred. Primary full-response peak, post-bump/settling roles and frozen results are unchanged.
+
+- Read guide 003 and records 020; actual brief pp8/10-13 and Week01_3 documentation cells were reviewed. No required source missing locally. Root README still claimed the final test was reserved; updated it and DATASET to match authoritative completed records. Added REPRODUCING as the current entry point, full-dependency instructions and clear overwrite boundaries for historical runners.
+- Original Git archive of 478139c exposed two reproducibility gaps: strict final/runtime audits require four deliberately excluded course originals, and Git had normalised five original nominal outputs from CRLF to LF. That changed the nominal summary fingerprint and broke interpretation in a copied repository. Preserved failed attempt repository_review_v1. Added exact-byte attributes and restaged the five original files; independent review confirmed line endings were the only differences. Working scientific bytes, algorithms and saved fingerprints remain intact.
+- Repaired staged scientific snapshot: all seven readiness checks pass in repository_review_v2. Interpretation passes with tracked files alone; final/runtime audits pass after four authorised course originals are restored locally. All 126 snapshot files remain byte-identical after audits; original reserved files were copied/hashed only, and the final audit used existing saved predictions. No course original was staged. Same Windows/Anaconda interpreter, no fresh install or other-OS claim.
+- All seven installed direct package versions match requirements-ml.txt. Saved guards remain Windows/build-sensitive; requirements pins are not a full environment lock. Documented exact course filenames/hashes and environment limits instead of changing sealed source checks.
+- Added build_docs.py, a portable HTML index and missing nominal-runner documentation. Seventeen pages cover 16 current modules; 98 local links/anchors and 78 public function anchors checked. Deterministic regeneration verified. HTML uses relative source links and disclosed runtime-path abbreviations; ignored import caches may be written. Scientific files/results are unchanged. Historical JSON environment paths remain preserved.
+
+See REPOSITORY_REVIEW.md for evidence and remaining submission work; use Suspension_Model/REPRODUCING.md for saved-result commands. The previous 433-test result remains historical implementation evidence. Records are saved at revision 021 with an AI-attributed local checkpoint. Licence selection, student Git identity, accessible GitHub hosting, final clone ZIP and assessed report remain outstanding; student understanding and AI contribution are not yet assessed. Submission stays 23 October 2026 at 23:59 Sydney; presentation-date planning remains deferred.
 
 ## Runtime benchmark checkpoint, 2026-10-05
 
@@ -400,9 +412,9 @@ Primary authority: MMA3001_2026_Project_Brief.pdf. The checklist below is a work
 ## Current setup files
 
 - PROJECT_GUIDE.md — revision 003: working instructions and opening prompt.
-- PROJECT_STATE.md — revision 020: completed numerical/ML/runtime checkpoints, interpretation and next actions.
-- EVIDENCE.md — revision 020: sources, numerical/ML evidence and actual runtime measurements/checks.
-- AI_USE_LOG.md — revision 020: implementation, timing/checking assistance and outstanding student contribution review.
+- PROJECT_STATE.md — revision 021: completed checkpoints, repository review and next actions.
+- EVIDENCE.md — revision 021: sources, scientific evidence and actual repository reproduction checks.
+- AI_USE_LOG.md — revision 021: implementation, documentation/repair assistance and outstanding student contribution review.
 - HANDOFF.md — revision 001: new-chat reading instructions, scope, completion criteria and copyable prompt; does not grant coding permission.
 
 These local files are in Project_Setup under the existing MMA3001 notebook folder. Uploaded copies must be refreshed when their authoritative local versions change.
@@ -418,5 +430,5 @@ These local files are in Project_Setup under the existing MMA3001 notebook folde
 ## Next three actions
 
 1. Review PHYSICS_REVIEW and RUNTIME_GUIDE with the student: lower A_post can coexist with longer settling; fast peak prediction does not supply post-bump dynamics; warm query time excludes preparation. Student understanding/reproduction remain unassessed.
-2. When requested, audit local repository readiness against the brief: setup/use instructions, documentation, test evidence, licence/identity decisions and eventual submission contents. Preserve source-material exclusions and distinguish a local checkpoint from a published repository.
+2. Review REPOSITORY_REVIEW and REPRODUCING: local readiness review is complete; licence/identity choices, course-source prerequisites and Windows/build limitations remain relevant to eventual submission.
 3. Arrange student Git identity, licence and GitHub publication separately when requested; continue source/decision/AI records. Do not restart fitting, reuse the consumed test for selection, draft the assessed report or plan presentation dates as an automatic follow-on.

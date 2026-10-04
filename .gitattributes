@@ -12,3 +12,11 @@
 *.png binary
 *.npz binary
 *.joblib binary
+
+# These early saved records were hashed with CRLF endings. Preserve those exact
+# original bytes; normalising them breaks the later frozen input fingerprints.
+/Suspension_Model/results/CHECK_RESULTS.md -text whitespace=cr-at-eol
+/Suspension_Model/results/environment.json -text whitespace=cr-at-eol
+/Suspension_Model/results/nominal_trace_1ms.csv -text whitespace=cr-at-eol
+/Suspension_Model/results/summary.json -text whitespace=cr-at-eol
+/Suspension_Model/results/unit_tests.txt -text whitespace=cr-at-eol

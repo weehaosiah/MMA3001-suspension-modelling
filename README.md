@@ -1,24 +1,43 @@
 # MMA3001 suspension modelling
 
-Start with [the simulation guide](Suspension_Model/README.md),
-[the dataset guide](Suspension_Model/DATASET.md), and
-[the ML development guide](Suspension_Model/ML_GUIDE.md).
+Start with [the reproduction guide](Suspension_Model/REPRODUCING.md) to check
+saved results, then [the physical/code walkthrough](Suspension_Model/WALKTHROUGH.md)
+to connect the calculations to the suspension. The
+[function documentation index](Suspension_Model/docs/index.html) explains the code.
 
 The authored project is in `Suspension_Model/`; decisions, sources and AI assistance
 are in `Project_Setup/`. The original course notebooks and brief are preserved in
 this folder but excluded from version control to avoid redistributing course material.
 
-The nominal simulation and bounded nine-pilot verification support the adopted
-dataset settings. The [walkthrough](Suspension_Model/WALKTHROUGH.md) connects code
-to physics; [verification results](Suspension_Model/verification_results/CHECK_RESULTS.md)
-show the numerical comparisons. See the
-[dataset checks](Suspension_Model/dataset_v1/CHECK_RESULTS.md) for the actual
-400-setup generation outcome. The
-[ML development comparison](Suspension_Model/ml_development_v1/CHECK_RESULTS.md)
-fits 225 training setups and selects using 75 validation setups. The 100 final-test
-responses remain reserved; no 300-row refit or assessed report has been started.
+The primary output is **max |zs(t) - zu(t)|** over the full response, measured from
+static equilibrium and including after the bump. Post-bump movement and settling
+remain separate physical diagnostics; the fitted models predict the primary peak only.
+
+The nominal simulation, nine-pilot verification, 400-setup dataset, development
+comparison, final evaluation and bounded runtime comparison are complete.
+The selected SVR and linear comparator were refitted on 300 development rows and
+evaluated once on 100 reserved cases. Those test cases are now consumed and cannot
+be used to tune models while retaining an independent-test claim.
+
+| Read | Purpose |
+|---|---|
+| [Simulation guide](Suspension_Model/README.md) | Model, nominal checks and original implementation |
+| [Dataset guide](Suspension_Model/DATASET.md) | 225 training / 75 validation / 100 test setup design |
+| [ML development](Suspension_Model/ML_GUIDE.md) | Training, scaling and validation-based model choice |
+| [Final evaluation](Suspension_Model/FINAL_EVALUATION_GUIDE.md) | Frozen models and once-only accuracy results |
+| [Physical interpretation](Suspension_Model/PHYSICS_REVIEW.md) | Post-bump peak versus settling |
+| [Runtime guide](Suspension_Model/RUNTIME_GUIDE.md) | Measured warm query costs and their limits |
+| [Repository review](Project_Setup/REPOSITORY_REVIEW.md) | Actual reproduction checks and outstanding submission work |
+
+The latest implementation checkpoint records 433 passing tests. See each stage's
+saved check report for its actual results; checking saved records does not rerun
+the experiments. No assessed report has been written.
 Submission deadline supplied by the student: **23 October 2026, 23:59 Australia/Sydney**.
 Presentation-date planning remains deferred.
 
-Git history is local. No GitHub remote has been created or published. Licence
-selection and the eventual GitHub repository remain outstanding submission work.
+Git history is local; a commit saves a version on this computer. GitHub hosting
+would be a separate upload. No remote or licence is configured, and existing
+AI-created commits identify the assistant. Licence choice, student Git identity,
+accessible GitHub hosting and the final submission ZIP remain outstanding.
+Current decisions, source evidence and material AI assistance are recorded in
+[Project_Setup](Project_Setup/PROJECT_STATE.md).

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: run_nominal</title>
+</head><body>
+<p class="portable-note">Portable display: &lt;project&gt; means the Suspension_Model directory. Displayed Path values, including ROOT/HERE and path defaults, abbreviate the absolute paths resolved at runtime; the Python values are unchanged. Dependency names without bundled pages are plain text.</p>
+
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">run_nominal</strong></td>
+<td class="extra"><a href="index.html">Documentation index</a><br><a href="../run_nominal.py">run_nominal.py</a></td></tr></table>
+    <p><span class="code">Reproduce&nbsp;the&nbsp;authorised&nbsp;nominal&nbsp;simulation&nbsp;and&nbsp;initial&nbsp;checks&nbsp;only.<br>
+&nbsp;<br>
+Run:&nbsp;python&nbsp;run_nominal.py<br>
+Outputs&nbsp;go&nbsp;to&nbsp;results/.&nbsp;No&nbsp;parameter-domain&nbsp;dataset&nbsp;or&nbsp;ML&nbsp;fitting&nbsp;is&nbsp;performed.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn">hashlib<br>
+importlib<br>
+json<br>
+</td><td class="multicolumn">matplotlib<br>
+numpy<br>
+os<br>
+</td><td class="multicolumn">platform<br>
+matplotlib.pyplot<br>
+subprocess<br>
+</td><td class="multicolumn">sys<br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-compare"><strong>compare</strong></a>(left, right)</dt><dd><span class="code">Compare&nbsp;output&nbsp;summaries&nbsp;against&nbsp;adopted&nbsp;0.05&nbsp;mm&nbsp;/&nbsp;0.01&nbsp;s&nbsp;limits.</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">Run&nbsp;checks,&nbsp;save&nbsp;actual&nbsp;evidence,&nbsp;and&nbsp;exit&nbsp;nonzero&nbsp;if&nbsp;a&nbsp;required&nbsp;check&nbsp;fails.</span></dd></dl>
+ <dl><dt><a name="-make_plots"><strong>make_plots</strong></a>(trajectory, final, output)</dt><dd><span class="code">Save&nbsp;readable&nbsp;response&nbsp;and&nbsp;physical-check&nbsp;figures&nbsp;from&nbsp;the&nbsp;checked&nbsp;run.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>ROOT</strong> = Path(&#x27;&lt;project&gt;&#x27;)</td></tr></table>
+</body></html>

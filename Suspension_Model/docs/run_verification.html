@@ -4,11 +4,13 @@
 <meta charset="utf-8">
 <title>Python: run_verification</title>
 </head><body>
+<p class="portable-note">Portable display: &lt;project&gt; means the Suspension_Model directory. Displayed Path values, including ROOT/HERE and path defaults, abbreviate the absolute paths resolved at runtime; the Python values are unchanged. Dependency names without bundled pages are plain text.</p>
+
 
 <table class="heading">
 <tr class="heading-text decor">
 <td class="title">&nbsp;<br><strong class="title">run_verification</strong></td>
-<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdedvu%5Conedrive%5Cdocuments%5Cmma3001%20jupiter%20notebooks%5Csuspension_model%5Crun_verification.py">c:\users\dedvu\onedrive\documents\mma3001 jupiter notebooks\suspension_model\run_verification.py</a></td></tr></table>
+<td class="extra"><a href="index.html">Documentation index</a><br><a href="../run_verification.py">run_verification.py</a></td></tr></table>
     <p><span class="code">Reproduce&nbsp;nine&nbsp;pilot&nbsp;checks&nbsp;before&nbsp;any&nbsp;parameter&nbsp;dataset&nbsp;or&nbsp;ML&nbsp;work.<br>
 &nbsp;<br>
 Only&nbsp;the&nbsp;adopted&nbsp;low/nominal/high&nbsp;stiffness-damping&nbsp;combinations&nbsp;are&nbsp;simulated.<br>
@@ -19,16 +21,16 @@ Course&nbsp;adaptation&nbsp;and&nbsp;physical&nbsp;sources&nbsp;remain&nbsp;in&n
 <td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
 
 <tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
-<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="hashlib.html">hashlib</a><br>
-<a href="importlib.html">importlib</a><br>
-<a href="json.html">json</a><br>
-</td><td class="multicolumn"><a href="matplotlib.html">matplotlib</a><br>
-<a href="numpy.html">numpy</a><br>
-<a href="os.html">os</a><br>
-</td><td class="multicolumn"><a href="platform.html">platform</a><br>
-<a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
-<a href="subprocess.html">subprocess</a><br>
-</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+<td class="singlecolumn"><table><tr><td class="multicolumn">hashlib<br>
+importlib<br>
+json<br>
+</td><td class="multicolumn">matplotlib<br>
+numpy<br>
+os<br>
+</td><td class="multicolumn">platform<br>
+matplotlib.pyplot<br>
+subprocess<br>
+</td><td class="multicolumn">sys<br>
 </td></tr></table></td></tr></table><p>
 <table class="section">
 <tr class="decor functions-decor heading-text">
@@ -52,6 +54,6 @@ artificial&nbsp;finer&nbsp;RK4&nbsp;samples.&nbsp;Exceptions&nbsp;propagate&nbsp
 <tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
 <td class="singlecolumn"><strong>BANDS_M</strong> = (0.0005, 0.001, 0.002)<br>
 <strong>BASE</strong> = SolverSettings(rtol=1e-06, atol=(1e-09, 1e-08, 1e-09, 1e-08), max_step_s=0.005)<br>
-<strong>ROOT</strong> = WindowsPath('C:/Users/dedvu/OneDrive/Documents/MMA3001 Jupiter notebooks/Suspension_Model')<br>
+<strong>ROOT</strong> = Path(&#x27;&lt;project&gt;&#x27;)<br>
 <strong>TIGHT</strong> = SolverSettings(rtol=1e-08, atol=(1e-11, 1e-10, 1e-11, 1e-10), max_step_s=0.0025)</td></tr></table>
 </body></html>

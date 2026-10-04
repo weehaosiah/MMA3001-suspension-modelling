@@ -10,8 +10,11 @@ Links in this guide refer to that preserved `dataset_v1` output folder.
 
 The dataset generator's scope is simulation and checking. The subsequent
 training/validation comparison is documented in [ML_GUIDE.md](ML_GUIDE.md).
-Final-test prediction evaluation remains a later stage; it does not occur in
-the dataset generator or the development comparison.
+The subsequent [final evaluation](FINAL_EVALUATION_GUIDE.md) is now complete and
+the test is consumed. That evaluation does not occur in the dataset generator or
+development comparison. Reservation instructions below describe the original
+generation/development boundary. Use [REPRODUCING.md](REPRODUCING.md) for current
+saved-result checks and local course-source prerequisites.
 
 ## What one row means
 
@@ -231,7 +234,9 @@ that a second generation has already been executed.
 
 Use the existing Anaconda environment recorded for the pilots: Python 3.12.7,
 NumPy 1.26.4 and SciPy 1.13.1, with Matplotlib 3.9.2 and pytest 7.4.4. Exact package
-requirements are in [requirements.txt](requirements.txt). The reuse guard is
+simulation requirements are in [requirements.txt](requirements.txt); current runners
+invoke the full test suite, so use [requirements-ml.txt](requirements-ml.txt), which
+includes those pins and the ML packages. The reuse guard is
 environment-sensitive: it compares the complete saved Python version/build string
 as well as the NumPy and SciPy versions. Another environment may correctly stop
 with a provenance mismatch. Reproduction in a fresh environment is unverified.

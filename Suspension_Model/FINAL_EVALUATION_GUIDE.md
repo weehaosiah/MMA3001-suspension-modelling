@@ -2,6 +2,9 @@
 
 This is working project documentation to help you understand and reproduce the code, not assessed report prose.
 
+See [REPRODUCING.md](REPRODUCING.md) for current saved-result commands, the Windows
+environment and excluded course originals required by strict source checks.
+
 The final comparison is complete. Two models were fitted on the same 300 development cases and evaluated on the 100 previously reserved test cases. The test set has now been used; it is no longer an unseen set for future model choices.
 
 Start with [the saved check results](final_evaluation_v1/CHECK_RESULTS.md) and [the comparison figure](final_evaluation_v1/final_test_comparison.png). The [machine-readable summary](final_evaluation_v1/summary.json) preserves the full results. Function documentation is available for [final_evaluation.py](docs/final_evaluation.html) and [final_plots.py](docs/final_plots.html).

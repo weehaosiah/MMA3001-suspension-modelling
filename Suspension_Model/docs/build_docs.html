@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: build_docs</title>
+</head><body>
+<p class="portable-note">Portable display: &lt;project&gt; means the Suspension_Model directory. Displayed Path values, including ROOT/HERE and path defaults, abbreviate the absolute paths resolved at runtime; the Python values are unchanged. Dependency names without bundled pages are plain text.</p>
+
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">build_docs</strong></td>
+<td class="extra"><a href="index.html">Documentation index</a><br><a href="../build_docs.py">build_docs.py</a></td></tr></table>
+    <p><span class="code">Build&nbsp;portable&nbsp;HTML&nbsp;API&nbsp;documentation&nbsp;without&nbsp;running&nbsp;project&nbsp;experiments.<br>
+&nbsp;<br>
+Run&nbsp;``python&nbsp;build_docs.py``&nbsp;from&nbsp;Suspension_Model,&nbsp;or&nbsp;from&nbsp;another&nbsp;directory<br>
+using&nbsp;this&nbsp;script's&nbsp;path.&nbsp;Among&nbsp;authored&nbsp;project&nbsp;files,&nbsp;only&nbsp;generated&nbsp;HTML&nbsp;is<br>
+written.&nbsp;Imports&nbsp;may&nbsp;create&nbsp;ignored&nbsp;Python/Matplotlib&nbsp;caches.&nbsp;Modules&nbsp;are&nbsp;imported<br>
+for&nbsp;their&nbsp;signatures&nbsp;and&nbsp;docstrings;&nbsp;no&nbsp;runner&nbsp;or&nbsp;model&nbsp;is&nbsp;called.&nbsp;Scientific<br>
+source&nbsp;content&nbsp;and&nbsp;saved&nbsp;results&nbsp;are&nbsp;left&nbsp;unchanged.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn">hashlib<br>
+html<br>
+</td><td class="multicolumn">importlib<br>
+os<br>
+</td><td class="multicolumn">pydoc<br>
+re<br>
+</td><td class="multicolumn">sys<br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-clean_page"><strong>clean_page</strong></a>(page, destination, generated_paths)</dt><dd><span class="code">Normalise&nbsp;signature&nbsp;paths&nbsp;and&nbsp;remove&nbsp;links&nbsp;to&nbsp;absent&nbsp;dependency&nbsp;pages.</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">Write&nbsp;repeatable&nbsp;HTML;&nbsp;imports&nbsp;may&nbsp;create&nbsp;ignored&nbsp;runtime&nbsp;caches.</span></dd></dl>
+ <dl><dt><a name="-relative_url"><strong>relative_url</strong></a>(target, folder)</dt><dd><span class="code">Return&nbsp;a&nbsp;URL&nbsp;path&nbsp;relative&nbsp;to&nbsp;the&nbsp;page's&nbsp;folder.</span></dd></dl>
+ <dl><dt><a name="-render_pages"><strong>render_pages</strong></a>()</dt><dd><span class="code">Render&nbsp;the&nbsp;explicit&nbsp;current&nbsp;modules;&nbsp;exclude&nbsp;historical&nbsp;failed&nbsp;runners.</span></dd></dl>
+ <dl><dt><a name="-validate_pages"><strong>validate_pages</strong></a>(pages)</dt><dd><span class="code">Reject&nbsp;broken&nbsp;local&nbsp;paths/anchors&nbsp;or&nbsp;exposed&nbsp;absolute&nbsp;filesystem&nbsp;paths.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>MODULE_NAMES</strong> = ('quarter_car', 'run_nominal', 'rk4_check', 'verify_reduced_case', 'run_verification', 'dataset_design', 'generate_dataset', 'ml_development', 'ml_plots', 'ml_reference_check', 'final_evaluation', 'final_plots', 'runtime_benchmark', 'runtime_outputs', 'build_docs')<br>
+<strong>PATH_NOTE</strong> = 'Portable display: &lt;project&gt; means the Suspension...dency names without bundled pages are plain text.'<br>
+<strong>ROOT</strong> = Path(&#x27;&lt;project&gt;&#x27;)</td></tr></table>
+</body></html>

@@ -4,7 +4,14 @@ The nominal checkpoint is preserved below. Begin with the
 [physical/code walkthrough](WALKTHROUGH.md), then see the
 [nine-pilot check results](verification_results/CHECK_RESULTS.md).
 
-## Physical interpretation and next experiment
+For current execution instructions, start with [REPRODUCING.md](REPRODUCING.md).
+It checks saved results without rerunning experiments, lists the excluded course
+files required by strict audits, and explains environment limits. The older nominal
+and verification commands below overwrite their result folders; use them only in
+a separate disposable reproduction copy. Browse all APIs through the
+[function documentation index](docs/index.html).
+
+## Physical interpretation and completed runtime comparison
 
 Read [PHYSICS_REVIEW.md](PHYSICS_REVIEW.md) for the difference between full peak,
 post-bump movement and settling. The saved cases show that a smaller post-bump
@@ -31,7 +38,7 @@ development-selected SVR. Its largest observed absolute test error is 0.051826 m
 These measure agreement with numerical labels, not real-vehicle accuracy or a
 guarantee over every possible setup. No model choice was changed after test access.
 
-All 385 tests pass. The saved-result audit reproduces every final metric without
+At the final-evaluation checkpoint, all 385 tests passed. The saved-result audit reproduces every final metric without
 refitting or reopening the original test responses. The test set has now been
 used; it cannot serve as a fresh independent test for changes chosen after seeing
 these scores. Original development models and data remain preserved.
@@ -68,13 +75,13 @@ the subsequent ML development stage is separate.
 
 ## Reproduce the bounded verification stage
 
-From this folder in PowerShell:
+Only in a separate disposable reproduction copy, from this folder in PowerShell:
 
 ```powershell
 & 'C:\Users\dedvu\anaconda3\python.exe' run_verification.py
 ```
 
-This runs the focused tests, the analytical clamped-wheel diagnostic and the nine
+This runs the current full test suite, the analytical clamped-wheel diagnostic and the nine
 low/nominal/high stiffness-damping combinations. Each pilot compares baseline and
 tighter RK45, three observation grids, 5 versus 10 seconds, and classical RK4 at
 0.5 and 0.25 ms. If the horizon/tail is inadequate, the programme checks a common
@@ -127,7 +134,7 @@ body and wheel positions, not every kind of vehicle motion.
 
 ## Run it on this laptop
 
-Open PowerShell in this folder and run:
+Only in a separate disposable reproduction copy, open PowerShell in this folder and run:
 
 ```powershell
 & 'C:\Users\dedvu\anaconda3\python.exe' run_nominal.py
@@ -139,12 +146,13 @@ To enter the folder from anywhere:
 Set-Location -LiteralPath 'C:\Users\dedvu\OneDrive\Documents\MMA3001 Jupiter notebooks\Suspension_Model'
 ```
 
-The command runs the nominal comparisons and tests, and replaces the generated
+The command runs the nominal comparisons and current full test suite, and replaces the generated
 files in `results/`. It prints the outcomes and returns a failure code if a required
 check fails. Runtime measurements and generation timestamps naturally vary between
 runs. No internet connection is needed with the existing packages.
 
-To run only the focused tests:
+To run the current full test suite (which performs small numerical/synthetic
+checks and needs the saved checkpoints and course originals):
 
 ```powershell
 & 'C:\Users\dedvu\anaconda3\python.exe' -m pytest -q tests
@@ -155,13 +163,17 @@ the recorded versions (installation needs internet access):
 
 ```powershell
 python -m venv .venv
-& .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-& .\.venv\Scripts\python.exe run_nominal.py
+& .\.venv\Scripts\python.exe -m pip install -r requirements-ml.txt
 ```
 
-This clean-environment recipe has not been executed here. The actual environment
+This clean-environment recipe has not been executed here and is not a guarantee
+of a full-suite pass: some checkpoint guards require the exact original Anaconda
+build string, not just Python 3.12. See REPRODUCING.md before attempting it. The actual environment
 used is Python 3.12.7, NumPy 1.26.4, SciPy 1.13.1, Matplotlib 3.9.2 and pytest 7.4.4.
 Exact platform and interpreter details are in `results/environment.json`.
+
+After restoring the documented course prerequisites, begin with the saved-result
+audits in REPRODUCING.md. Run a fresh nominal experiment only in a disposable copy.
 
 ## How the code represents the physical model
 
@@ -252,7 +264,7 @@ see the dataset results for the later sampled setups.
 | `quarter_car.py` | Physical model, integration and output definitions |
 | `run_nominal.py` | Reproducible comparisons, plots and saved evidence |
 | `tests/test_quarter_car.py` | Independent force/energy checks and failure cases |
-| `requirements.txt` | Exact package versions used |
+| `requirements.txt` / `requirements-ml.txt` | Original simulation pins / current complete direct dependencies |
 | `docs/quarter_car.html` | Generated documentation of model functions |
 | `results/nominal_trace_1ms.csv` | Readable time history in SI units |
 | `results/nominal_trace_0p25ms.npz` | Compressed full-resolution final time/state arrays |
@@ -291,10 +303,11 @@ known folder for that command; no global setting is changed:
 git -c safe.directory='C:/Users/dedvu/OneDrive/Documents/MMA3001 Jupiter notebooks' log --oneline
 ```
 
-To regenerate the function documentation after later model edits, run from this folder:
+To regenerate the portable function documentation after later source edits, run
+from this folder. This writes only generated HTML and checks its local links:
 
 ```powershell
-& 'C:\Users\dedvu\anaconda3\python.exe' -c "import pathlib,pydoc,quarter_car; p=pathlib.Path('docs'); p.mkdir(exist_ok=True); s=pydoc.html.page('quarter_car',pydoc.html.document(quarter_car)); (p/'quarter_car.html').write_text('\n'.join(line.rstrip() for line in s.splitlines())+'\n',encoding='utf-8')"
+& 'C:\Users\dedvu\anaconda3\python.exe' build_docs.py
 ```
 
 The subsequent nine-setup verification stage is documented above and in
