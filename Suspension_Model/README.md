@@ -11,9 +11,14 @@ post-bump movement and settling. The saved cases show that a smaller post-bump
 maximum can accompany longer settling. A read-only calculation checks the grid
 comparisons in `interpretation_v1/`; it creates no new simulation or ML results.
 
-[RUNTIME_PLAN.md](RUNTIME_PLAN.md) proposes a bounded timing experiment, separating
-peak-only queries from the fuller physical diagnostics and from model preparation
-costs. The benchmark is not yet implemented or run; no speedup is claimed.
+[RUNTIME_PLAN.md](RUNTIME_PLAN.md) preserves the original timing protocol. Its
+authorised implementation is now complete: see [RUNTIME_GUIDE.md](RUNTIME_GUIDE.md)
+and [actual results](runtime_benchmark_v2/CHECK_RESULTS.md). Warm single-query
+times average 222.638 ms for simulation, 0.126 ms for linear regression and
+0.163 ms for the frozen SVR across the nine case medians. This excludes preparation
+and startup; it is not an overall project speedup. Full physical diagnostics are
+timed separately. All 433 tests and seven benchmark checks pass. The first
+preflight failure is preserved in `runtime_benchmark_v1`; it contains no timings.
 
 ## Final evaluation stage
 

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: runtime_benchmark</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">runtime_benchmark</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdedvu%5Conedrive%5Cdocuments%5Cmma3001%20jupiter%20notebooks%5Csuspension_model%5Cruntime_benchmark.py">c:\users\dedvu\onedrive\documents\mma3001 jupiter notebooks\suspension_model\runtime_benchmark.py</a></td></tr></table>
+    <p><span class="code">Run&nbsp;or&nbsp;audit&nbsp;the&nbsp;bounded&nbsp;P009&nbsp;warm-query&nbsp;benchmark&nbsp;without&nbsp;fitting&nbsp;models.<br>
+&nbsp;<br>
+Usage:&nbsp;python&nbsp;runtime_benchmark.py&nbsp;run|audit&nbsp;--output&nbsp;runtime_benchmark_v2<br>
+Existing&nbsp;result&nbsp;folders&nbsp;are&nbsp;preserved.&nbsp;Audit&nbsp;reads&nbsp;saved&nbsp;timing&nbsp;observations&nbsp;only.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="argparse.html">argparse</a><br>
+<a href="ctypes.html">ctypes</a><br>
+<a href="importlib.html">importlib</a><br>
+</td><td class="multicolumn"><a href="joblib.html">joblib</a><br>
+<a href="json.html">json</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td class="multicolumn"><a href="os.html">os</a><br>
+<a href="platform.html">platform</a><br>
+<a href="subprocess.html">subprocess</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#RuntimeError">builtins.RuntimeError</a>(<a href="builtins.html#Exception">builtins.Exception</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="runtime_benchmark.html#QueryFailure">QueryFailure</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="QueryFailure">class <strong>QueryFailure</strong></a>(<a href="builtins.html#RuntimeError">builtins.RuntimeError</a>)</td></tr>
+
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#QueryFailure">QueryFailure</a>(message,&nbsp;integrations=0,&nbsp;nfev=0,&nbsp;attempts=0)<br>
+&nbsp;<br>
+Query&nbsp;failure&nbsp;with&nbsp;completed/attempted&nbsp;integration&nbsp;work&nbsp;retained.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="runtime_benchmark.html#QueryFailure">QueryFailure</a></dd>
+<dd><a href="builtins.html#RuntimeError">builtins.RuntimeError</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="QueryFailure-__init__"><strong>__init__</strong></a>(self, message, integrations=0, nfev=0, attempts=0)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Static methods inherited from <a href="builtins.html#RuntimeError">builtins.RuntimeError</a>:<br>
+<dl><dt><a name="QueryFailure-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> class method of <a href="builtins.html#RuntimeError">builtins.RuntimeError</a></span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="QueryFailure-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><span class="code">Return&nbsp;getattr(self,&nbsp;name).</span></dd></dl>
+
+<dl><dt><a name="QueryFailure-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><span class="code">Helper&nbsp;for&nbsp;pickle.</span></dd></dl>
+
+<dl><dt><a name="QueryFailure-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><span class="code">Return&nbsp;repr(self).</span></dd></dl>
+
+<dl><dt><a name="QueryFailure-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="QueryFailure-__str__"><strong>__str__</strong></a>(self, /)</dt><dd><span class="code">Return&nbsp;str(self).</span></dd></dl>
+
+<dl><dt><a name="QueryFailure-add_note"><strong>add_note</strong></a>(...)</dt><dd><span class="code">Exception.<a href="#QueryFailure-add_note">add_note</a>(note)&nbsp;--<br>
+add&nbsp;a&nbsp;note&nbsp;to&nbsp;the&nbsp;exception</span></dd></dl>
+
+<dl><dt><a name="QueryFailure-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><span class="code">Exception.<a href="#QueryFailure-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><span class="code">exception&nbsp;cause</span></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><span class="code">exception&nbsp;context</span></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-audit"><strong>audit</strong></a>(output)</dt><dd><span class="code">Check&nbsp;saved&nbsp;hashes&nbsp;and&nbsp;recompute&nbsp;timing&nbsp;summaries&nbsp;without&nbsp;new&nbsp;timed&nbsp;work.</span></dd></dl>
+ <dl><dt><a name="-diagnostic_peak"><strong>diagnostic_peak</strong></a>(X, setups)</dt><dd><span class="code">Return&nbsp;fresh&nbsp;full-diagnostic&nbsp;peaks/work;&nbsp;refuse&nbsp;any&nbsp;invalid&nbsp;setup&nbsp;or&nbsp;result.<br>
+&nbsp;<br>
+X&nbsp;must&nbsp;match&nbsp;setup&nbsp;coefficients.&nbsp;Calls&nbsp;the&nbsp;existing&nbsp;row&nbsp;workflow&nbsp;with&nbsp;no&nbsp;cache.<br>
+Full&nbsp;diagnostics&nbsp;have&nbsp;no&nbsp;equivalent&nbsp;output&nbsp;from&nbsp;the&nbsp;two&nbsp;scalar&nbsp;regressors.</span></dd></dl>
+ <dl><dt><a name="-execute_jobs"><strong>execute_jobs</strong></a>(jobs, cases, models, expected_ml, output)</dt><dd><span class="code">Execute&nbsp;the&nbsp;fixed&nbsp;plan,&nbsp;retaining&nbsp;each&nbsp;raw&nbsp;job&nbsp;or&nbsp;failed/partial&nbsp;observation.<br>
+&nbsp;<br>
+Arrays,&nbsp;callbacks&nbsp;and&nbsp;expected&nbsp;values&nbsp;are&nbsp;prepared&nbsp;before&nbsp;each&nbsp;timing&nbsp;interval.<br>
+Failure&nbsp;stops&nbsp;further&nbsp;jobs&nbsp;after&nbsp;saving&nbsp;the&nbsp;failed&nbsp;record.&nbsp;No&nbsp;fitting&nbsp;occurs.</span></dd></dl>
+ <dl><dt><a name="-get_clock_info"><strong>get_clock_info</strong></a>(...)</dt><dd><span class="code"><a href="#-get_clock_info">get_clock_info</a>(name:&nbsp;str)&nbsp;-&gt;&nbsp;dict<br>
+&nbsp;<br>
+Get&nbsp;information&nbsp;of&nbsp;the&nbsp;specified&nbsp;clock.</span></dd></dl>
+ <dl><dt><a name="-integrity_predictions"><strong>integrity_predictions</strong></a>(models, cases)</dt><dd><span class="code">Make&nbsp;20&nbsp;untimed&nbsp;guarded&nbsp;calls,&nbsp;preserving&nbsp;each&nbsp;workload's&nbsp;array&nbsp;shape.<br>
+&nbsp;<br>
+Single-row&nbsp;and&nbsp;batched&nbsp;floating-point&nbsp;evaluation&nbsp;can&nbsp;differ&nbsp;in&nbsp;last&nbsp;bits;<br>
+each&nbsp;measured&nbsp;workload&nbsp;is&nbsp;compared&nbsp;with&nbsp;its&nbsp;own&nbsp;exact&nbsp;pre-timing&nbsp;output.</span></dd></dl>
+ <dl><dt><a name="-make_schedule"><strong>make_schedule</strong></a>()</dt><dd><span class="code">Predeclare&nbsp;warm-ups&nbsp;and&nbsp;five&nbsp;rotating&nbsp;measured&nbsp;rounds;&nbsp;162&nbsp;integrations.</span></dd></dl>
+ <dl><dt><a name="-perf_counter"><strong>perf_counter</strong></a>(...)</dt><dd><span class="code"><a href="#-perf_counter">perf_counter</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Performance&nbsp;counter&nbsp;for&nbsp;benchmarking.</span></dd></dl>
+ <dl><dt><a name="-power_status"><strong>power_status</strong></a>()</dt><dd><span class="code">Read&nbsp;Windows&nbsp;AC/battery&nbsp;state&nbsp;without&nbsp;changing&nbsp;power&nbsp;settings;&nbsp;else&nbsp;unknown.</span></dd></dl>
+ <dl><dt><a name="-run"><strong>run</strong></a>(output)</dt><dd><span class="code">Create&nbsp;one&nbsp;checkpoint:&nbsp;verify,&nbsp;test,&nbsp;benchmark,&nbsp;preserve&nbsp;failures&nbsp;and&nbsp;outputs.</span></dd></dl>
+ <dl><dt><a name="-simulate_peak"><strong>simulate_peak</strong></a>(X)</dt><dd><span class="code">Return&nbsp;fresh&nbsp;baseline&nbsp;full-response&nbsp;peaks&nbsp;[mm]&nbsp;and&nbsp;solver&nbsp;work&nbsp;for&nbsp;X[n,2].<br>
+&nbsp;<br>
+Includes&nbsp;feature&nbsp;checks,&nbsp;parameter&nbsp;creation,&nbsp;solves&nbsp;and&nbsp;1&nbsp;ms&nbsp;observations.<br>
+Excludes&nbsp;contact/tail/settling&nbsp;classification.&nbsp;<a href="#QueryFailure">QueryFailure</a>&nbsp;retains&nbsp;known&nbsp;work.</span></dd></dl>
+ <dl><dt><a name="-single_thread_context"><strong>single_thread_context</strong></a>()</dt><dd><span class="code">Initialise&nbsp;lazy&nbsp;thread&nbsp;runtimes,&nbsp;then&nbsp;limit&nbsp;and&nbsp;verify&nbsp;every&nbsp;detected&nbsp;pool.<br>
+&nbsp;<br>
+The&nbsp;first&nbsp;MKL&nbsp;inspection&nbsp;can&nbsp;load&nbsp;Intel&nbsp;OpenMP&nbsp;after&nbsp;discovery&nbsp;has&nbsp;started.<br>
+A&nbsp;fresh&nbsp;limits&nbsp;controller&nbsp;must&nbsp;therefore&nbsp;enumerate&nbsp;after&nbsp;that&nbsp;inspection.<br>
+Original&nbsp;limits&nbsp;are&nbsp;restored&nbsp;on&nbsp;exit,&nbsp;including&nbsp;when&nbsp;work&nbsp;raises&nbsp;an&nbsp;error.</span></dd></dl>
+ <dl><dt><a name="-statistics"><strong>statistics</strong></a>(samples)</dt><dd><span class="code">Summarise&nbsp;positive&nbsp;finite&nbsp;elapsed&nbsp;seconds;&nbsp;reject&nbsp;missing/invalid&nbsp;samples.</span></dd></dl>
+ <dl><dt><a name="-summarise_timings"><strong>summarise_timings</strong></a>(rows)</dt><dd><span class="code">Validate&nbsp;exact&nbsp;planned&nbsp;jobs/work,&nbsp;then&nbsp;summarise&nbsp;without&nbsp;executing&nbsp;queries.</span></dd></dl>
+ <dl><dt><a name="-timed_call"><strong>timed_call</strong></a>(function, loops, clock=&lt;built-in function perf_counter&gt;)</dt><dd><span class="code">Time&nbsp;real&nbsp;calls&nbsp;only;&nbsp;return&nbsp;elapsed&nbsp;seconds,&nbsp;last&nbsp;output&nbsp;and&nbsp;any&nbsp;failure.<br>
+&nbsp;<br>
+Correctness&nbsp;comparisons&nbsp;and&nbsp;file&nbsp;writes&nbsp;occur&nbsp;in&nbsp;the&nbsp;caller&nbsp;after&nbsp;the&nbsp;clock.<br>
+The&nbsp;wrapper&nbsp;loop&nbsp;overhead&nbsp;is&nbsp;included;&nbsp;no&nbsp;guessed&nbsp;overhead&nbsp;is&nbsp;subtracted.</span></dd></dl>
+ <dl><dt><a name="-verify_inputs"><strong>verify_inputs</strong></a>(plan)</dt><dd><span class="code">Check&nbsp;every&nbsp;declared&nbsp;source/data/model&nbsp;fingerprint&nbsp;without&nbsp;test-file&nbsp;access.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>CASE_IDS</strong> = ['train_001', 'train_008', 'train_015', 'train_106', 'train_113', 'train_120', 'train_211', 'train_218', 'train_225']<br>
+<strong>METHODS</strong> = ('simulation', 'linear', 'svr')<br>
+<strong>ROOT</strong> = WindowsPath('C:/Users/dedvu/OneDrive/Documents/MMA3001 Jupiter notebooks/Suspension_Model')</td></tr></table>
+</body></html>

@@ -1,16 +1,32 @@
 # MMA3001 project state
 
-Revision: 019 | Updated: 2026-10-05 | Status: physical interpretation reviewed; bounded runtime comparison planned, not run
+Revision: 020 | Updated: 2026-10-05 | Status: bounded warm-query runtime comparison complete and audited
 
 ## Current stage
 
 The nominal simulation, bounded nine-pilot verification, 400-setup dataset, ML development comparison and refined-validation check are complete. The development-selected SVR and linear comparator have now been refitted on the same 300 original development rows and evaluated once on all 100 reserved cases. The final test is consumed; no settings or model preference changed after access. These are working implementation/evidence records, not the assessed report.
 
-The subsequent physical interpretation and runtime-planning stage is complete. It analysed saved results only and produced P009, a proposed timing protocol. No new benchmark, simulation, fitting or prediction evaluation occurred in that stage.
+The subsequent physical interpretation and runtime-planning stage is complete. The student then authorised implementing P009; its bounded warm-query benchmark is now complete. It repeats nine existing setups with fixed numerical settings and frozen models, without adding training data, fitting models or re-evaluating the final test.
 
 D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. D004 later authorised bounded verification, D006 dataset generation, D008 the ML development comparison and D010 final refitting/evaluation. Assessed report writing and GitHub publication remain outside this completed stage. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
 
-Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D012 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D013 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+
+## Runtime benchmark checkpoint, 2026-10-05
+
+D013 / U016 - The student's "ok proceed" followed the completed physical review and proposal to implement/run P009. Adopted that bounded runtime protocol and completed it. No new permission request was required. The full-response primary output, post-bump/settling role, physical/numerical settings, final SVR preference and consumed-test status remain unchanged. This stage adds timing evidence, not a new dataset, model search, fit, final-test evaluation, assessed report or publication.
+
+- Read guide 003, records 019 and P009 revision 001; reread relevant actual Week02_1 timing cells before adaptation. The prior brief pp5-7 audit remains applicable and its original hash is unchanged. No required file missing or newer conflicting record found. The known course throughput-unit error remains documented and was not copied into calculations. No installation or notebook execution occurred.
+- First attempt `runtime_benchmark_v1` passed 429 tests but stopped before integrity predictions, warm-ups or timed jobs: a lazily loaded Intel OpenMP runtime had not received the one-thread limit. Preserved plan, failure record and exact old runner. Explicit discovery before constructing the limit controller fixed the ordering; four added synthetic tests cover discovery, rejection and restoration. No system, physics, model or repetition setting changed.
+- Successful `runtime_benchmark_v2` saves 433 passing tests (385 prior plus 48 runtime tests). Its 234 scheduled jobs complete 162 integrations, including 27 warm-up integrations, with 1,003,968 derivative evaluations; 100,060 benchmark ML calls include 60 warm-up calls. Forty separate before/after integrity calls use matching single-row/batch shapes. No model was fitted. Warm-up durations are retained only as work/failure bookkeeping and excluded from reported timing statistics.
+- Warm A-only single-query results, mean of nine case medians: simulator 222.637844 ms, linear 0.126471 ms, SVR 0.163470 ms. Ratios relative to simulator: 1760.39 and 1361.95. Nine-query median batch times: 2014.271000 ms, 0.127570 ms and 0.182364 ms; batch ratios 15789.51 and 11045.31. These are loaded-model, in-memory scalar-query comparisons on these nine inputs, not end-to-end speedups or new accuracy results. Each ML observation is a 1000-call block average; its spread is not individual-request variability.
+- Full diagnostic simulator mean of case medians is 222.277811 ms. It provides post-bump, settling/contact/energy/tail outputs absent from the regressors, so no equivalent-output ML ratio is assigned. Its small difference from A-only timings does not isolate diagnostic overhead or establish that extra checks improve speed.
+- All seven benchmark checks pass. Every repeated simulation peak agrees exactly with its saved baseline value in this run; model memory hashes and all frozen source/data/model fingerprints remain unchanged. MKL, Microsoft OpenMP and Intel OpenMP each report one thread before/after. AC power/100% battery at both ends; other assistant experiments idle, user/OS background load not comprehensively controlled. Minimum timed ML block is 0.1238523 s, versus timer resolution 1e-7 s. Whole schedule is 50.9708593 s including between-query bookkeeping, not a build time.
+- Saved-output audit reproduces timings, counts, quartiles and ratios without new timed work or fitting. Independent review finds zero numerical/hash mismatches across all 234 jobs, 20 benchmark inputs, six outputs and 37 prior artifact fingerprints. Original reserved files were checked by checksum only during preservation review, without inspecting responses or re-evaluating predictions. Figure visually inspected. Previous model/dataset/physics checkpoints remain intact. Source code, 48 tests, HTML, RUNTIME_GUIDE and both attempted-output folders are preserved. No second successful full benchmark or fresh-environment installation is claimed.
+
+Use `python runtime_benchmark.py audit` from Suspension_Model in the recorded environment; the current default is `runtime_benchmark_v2`. An intentional repetition requires a fresh output name and repeats the timed work. See RUNTIME_GUIDE.md and runtime_benchmark_v2/CHECK_RESULTS.md. Records are saved at revision 020 with an AI-attributed local checkpoint, not an upload.
+
+Limits: preparation/startup costs are excluded from the warm ratios; earlier timing records form a partial historical ledger, not a controlled comparison with this run. Earlier one-thread requests lack the complete pool snapshots now recorded. Complete new-build cost and numerical break-even remain unmeasured. Real-vehicle accuracy, physical clearances, continuous-domain validity and student understanding/AI contribution remain unresolved. Submission remains 23 October 2026 at 23:59 Sydney; presentation-date planning stays deferred.
 
 ## Interpretation and runtime plan, 2026-10-05
 
@@ -384,9 +400,9 @@ Primary authority: MMA3001_2026_Project_Brief.pdf. The checklist below is a work
 ## Current setup files
 
 - PROJECT_GUIDE.md — revision 003: working instructions and opening prompt.
-- PROJECT_STATE.md — revision 019: completed checkpoints, physical interpretation, proposed runtime protocol and next actions.
-- EVIDENCE.md — revision 019: sources, numerical/ML evidence, saved-data interpretation and timing-source audit.
-- AI_USE_LOG.md — revision 019: implementation, interpretation/planning assistance and outstanding student contribution review.
+- PROJECT_STATE.md — revision 020: completed numerical/ML/runtime checkpoints, interpretation and next actions.
+- EVIDENCE.md — revision 020: sources, numerical/ML evidence and actual runtime measurements/checks.
+- AI_USE_LOG.md — revision 020: implementation, timing/checking assistance and outstanding student contribution review.
 - HANDOFF.md — revision 001: new-chat reading instructions, scope, completion criteria and copyable prompt; does not grant coding permission.
 
 These local files are in Project_Setup under the existing MMA3001 notebook folder. Uploaded copies must be refreshed when their authoritative local versions change.
@@ -395,12 +411,12 @@ These local files are in Project_Setup under the existing MMA3001 notebook folde
 
 1. All 400 sampled setups pass the adopted per-row checks; exact label error and contact between sampled times are not certified. Further sampled setups still need their own checks.
 2. Will P003 maintain tyre contact throughout the continuous domain, and will P007's 400 setups be sufficient for ML? These remain open despite the completed dataset screening.
-3. Selected SVR has lower error on both the development validation sample and the final test. Will an end-to-end speed benefit justify its cost, and are results robust to other samples or refined training labels? Those claims remain untested.
+3. Selected SVR has lower sampled prediction error and much shorter warm A-only query time than simulation. Do complete preparation costs justify it for the intended number of queries, and are results robust to other samples or refined training labels? Those claims remain untested.
 4. Can the student explain the state, force signs, equilibrium convention, full-response maximum, settling rule and checks independently? Understanding and the overall AI contribution estimate remain to be reviewed.
 5. Licence choice, student Git identity and GitHub publication remain future repository work; no remote has been created.
 
 ## Next three actions
 
-1. Review PHYSICS_REVIEW with the student, particularly why lower A_post can coexist with longer settling and why accurate A prediction does not supply post-bump dynamics. Student understanding/reproduction remain unassessed.
-2. When requested, implement and run proposed P009 in RUNTIME_PLAN: bounded matched-output runtime comparison, separate diagnostic-workflow timing and explicit cost accounting. Keep the consumed final test and fixed models unchanged; no numeric speedup/break-even claim until supporting measurements exist.
-3. Arrange student Git identity, licence and GitHub publication separately when requested; continue source/decision/AI records. Assessed report writing and presentation-date planning remain outside this completed final-evaluation stage.
+1. Review PHYSICS_REVIEW and RUNTIME_GUIDE with the student: lower A_post can coexist with longer settling; fast peak prediction does not supply post-bump dynamics; warm query time excludes preparation. Student understanding/reproduction remain unassessed.
+2. When requested, audit local repository readiness against the brief: setup/use instructions, documentation, test evidence, licence/identity decisions and eventual submission contents. Preserve source-material exclusions and distinguish a local checkpoint from a published repository.
+3. Arrange student Git identity, licence and GitHub publication separately when requested; continue source/decision/AI records. Do not restart fitting, reuse the consumed test for selection, draft the assessed report or plan presentation dates as an automatic follow-on.

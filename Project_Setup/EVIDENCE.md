@@ -1,6 +1,32 @@
 # MMA3001 evidence register
 
-Revision: 019 | Updated: 2026-10-05 | Status: saved-data physical interpretation and runtime-source audit recorded
+Revision: 020 | Updated: 2026-10-05 | Status: bounded warm-query runtime evidence and checks recorded
+
+## Bounded runtime experiment, 2026-10-05
+
+U016 / D013 - The student said "ok proceed" to implementing and running the saved P009 protocol. Completed that bounded stage, retaining the exact primary output, nine existing inputs, original numerical precision/settings, frozen models and consumed final test. No fitting, new dataset rows, model selection, final-test re-evaluation, assessed report or publication occurred. The benchmark runner does not open original held-out responses; the independent preservation audit subsequently checks their bytes by checksum only.
+
+R009 - Read guide 003, current records 019 and RUNTIME_PLAN revision 001. Main assistant reread actual Week02_1 cells 78/80/85/128/130; course-audit assistant reread 76/78/80/82/85/92/94/102/104/128/130. The notebook remains the 131-cell, format-4.0 copy identified by R008's hash. The prior complete-page brief pp5-7 reading remains applicable; its full-file hash matches the existing 15-page source. No fresh full brief reread, source edits, dependency installation, notebook execution or linked-video viewing claimed. No required input missing or conflicting newer record found. The known cell90 throughput-unit typo remains excluded from project calculations.
+
+M015 - Actual runtime experiment. First attempt v1 saved 429 passing tests (6.03 s) but failed the preflight thread-limit check, before any integrity prediction or benchmark job; no raw timings file exists. Diagnosis in a fresh process found one thread for MKL/Microsoft OpenMP but 16 for Intel OpenMP after first discovery; a second controller found/limited all three. The correction discovers lazy runtimes before constructing the limiting controller and checks detected pools before/after. Four new focused cases cover discovery order, failure before work and restoring original limits. The old runner snapshot matches v1's recorded source hash exactly. Failed evidence is preserved rather than overwritten.
+
+Successful v2 runs the same protocol once: 433 tests pass in 6.15 s (385 previous plus 48 runtime cases), followed by 234 jobs. Exactly 162 new integrations = 135 measured plus 27 warm-up; 1,003,968 derivative evaluations. Exactly 100,060 benchmark ML calls = 100,000 measured plus 60 warm-up. Forty additional guarded calls compare pre/post predictions with the same single-row/batch shape; no fits. Inputs, arrays, models and physical settings are preserved. Warm-up elapsed records are bookkeeping only and excluded from every timing summary.
+
+| Method | Mean of nine single-case medians [ms/query] | Median nine-case batch [ms/batch] | Single-query warm ratio | Batch warm ratio |
+|---|---:|---:|---:|---:|
+| A-only simulator | 222.637844444156 | 2014.271000000008 | 1 | 1 |
+| Frozen linear | 0.126470588890 | 0.127570199998 | 1760.392249286 | 15789.510403092 |
+| Frozen SVR | 0.163469655556 | 0.182364400003 | 1361.952123086 | 11045.308184952 |
+
+Five measured rounds per condition. Simulator observations time individual calls; ML observations average 1000 genuine guarded calls, so their spread cannot be interpreted as individual-request variability. Raw order, durations, loops, work, outputs and flags are retained in raw_timings.jsonl; per-case medians, min/max, quartiles and IQR are saved. No slow observation dropped. Batch input order and aggregation are predeclared; batching is a different workload from nine separately arriving requests. The frozen accuracy-based SVR preference is not changed by the faster linear query time.
+
+The full diagnostic path mean of case medians is 222.277811111578 ms. It includes A_post/settling/contact/energy/tail and record construction, so there is no equivalent-output ML ratio. Its small difference from the separately timed A-only path is not evidence of negative diagnostic overhead; five-round phase/noise differences do not isolate the cost of those extra operations. Numerical solve/refinement accuracy remains the prior evidence, not a new convergence study.
+
+M016 - Benchmark checks/preservation. All seven checks pass: every call valid/reproduced, exact integration count, exact benchmark prediction-call count, unchanged model memory hashes, identical matching-shape pre/post predictions, unchanged frozen inputs and one detected numerical thread. Maximum simulation peak discrepancy from saved baseline is exactly 0 mm. All three detected pools (MKL, Microsoft OpenMP, Intel OpenMP) report one before and after. AC power, battery100% at start/end; platform Windows11 and CPU identifier in plan. Other assistant experiments remained idle; user/OS background workload was not comprehensively measured or controlled.
+
+Whole schedule time is 50.970859300003 s including inter-job bookkeeping. The shortest measured ML block is 0.123852299999 s and recorded timer resolution is 1e-7 s (QueryPerformanceCounter). These are neither complete application startup/build times nor guarantees of performance on other machines. Historical timing records requested a one-thread setting but did not save all detected-pool snapshots; they remain a separate partial cost ledger and are not retroactively treated as this controlled comparison.
+
+Saved-artifact audit reproduces timings, work counts and ratios without new measurements or fitting. Independent audit agrees exactly with every statistic across 234 jobs (195 measured, 39 warm-up), with maximum discrepancy 0. It confirms 20 benchmark input and six output hashes plus the plan, all 37 prior artifact hashes, final 26 source/14 pre-test input hashes and two fitted-model seals: zero mismatches. Original reserved files were hashed only, never parsed for this review. The comparison figure was visually inspected. Original datasets, model sources/fitted models and preceding result folders remain unchanged. Reproduction commands and exclusions are in RUNTIME_GUIDE.md; current default output is runtime_benchmark_v2, while v1 remains a failed preflight record. No second successful benchmark or clean-environment reproduction is claimed. Preparation costs, true end-to-end benefit and numeric break-even remain unestablished; the speed ratios concern only the stated warm A-only query boundary.
 
 ## Physical interpretation and runtime planning, 2026-10-05
 

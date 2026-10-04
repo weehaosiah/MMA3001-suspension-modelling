@@ -1,0 +1,2725 @@
+{
+  "created_utc": "2026-10-04T15:01:21.672856+00:00",
+  "protocol": "P009 revision 001, adopted for this run",
+  "cases": {
+    "train_001": {
+      "X": [
+        18000.0,
+        1594.8
+      ],
+      "A_mm": 44.093828353226726,
+      "setup": {
+        "setup_id": "train_001",
+        "split": "train",
+        "ks_N_m": 18000.0,
+        "cs_N_s_m": 1594.8,
+        "sampling": "15x15_grid",
+        "seed": null,
+        "pilot_id": "kL_cL"
+      }
+    },
+    "train_008": {
+      "X": [
+        18000.0,
+        2126.4
+      ],
+      "A_mm": 39.34320109507965,
+      "setup": {
+        "setup_id": "train_008",
+        "split": "train",
+        "ks_N_m": 18000.0,
+        "cs_N_s_m": 2126.4,
+        "sampling": "15x15_grid",
+        "seed": null,
+        "pilot_id": "kL_cN"
+      }
+    },
+    "train_015": {
+      "X": [
+        18000.0,
+        2658.0
+      ],
+      "A_mm": 35.442281953193806,
+      "setup": {
+        "setup_id": "train_015",
+        "split": "train",
+        "ks_N_m": 18000.0,
+        "cs_N_s_m": 2658.0,
+        "sampling": "15x15_grid",
+        "seed": null,
+        "pilot_id": "kL_cH"
+      }
+    },
+    "train_106": {
+      "X": [
+        24000.0,
+        1594.8
+      ],
+      "A_mm": 45.491904882679044,
+      "setup": {
+        "setup_id": "train_106",
+        "split": "train",
+        "ks_N_m": 24000.0,
+        "cs_N_s_m": 1594.8,
+        "sampling": "15x15_grid",
+        "seed": null,
+        "pilot_id": "kN_cL"
+      }
+    },
+    "train_113": {
+      "X": [
+        24000.0,
+        2126.4
+      ],
+      "A_mm": 40.57115466291602,
+      "setup": {
+        "setup_id": "train_113",
+        "split": "train",
+        "ks_N_m": 24000.0,
+        "cs_N_s_m": 2126.4,
+        "sampling": "15x15_grid",
+        "seed": null,
+        "pilot_id": "kN_cN"
+      }
+    },
+    "train_120": {
+      "X": [
+        24000.0,
+        2658.0
+      ],
+      "A_mm": 36.52290963653134,
+      "setup": {
+        "setup_id": "train_120",
+        "split": "train",
+        "ks_N_m": 24000.0,
+        "cs_N_s_m": 2658.0,
+        "sampling": "15x15_grid",
+        "seed": null,
+        "pilot_id": "kN_cH"
+      }
+    },
+    "train_211": {
+      "X": [
+        30000.0,
+        1594.8
+      ],
+      "A_mm": 45.685103200530705,
+      "setup": {
+        "setup_id": "train_211",
+        "split": "train",
+        "ks_N_m": 30000.0,
+        "cs_N_s_m": 1594.8,
+        "sampling": "15x15_grid",
+        "seed": null,
+        "pilot_id": "kH_cL"
+      }
+    },
+    "train_218": {
+      "X": [
+        30000.0,
+        2126.4
+      ],
+      "A_mm": 40.84802116413598,
+      "setup": {
+        "setup_id": "train_218",
+        "split": "train",
+        "ks_N_m": 30000.0,
+        "cs_N_s_m": 2126.4,
+        "sampling": "15x15_grid",
+        "seed": null,
+        "pilot_id": "kH_cN"
+      }
+    },
+    "train_225": {
+      "X": [
+        30000.0,
+        2658.0
+      ],
+      "A_mm": 36.84106996452332,
+      "setup": {
+        "setup_id": "train_225",
+        "split": "train",
+        "ks_N_m": 30000.0,
+        "cs_N_s_m": 2658.0,
+        "sampling": "15x15_grid",
+        "seed": null,
+        "pilot_id": "kH_cH"
+      }
+    }
+  },
+  "jobs": [
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "linear",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "svr",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "single_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "batch_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "batch_A",
+      "method": "linear",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "warmup",
+      "workload": "batch_A",
+      "method": "svr",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 0,
+      "loops": 3
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "linear",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "svr",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 1,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "linear",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "svr",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 2,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "svr",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "linear",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 3,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "linear",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "svr",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 4,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "linear",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "svr",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 5,
+      "loops": 1000
+    },
+    {
+      "phase": "timed",
+      "workload": "batch_A",
+      "method": "simulation",
+      "case_ids": [
+        "train_001",
+        "train_008",
+        "train_015",
+        "train_106",
+        "train_113",
+        "train_120",
+        "train_211",
+        "train_218",
+        "train_225"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "warmup",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 0,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 1,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 2,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 3,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 4,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_001"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_008"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_015"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_106"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_113"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_120"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_211"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_218"
+      ],
+      "round": 5,
+      "loops": 1
+    },
+    {
+      "phase": "timed",
+      "workload": "full_diagnostic",
+      "method": "full_diagnostic",
+      "case_ids": [
+        "train_225"
+      ],
+      "round": 5,
+      "loops": 1
+    }
+  ],
+  "physical_parameters": {
+    "ms": 365.4,
+    "mu": 43.0,
+    "ks": 24000.0,
+    "cs": 2126.4,
+    "kt": 350000.0,
+    "g": 9.81
+  },
+  "bump": {
+    "height_m": 0.05,
+    "duration_s": 0.5
+  },
+  "solver": {
+    "rtol": 1e-06,
+    "atol": [
+      1e-09,
+      1e-08,
+      1e-09,
+      1e-08
+    ],
+    "max_step_s": 0.005
+  },
+  "horizon_s": 5.0,
+  "observation_dt_s": 0.001,
+  "reproduction_atol_mm": 1e-08,
+  "dtype": "float64",
+  "untimed_pre_post_integrity_prediction_calls": 40,
+  "input_sha256": {
+    "Suspension_Model\\runtime_benchmark.py": "220c3ca6ecde3a9968ce1467d43c78407c2c4a2f5e92ebde25da3b3f490ce9ae",
+    "Suspension_Model\\runtime_outputs.py": "b552958e3987fe67fd53702afa46df041d0c7c220ba0714736c485642c835455",
+    "Suspension_Model\\tests\\test_runtime_benchmark.py": "53560d13e93673050153f5db057a0210cb422e6f641b9abe2a74d372f80b506e",
+    "Suspension_Model\\RUNTIME_PLAN.md": "3083db6ad57f7f4b6dcff01322edf94075adf02fd27d691e4aaa927c300ccc01",
+    "Suspension_Model\\generate_dataset.py": "4dcaf5f4b56dce7eceb56d7c92f6723b0ea6a2a17d9a7c9955c98b37a4affed7",
+    "Suspension_Model\\quarter_car.py": "66b67460a82b20732781147542ab41c1af08428cc8cde75400733b09d112bf17",
+    "Suspension_Model\\dataset_design.py": "47da86deaeb67786813ef9633135d7c9c68857dc0e768c020718203b8c09bcec",
+    "Suspension_Model\\ml_development.py": "c9fc4482ce2c5251f0efb7e73749603f02bf61d7d6964102e65c377fd7e40f69",
+    "Suspension_Model\\final_evaluation.py": "98832999bd3c47f9979085500ae623738a946fbedc54bc8637e82e74fc662466",
+    "Suspension_Model\\requirements.txt": "e1d454654632f1fe67a55515ce662bf361a085232eedc14e64a034f9d5dbc6e5",
+    "Suspension_Model\\requirements-ml.txt": "823d6ea0861af85c5db96197859b1ecc500dd7be3aff89f1ce01732f99973b28",
+    "Suspension_Model\\dataset_v1\\summary.json": "ad4d628bda744e860e0722634600a6aceb5cd2056dd4ee65861db9ad94e77fcc",
+    "Suspension_Model\\dataset_v1\\train.csv": "a0760d9987d049411b835499146873931f47dd6665f4a13f396e1be23bc0f1c9",
+    "Suspension_Model\\dataset_v1\\train_diagnostics.jsonl": "a3bce544a231551953bbcde917b5835fc26adb00fe0cd5f38e78c752fca29102",
+    "Suspension_Model\\final_evaluation_v1\\frozen_plan.json": "fe3aeebab3dc1333c7063ba50a37bbf914ada161cbf48d32c2bcd08c53b02adc",
+    "Suspension_Model\\final_evaluation_v1\\refit.json": "2df743097d055242f37c68f1ee045fc829e47ab779d60344a8e3f790ba0aa635",
+    "Suspension_Model\\final_evaluation_v1\\linear.joblib": "3c29b6dfc6583ae6870b992e7ce084954624e46387bb113ff5e498acda7d3d22",
+    "Suspension_Model\\final_evaluation_v1\\svr.joblib": "2dd1780bf11591be3c42b7e0f61676f71bc784f8fcdfef810cc6c354922ecaa8",
+    "MMA3001_2026_Project_Brief.pdf": "1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c",
+    "MMA3001_Notes_Week02_1_Optimisation_and_Profiling.ipynb": "42166ad53117029e35108461b3a4c6607cd2ec38c7aac5ba30e323a3e1640749"
+  },
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "C:\\Users\\dedvu\\anaconda3\\python.exe",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "scikit-learn": "1.5.1",
+      "joblib": "1.4.2",
+      "threadpoolctl": "3.5.0",
+      "matplotlib": "3.9.2",
+      "pytest": "7.4.4"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "logical_cpus": 16,
+    "timer": {
+      "implementation": "QueryPerformanceCounter()",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-07
+    }
+  },
+  "power_before": {
+    "available": true,
+    "ac_line_status": 1,
+    "battery_percent": 100,
+    "battery_flag": 1
+  },
+  "background_work": "Other assistant experiments stopped; user/OS processes not controlled or comprehensively measured.",
+  "comparison": "warm in-memory A-only queries; full diagnostics separately; no fits or test-response access",
+  "warmup_bookkeeping": "Warm-up elapsed durations are retained for work/failure records and excluded from all reported timing statistics.",
+  "scope_excludes": [
+    "imports",
+    "model loading",
+    "input-array allocation",
+    "logging",
+    "file export",
+    "plotting"
+  ],
+  "historical_costs": "See preserved RUNTIME_PLAN.md; partial historical ledger is not a complete contemporaneous build cost."
+}

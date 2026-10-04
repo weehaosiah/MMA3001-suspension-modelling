@@ -1,0 +1,6 @@
+{
+  "complete": false,
+  "stage": "failed",
+  "error": "RuntimeError: numerical thread limit not applied",
+  "note": "Partial raw observations preserved; do not discard or overwrite this checkpoint."
+}
