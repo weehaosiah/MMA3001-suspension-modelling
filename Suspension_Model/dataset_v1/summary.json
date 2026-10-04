@@ -1,0 +1,105 @@
+{
+  "status": "completed",
+  "dataset_ready": true,
+  "completed_utc": "2026-10-04T13:37:18.304990+00:00",
+  "manifest_checks": {
+    "rows": 400,
+    "unique_ids": 400,
+    "unique_pairs": 400,
+    "split_counts": {
+      "train": 225,
+      "validation": 75,
+      "test": 100
+    },
+    "duplicates": 0,
+    "finite_in_domain": true
+  },
+  "source_unchanged_during_generation": true,
+  "frozen_manifests_unchanged": true,
+  "frozen_manifest_sha256": {
+    "generation_plan.json": "046b327a50225d4dd25da4feb2586ca564e85ce35d6472cd0af4cc4ca9546e56",
+    "setup_manifest.csv": "4392961c276137f3c7fad472c0c3bb84f78267d4e6cb8e70977192a4528ef35f"
+  },
+  "counts": {
+    "train": {
+      "rows": 225,
+      "eligible_targets": 225,
+      "settling_unresolved": 0,
+      "verified_pilot_baseline": 9,
+      "new_solver_completed": 216,
+      "new_integration": 216
+    },
+    "validation": {
+      "rows": 75,
+      "eligible_targets": 75,
+      "settling_unresolved": 0,
+      "new_integration": 75,
+      "new_solver_completed": 75
+    },
+    "test": {
+      "rows": 100,
+      "eligible_targets": 100,
+      "settling_unresolved": 0,
+      "new_integration": 100,
+      "new_solver_completed": 100
+    }
+  },
+  "export_audit": {
+    "train": {
+      "rows": 225,
+      "eligible_targets": 225,
+      "failed_targets": 0,
+      "identity_and_units_pass": true
+    },
+    "validation": {
+      "rows": 75,
+      "eligible_targets": 75,
+      "failed_targets": 0,
+      "identity_and_units_pass": true
+    },
+    "test": {
+      "rows": 100,
+      "eligible_targets": 100,
+      "failed_targets": 0,
+      "identity_and_units_pass": true
+    }
+  },
+  "failure_counts": {},
+  "predeclared_validity_aggregates": {
+    "minimum_sampled_contact_N": 2398.8089258009995,
+    "maximum_tail_bound_mm": 0.011530650541651465,
+    "maximum_positive_energy_increment_J": 0.0
+  },
+  "work": {
+    "new_integrations": 391,
+    "new_integration_attempts": 391,
+    "reused_pilots": 9,
+    "known_new_integration_runtime_s": 78.96322860012151,
+    "known_new_derivative_evaluations": 2423152,
+    "failure_work_note": "Failed solves may have unknown solver cost; row processing time is retained in each diagnostic.",
+    "row_generation_elapsed_s": 86.70243720000144,
+    "reused_historical_runtime_s_not_new_work": 1.8097845999982383
+  },
+  "artifact_sha256": {
+    "generation_plan.json": "046b327a50225d4dd25da4feb2586ca564e85ce35d6472cd0af4cc4ca9546e56",
+    "input_coverage.png": "2891606a2e1bf35a17fa9df5d6cc305f875a73c3a1d83f55564fb10b72843ac6",
+    "setup_manifest.csv": "4392961c276137f3c7fad472c0c3bb84f78267d4e6cb8e70977192a4528ef35f",
+    "train.csv": "a0760d9987d049411b835499146873931f47dd6665f4a13f396e1be23bc0f1c9",
+    "train_diagnostics.jsonl": "a3bce544a231551953bbcde917b5835fc26adb00fe0cd5f38e78c752fca29102",
+    "unit_tests.txt": "ad3080430f7b7ed2825d03aa60e513e00f4383f38d560d174834075c34d7e9fe",
+    "validation.csv": "8bc61589128e8d120393628548a326e910e79ace5919cf7d259ed0c85438e2e1",
+    "validation_diagnostics.jsonl": "8e34bc67e85bf3c08cdd1ca4d2d45a1800e77635441c8576d655db3d7267e215",
+    "heldout_test\\test.csv": "e1bfb96253ed575ae005b5196e858064e1c3dd17394a6ccba57d6e95f7dd8af3",
+    "heldout_test\\test_diagnostics.jsonl": "ac2d3c407252ce765790063088f8fb21a728d8400397ba009c13b66efb97a588",
+    "CHECK_RESULTS.md": "ef9d729b162b86208e834286d5e087a440ba176a50814e7bc8d99aa8091a939b",
+    "heldout_test\\README.md": "9f1551891b8050c33f139dfb0600502a92768a2169c1c21d21ad43c025116720"
+  },
+  "no_ml_fitted": true,
+  "heldout_response_statistics_inspected": false,
+  "limits": [
+    "Pilot refinement plus per-row validity does not certify each label's exact error.",
+    "Unresolved settling is independent of primary-label eligibility.",
+    "Sampled contact consistency is not continuous-contact proof or real-vehicle validation.",
+    "400 is the adopted initial sample budget, not demonstrated ML sufficiency."
+  ]
+}

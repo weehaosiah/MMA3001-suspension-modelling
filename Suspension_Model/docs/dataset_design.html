@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: dataset_design</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">dataset_design</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdedvu%5Conedrive%5Cdocuments%5Cmma3001%20jupiter%20notebooks%5Csuspension_model%5Cdataset_design.py">c:\users\dedvu\onedrive\documents\mma3001 jupiter notebooks\suspension_model\dataset_design.py</a></td></tr></table>
+    <p><span class="code">Fixed&nbsp;setup&nbsp;identities&nbsp;and&nbsp;validity&nbsp;rules&nbsp;for&nbsp;the&nbsp;first&nbsp;simulation&nbsp;dataset.<br>
+&nbsp;<br>
+Applies&nbsp;PROJECT_STATE&nbsp;P007/D005.&nbsp;One&nbsp;row&nbsp;is&nbsp;one&nbsp;(stiffness,&nbsp;damping)&nbsp;setup;<br>
+time&nbsp;samples&nbsp;are&nbsp;not&nbsp;independent&nbsp;ML&nbsp;rows.&nbsp;No&nbsp;fitting/preprocessing&nbsp;occurs&nbsp;here.<br>
+Course&nbsp;basis:&nbsp;Week05_6&nbsp;cells&nbsp;4,&nbsp;13-15,&nbsp;19,&nbsp;28-30;&nbsp;Week05_5&nbsp;cells&nbsp;16-17,&nbsp;36-37.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="hashlib.html">hashlib</a><br>
+<a href="importlib.html">importlib</a><br>
+</td><td class="multicolumn"><a href="json.html">json</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-classify_summary"><strong>classify_summary</strong></a>(summary, continuity_error=0.0)</dt><dd><span class="code">Return&nbsp;independent&nbsp;numerical,&nbsp;contact,&nbsp;target&nbsp;and&nbsp;settling&nbsp;validity.<br>
+&nbsp;<br>
+Uses&nbsp;the&nbsp;adopted&nbsp;nominal&nbsp;units/settings.&nbsp;Nonfinite,&nbsp;incomplete,&nbsp;wrong-setting,<br>
+inadequate-tail,&nbsp;inconsistent-peak&nbsp;or&nbsp;energy/continuity&nbsp;failures&nbsp;prevent&nbsp;a<br>
+primary&nbsp;ML&nbsp;target.&nbsp;Unresolved&nbsp;settling&nbsp;alone&nbsp;does&nbsp;NOT&nbsp;erase&nbsp;a&nbsp;valid&nbsp;A.<br>
+A&nbsp;finite&nbsp;raw&nbsp;estimate&nbsp;is&nbsp;retained&nbsp;in&nbsp;diagnostics&nbsp;even&nbsp;if&nbsp;the&nbsp;target&nbsp;is&nbsp;null.<br>
+This&nbsp;applies&nbsp;pilot-verified&nbsp;settings&nbsp;plus&nbsp;per-row&nbsp;checks;&nbsp;it&nbsp;does&nbsp;not&nbsp;assert<br>
+a&nbsp;separate&nbsp;refinement/horizon&nbsp;comparison&nbsp;or&nbsp;exact&nbsp;error&nbsp;bound&nbsp;for&nbsp;every&nbsp;row.<br>
+Missing&nbsp;required&nbsp;fields&nbsp;fail&nbsp;closed;&nbsp;no&nbsp;exception&nbsp;is&nbsp;needed&nbsp;for&nbsp;missing&nbsp;data.</span></dd></dl>
+ <dl><dt><a name="-load_verified_pilots"><strong>load_verified_pilots</strong></a>(summary_path, model_path)</dt><dd><span class="code">Load&nbsp;exactly&nbsp;nine&nbsp;eligible&nbsp;baseline&nbsp;pilot&nbsp;summaries,&nbsp;rejecting&nbsp;stale&nbsp;cache.<br>
+&nbsp;<br>
+Requires&nbsp;matching&nbsp;model&nbsp;bytes,&nbsp;installed&nbsp;numerical&nbsp;versions,&nbsp;exact&nbsp;physical<br>
+parameters,&nbsp;bump,&nbsp;equilibrium&nbsp;start,&nbsp;adopted&nbsp;settings&nbsp;and&nbsp;successful&nbsp;pilot<br>
+verification.&nbsp;Only&nbsp;base_1ms&nbsp;is&nbsp;reused,&nbsp;never&nbsp;the&nbsp;tight/extended&nbsp;final&nbsp;result.<br>
+Returns&nbsp;{(ks,cs):&nbsp;{pilot_id,&nbsp;parameters,&nbsp;summary,&nbsp;continuity_error,&nbsp;source_sha256}}.<br>
+Raises&nbsp;ValueError&nbsp;for&nbsp;inconsistent/unverified&nbsp;inputs,&nbsp;OSError&nbsp;for&nbsp;bad&nbsp;paths.</span></dd></dl>
+ <dl><dt><a name="-make_setups"><strong>make_setups</strong></a>()</dt><dd><span class="code">Return&nbsp;the&nbsp;predeclared&nbsp;400&nbsp;setup&nbsp;dictionaries,&nbsp;with&nbsp;stable&nbsp;IDs&nbsp;and&nbsp;splits.<br>
+&nbsp;<br>
+Training&nbsp;traversal:&nbsp;ascending&nbsp;stiffness&nbsp;outer&nbsp;loop,&nbsp;damping&nbsp;inner&nbsp;loop.<br>
+Each&nbsp;random&nbsp;split&nbsp;has&nbsp;its&nbsp;own&nbsp;PCG64&nbsp;generator&nbsp;and&nbsp;one&nbsp;(count,2)&nbsp;uniform&nbsp;draw;<br>
+columns&nbsp;are&nbsp;[ks,cs].&nbsp;No&nbsp;redraws,&nbsp;noise,&nbsp;shuffle&nbsp;or&nbsp;global&nbsp;RNG&nbsp;state&nbsp;are&nbsp;used.<br>
+Validation&nbsp;of&nbsp;identity,&nbsp;counts&nbsp;and&nbsp;finite&nbsp;domain&nbsp;values&nbsp;occurs&nbsp;before&nbsp;return.</span></dd></dl>
+ <dl><dt><a name="-safe_json"><strong>safe_json</strong></a>(value)</dt><dd><span class="code">Replace&nbsp;nonfinite&nbsp;numbers&nbsp;with&nbsp;null&nbsp;for&nbsp;a&nbsp;failure&nbsp;record,&nbsp;preserving&nbsp;keys.</span></dd></dl>
+ <dl><dt><a name="-sha256_file"><strong>sha256_file</strong></a>(path)</dt><dd><span class="code">Return&nbsp;a&nbsp;file's&nbsp;SHA256&nbsp;identity;&nbsp;missing/unreadable&nbsp;files&nbsp;raise&nbsp;OSError.</span></dd></dl>
+ <dl><dt><a name="-validate_setups"><strong>validate_setups</strong></a>(rows)</dt><dd><span class="code">Reject&nbsp;missing/duplicate&nbsp;identities,&nbsp;wrong&nbsp;roles/counts&nbsp;or&nbsp;invalid&nbsp;inputs.<br>
+&nbsp;<br>
+Raises&nbsp;ValueError&nbsp;on&nbsp;any&nbsp;violation.&nbsp;Exact&nbsp;duplicate&nbsp;coefficient&nbsp;pairs&nbsp;are<br>
+rejected&nbsp;across&nbsp;all&nbsp;roles.&nbsp;No&nbsp;failed&nbsp;or&nbsp;duplicated&nbsp;row&nbsp;is&nbsp;silently&nbsp;removed.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>BAND_M</strong> = 0.001<br>
+<strong>CONFIRMATION_S</strong> = 1.0<br>
+<strong>CONTACT_MARGIN_N</strong> = 1.0<br>
+<strong>COUNTS</strong> = {'test': 100, 'train': 225, 'validation': 75}<br>
+<strong>CS_RANGE</strong> = (1594.8, 2658.0)<br>
+<strong>HORIZON_S</strong> = 5.0<br>
+<strong>KS_RANGE</strong> = (18000.0, 30000.0)<br>
+<strong>OBSERVATION_DT_S</strong> = 0.001<br>
+<strong>SEEDS</strong> = {'test': 3002, 'validation': 3001}</td></tr></table>
+</body></html>

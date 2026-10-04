@@ -1,0 +1,133 @@
+{
+  "created_utc": "2026-10-04T13:35:45.999213+00:00",
+  "stage_date_sydney": "2026-10-05",
+  "prediction_contract": {
+    "row": "one unique full suspension setup",
+    "features": [
+      "ks_N_m",
+      "cs_N_s_m"
+    ],
+    "target": "A_mm = 1000 * max over full response of abs(zs-zu)",
+    "diagnostics_not_features": [
+      "A_post_m",
+      "settling_after_exit_s",
+      "contact",
+      "energy",
+      "tail"
+    ]
+  },
+  "counts": {
+    "train": 225,
+    "validation": 75,
+    "test": 100
+  },
+  "ks_range_N_m": [
+    18000.0,
+    30000.0
+  ],
+  "cs_range_N_s_m": [
+    1594.8,
+    2658.0
+  ],
+  "training": "np.linspace endpoints inclusive, 15 each; ks outer loop, cs inner loop",
+  "random_splits": {
+    "generator": "numpy.random.Generator(numpy.random.PCG64(seed))",
+    "seeds": {
+      "validation": 3001,
+      "test": 3002
+    },
+    "draw": "one uniform(low=[ks_min,cs_min], high=[ks_max,cs_max], size=(count,2)) per split",
+    "columns": [
+      "ks_N_m",
+      "cs_N_s_m"
+    ],
+    "independent_generators": true
+  },
+  "units_and_serialization": "SI inputs/raw diagnostics; mm ML target; Python round-trip float text in CSV/JSON",
+  "fixed_parameters": {
+    "ms": 365.4,
+    "mu": 43.0,
+    "ks": 24000.0,
+    "cs": 2126.4,
+    "kt": 350000.0,
+    "g": 9.81
+  },
+  "bump": {
+    "height_m": 0.05,
+    "duration_s": 0.5
+  },
+  "initial_state": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "solver": {
+    "rtol": 1e-06,
+    "atol": [
+      1e-09,
+      1e-08,
+      1e-09,
+      1e-08
+    ],
+    "max_step_s": 0.005
+  },
+  "horizon_s": 5.0,
+  "observation_dt_s": 0.001,
+  "settling_band_m": 0.001,
+  "confirmation_s": 1.0,
+  "contact_screening_margin_N": 1.0,
+  "contact_basis": "sampled fixed numerical guard supported by pilot comparisons; not a safety standard or per-row refined minimum",
+  "verification_basis": "D005 pilot settings; each row checks solve/finite/continuity/energy/tail/contact/output consistency",
+  "heldout_policy": "separate response files; no target distribution, response plot or prediction inspection before choices freeze",
+  "pilot_reuse": {
+    "count": 9,
+    "role": "train only",
+    "summary_key": "bands.1.runs.base_1ms",
+    "source": "verification_results\\summary.json",
+    "sha256": "2d02e365dea6b5a3beec4390c02647d6abb4b93d99c673926766dde4c17b5cfa"
+  },
+  "input_sha256": {
+    "Suspension_Model\\dataset_design.py": "47da86deaeb67786813ef9633135d7c9c68857dc0e768c020718203b8c09bcec",
+    "Suspension_Model\\generate_dataset.py": "4dcaf5f4b56dce7eceb56d7c92f6723b0ea6a2a17d9a7c9955c98b37a4affed7",
+    "Suspension_Model\\quarter_car.py": "66b67460a82b20732781147542ab41c1af08428cc8cde75400733b09d112bf17",
+    "Suspension_Model\\rk4_check.py": "5aebb254117db6b1dfae6851d0e7f32ebca69c902348f190da500afb5375d03d",
+    "Suspension_Model\\run_nominal.py": "819ef6dd9088c1401eb1aafd62c8c7e5234fe5dcc35fdc4697d92d0278e0b88f",
+    "Suspension_Model\\run_verification.py": "f5bf874021b7ae8e58ae8f06506bb3488615d0b035b24ce65819bd4c3b6562cf",
+    "Suspension_Model\\verify_reduced_case.py": "2d3aba27c55a134ffb75cf2a00787032e5f97df7041da5002cef2c60be7c635d",
+    "Suspension_Model\\tests\\test_dataset_design.py": "1c546933a52944b3ffd2ecc8cf5e13d39122ba6933eba89da8576761cd7737f0",
+    "Suspension_Model\\tests\\test_dataset_generation.py": "80e4ac4dd353a1fe30b893e6e197f10a78eebc33a49a53c181c594cf82568792",
+    "Suspension_Model\\tests\\test_quarter_car.py": "c029b56c6361a6760df5a97be52b7c02c10cb1072cf83613c50b239641001d83",
+    "Suspension_Model\\tests\\test_reduced_case.py": "75633193f1c7277dceb8a0be6ffaedfb00a769622e170ca4e6401aef2a28111c",
+    "Suspension_Model\\tests\\test_rk4_check.py": "3a21fb1761130a8c58eac05bff90fb10c85b1e6418539d43f127822b37411098",
+    "Suspension_Model\\tests\\test_verification.py": "96b3cd3898860b2261d159d282dad629303df1ce8b0ef1e08c0ebeb9693e4421",
+    "Suspension_Model\\verification_results\\summary.json": "2d02e365dea6b5a3beec4390c02647d6abb4b93d99c673926766dde4c17b5cfa",
+    "Suspension_Model\\requirements.txt": "e1d454654632f1fe67a55515ce662bf361a085232eedc14e64a034f9d5dbc6e5",
+    "MMA3001_2026_Project_Brief.pdf": "1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c",
+    "MMA3001_Notes_Week05_5_Evaluating_Regression_Performance.ipynb": "b3dd29a48eea8b871d2410cdf5e59b90d623553e2605991b7a00f1f7e8796155",
+    "MMA3001_Notes_Week05_6_Training_Data_Evaluation_and_Selection.ipynb": "94a81726e26ba53b665f8ed29dabf9ebf089b2975808f30242f25f4a98684fc0"
+  },
+  "manifest_checks": {
+    "rows": 400,
+    "unique_ids": 400,
+    "unique_pairs": 400,
+    "split_counts": {
+      "train": 225,
+      "validation": 75,
+      "test": 100
+    },
+    "duplicates": 0,
+    "finite_in_domain": true
+  },
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "C:\\Users\\dedvu\\anaconda3\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "matplotlib": "3.9.2",
+      "pytest": "7.4.4"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: generate_dataset</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">generate_dataset</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdedvu%5Conedrive%5Cdocuments%5Cmma3001%20jupiter%20notebooks%5Csuspension_model%5Cgenerate_dataset.py">c:\users\dedvu\onedrive\documents\mma3001 jupiter notebooks\suspension_model\generate_dataset.py</a></td></tr></table>
+    <p><span class="code">Generate&nbsp;the&nbsp;declared&nbsp;225/75/100&nbsp;simulation&nbsp;dataset,&nbsp;without&nbsp;any&nbsp;ML&nbsp;fitting.<br>
+&nbsp;<br>
+Run&nbsp;once&nbsp;with:&nbsp;python&nbsp;generate_dataset.py<br>
+For&nbsp;an&nbsp;independent&nbsp;rerun:&nbsp;python&nbsp;generate_dataset.py&nbsp;--output&nbsp;dataset_recheck<br>
+An&nbsp;existing&nbsp;output&nbsp;directory&nbsp;is&nbsp;never&nbsp;overwritten.&nbsp;Failed&nbsp;rows&nbsp;remain&nbsp;present.<br>
+Final-test&nbsp;response&nbsp;files&nbsp;stay&nbsp;in&nbsp;heldout_test/;&nbsp;common&nbsp;outputs&nbsp;reveal&nbsp;only&nbsp;its<br>
+inputs&nbsp;and&nbsp;predeclared&nbsp;validity&nbsp;checks,&nbsp;never&nbsp;response&nbsp;distributions&nbsp;or&nbsp;scores.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="argparse.html">argparse</a><br>
+<a href="csv.html">csv</a><br>
+<a href="importlib.html">importlib</a><br>
+</td><td class="multicolumn"><a href="json.html">json</a><br>
+<a href="matplotlib.html">matplotlib</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td class="multicolumn"><a href="os.html">os</a><br>
+<a href="platform.html">platform</a><br>
+<a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td class="multicolumn"><a href="subprocess.html">subprocess</a><br>
+<a href="sys.html">sys</a><br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-audit_exports"><strong>audit_exports</strong></a>(output, expected_rows)</dt><dd><span class="code">Check&nbsp;saved&nbsp;row&nbsp;identities,&nbsp;round-trip&nbsp;inputs&nbsp;and&nbsp;target&nbsp;validity/units.<br>
+&nbsp;<br>
+All&nbsp;roles&nbsp;are&nbsp;checked&nbsp;mechanically.&nbsp;Only&nbsp;counts/check&nbsp;outcomes&nbsp;are&nbsp;returned;<br>
+held-out&nbsp;target&nbsp;values&nbsp;or&nbsp;descriptive&nbsp;response&nbsp;statistics&nbsp;are&nbsp;not&nbsp;exposed.<br>
+Raises&nbsp;ValueError&nbsp;for&nbsp;mismatches&nbsp;or&nbsp;a&nbsp;missing/nonfinite&nbsp;eligible&nbsp;label.</span></dd></dl>
+ <dl><dt><a name="-frozen_manifests_unchanged"><strong>frozen_manifests_unchanged</strong></a>(output, initial_hashes)</dt><dd><span class="code">Check&nbsp;saved&nbsp;plan/setup&nbsp;bytes&nbsp;against&nbsp;their&nbsp;identities&nbsp;from&nbsp;before&nbsp;simulation.</span></dd></dl>
+ <dl><dt><a name="-generate"><strong>generate</strong></a>(output)</dt><dd><span class="code">Create&nbsp;a&nbsp;new&nbsp;versioned&nbsp;dataset&nbsp;directory;&nbsp;return&nbsp;zero&nbsp;only&nbsp;when&nbsp;ready.<br>
+&nbsp;<br>
+Existing&nbsp;output&nbsp;raises&nbsp;FileExistsError&nbsp;before&nbsp;writing.&nbsp;Source/setup&nbsp;manifests<br>
+precede&nbsp;simulation.&nbsp;Failed&nbsp;checks&nbsp;retain&nbsp;rows&nbsp;and&nbsp;reasons&nbsp;and&nbsp;block&nbsp;readiness;<br>
+they&nbsp;do&nbsp;not&nbsp;trigger&nbsp;redrawing,&nbsp;split&nbsp;reassignment,&nbsp;silent&nbsp;dropping&nbsp;or&nbsp;ML&nbsp;work.</span></dd></dl>
+ <dl><dt><a name="-input_coverage_plot"><strong>input_coverage_plot</strong></a>(rows, output)</dt><dd><span class="code">Plot&nbsp;only&nbsp;coefficient&nbsp;inputs&nbsp;for&nbsp;the&nbsp;three&nbsp;roles,&nbsp;never&nbsp;test&nbsp;responses.</span></dd></dl>
+ <dl><dt><a name="-perf_counter"><strong>perf_counter</strong></a>(...)</dt><dd><span class="code"><a href="#-perf_counter">perf_counter</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Performance&nbsp;counter&nbsp;for&nbsp;benchmarking.</span></dd></dl>
+ <dl><dt><a name="-row_result"><strong>row_result</strong></a>(setup, cached=None)</dt><dd><span class="code">Return&nbsp;one&nbsp;complete&nbsp;diagnostic&nbsp;record&nbsp;plus&nbsp;safe&nbsp;ML&nbsp;export&nbsp;fields.<br>
+&nbsp;<br>
+Reuse&nbsp;is&nbsp;allowed&nbsp;only&nbsp;for&nbsp;training&nbsp;and&nbsp;a&nbsp;matching&nbsp;already-verified&nbsp;pilot.<br>
+New&nbsp;integrations&nbsp;use&nbsp;D005&nbsp;settings.&nbsp;Numerical&nbsp;exceptions&nbsp;become&nbsp;preserved<br>
+failed&nbsp;rows;&nbsp;unresolved&nbsp;settling&nbsp;alone&nbsp;does&nbsp;not&nbsp;prevent&nbsp;a&nbsp;valid&nbsp;primary&nbsp;A.</span></dd></dl>
+ <dl><dt><a name="-write_json"><strong>write_json</strong></a>(path, payload)</dt><dd><span class="code">Save&nbsp;strict&nbsp;JSON,&nbsp;converting&nbsp;nonfinite&nbsp;diagnostics&nbsp;to&nbsp;null&nbsp;in&nbsp;failure&nbsp;data.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>BAND_M</strong> = 0.001<br>
+<strong>CONFIRMATION_S</strong> = 1.0<br>
+<strong>CONTACT_MARGIN_N</strong> = 1.0<br>
+<strong>COUNTS</strong> = {'test': 100, 'train': 225, 'validation': 75}<br>
+<strong>CS_RANGE</strong> = (1594.8, 2658.0)<br>
+<strong>HORIZON_S</strong> = 5.0<br>
+<strong>KS_RANGE</strong> = (18000.0, 30000.0)<br>
+<strong>MANIFEST_COLUMNS</strong> = ('setup_id', 'split', 'ks_N_m', 'cs_N_s_m', 'sampling', 'seed', 'pilot_id')<br>
+<strong>OBSERVATION_DT_S</strong> = 0.001<br>
+<strong>ROOT</strong> = WindowsPath('C:/Users/dedvu/OneDrive/Documents/MMA3001 Jupiter notebooks/Suspension_Model')<br>
+<strong>SEEDS</strong> = {'test': 3002, 'validation': 3001}<br>
+<strong>TARGET_COLUMNS</strong> = ('setup_id', 'split', 'ks_N_m', 'cs_N_s_m', 'A_mm', 'target_valid')</td></tr></table>
+</body></html>

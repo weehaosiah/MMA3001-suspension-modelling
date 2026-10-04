@@ -1,14 +1,32 @@
 # MMA3001 project state
 
-Revision: 015 | Updated: 2026-10-05 | Status: nine-pilot verification completed; full dataset and ML not started
+Revision: 016 | Updated: 2026-10-05 | Status: 400-setup dataset generated and checked; ML not started
 
 ## Current stage
 
-The nominal simulation and the bounded nine-pilot verification programme are complete. These records document implementation and numerical evidence, not the assessed report. No full parameter dataset or ML training has begun.
+The nominal simulation, bounded nine-pilot verification and first 400-setup dataset are complete. These records document implementation and numerical evidence, not the assessed report. No learned preprocessing, ML training or final-test prediction evaluation has begun.
 
-D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. This supersedes the earlier no-coding boundary for this stage only. Report writing and the full dataset/ML stage remain outside scope. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
+D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. D004 later authorised bounded verification; D006 below authorises dataset generation. ML training, assessed report writing and GitHub publication remain outside this completed stage. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
 
-Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003/D004 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D007 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+
+## Dataset checkpoint, 2026-10-05
+
+D006 / U012 - Following completion of the nine-pilot verification and the proposed next dataset stage, the student said "proceed". Implemented the adopted P007 design and per-row checks. This authorises dataset generation, not ML fitting, assessed report writing or GitHub publication. D002's full-response max abs(zs-zu), static-equilibrium convention and post-bump priority are unchanged.
+
+D007 - Recorded implementation details before response generation: 15 by 15 endpoint-inclusive training grid, stiffness outer loop and damping inner loop; separate NumPy Generator(PCG64(seed)) instances for validation seed 3001 and test seed 3002; one uniform draw of shape (count,2) per split, columns [ks,cs], retained draw order. Fixed IDs train_001-225, validation_001-075 and test_001-100. No noise, redraw, reshuffling, dropped rows or role changes. Counts/seeds/domain come from the adopted P007 starting plan; the explicit traversal/generator/serialization rules make it reproducible, not an empirically optimal design.
+
+- Read guide 003, handoff 001 and current state/evidence/AI log 015. The newer local records supersede the handoff's expected 013 and historical no-implementation status. No required source was missing or newly conflicting. Reread actual Week05_6 row/split/leakage cells and Week05_5 evaluation-role/final-test cells before adaptation. Original brief and numerical-course source hashes remain unchanged; no fresh complete brief reread or notebook execution is claimed.
+- Generated `Suspension_Model/dataset_v1/`: 225 training, 75 validation and 100 reserved test rows; all 400 input pairs and IDs are unique and in the declared domain. The nine original baseline pilot summaries are reused only in training at 5 s / 1 ms. Completed 391 new dataset integrations; verification/test solves are not extra dataset samples.
+- All 400 primary targets pass the prescribed solve/finite/continuity, peak consistency, contact, energy and tail screening. All 400 relative settling times are resolved under adopted settings, with no unresolved entries. These rows did not each receive the complete refinement/RK4 programme; that evidence remains the nine pilots.
+- Minimum sampled tyre force: 2398.808925801 N, above the fixed 1 N screening guard. Maximum 5 s remaining-motion bound: 0.011530650542 mm, below every row's tail/peak margins. Maximum positive sampled post-bump energy increment: 0 J. No failure reasons recorded. The baseline-grid contact minimum differs slightly from the pilot tight-reference figure; they are different numerical observations, not conflicting records.
+- Saved-file audit verifies identities, splits, physical parameters, exact input round trips, independently recomputed validity decisions and metre-to-millimetre target conversion. Source files and the plan/setup manifests remained byte-identical throughout generation. The combined test suite passes 280 cases, including deliberately corrupted exports, stale caches, missing diagnostics and retained failed rows. Input-only coverage plot was visually inspected.
+- Exact configuration, environment, source/output hashes, raw SI summaries, post-bump/settling diagnostics and measured work are saved. New integrations used 2,423,152 derivative evaluations and 78.963229 s of summed integration time; the row-generation loop took 86.702437 s. These are one-run laptop timings, not a benchmark or ML speed comparison. Historical reused pilot integration time is recorded separately, not counted as new work.
+- Final-test response files are segregated under `heldout_test/`. Only predefined physical/numerical checks, input identity, unit checks and counts were inspected for that split; no target distribution, response plot or prediction error was used for development. No scaler or ML model has been fitted.
+
+Start with `Suspension_Model/DATASET.md` and `dataset_v1/CHECK_RESULTS.md`. For a fresh reproduction in the recorded environment, run `generate_dataset.py --output dataset_recheck` from `Suspension_Model/`. Existing output directories are refused. This command recipe is saved; a second full generation and a clean-environment installation were not executed. Exact Python build and NumPy/SciPy checks protect pilot reuse; changing environment needs reviewed verification/artifact refresh, not bypassing provenance guards.
+
+Remaining uncertainties: exact continuous-time label error at each nonpilot row, contact between sample times and at unsampled parameter values, real-vehicle validity and travel clearances, dataset sufficiency and ML accuracy/cost. Student understanding and overall AI contribution remain unassessed. The original nominal/pilot results and governing-model code remain unchanged. Local checkpoint is AI-attributed; no packages installed, global Git identity changed or remote published. Submission remains 23 October 2026 at 23:59 Australia/Sydney; presentation-date planning stays deferred.
 
 ## Verification checkpoint, 2026-10-05
 
@@ -312,23 +330,23 @@ Primary authority: MMA3001_2026_Project_Brief.pdf. The checklist below is a work
 ## Current setup files
 
 - PROJECT_GUIDE.md — revision 003: working instructions and opening prompt.
-- PROJECT_STATE.md — revision 015: nominal and nine-pilot checkpoints, settings decision, historical specification and next actions.
-- EVIDENCE.md — revision 015: source index, course references, nominal/pilot/reduced-case and sensitivity evidence.
-- AI_USE_LOG.md — revision 015: implementation, walkthrough, independent verification/review assistance and outstanding student contribution review.
+- PROJECT_STATE.md — revision 016: nominal, verification and dataset checkpoints, decisions, historical specification and next actions.
+- EVIDENCE.md — revision 016: source index, course references, numerical verification and dataset evidence.
+- AI_USE_LOG.md — revision 016: implementation, dataset/checking assistance and outstanding student contribution review.
 - HANDOFF.md — revision 001: new-chat reading instructions, scope, completion criteria and copyable prompt; does not grant coding permission.
 
 These local files are in Project_Setup under the existing MMA3001 notebook folder. Uploaded copies must be refreshed when their authoritative local versions change.
 
 ## Open questions
 
-1. Will the selected solver/grid/duration and contact assumption remain adequate at every later sampled setup? The nine pilots support starting settings, not a guarantee across the whole domain.
-2. Will P003 maintain tyre contact throughout the domain, and will P007's starting 400 setups be sufficient? These require later evidence.
+1. All 400 sampled setups pass the adopted per-row checks; exact label error and contact between sampled times are not certified. Further sampled setups still need their own checks.
+2. Will P003 maintain tyre contact throughout the continuous domain, and will P007's 400 setups be sufficient for ML? These remain open despite the completed dataset screening.
 3. Will P008's RBF SVR improve accuracy or speed enough to justify its cost relative to linear regression/direct simulation? No ML evidence exists.
 4. Can the student explain the state, force signs, equilibrium convention, full-response maximum, settling rule and checks independently? Understanding and the overall AI contribution estimate remain to be reviewed.
 5. Licence choice, student Git identity and GitHub publication remain future repository work; no remote has been created.
 
 ## Next three actions
 
-1. Review the walkthrough and nine-pilot plots/results with the student; they can reproduce both checkpoints using the README commands. Understanding and student-independent verification remain unassessed.
-2. The next implementation stage, when requested, is the adopted dataset design with explicit split identities and per-run contact/tail/output-validity checks, using D005 starting numerical settings. Resolve invalid runs transparently before fitting ML models.
-3. Arrange student Git identity, licence and GitHub publication as separate repository work when requested; continue source/decision/AI records. Full dataset/ML, assessed report and presentation-date planning were outside this completed verification stage.
+1. Review the dataset guide and results with the student: one row versus time samples, features versus diagnostics, and training/validation/test roles. Student-independent reproduction and understanding remain unassessed.
+2. The next implementation stage, when requested, is P008's linear-regression/RBF-SVR development comparison using training and validation only. Fit scaling only within the training workflow and preserve the reserved final test until choices are fixed; keep post-bump interpretation alongside the primary-target comparison.
+3. Arrange student Git identity, licence and GitHub publication as separate repository work when requested; continue source/decision/AI records. ML fitting, assessed report writing and presentation-date planning were outside this completed dataset stage.

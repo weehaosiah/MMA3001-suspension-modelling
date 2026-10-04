@@ -1,6 +1,34 @@
 # MMA3001 evidence register
 
-Revision: 015 | Updated: 2026-10-05 | Status: nine-pilot, RK4, reduced-case and settling-sensitivity evidence recorded
+Revision: 016 | Updated: 2026-10-05 | Status: 400-setup dataset and generation-check evidence recorded
+
+## First simulation dataset, 2026-10-05
+
+U012 / D006 - The student's "proceed" followed the completed nine-pilot stage and proposed dataset generation. Implemented that stage only. No preprocessing fit, ML training, final-test prediction evaluation, assessed report writing or GitHub publication occurred. D002's full-response primary target and post-bump priority remain unchanged. D007 records exact sampling/traversal details that implement adopted P007; they are project choices, not assessment requirements or demonstrated optimal settings.
+
+R005 - Read guide 003, handoff 001 and current records 015. The accessible records are newer than the handoff's expected 013 and explicitly document completed nominal/pilot work; their chronology supersedes its historical no-coding status. No new missing required source or material record conflict was found. Before adaptation, reread actual Week05_6 cells 4, 13-15, 19 and 28-30 (one-row prediction contract, duplicate identity, suitable splits and training-only preprocessing) and Week05_5 cells 6, 9, 16-17, with independent review of 36-37 and main-assistant reread of those final-test cells. Cell numbers are one-based JSON positions. Notebook code was not executed or altered. The original 15-page brief and numerical-source bytes match the prior reading; a fresh complete brief reread is not claimed. No new external source or dependency installation was needed.
+
+M007 - Actual dataset generation. `Suspension_Model/generate_dataset.py` completed one full generation into `dataset_v1/`, using `dataset_design.py` for sampling/identity and validity. The plan and 400-row setup manifest were saved before numerical output generation and verified unchanged afterward. A 15 by 15 endpoint-inclusive grid gives 225 training pairs; separate PCG64 generators with seeds 3001 and 3002 provide 75 validation and 100 test pairs. Each generator makes one (count,2) uniform draw with columns [ks,cs]. All 400 IDs and coefficient pairs are unique, finite and within the adopted domain. No noise, redraw, drop or role reassignment occurred.
+
+Exactly nine baseline pilot summaries were reused within training at D005 settings: RK45 rtol=1e-6, component atol=[1e-9,1e-8,1e-9,1e-8], max_step=0.005 s, 5 s horizon and 1 ms observations. The reuse guard checks physical parameters, initial state, road, settings, numerical environment, model-source bytes and successful pilot verification. The tight 10 s reference was not substituted. Completed 391 new dataset integrations; the test suite's verification solves are additional check work, not dataset rows.
+
+| Role | Unique rows | Eligible primary targets | Reused pilot labels | Unresolved settling |
+|---|---:|---:|---:|---:|
+| Training | 225 | 225 | 9 | 0 |
+| Validation | 75 | 75 | 0 | 0 |
+| Reserved final test | 100 | 100 | 0 | 0 |
+
+All rows pass complete finite solve, full exit-state continuity, peak consistency, sampled tyre contact, post-bump energy and tail screening. Minimum sampled tyre force across all rows is 2398.808925801 N, above the fixed 1 N guard. Largest 5 s remaining-motion bound is 0.011530650542 mm, below each row's min(0.5 mm, A/2, A_post/2) criterion. Maximum positive sampled energy increment is 0 J. These are permitted predeclared validity aggregates, not an inspection of final-test target distributions. No failure reasons were recorded. Settling is labelled `resolved_under_adopted_settings`; full independent refinement was performed on nine pilots, not repeated at every new pair. Numerical and contact validity remain separate; unresolved settling alone would not erase an independently valid primary target.
+
+New label integrations used 2,423,152 derivative evaluations and 78.963228600 s summed integration time. The row-generation loop took 86.702437200 s, excluding its preceding tests and subsequent audit/plot. Historical reused-pilot integration time 1.809784600 s is recorded separately. These are one-run measurements on the existing laptop environment, not a speed benchmark. Original nominal/pilot artifacts and physical-model module are unchanged.
+
+M008 - Generation checks and preservation. Combined suite: 280 tests pass (178 prior tests plus 77 design/cache/classification tests and 25 generator/export/failure tests); saved generation-run output reports 4.16 s. New tests use mutated prior summaries or synthetic records, not new physical experiments. They check frozen sampling, duplicate/identity/domain rejection, missing/nonfinite diagnostics, separate primary/contact/settling decisions, stale/incorrect caches, exception retention and unknown failed-solver cost, corrupted exports, manifest changes and refusal to overwrite existing outputs. Initial new design tests exposed eight guard failures; corrections were made before full generation. Focused and complete reruns then passed.
+
+The export audit rechecks all CSV/JSON setup identities, physical parameters, round-trip inputs, validity from raw checks and A_mm=1000*A_m. Final independent assistant audit found zero mismatches across 18 source hashes, 12 output hashes and two pre-generation manifest hashes; hashes were read mechanically without exposing reserved test responses. Source files and manifests remained unchanged during the run. CSV/JSONL line endings are explicitly stable for Git. The three-panel plot shows only stiffness/damping input locations; it was visually inspected. Outputs include raw SI and post-bump/settling summaries, configuration, environment, work and provenance. Full traces for each of the 400 rows are not saved; nominal/pilot traces remain available.
+
+Reproduction instructions are in `Suspension_Model/DATASET.md`. Existing output folders are never overwritten; a fresh run uses `--output dataset_recheck`. No second full dataset run or fresh-environment installation was performed. Exact Python version/build and numerical versions protect cached pilot reuse; a changed environment requires reviewed verification/artifact refresh. Local Git records an AI-authored checkpoint; no student/global identity or remote was changed.
+
+Limits: the 400 sampled cases passing does not prove exact continuous-time label accuracy, continuous contact throughout the whole parameter rectangle, real-vehicle validity, physical travel clearance, adequate sample size or any ML performance. Final-test responses remain segregated and were not explored for model selection, target distributions or response plots. Only predefined identity/unit/physical/numerical checks were applied. State/evidence/AI log are saved at revision 016; student understanding and overall AI contribution remain to be reviewed.
 
 ## Bounded simulator verification, 2026-10-05
 
