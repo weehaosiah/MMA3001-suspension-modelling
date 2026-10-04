@@ -1,14 +1,33 @@
 # MMA3001 project state
 
-Revision: 014 | Updated: 2026-10-04 | Status: nominal simulation and initial checks completed; wider verification pending
+Revision: 015 | Updated: 2026-10-05 | Status: nine-pilot verification completed; full dataset and ML not started
 
 ## Current stage
 
-One nominal simulation and its initial checks are complete. These records document working implementation and numerical evidence, not the assessed report. The wider simulator-verification stage remains next; no full parameter dataset or ML training has begun.
+The nominal simulation and the bounded nine-pilot verification programme are complete. These records document implementation and numerical evidence, not the assessed report. No full parameter dataset or ML training has begun.
 
 D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. This supersedes the earlier no-coding boundary for this stage only. Report writing and the full dataset/ML stage remain outside scope. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
 
-Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's explicit current instruction.
+Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003/D004 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+
+## Verification checkpoint, 2026-10-05
+
+D004 / U011 - After the assistant proposed a nominal walkthrough followed by the bounded verification programme, the student said "ok proceed". This authorises that next stage. It does not extend the task to the full dataset, ML training, assessed report or GitHub publication. The walkthrough is saved in `Suspension_Model/WALKTHROUGH.md`; explanations were also given in chat. No student understanding or independent rerun is inferred.
+
+- Read guide 003 and current records 014; existing repository was clean at nominal checkpoint `4228532`. No newer conflicting record or missing required source was found. Reread actual Week07_4 RK4/refinement cells and Week07_5 analytical-oscillator cells before adapting. The original brief remains byte-identical to the previously read copy; no fresh full brief reread is claimed. Course originals and original nominal result files remain unchanged.
+- Completed all nine low/nominal/high combinations of ks={18000,24000,30000} N/m and cs={1594.8,2126.4,2658.0} N s/m. Each compares baseline RK45, tighter RK45, 1/0.5/0.25 ms observations, 5 versus 10 s, and classical RK4 at 0.5/0.25 ms. RK4 carries all exit states and evaluates the road at every intermediate stage time. Repeated runs/grids are verification work, not extra parameter samples.
+- All nine pilots pass. Direct baseline 1 ms / 5 s versus tight 0.25 ms / 10 s maximum differences: A 0.000464923531 mm; A_post 7.47171516e-7 mm; settling across all three bands 8.86295923e-6 s. All are below the adopted 0.05 mm and 0.01 s limits. Extending 5 to 10 s changed no sampled peak or settling result. No 20 s extension was needed.
+- Same-grid RK4/RK45 maximum A discrepancy: 2.24514157e-8 mm; maximum A_post discrepancy: 1.57725152e-8 mm. RK4 step-halving peak changes also include changes in observation spacing, so they are not claimed as pure integration error or a measured convergence order.
+- Tyre contact, energy, tails, finite complete solves and full exit-state continuity pass separately for all runs. Minimum tight-reference sampled contact force across pilots is 2398.782752 N. Largest tight 5 s future-movement bound is 0.01080601534 mm, below 0.5 mm and the peak margins. This is numerical/model-consistency evidence, not an exact continuous-time bound or full-domain proof.
+- Reduced analytical check: wheel deliberately fixed at zero; existing body-force function compared with the unforced underdamped closed-form solution from initial x=0.010 m and v=0.020 m/s. Maximum errors: 3.80071e-13 m in position and 3.05054e-12 m/s in velocity, below diagnostic limits 1e-7 m and 1e-6 m/s. This clamp does not replace the full study model.
+- Settling-band sensitivity is resolved for all nine setups. Nominal times after exit: 1.644586 s at +/-0.5 mm; 1.269332 s at +/-1 mm; 1.174273 s at +/-2 mm. The +/-1 mm band and full-response A remain unchanged. Nominal A, A_post and +/-1 mm settling exactly reproduce the original checkpoint in this environment.
+- The combined test suite passes 178 cases, including failure-classification tests: contact failure remains separate from numerical peak resolution; unresolved narrow-band/tail/horizon outcomes and accumulated comparison errors cannot silently pass. Independent assistant review found and corrected a plot limit that would have hidden a required horizon extension; final outputs were regenerated.
+
+D005 - Numerical settings decision from these pilot results: retain baseline RK45 rtol=1e-6, atol=[1e-9 m,1e-8 m/s,1e-9 m,1e-8 m/s], max internal step=0.005 s, 1 ms observations and a common 5 s observation as starting settings for later simulations. Every later setup still needs contact/tail checks and separate output-validity flags; unresolved primary labels must not be used. The 10 s tight solution remains the verification reference, not evidence of a new study input or extra row.
+
+Reproduce with `Suspension_Model/run_verification.py`. Actual tables, plots, all per-run comparisons, band results, derivative counts, single-run timings, source hashes, environment versions and compressed traces are saved in `Suspension_Model/verification_results/`. New modules and tests are documented in generated HTML. Existing dependencies are unchanged; no packages installed. Local Git checkpoint uses explicit AI authorship; no GitHub remote, student identity or global Git settings changed.
+
+Remaining uncertainties: unsampled parameter combinations, real-vehicle/telemetry validity, physical travel clearances, later dataset sufficiency, ML accuracy/cost and student understanding/AI contribution. Nine checked locations do not certify the whole rectangle. GitHub hosting and licence selection remain future repository work. Submission remains 23 October 2026 at 23:59 Australia/Sydney; presentation-date planning stays deferred.
 
 ## Nominal checkpoint, 2026-10-04
 
@@ -293,16 +312,16 @@ Primary authority: MMA3001_2026_Project_Brief.pdf. The checklist below is a work
 ## Current setup files
 
 - PROJECT_GUIDE.md — revision 003: working instructions and opening prompt.
-- PROJECT_STATE.md — revision 014: adopted starting plan, nominal implementation/checkpoint, historical specification and next actions.
-- EVIDENCE.md — revision 014: source index, version audit, course references and actual nominal check evidence.
-- AI_USE_LOG.md — revision 014: implementation/review assistance, corrections and outstanding student contribution review.
+- PROJECT_STATE.md — revision 015: nominal and nine-pilot checkpoints, settings decision, historical specification and next actions.
+- EVIDENCE.md — revision 015: source index, course references, nominal/pilot/reduced-case and sensitivity evidence.
+- AI_USE_LOG.md — revision 015: implementation, walkthrough, independent verification/review assistance and outstanding student contribution review.
 - HANDOFF.md — revision 001: new-chat reading instructions, scope, completion criteria and copyable prompt; does not grant coding permission.
 
 These local files are in Project_Setup under the existing MMA3001 notebook folder. Uploaded copies must be refreshed when their authoritative local versions change.
 
 ## Open questions
 
-1. Will the remaining numerical checks support one solver/grid/duration across the intended parameter domain? Nominal success alone cannot establish this.
+1. Will the selected solver/grid/duration and contact assumption remain adequate at every later sampled setup? The nine pilots support starting settings, not a guarantee across the whole domain.
 2. Will P003 maintain tyre contact throughout the domain, and will P007's starting 400 setups be sufficient? These require later evidence.
 3. Will P008's RBF SVR improve accuracy or speed enough to justify its cost relative to linear regression/direct simulation? No ML evidence exists.
 4. Can the student explain the state, force signs, equilibrium convention, full-response maximum, settling rule and checks independently? Understanding and the overall AI contribution estimate remain to be reviewed.
@@ -310,6 +329,6 @@ These local files are in Project_Setup under the existing MMA3001 notebook folde
 
 ## Next three actions
 
-1. Review the saved response plot and README with the student, and reproduce the nominal checkpoint using the documented command. Do not re-request the already granted nominal-stage approval.
-2. Continue the subsequent simulator-verification stage when requested: remaining pilot setups, RK4 and reduced-case comparison, band sensitivity and domain contact/tail checks. Discuss any material physical-domain/model change before adopting it.
-3. Only after verification and appropriate scope authorisation, proceed to the full dataset/ML stage. Keep source/decision/AI records current. Report writing, GitHub publication and presentation-date planning were not part of this nominal stage.
+1. Review the walkthrough and nine-pilot plots/results with the student; they can reproduce both checkpoints using the README commands. Understanding and student-independent verification remain unassessed.
+2. The next implementation stage, when requested, is the adopted dataset design with explicit split identities and per-run contact/tail/output-validity checks, using D005 starting numerical settings. Resolve invalid runs transparently before fitting ML models.
+3. Arrange student Git identity, licence and GitHub publication as separate repository work when requested; continue source/decision/AI records. Full dataset/ML, assessed report and presentation-date planning were outside this completed verification stage.

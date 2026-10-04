@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: verify_reduced_case</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">verify_reduced_case</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdedvu%5Conedrive%5Cdocuments%5Cmma3001%20jupiter%20notebooks%5Csuspension_model%5Cverify_reduced_case.py">c:\users\dedvu\onedrive\documents\mma3001 jupiter notebooks\suspension_model\verify_reduced_case.py</a></td></tr></table>
+    <p><span class="code">Analytical&nbsp;check&nbsp;of&nbsp;the&nbsp;body&nbsp;equation&nbsp;with&nbsp;the&nbsp;wheel&nbsp;deliberately&nbsp;clamped.<br>
+&nbsp;<br>
+The&nbsp;study&nbsp;still&nbsp;uses&nbsp;the&nbsp;full&nbsp;two-mass&nbsp;quarter-car.&nbsp;This&nbsp;diagnostic&nbsp;holds&nbsp;wheel<br>
+position&nbsp;and&nbsp;velocity&nbsp;at&nbsp;zero&nbsp;and&nbsp;checks&nbsp;the&nbsp;existing&nbsp;body's&nbsp;force&nbsp;equation<br>
+against&nbsp;the&nbsp;closed-form&nbsp;unforced&nbsp;damped&nbsp;oscillator.&nbsp;It&nbsp;is&nbsp;not&nbsp;an&nbsp;approximation<br>
+of&nbsp;the&nbsp;full&nbsp;quarter-car&nbsp;trajectory&nbsp;or&nbsp;a&nbsp;check&nbsp;against&nbsp;a&nbsp;real&nbsp;vehicle.<br>
+&nbsp;<br>
+Adapted&nbsp;from&nbsp;MMA3001_Notes_Week07_5_Higher_Order_ODEs.ipynb,&nbsp;one-based&nbsp;JSON<br>
+cells&nbsp;19-21&nbsp;(analytical&nbsp;response&nbsp;and&nbsp;verification&nbsp;versus&nbsp;validation),&nbsp;read&nbsp;on<br>
+2026-10-05.&nbsp;Course&nbsp;notebooks&nbsp;are&nbsp;neither&nbsp;imported&nbsp;nor&nbsp;executed.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="numpy.html">numpy</a><br>
+</td><td class="multicolumn"><a href="quarter_car.html">quarter_car</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-clamped_wheel_rhs"><strong>clamped_wheel_rhs</strong></a>(time_s, body_state, parameters)</dt><dd><span class="code">Return&nbsp;body&nbsp;[velocity,&nbsp;acceleration]&nbsp;with&nbsp;wheel&nbsp;[position,&nbsp;velocity]=0.<br>
+&nbsp;<br>
+``body_state``&nbsp;is&nbsp;a&nbsp;finite&nbsp;two-vector&nbsp;[m,&nbsp;m/s],&nbsp;and&nbsp;parameters&nbsp;is&nbsp;the<br>
+existing&nbsp;quarter-car&nbsp;Parameters&nbsp;object.&nbsp;The&nbsp;original&nbsp;``quarter_car.rhs``<br>
+computes&nbsp;the&nbsp;derivatives,&nbsp;so&nbsp;a&nbsp;mistake&nbsp;in&nbsp;its&nbsp;body&nbsp;force&nbsp;equation&nbsp;can&nbsp;be<br>
+detected.&nbsp;The&nbsp;clamp&nbsp;supplies&nbsp;a&nbsp;reaction&nbsp;force:&nbsp;its&nbsp;wheel&nbsp;acceleration&nbsp;is<br>
+deliberately&nbsp;discarded&nbsp;instead&nbsp;of&nbsp;integrated.&nbsp;Invalid&nbsp;state&nbsp;raises&nbsp;ValueError.</span></dd></dl>
+ <dl><dt><a name="-perf_counter"><strong>perf_counter</strong></a>(...)</dt><dd><span class="code"><a href="#-perf_counter">perf_counter</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Performance&nbsp;counter&nbsp;for&nbsp;benchmarking.</span></dd></dl>
+ <dl><dt><a name="-run_reduced_check"><strong>run_reduced_check</strong></a>()</dt><dd><span class="code">Run&nbsp;the&nbsp;nominal&nbsp;clamped-wheel&nbsp;analytical&nbsp;check&nbsp;and&nbsp;return&nbsp;JSON-ready&nbsp;data.<br>
+&nbsp;<br>
+Compares&nbsp;both&nbsp;states&nbsp;on&nbsp;a&nbsp;1&nbsp;ms&nbsp;output&nbsp;grid&nbsp;over&nbsp;0-5&nbsp;s.&nbsp;RK45's&nbsp;internal&nbsp;steps<br>
+are&nbsp;separate&nbsp;from&nbsp;this&nbsp;grid.&nbsp;Returns&nbsp;configuration,&nbsp;sampled&nbsp;maximum&nbsp;absolute<br>
+errors,&nbsp;predeclared&nbsp;acceptance,&nbsp;pass/fail,&nbsp;solve&nbsp;work&nbsp;and&nbsp;source&nbsp;references.<br>
+Failed,&nbsp;incomplete&nbsp;or&nbsp;nonfinite&nbsp;solutions&nbsp;produce&nbsp;a&nbsp;failed&nbsp;result&nbsp;with&nbsp;null<br>
+errors.&nbsp;No&nbsp;output&nbsp;files&nbsp;are&nbsp;written&nbsp;and&nbsp;no&nbsp;full-study&nbsp;parameters&nbsp;are&nbsp;changed.</span></dd></dl>
+ <dl><dt><a name="-underdamped_exact"><strong>underdamped_exact</strong></a>(time_s, initial_position_m=0.01, initial_velocity_m_s=0.02, mass_kg=365.4, damping_n_s_m=2126.4, stiffness_n_m=24000.0)</dt><dd><span class="code">Return&nbsp;analytical&nbsp;displacement&nbsp;[m]&nbsp;and&nbsp;velocity&nbsp;[m/s]&nbsp;from&nbsp;time&nbsp;zero.<br>
+&nbsp;<br>
+Parameters&nbsp;follow&nbsp;``m*x''&nbsp;+&nbsp;c*x'&nbsp;+&nbsp;k*x&nbsp;=&nbsp;0``&nbsp;about&nbsp;static&nbsp;equilibrium.<br>
+``time_s``&nbsp;may&nbsp;be&nbsp;a&nbsp;scalar&nbsp;or&nbsp;an&nbsp;array&nbsp;of&nbsp;finite&nbsp;nonnegative&nbsp;seconds;&nbsp;each<br>
+returned&nbsp;value&nbsp;has&nbsp;its&nbsp;shape.&nbsp;Mass&nbsp;and&nbsp;stiffness&nbsp;must&nbsp;be&nbsp;positive;&nbsp;damping<br>
+must&nbsp;be&nbsp;nonnegative&nbsp;with&nbsp;damping&nbsp;ratio&nbsp;below&nbsp;one.&nbsp;The&nbsp;zero-damping&nbsp;limit&nbsp;is<br>
+supported&nbsp;for&nbsp;an&nbsp;independent&nbsp;check.&nbsp;Initial&nbsp;position/velocity&nbsp;must&nbsp;be&nbsp;finite.<br>
+Unsupported&nbsp;or&nbsp;nonfinite&nbsp;numeric&nbsp;inputs&nbsp;raise&nbsp;ValueError.<br>
+&nbsp;<br>
+This&nbsp;formula&nbsp;has&nbsp;no&nbsp;forcing&nbsp;and&nbsp;does&nbsp;not&nbsp;describe&nbsp;the&nbsp;two&nbsp;moving&nbsp;masses&nbsp;of<br>
+the&nbsp;full&nbsp;model.&nbsp;It&nbsp;supplies&nbsp;an&nbsp;independent&nbsp;reference&nbsp;for&nbsp;the&nbsp;clamped&nbsp;case.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>FLAT_ROAD</strong> = Bump(height_m=0.0, duration_s=0.5)<br>
+<strong>POSITION_ACCEPTANCE_M</strong> = 1e-07<br>
+<strong>VELOCITY_ACCEPTANCE_M_S</strong> = 1e-06</td></tr></table>
+</body></html>

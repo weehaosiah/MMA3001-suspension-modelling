@@ -6,8 +6,11 @@ The authored project is in `Suspension_Model/`; decisions, sources and AI assist
 are in `Project_Setup/`. The original course notebooks and brief are preserved in
 this folder but excluded from version control to avoid redistributing course material.
 
-Current stage: one nominal quarter-car simulation and its initial checks. No full
-parameter dataset, machine-learning training or assessed report has been started.
+Current stage: nominal simulation plus the bounded nine-pilot verification,
+RK4 comparison, analytical reduced-case check and settling-band sensitivity.
+Start with the [walkthrough](Suspension_Model/WALKTHROUGH.md) and
+[verification results](Suspension_Model/verification_results/CHECK_RESULTS.md).
+No full parameter dataset, machine-learning training or assessed report has been started.
 Submission deadline supplied by the student: **23 October 2026, 23:59 Australia/Sydney**.
 Presentation-date planning remains deferred.
 

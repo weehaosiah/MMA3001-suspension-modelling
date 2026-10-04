@@ -1,6 +1,44 @@
 # MMA3001 evidence register
 
-Revision: 014 | Updated: 2026-10-04 | Status: nominal implementation and measured initial-check evidence recorded
+Revision: 015 | Updated: 2026-10-05 | Status: nine-pilot, RK4, reduced-case and settling-sensitivity evidence recorded
+
+## Bounded simulator verification, 2026-10-05
+
+U011 / D004 - The student said "ok proceed" after the proposed nominal walkthrough and bounded verification programme. Implemented those activities while preserving D002's full-response maximum and post-bump priority. No full parameter dataset, ML training, report prose or GitHub publication was begun. D005 records the resulting numerical settings decision; it is a choice supported by the nine pilots, not a physical standard.
+
+R004 - Read guide 003 and current state/evidence/AI log 014; Git was clean at `4228532`. Reread actual Week07_4 cells 12, 17, 21-23, 32-33 (classical RK4, convergence and cost) and Week07_5 cells 19-21 (known underdamped oscillator and limits of verification). Cell numbering remains one-based JSON position. The brief and course-source hashes are recorded with outputs and agree with earlier copies; the full brief was not reread this session. Course originals were neither edited nor executed. No new external technical source or package was needed.
+
+M003 - Nine-pilot programme. `run_verification.py` runs each of nine low/nominal/high stiffness/damping pairs with baseline RK45 to 5 s, tight RK45 to 5 s, tight RK45 to 10 s, and classical RK4 to 5 s at 0.5/0.25 ms. This is 45 full quarter-car integrations per programme execution; grid/band summaries reuse those trajectories. The programme was regenerated after display/failure-test additions, not used to create extra sample rows. The nominal centre's A, A_post and 1 mm settling exactly matched the original checkpoint. All nine pass; no horizon extension to 20 s was required.
+
+| ks [N/m] | cs [N s/m] | A [mm] | A_post [mm] | +/-1 mm settling after exit [s] | Reference minimum contact [N] |
+|---|---:|---:|---:|---:|---:|
+| 18000 | 1594.8 | 44.093828 | 39.623735 | 1.873319 | 2922.138 |
+| 18000 | 2126.4 | 39.343321 | 33.663538 | 1.376666 | 2831.415 |
+| 18000 | 2658.0 | 35.442747 | 28.785418 | 1.004290 | 2744.095 |
+| 24000 | 1594.8 | 45.491905 | 37.808798 | 1.987777 | 2670.127 |
+| 24000 | 2126.4 | 40.571155 | 31.891620 | 1.269332 | 2626.596 |
+| 24000 | 2658.0 | 36.522937 | 27.115903 | 0.889807 | 2574.116 |
+| 30000 | 1594.8 | 45.685298 | 34.092912 | 1.841485 | 2418.829 |
+| 30000 | 2126.4 | 40.848131 | 28.673449 | 1.445349 | 2417.877 |
+| 30000 | 2658.0 | 36.841515 | 24.324843 | 1.095702 | 2398.783 |
+
+Table uses tight RK45 / 10 s / 0.25 ms reference summaries. Both peaks include their relevant interval boundaries. Exact values and timings remain in `Suspension_Model/verification_results/summary.json`.
+
+Maximum direct base 5 s / 1 ms versus reference 10 s / 0.25 ms differences: A 0.000464923531 mm, A_post 7.47171516e-7 mm, settling 8.86295923e-6 s across all three bands. Same-grid RK45 tolerance refinement: A 5.75289982e-7 mm and A_post 7.47171516e-7 mm. Same-grid RK4 versus RK45: A 2.24514157e-8 mm and A_post 1.57725152e-8 mm. All satisfy the 0.05 mm / 0.01 s comparison criteria. Horizon extension changed no sampled peaks/settling. Equal outputs do not prove zero continuous-time error.
+
+RK4 adaptation keeps the taught four stages/1:2:2:1 weights, extends scalar state to a four-vector, lands at bump exit and carries the full state onward. It calls the existing physical RHS and evaluates road forcing at each intermediate time. Native samples only are used; finer interpolation of RK4 output is rejected. RK4 step-halving also refines observation spacing, so its peak difference is not a pure integration-error estimate. A separate focused known-solution test checks RK4 convergence; no convergence order is inferred from the pilot peak table.
+
+Every compared trajectory passes finite/complete solve, all-state exit continuity, sampled energy allowance, tail margin and sampled contact consistency. Minimum reference contact across pilots is 2398.782752 N; largest tight 5 s tail bound is 0.01080601534 mm. No positive sampled post-bump energy increment was observed. The contact numerical ambiguity rule and energy allowance remain those documented in M002. The runner independently retains numerical peak and physical-contact flags; failed contact cannot be repaired by waiting longer. A failed narrow-band result does not silently invalidate an independently resolved primary peak, but blocks the all-band verification claim.
+
+M004 - Analytical reduced-case diagnostic. The wheel is deliberately clamped at zu = vu = 0, and the existing body RHS is integrated from x0 = 0.010 m, v0 = 0.020 m/s over 0–5 s. The known unforced underdamped solution from C001 cells 19–21 independently supplies both state references on a 1 ms grid. RK45 settings: rtol = 1e-9, atol = [1e-11 m, 1e-10 m/s], max_step = 0.005 s. Predeclared diagnostic criteria: position discrepancy <=1e-7 m and velocity <=1e-6 m/s. Measured maxima 3.80070975e-13 m and 3.05053552e-12 m/s both pass; 6008 derivative evaluations. The clamp checks the body force/integration only, does not check the tyre equation or exact full quarter-car solution, and does not alter the physical study model.
+
+M005 - Settling-band interpretation. All nine setups resolve 0.5/1/2 mm bands under solver/grid/horizon/RK4 agreement. Nominal after-exit times are 1.644585983 s, 1.269331763 s and 1.174272850 s respectively. These are alternative measurements of the same motion, not extra ML targets. The 1 mm band remains adopted; its value is a project tolerance, not a safety/comfort standard.
+
+M006 - Tests and reproducibility. 178 focused tests pass in the complete suite: original 96, RK4 comparator 38, reduced diagnostic 34, verification-classification 10. Classification tests inject contact loss, unresolved narrow-band/tails/horizons, accumulated comparison differences and numerical failures without generating more pilot data. Known-solution, force/sign/units, invalid-input and solver-failure checks complement solver agreement. Original `quarter_car.py`, `run_nominal.py` and nominal result artifacts remain unchanged.
+
+Reproducible artifacts: new RK4/reduced-case/verification modules and tests; WALKTHROUGH.md; README commands; generated HTML; `verification_results/CHECK_RESULTS.md`, summary.json, unit_tests.txt, two PNGs and compressed 1 ms pilot traces. Plotted traces show the complete selected observation window, including an extended window if needed. Final input hashes and saved traces are checked for consistency; plotting/source documents were visually/read-only reviewed. Runtime and derivative counts are recorded for all integrations; no repeated timing benchmark or performance optimisation is claimed. Python and four package versions remain those in revision 014; no installation was performed.
+
+Decision D005: baseline RK45 with 1 ms observations and 5 s horizon is adequate as a starting setting at these nine pilots under the agreed criteria. Every later setup still requires contact/tail checks and unresolved-label handling. Remaining uncertainty includes unsampled combinations, real-car validity, travel clearances, future dataset sufficiency and ML accuracy/cost. No evidence in these pilots establishes an optimum suspension for comfort, grip or lap time.
 
 ## Current-stage evidence, 2026-10-04
 

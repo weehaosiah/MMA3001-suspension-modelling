@@ -1,4 +1,48 @@
-# One nominal suspension simulation
+# Suspension simulation and verification
+
+The nominal checkpoint is preserved below. Begin with the
+[physical/code walkthrough](WALKTHROUGH.md), then see the
+[nine-pilot check results](verification_results/CHECK_RESULTS.md).
+
+## Reproduce the bounded verification stage
+
+From this folder in PowerShell:
+
+```powershell
+& 'C:\Users\dedvu\anaconda3\python.exe' run_verification.py
+```
+
+This runs the focused tests, the analytical clamped-wheel diagnostic and the nine
+low/nominal/high stiffness-damping combinations. Each pilot compares baseline and
+tighter RK45, three observation grids, 5 versus 10 seconds, and classical RK4 at
+0.5 and 0.25 ms. If the horizon/tail is inadequate, the programme checks a common
+10-second observation against 20 seconds. It records failures instead of creating
+usable labels silently. Contact loss requires a physical-model/domain review;
+longer observation cannot fix it.
+
+The three settling bands (±0.5, ±1 and ±2 mm) are checked separately. The primary
+output remains the full-response maximum absolute relative displacement.
+`verification_results/summary.json` records every comparison and configuration;
+the accompanying Markdown table, PNGs and compressed time histories make the
+results inspectable. This command regenerates only `verification_results/`,
+leaving the original nominal results in `results/` intact.
+
+Additional source files:
+
+- `rk4_check.py`: adapts Week07_4 cells 12/17 to a four-state fixed-step comparator.
+  RK4 evaluates the changing road input at each intermediate stage time.
+- `verify_reduced_case.py`: adapts Week07_5 cells 19–21 to a deliberately clamped
+  wheel. It checks the existing body equation against a known formula; the wheel
+  clamp is only a diagnostic and does not replace the full study model.
+- `run_verification.py`: the bounded nine-pilot runner, including separate physical
+  contact and numerical output-validity checks.
+
+Verification settings must be selected using these recorded comparisons. Nine
+successful sample locations do not guarantee every location in the domain;
+every later run still needs its own contact and tail checks. These pilot outputs
+are not the full parameter dataset, and no ML fitting occurs in this command.
+
+## Original nominal checkpoint
 
 This is the first implementation checkpoint, authorised on 4 October 2026. It
 implements the adopted starting specification in `Project_Setup/PROJECT_STATE.md`.
@@ -190,9 +234,9 @@ To regenerate the function documentation after later model edits, run from this 
 & 'C:\Users\dedvu\anaconda3\python.exe' -c "import pathlib,pydoc,quarter_car; p=pathlib.Path('docs'); p.mkdir(exist_ok=True); s=pydoc.html.page('quarter_car',pydoc.html.document(quarter_car)); (p/'quarter_car.html').write_text('\n'.join(line.rstrip() for line in s.splitlines())+'\n',encoding='utf-8')"
 ```
 
-The remaining simulator work is the nine-setup pilot programme, classical RK4
-comparison, reduced analytical oscillator, 0.5/1/2 mm band sensitivity, and domain
-contact/tail checks. These checks precede the full dataset and ML stage. No
-dataset-wide claim, learned model, telemetry validation or report prose exists.
+The subsequent nine-setup verification stage is documented above and in
+`verification_results/`. Per-run contact/tail checks remain necessary for any
+later full dataset. No dataset-wide claim, learned model, telemetry validation or
+assessed report prose exists.
 Licence selection, GitHub hosting and final submission packaging remain later work.
 Student understanding and overall project AI contribution remain to be assessed.

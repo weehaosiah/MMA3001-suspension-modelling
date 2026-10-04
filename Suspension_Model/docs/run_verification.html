@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: run_verification</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">run_verification</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdedvu%5Conedrive%5Cdocuments%5Cmma3001%20jupiter%20notebooks%5Csuspension_model%5Crun_verification.py">c:\users\dedvu\onedrive\documents\mma3001 jupiter notebooks\suspension_model\run_verification.py</a></td></tr></table>
+    <p><span class="code">Reproduce&nbsp;nine&nbsp;pilot&nbsp;checks&nbsp;before&nbsp;any&nbsp;parameter&nbsp;dataset&nbsp;or&nbsp;ML&nbsp;work.<br>
+&nbsp;<br>
+Only&nbsp;the&nbsp;adopted&nbsp;low/nominal/high&nbsp;stiffness-damping&nbsp;combinations&nbsp;are&nbsp;simulated.<br>
+Course&nbsp;adaptation&nbsp;and&nbsp;physical&nbsp;sources&nbsp;remain&nbsp;in&nbsp;Project_Setup/EVIDENCE.md.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="hashlib.html">hashlib</a><br>
+<a href="importlib.html">importlib</a><br>
+<a href="json.html">json</a><br>
+</td><td class="multicolumn"><a href="matplotlib.html">matplotlib</a><br>
+<a href="numpy.html">numpy</a><br>
+<a href="os.html">os</a><br>
+</td><td class="multicolumn"><a href="platform.html">platform</a><br>
+<a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+<a href="subprocess.html">subprocess</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-comparison_pass"><strong>comparison_pass</strong></a>(comparison)</dt><dd><span class="code">Return&nbsp;whether&nbsp;both&nbsp;peaks&nbsp;and&nbsp;resolved-candidate&nbsp;settling&nbsp;agree.</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">Run&nbsp;this&nbsp;bounded&nbsp;verification&nbsp;programme&nbsp;and&nbsp;return&nbsp;nonzero&nbsp;on&nbsp;failure.</span></dd></dl>
+ <dl><dt><a name="-make_plots"><strong>make_plots</strong></a>(pilots, trajectories, output)</dt><dd><span class="code">Plot&nbsp;only&nbsp;the&nbsp;nine&nbsp;verified&nbsp;sample&nbsp;locations,&nbsp;with&nbsp;no&nbsp;fitted&nbsp;response&nbsp;surface.</span></dd></dl>
+ <dl><dt><a name="-verify_pilot"><strong>verify_pilot</strong></a>(parameters, horizon_s)</dt><dd><span class="code">Run&nbsp;a&nbsp;single&nbsp;setup's&nbsp;refinements&nbsp;and&nbsp;return&nbsp;evidence&nbsp;plus&nbsp;its&nbsp;reference.<br>
+&nbsp;<br>
+horizon_s&nbsp;[s]&nbsp;is&nbsp;checked&nbsp;against&nbsp;twice&nbsp;that&nbsp;duration.&nbsp;Each&nbsp;RK4&nbsp;solution&nbsp;is<br>
+compared&nbsp;against&nbsp;RK45&nbsp;at&nbsp;its&nbsp;own&nbsp;native&nbsp;observation&nbsp;spacing,&nbsp;without&nbsp;creating<br>
+artificial&nbsp;finer&nbsp;RK4&nbsp;samples.&nbsp;Exceptions&nbsp;propagate&nbsp;for&nbsp;the&nbsp;caller&nbsp;to&nbsp;record.</span></dd></dl>
+ <dl><dt><a name="-write_markdown"><strong>write_markdown</strong></a>(result, output)</dt><dd><span class="code">Write&nbsp;the&nbsp;measured&nbsp;checkpoint,&nbsp;making&nbsp;failures&nbsp;and&nbsp;limits&nbsp;visible.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>BANDS_M</strong> = (0.0005, 0.001, 0.002)<br>
+<strong>BASE</strong> = SolverSettings(rtol=1e-06, atol=(1e-09, 1e-08, 1e-09, 1e-08), max_step_s=0.005)<br>
+<strong>ROOT</strong> = WindowsPath('C:/Users/dedvu/OneDrive/Documents/MMA3001 Jupiter notebooks/Suspension_Model')<br>
+<strong>TIGHT</strong> = SolverSettings(rtol=1e-08, atol=(1e-11, 1e-10, 1e-11, 1e-10), max_step_s=0.0025)</td></tr></table>
+</body></html>
