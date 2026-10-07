@@ -1,6 +1,18 @@
 # MMA3001 evidence register
 
-Revision: 021 | Updated: 2026-10-05 | Status: local repository review and actual reproduction checks recorded
+Revision: 022 | Updated: 2026-10-07 | Status: GitHub setup findings and licence alternatives recorded; choices pending
+
+## GitHub setup choices, 2026-10-07
+
+U018 / D015 - Student acknowledged the simulated-dataset explanation and authorised continuing. Continued outstanding setup preparation; student then requested licence alternatives before choosing MIT. Licence remains undecided, with no change to the model, target or consumed final test.
+
+R011 - Read guide 003 and records 021. Course-audit assistant reread actual brief pp1/2/6/8; unchanged 15-page SHA256 1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c. Page 8 requires an accessible repository link and licensing agreement but specifies no licence and no explicit public-only rule. Private access requires a verified assessor-access workflow. Pages reviewed retain individual responsibility and disclosure/verification of substantial AI assistance; no claim that this is a review of every university policy. Recorded external/course methods and third-party dependencies are not automatically relicensed by a project licence.
+
+S014 - Official GitHub guidance and its Choose a License service, read 2026-10-07: [MIT](https://choosealicense.com/licenses/mit/), [BSD 3-Clause](https://choosealicense.com/licenses/bsd-3-clause/), [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/), [GPLv3](https://choosealicense.com/licenses/gpl-3.0/), [licensing a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository), [Git author name](https://docs.github.com/en/get-started/git-basics/setting-your-username-in-git), [commit email](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address), [repository access](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories), and [visibility changes](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility). Basis for plain-language comparison and pending setup choices; no licence selected or legal clearance of external materials claimed. MIT is the assistant's simple-reuse recommendation, not a brief requirement. GPL's source-sharing obligations concern distribution of covered works; commercial distribution remains allowed. Git identity differs from login; noreply is an available account-specific email option.
+
+M019 - Read-only local setup checks: clean 82bda94, 134 tracked files totalling 10,443,724 bytes, eight local commits, no remote or configured user.name/user.email, no tracked course PDF/notebook or licence. Largest file is the preserved pilot trace NPZ (2,999,817 bytes). GitHub CLI not found on PATH. Plugin search first found GitHub available/uninstalled; suggestion issued. Later search confirmed installed and a successful authenticated profile call returned login weehaosiah. Account-associated email was not selected as the commit address or copied into setup records. No private repository content accessed, no repository mutation/publication or credentials requested.
+
+PUBLICATION_SETUP.md is a concrete proposal with name, description, scope, comparison and pending choices. No scientific rerun, source change, installation of numerical dependencies, identity configuration, licence file, remote or clone-ZIP is claimed. New local documentation/records are revision 022; uploaded copies remain separate.
 
 ## Repository readiness and byte-preservation repair, 2026-10-05
 

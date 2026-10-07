@@ -1,6 +1,6 @@
 # MMA3001 project state
 
-Revision: 021 | Updated: 2026-10-05 | Status: local repository readiness review complete; publication pending
+Revision: 022 | Updated: 2026-10-07 | Status: GitHub setup prepared; licence, identity and visibility choices pending
 
 ## Current stage
 
@@ -10,7 +10,17 @@ The subsequent physical interpretation and runtime-planning stage is complete. T
 
 D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. D004 later authorised bounded verification, D006 dataset generation, D008 the ML development comparison and D010 final refitting/evaluation. Assessed report writing and GitHub publication remain outside this completed stage. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
 
-Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D014 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D015 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+
+## GitHub setup preparation, 2026-10-07
+
+D015 / U018 - After asking about the dataset and acknowledging the explanation, the student authorised continuing the process. Continued the outstanding licence/identity/GitHub setup preparation. When asked about MIT, the student requested alternatives before choosing; no licence is adopted. The acknowledgement concerns the dataset explanation and is not evidence of independent mastery of the full project.
+
+Read guide 003 and records 021. Local checkpoint 82bda94 was clean, with 134 tracked files (10,443,724 bytes), eight commits, no tracked course PDF/notebook or licence, no configured student Git identity and no remote. No scientific checks were rerun; prior numerical/ML/runtime/readiness evidence remains unchanged. GitHub CLI was not found on PATH. GitHub plugin was suggested, then became installed; authenticated profile access confirms account weehaosiah. This is confirmed connection, not repository creation/publication.
+
+Prepared PUBLICATION_SETUP.md: proposed name mma3001-suspension-modelling, description, content scope, MIT/BSD-3-Clause/Apache-2.0/GPLv3 comparison and remaining identity/visibility choices. Official sources distinguish licence permissions, author attribution and access settings. Brief p8 requires an accessible repository and licensing agreement but names no particular licence and does not explicitly require public visibility; a private repository needs verified assessor access. Course/external materials and dependencies retain their own terms. No licence, identity, visibility or email choice is inferred from the account profile.
+
+Licence, project display name, preferred commit email and public/private choice remain pending. No licence file, student identity configuration, remote, upload or final clone ZIP has been created. Records saved at revision 022. No new simulation, dataset, fit, timing, assessed report or presentation planning. Deadline remains 23 October 2026 at 23:59 Australia/Sydney.
 
 ## Local repository readiness, 2026-10-05
 
@@ -412,9 +422,9 @@ Primary authority: MMA3001_2026_Project_Brief.pdf. The checklist below is a work
 ## Current setup files
 
 - PROJECT_GUIDE.md — revision 003: working instructions and opening prompt.
-- PROJECT_STATE.md — revision 021: completed checkpoints, repository review and next actions.
-- EVIDENCE.md — revision 021: sources, scientific evidence and actual repository reproduction checks.
-- AI_USE_LOG.md — revision 021: implementation, documentation/repair assistance and outstanding student contribution review.
+- PROJECT_STATE.md — revision 022: completed checkpoints and pending GitHub setup decisions.
+- EVIDENCE.md — revision 022: sources, scientific evidence, reproduction checks and setup findings.
+- AI_USE_LOG.md — revision 022: implementation, documentation/setup assistance and outstanding student contribution review.
 - HANDOFF.md — revision 001: new-chat reading instructions, scope, completion criteria and copyable prompt; does not grant coding permission.
 
 These local files are in Project_Setup under the existing MMA3001 notebook folder. Uploaded copies must be refreshed when their authoritative local versions change.
@@ -431,4 +441,4 @@ These local files are in Project_Setup under the existing MMA3001 notebook folde
 
 1. Review PHYSICS_REVIEW and RUNTIME_GUIDE with the student: lower A_post can coexist with longer settling; fast peak prediction does not supply post-bump dynamics; warm query time excludes preparation. Student understanding/reproduction remain unassessed.
 2. Review REPOSITORY_REVIEW and REPRODUCING: local readiness review is complete; licence/identity choices, course-source prerequisites and Windows/build limitations remain relevant to eventual submission.
-3. Arrange student Git identity, licence and GitHub publication separately when requested; continue source/decision/AI records. Do not restart fitting, reuse the consumed test for selection, draft the assessed report or plan presentation dates as an automatic follow-on.
+3. Complete the pending PUBLICATION_SETUP choices (licence, name/email and visibility), then use the connected account for the agreed repository setup. Preserve course exclusions and AI attribution; verify assessor access and a real clone before final ZIP packaging. Do not restart fitting, reuse the consumed test for selection, draft the assessed report or plan presentation dates as an automatic follow-on.

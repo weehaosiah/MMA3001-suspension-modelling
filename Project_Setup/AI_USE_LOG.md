@@ -1,6 +1,15 @@
 # MMA3001 AI-use log
 
-Revision: 021 | Updated: 2026-10-05 | Status: repository review, documentation and reproducibility repair assistance recorded
+Revision: 022 | Updated: 2026-10-07 | Status: licence explanation and GitHub setup preparation recorded
+
+## Licence alternatives and GitHub setup preparation, 2026-10-07
+
+- Task/student role: student asked what dataset is used, then said they understood and authorised continuing. AI summarised the simulation-generated 400-setup dataset without new computation. Continued the outstanding repository setup stage. Student requested licence alternatives before choosing MIT; licence, name/email and visibility remain open. No independent-learning assessment is inferred from the acknowledgement.
+- Assistance/reason: AI inspected current local state, prepared PUBLICATION_SETUP with a proposed repository name/description/scope, explained four licence alternatives and Git identity versus account/access, and checked current official sources. AI was used for beginner-friendly setup guidance and preserving the distinction between prepared and published work. The course-audit assistant checked actual brief pages and source-attribution constraints.
+- Tools/sources: guide 003, records 021, local Git/file inventory, actual brief pp1/2/6/8, official pages in S014, plugin-management skill and GitHub connection/profile tools. Initially no GitHub plugin connection; it became installed during the turn and authenticated profile confirmed weehaosiah. No password/token requested or written. No course content or scientific computation executed.
+- Decisions/limits: MIT is an assistant recommendation for broad reuse, not student acceptance or an assessment rule. Explained GPL commercial distribution/source sharing, Apache patent grant and BSD non-endorsement. A proposed project licence does not license external sources or dependencies. Prepared account choices without guessing the student's display name or preferred commit email. No licence, identity, public/private setting, remote, upload or clone ZIP created.
+- Checks: existing checkpoint 82bda94 clean, 134 tracked files, no tracked course originals/licence, eight local commits, no remote/configured student identity, GitHub CLI not found on PATH. Prior 433-test and saved-result audit evidence remains historical; no new full tests, simulations, predictions, fits or timings run. Final setup-document links and checkpoint bytes are checked before saving.
+- Contribution/saved work: AI drafted the setup comparison and revision 022 records; student directs choices. Overall AI contribution and independent understanding remain unassessed. Local AI-attributed checkpoint only; assessed report and presentation-date planning remain outside scope. Deadline remains 23 October 2026 at 23:59 Sydney.
 
 ## Local repository readiness review, 2026-10-05
 
