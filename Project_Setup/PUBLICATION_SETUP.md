@@ -1,10 +1,18 @@
 # GitHub setup decisions
 
-Revision: 001 | Prepared: 2026-10-07 | Status: choices pending; nothing published
+Revision: 002 | Updated: 2026-10-07 | Status: student-led upload guide prepared; choices pending
 
 The student authorised continuing after the repository review, then requested an
 explanation of licence alternatives before choosing. No licence has been selected
-or added. Identity, account and visibility questions remain open.
+or added. Project display name, preferred commit email and visibility remain open.
+The connected account is known; its verified/primary school-email status still
+needs checking in account settings.
+
+The student now wants to understand Git and upload independently. Follow
+[GITHUB_SELF_UPLOAD_GUIDE.md](GITHUB_SELF_UPLOAD_GUIDE.md) using the required
+school-linked account. No automatic upload or identity change is implied by this
+teaching task. The connected profile reports a Monash student email but does not
+expose verified/primary flags.
 
 ## Prepared repository details
 

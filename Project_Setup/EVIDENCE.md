@@ -1,6 +1,18 @@
 # MMA3001 evidence register
 
-Revision: 022 | Updated: 2026-10-07 | Status: GitHub setup findings and licence alternatives recorded; choices pending
+Revision: 023 | Updated: 2026-10-07 | Status: checked beginner Git and self-upload guidance recorded
+
+## Student-led upload explanation, 2026-10-07
+
+U019 / D016 - Student requests explanations of GitHub, commit/push/etc and instructions to upload independently using a school-email GitHub account. Adopted the user-reported email requirement and teaching workflow; no automatic publication or identity changes.
+
+R012 - Read guide 003/records 022. Source assistant reread actual brief p8; unchanged PDF SHA256 1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c. Retain required accessible GitHub repository, documentation/licence/tests and separate Moodle report plus ZIP of a clone. Page 8 does not specify school email, public visibility or precise link-entry location. Root reread Week01_2 cells6/9/12/14-15/40/53/55/68-79: 84 cells, format4.0, SHA256 79194d023e82759946b18b57f70bfcb4c26c827f6a974a1abfe49fa656460a17. No cell/video executed or credential example reused. Clarified merge (cell9) and private-link access (cells40/53) against official sources. Adapted add/commit/push concepts to Desktop and the existing Windows repository, without new Colab initialisation.
+
+S015 - Official Git/GitHub sources read 2026-10-07: [Git glossary](https://git-scm.com/docs/gitglossary), [add local repository](https://docs.github.com/en/desktop/adding-and-cloning-repositories/adding-a-repository-from-your-local-computer-to-github-desktop), [publish existing project](https://docs.github.com/en/desktop/adding-and-cloning-repositories/adding-an-existing-project-to-github-using-github-desktop), [clone](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop), [Desktop installation](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop), [local author configuration](https://docs.github.com/en/desktop/configuring-and-customizing-github-desktop/configuring-git-for-github-desktop), [commit/review](https://docs.github.com/en/desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop), [fetch/pull](https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/syncing-your-branch-in-github-desktop), [account email](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/adding-an-email-address-to-your-github-account). The guide author also checked official authentication/archive pages linked in the guide. An old sync-doc URL failed; official search located the current URL. These support written steps; no live Desktop UI inspection or installation is claimed.
+
+M020 - Starting local main at bdc41de was clean, no remote. Current .gitignore retains source exclusions. Fresh authenticated profile returns weehaosiah with a student.monash.edu email; no primary/verified flag exposed. Only domain association recorded, not the raw address. Student should confirm intended school account in Settings > Emails. Commit identity is separate from login; prior AI attribution remains unchanged.
+
+Saved GITHUB_SELF_UPLOAD_GUIDE.md and revision023 records. Explain why a clean local tree may still be unpublished, why existing history should be added to Desktop, and why a final ZIP must come from an actual clone. Download ZIP omits Git history; .gitignore does not filter manual ZIP creation. Scientific bytes untouched, no full tests or experiments rerun. Actual student installation/login/upload/clone/submission and independent understanding remain pending.
 
 ## GitHub setup choices, 2026-10-07
 

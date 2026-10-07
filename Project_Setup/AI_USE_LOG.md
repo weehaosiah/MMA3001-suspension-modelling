@@ -1,6 +1,15 @@
 # MMA3001 AI-use log
 
-Revision: 022 | Updated: 2026-10-07 | Status: licence explanation and GitHub setup preparation recorded
+Revision: 023 | Updated: 2026-10-07 | Status: beginner Git teaching and self-upload instructions recorded
+
+## Teaching Git and independent upload, 2026-10-07
+
+- Student request: beginner explanations of Git/GitHub, commit/push and related terms, with enough guidance to upload independently; school-email-account requirement added. AI treated this as teaching, not permission to publish or change identity/licence choices.
+- Material assistance: main assistant and guide-writing/source-review assistants prepared a glossary, save/select/commit/push flow, actual-project examples, Windows Desktop menu steps, account/email checks, preserved-history upload, updates, access checks and final clone ZIP. AI supplied instructions and records; student has not yet demonstrated the process.
+- Sources/tools: guide003/records022, actual brief p8, actual Week01_2 Git cells (R012), current official docs S015, read-only local Git and authenticated profile. Corrected course merge/private-link descriptions and replaced an inaccessible old sync-doc URL. No course command/video, credential example or external repository was executed.
+- Checks: clean main at bdc41de/no remote initially; account weehaosiah reports Monash student domain but tool does not expose verified/primary status. Raw email omitted from authored records. Instructions checked against existing root/history/ignore rules and separate Moodle report/clone-ZIP requirements. Local links and whitespace checked. No Desktop UI operation/installation, account configuration, upload, source/scientific changes or test rerun.
+- Learning/limits: commit saves locally; push uploads saved commits; clean status does not prove upload. Explain private marker access, exact-byte attributes and why a fresh clone avoids packaging excluded course materials. School email is user-reported rather than attributed to brief p8. Overall AI contribution and independent student understanding remain unassessed. Licence/name/email/visibility and student upload remain pending.
+- Saved: GITHUB_SELF_UPLOAD_GUIDE, publication note and records revision023 with an AI-attributed local checkpoint. Instructional documentation, not assessed report text. Deadline stays 23 October 2026 at 23:59 Sydney; presentation planning deferred.
 
 ## Licence alternatives and GitHub setup preparation, 2026-10-07
 

@@ -1,6 +1,6 @@
 # MMA3001 project state
 
-Revision: 022 | Updated: 2026-10-07 | Status: GitHub setup prepared; licence, identity and visibility choices pending
+Revision: 023 | Updated: 2026-10-07 | Status: student self-upload guide prepared; publication pending
 
 ## Current stage
 
@@ -10,7 +10,17 @@ The subsequent physical interpretation and runtime-planning stage is complete. T
 
 D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. D004 later authorised bounded verification, D006 dataset generation, D008 the ML development comparison and D010 final refitting/evaluation. Assessed report writing and GitHub publication remain outside this completed stage. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
 
-Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D015 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D016 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+
+## Student-led GitHub upload learning, 2026-10-07
+
+D016 / U019 - Student requested beginner explanations of Git/GitHub, commit/push and related terms, with instructions to upload the project themselves using a school-email account. The email requirement is user-reported, not wording found on brief p8. Teach the workflow; do not automatically publish or change identity. This current instruction supersedes any expectation of assistant-led publication in the earlier setup plan.
+
+Read guide 003 and records 022; actual Week01_2 Git cells and official GitHub Desktop/account instructions. Brief p8 was independently reread: accessible GitHub repository plus report and ZIP of a clone through Moodle. Course cell9's merge definition and cells40/53's private-link implications are clarified: merging does not inherently delete a branch, and a private URL alone grants no access.
+
+Saved GITHUB_SELF_UPLOAD_GUIDE.md covering save/select/commit/push, school-account checks, Windows Desktop for the existing repository, local author settings, first upload, subsequent updates, access checks and a fresh-clone ZIP. Preserve AI-attributed history, .gitignore and .gitattributes. Manual ZIP tools do not apply Git ignore rules; keep course sources outside the submission clone and use a separate copy for source-dependent audits.
+
+Fresh account read confirms weehaosiah reports a student.monash.edu address; primary/verified flags are unavailable, so student checks Settings > Emails. No raw email or credential added to records. Starting local bdc41de was clean on main, with no remote. No Desktop UI was operated, app installed, account/identity changed, licence chosen, upload/ZIP produced or scientific calculation rerun. Instructions are source-checked, not evidence of student completion. Records revision 023; deadline remains 23 October 2026 at 23:59 Sydney, presentation planning deferred.
 
 ## GitHub setup preparation, 2026-10-07
 
@@ -422,9 +432,9 @@ Primary authority: MMA3001_2026_Project_Brief.pdf. The checklist below is a work
 ## Current setup files
 
 - PROJECT_GUIDE.md — revision 003: working instructions and opening prompt.
-- PROJECT_STATE.md — revision 022: completed checkpoints and pending GitHub setup decisions.
-- EVIDENCE.md — revision 022: sources, scientific evidence, reproduction checks and setup findings.
-- AI_USE_LOG.md — revision 022: implementation, documentation/setup assistance and outstanding student contribution review.
+- PROJECT_STATE.md — revision 023: completed checkpoints and student-led GitHub upload instructions.
+- EVIDENCE.md — revision 023: sources, scientific/reproduction evidence and checked Git/account guidance.
+- AI_USE_LOG.md — revision 023: implementation, documentation/teaching assistance and outstanding student contribution review.
 - HANDOFF.md — revision 001: new-chat reading instructions, scope, completion criteria and copyable prompt; does not grant coding permission.
 
 These local files are in Project_Setup under the existing MMA3001 notebook folder. Uploaded copies must be refreshed when their authoritative local versions change.
@@ -441,4 +451,4 @@ These local files are in Project_Setup under the existing MMA3001 notebook folde
 
 1. Review PHYSICS_REVIEW and RUNTIME_GUIDE with the student: lower A_post can coexist with longer settling; fast peak prediction does not supply post-bump dynamics; warm query time excludes preparation. Student understanding/reproduction remain unassessed.
 2. Review REPOSITORY_REVIEW and REPRODUCING: local readiness review is complete; licence/identity choices, course-source prerequisites and Windows/build limitations remain relevant to eventual submission.
-3. Complete the pending PUBLICATION_SETUP choices (licence, name/email and visibility), then use the connected account for the agreed repository setup. Preserve course exclusions and AI attribution; verify assessor access and a real clone before final ZIP packaging. Do not restart fitting, reuse the consumed test for selection, draft the assessed report or plan presentation dates as an automatic follow-on.
+3. Follow GITHUB_SELF_UPLOAD_GUIDE: student verifies the school-linked account, adds the existing repository to Desktop, chooses licence/name/email/visibility and performs publication themselves. Preserve exclusions and AI attribution; verify assessor access and a real clone before ZIP packaging. No automatic upload, renewed fitting, consumed-test tuning, report drafting or presentation planning.
