@@ -1,6 +1,20 @@
 # MMA3001 evidence register
 
-Revision: 023 | Updated: 2026-10-07 | Status: checked beginner Git and self-upload guidance recorded
+Revision: 024 | Updated: 2026-10-11 | Status: student upload and remote/local agreement verified
+
+## First GitHub upload verification, 2026-10-11
+
+U020 / D017 - Student completed the guided Desktop steps, reported saving author settings and supplied https://github.com/weehaosiah/MMA3001-suspension-modelling after publishing. The student performed the upload; the assistant checked it without changing the remote. Do not infer independent command-line proficiency, exact author settings, email verification or permission to push later edits.
+
+R013 - Read guide003, the current sections of state/evidence/AI023, historical handoff001 and publication note002. The course-audit assistant independently reviewed the outstanding publication requirements against these records. No new numerical/course method was adapted, notebook executed or fresh brief reread claimed. Existing brief p8 audit R012 remains the assessment basis. Official Desktop installation, authentication, add-local-repository, local author configuration and publication pages in S015 were revisited during the guided workflow; the [email-verification page](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/verifying-your-email-address) was also checked. No live Desktop screen was inspected; the student's screen descriptions guided the instructions. Redirected the new-repository form to Add local repository to preserve the existing history.
+
+M021 - Read-only check on 11 October 2026, approximately 16:26 Sydney. Local Git status was clean on main tracking origin/main; origin is https://github.com/weehaosiah/MMA3001-suspension-modelling.git. Authenticated GitHub repository metadata confirms owner weehaosiah, visibility private and default branch main. The remote branch head and local HEAD both equal 73b1a02fd8f5bc2006a1ab481cf2a1cd348772f4 (Explain Git workflow and student-led GitHub upload); their tree is 3997151f7fb4c4459def8adb316b462875e90387.
+
+Fetched the recursive Git tree at that immutable tree identifier and compared it with local git ls-tree -r HEAD: 136 blobs on each side, zero missing/extra paths, zero blob-identifier/mode mismatches, remote tree not truncated. Root entries are .gitattributes, .gitignore, Project_Setup, README.md and Suspension_Model. Queried commits on main with per_page=100: all 10 returned commit identifiers match the 10 local git log entries in order. No root MMA3001_*.pdf / MMA3001_*.ipynb source or LICENSE/LICENCE/COPYING file appears in the tracked tree. GitHub's aggregate size field reported zero despite the confirmed tree; that field was not used as content evidence.
+
+Remote evidence endpoints: [repository](https://github.com/weehaosiah/MMA3001-suspension-modelling), [verified commit](https://github.com/weehaosiah/MMA3001-suspension-modelling/commit/73b1a02fd8f5bc2006a1ab481cf2a1cd348772f4), GitHub REST branches/main, git/trees/3997151f7fb4c4459def8adb316b462875e90387?recursive=1 and commits?sha=main&per_page=100. API access was authenticated as the connected user; it does not establish access for a marker or anonymous visitor. Matching Git objects establishes the uploaded tracked snapshot/history, not a fresh clone, clean-environment reproduction or rerun of scientific tests.
+
+Licence choice, assessor access, verified/primary school-email state and final clone ZIP/report/Moodle submission remain unresolved. The account's previously observed student.monash.edu association is not upgraded to verified-email evidence. No raw personal email or credential is recorded. New revision024 records/publication003 are local, uncommitted documentation following this check; no assistant commit or push is claimed.
 
 ## Student-led upload explanation, 2026-10-07
 

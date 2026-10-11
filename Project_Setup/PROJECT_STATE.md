@@ -1,6 +1,6 @@
 # MMA3001 project state
 
-Revision: 023 | Updated: 2026-10-07 | Status: student self-upload guide prepared; publication pending
+Revision: 024 | Updated: 2026-10-11 | Status: student GitHub upload verified; submission preparation remains
 
 ## Current stage
 
@@ -8,9 +8,21 @@ The nominal simulation, bounded nine-pilot verification, 400-setup dataset, ML d
 
 The subsequent physical interpretation and runtime-planning stage is complete. The student then authorised implementing P009; its bounded warm-query benchmark is now complete. It repeats nine existing setups with fixed numerical settings and frozen models, without adding training data, fitting models or re-evaluating the final test.
 
-D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. D004 later authorised bounded verification, D006 dataset generation, D008 the ML development comparison and D010 final refitting/evaluation. Assessed report writing and GitHub publication remain outside this completed stage. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
+D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. D004 later authorised bounded verification, D006 dataset generation, D008 the ML development comparison and D010 final refitting/evaluation. Assessed report writing remains outside this completed scientific stage. The student's subsequent GitHub upload is verified below. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
 
-Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D016 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D017 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+
+## Student upload verified, 2026-10-11
+
+D017 / U020 - The student followed the Desktop guidance, confirmed the existing history appeared, reported saving their local author settings, and supplied [their repository](https://github.com/weehaosiah/MMA3001-suspension-modelling) after publishing it themselves. The assistant performed read-only remote verification. Student control of future commits/uploads remains in force; this is not permission for automatic publication of new local edits.
+
+At the check, local main was clean and origin pointed to that repository. GitHub confirms owner weehaosiah, private visibility and default branch main. Both copies point to commit 73b1a02fd8f5bc2006a1ab481cf2a1cd348772f4, tree 3997151f7fb4c4459def8adb316b462875e90387. All 136 tracked file paths, Git blob identifiers and modes match, and all 10 commit identifiers match in order. README.md, Project_Setup, Suspension_Model, .gitignore and .gitattributes are present. No root course PDF/notebook or licence file is tracked. See EVIDENCE M021 for the method and limits.
+
+Read guide003 and records023; these newer working records supersede the opening prompt's historical revision013 state. No missing required setup record or conflicting newer record was found. Publication-pending summaries are corrected here and in PUBLICATION_SETUP revision003; historical entries remain preserved. No scientific source, result, dataset, model or test status changed, and no numerical check was rerun.
+
+Remaining: select a licence; confirm school-email verification in GitHub settings; arrange and verify assessor access to the private repository; complete student understanding/AI-contribution review; obtain authorisation before report writing; prepare the final clone ZIP/Moodle submission when the work is complete. Saving author settings is student-reported, not an independent inspection of those settings or email verification. No final clone or submission is claimed. Deadline remains 23 October 2026 at 23:59 Sydney; presentation-date planning stays deferred.
+
+These revision024 records and the publication-note update are saved locally after the verified upload and intentionally left for the student to review, commit and push as a practical exercise. The confirmed remote checkpoint remains 73b1a02 until a subsequent push is verified.
 
 ## Student-led GitHub upload learning, 2026-10-07
 

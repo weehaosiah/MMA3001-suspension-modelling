@@ -1,12 +1,13 @@
 # GitHub setup decisions
 
-Revision: 002 | Updated: 2026-10-07 | Status: student-led upload guide prepared; choices pending
+Revision: 003 | Updated: 2026-10-11 | Status: student upload verified; licence and final access checks pending
 
 The student authorised continuing after the repository review, then requested an
 explanation of licence alternatives before choosing. No licence has been selected
-or added. Project display name, preferred commit email and visibility remain open.
-The connected account is known; its verified/primary school-email status still
-needs checking in account settings.
+or added. The student has now published the project privately and reported saving
+their local author settings. The exact chosen author details were not independently
+inspected. Verified/primary school-email status still needs checking in account
+settings.
 
 The student now wants to understand Git and upload independently. Follow
 [GITHUB_SELF_UPLOAD_GUIDE.md](GITHUB_SELF_UPLOAD_GUIDE.md) using the required
@@ -14,25 +15,32 @@ school-linked account. No automatic upload or identity change is implied by this
 teaching task. The connected profile reports a Monash student email but does not
 expose verified/primary flags.
 
-## Prepared repository details
+## Current repository details
 
-| Setting | Proposed value / current status |
+| Setting | Verified value / current status |
 |---|---|
-| Repository name | `mma3001-suspension-modelling` — proposed |
-| Description | MMA3001 quarter-car suspension simulation, numerical verification and machine-learning comparison for full-response peak suspension travel. |
-| Owner/account | Authenticated GitHub account confirmed as `weehaosiah`; proposed owner |
-| Visibility | Awaiting choice: private initially with assessor access, or public |
+| Repository name | `MMA3001-suspension-modelling` |
+| Repository URL | https://github.com/weehaosiah/MMA3001-suspension-modelling |
+| Description | Suggested during guidance: MMA3001 quarter-car suspension modelling and machine-learning comparison. Actual remote description not independently checked. |
+| Owner/account | `weehaosiah`, confirmed by remote metadata |
+| Visibility | Private, confirmed; assessor access still needs verification |
 | Licence | Awaiting choice after the comparison below |
-| Git name / email | Awaiting the student's chosen name and exact account-associated email; GitHub noreply is available |
-| Existing local checkpoint | `82bda94`, clean at the start of this setup stage |
-| Connection | GitHub plugin was initially absent, then installed during this turn; authenticated profile read confirms the connection. GitHub CLI not found on PATH. No remote configured. |
+| Git name / email | Student reports local settings saved; exact values not inspected or recorded |
+| Verified uploaded checkpoint | `73b1a02fd8f5bc2006a1ab481cf2a1cd348772f4`, default branch `main` |
+| Connection | Authenticated remote reads succeed; local origin points to the repository URL with `.git` suffix |
 
-At the starting checkpoint there are 134 tracked files totalling 10,443,724 bytes
+On 11 October 2026, all 136 tracked file entries (path, blob identifier and mode)
+and all 10 commit identifiers matched between local Git and GitHub. Local status
+was clean before this record update. Course originals remain excluded. The student
+performed the upload; the assistant made read-only remote checks. These new record
+edits are local and require the student's next commit and push. See EVIDENCE M021.
+
+At the historical starting checkpoint 82bda94 there were 134 tracked files totalling 10,443,724 bytes
 and eight local commits. No course PDF/notebook or licence file is tracked.
 This inventory predates this setup note and its record updates. It is not a
 publication or a new scientific verification result.
 
-Publishing the existing repository would include authored source, data/results,
+The uploaded repository includes authored source, data/results,
 documentation, project/AI-use records and Git history. Some preserved environment
 records contain the original local Windows paths. Course originals and temporary
 working copies stay excluded. Licence scope must not imply ownership or relicensing
@@ -72,8 +80,8 @@ Public means anyone on the internet can view the repository. Private limits acce
 to authorised people; access must be arranged for assessors. Source:
 [GitHub repository visibility](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories).
 
-Once the choices and account access are available, add the chosen licence/identity,
-create the agreed repository, upload the reviewed local history, verify access and
-clone it for the submission ZIP. Those actions have not occurred. The final ZIP
+Next, select and add the project licence, verify school-account and assessor access,
+and later clone the final uploaded revision for the submission ZIP. Initial upload
+is complete; licence selection, access verification and final packaging remain. The final ZIP
 must not be described as a clone of GitHub until a real remote clone exists.
 No report drafting, new fitting or experiments are part of this setup stage.

@@ -1,6 +1,15 @@
 # MMA3001 AI-use log
 
-Revision: 023 | Updated: 2026-10-07 | Status: beginner Git teaching and self-upload instructions recorded
+Revision: 024 | Updated: 2026-10-11 | Status: guided student upload and read-only verification recorded
+
+## Guiding and verifying the student's first upload, 2026-10-11
+
+- Student actions: followed the stepwise Desktop instructions, confirmed the existing commits appeared, reported saving local author settings, published the repository and supplied its URL. The remote check confirms the upload. These actions do not establish independent understanding of every Git concept, exact identity settings or school-email verification.
+- Material AI assistance/reason: explained how to open the existing repository, configure future commit attribution and publish with a private/public choice; corrected the detour into the new-repository form; explained local history versus uploading. AI provided beginner guidance and checked whether the published work matches the recorded checkpoint.
+- Tools/sources: main assistant, read-only course/record-review assistant, local Git, authenticated GitHub metadata/tree/commit APIs, current official Desktop/account pages in R013/S015, guide003, records023 and publication002. No Desktop UI was operated by the assistant. No credentials were requested or included in records; exact serving model identifier is unverified.
+- Actual checks: private repository weehaosiah/MMA3001-suspension-modelling has default main and head 73b1a02fd8f5bc2006a1ab481cf2a1cd348772f4. Its complete 136-file Git tree and ordered 10-commit history match local Git, with zero file-object/mode/path differences. Local status was clean before recording the check, and origin is configured to the student's URL. No course original or licence file is tracked. Detailed method and limitations are in M021.
+- Boundaries/uncertainties: no assistant upload, remote mutation, identity change, licence selection, final clone ZIP, report draft, scientific calculation or test rerun. Private marker access and school-email verification remain unchecked. Student upload progress is now demonstrated through interaction and remote evidence; independent reproduction/explanation and overall AI contribution remain unassessed. No percentage invented.
+- Saved artifacts: state/evidence/AI revision024 and PUBLICATION_SETUP revision003, correcting current publication-pending summaries while retaining historical records. These are AI-drafted working records, left locally for the student to review, commit and push. A future student-authored commit of these files must not be described as student authorship of the AI-drafted text. Existing AI-attributed history is preserved. Submission remains 23 October 2026 at 23:59 Sydney; presentation planning stays deferred.
 
 ## Teaching Git and independent upload, 2026-10-07
 
