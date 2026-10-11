@@ -35,9 +35,19 @@ the experiments. No assessed report has been written.
 Submission deadline supplied by the student: **23 October 2026, 23:59 Australia/Sydney**.
 Presentation-date planning remains deferred.
 
-Git history is local; a commit saves a version on this computer. GitHub hosting
-would be a separate upload. No remote or licence is configured, and existing
-AI-created commits identify the assistant. Licence choice, student Git identity,
-accessible GitHub hosting and the final submission ZIP remain outstanding.
+The student has published the project to the private
+[GitHub repository](https://github.com/weehaosiah/MMA3001-suspension-modelling).
+On 11 October 2026, local and remote main matched at `db15329`; existing
+AI-created commits retain their attribution. A commit saves a local checkpoint;
+a push uploads it. Verified assessor access, the final report and clone ZIP remain
+outstanding. See the [brief reconciliation and submission checklist](Project_Setup/SUBMISSION_CHECKLIST.md)
+for requirements, current evidence and the remaining steps.
+
+The project's original software and associated authored documentation are licensed
+under the [MIT licence](LICENSE), selected by the student on 11 October 2026.
+The notice uses the student's configured Git author name, `weehaosiah`. Course
+originals, cited external material and third-party dependencies retain their own
+terms; this licence does not relicense them. AI assistance remains disclosed in
+the project records.
 Current decisions, source evidence and material AI assistance are recorded in
 [Project_Setup](Project_Setup/PROJECT_STATE.md).

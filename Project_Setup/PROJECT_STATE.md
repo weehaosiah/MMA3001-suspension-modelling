@@ -1,6 +1,6 @@
 # MMA3001 project state
 
-Revision: 024 | Updated: 2026-10-11 | Status: student GitHub upload verified; submission preparation remains
+Revision: 026 | Updated: 2026-10-11 | Status: MIT prepared; school email student-confirmed; verification clone awaits Desktop
 
 ## Current stage
 
@@ -10,7 +10,33 @@ The subsequent physical interpretation and runtime-planning stage is complete. T
 
 D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. D004 later authorised bounded verification, D006 dataset generation, D008 the ML development comparison and D010 final refitting/evaluation. Assessed report writing remains outside this completed scientific stage. The student's subsequent GitHub upload is verified below. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
 
-Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D017 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D019 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+
+## Licence and account confirmation, 2026-10-11
+
+D019 / U022 - Student authorised continuing the reconfirmed process, explicitly selected MIT, and confirmed the school email is verified. The student was unsure which name belongs in the copyright notice. Read the existing repository-local Git author name as weehaosiah and used that configured public identifier in the standard notice: Copyright (c) 2026 weehaosiah. This is the assistant's explained implementation choice, not a guessed full/legal name. Exact email was not read or recorded; verified status is student-confirmed rather than independently exposed by the tool.
+
+Added root LICENSE and linked it from README, applying it to original project software and associated authored documentation. Course originals, cited external material and third-party dependencies retain their own terms; AI attribution remains preserved. Updated publication005, upload-guide003 and checklist002 to reflect the accepted choice and account confirmation. These files, the preceding audit edits and records026 remain local awaiting student review/commit/push; no assistant upload or Git identity change occurred.
+
+Attempted a separate real GitHub clone into ignored tmp/github_clone_check_20261011 for saved-result verification. The restricted attempt failed with getaddrinfo thread failure; the permitted-network retry reached authentication but could not prompt non-interactively. Both returned exit128; no clone directory remains. No audit was run and no remote content changed. The student's signed-in GitHub Desktop can be used for the next clone attempt. Do not substitute a local archive and call it a GitHub clone.
+
+The safe later checks are interpretation_v1/review_saved.py, final_evaluation.py audit and runtime_benchmark.py audit, using the existing Anaconda interpreter with -B in the separate clone. Independent static review confirms those modes read/hash saved artifacts and recompute summaries without simulation, fitting, prediction, timing or pytest. Run interpretation with tracked files alone, then restore the four exact authorised course originals for strict final/runtime audits; keep that source-restored verification copy separate from the final ZIP clone.
+
+Next: student reviews/commits/pushes the licence and documentation, then creates the verification copy through Desktop. Assessor access, Moodle/Unit Overview details, profiling, final reproduction, report/AI reflection and final packaging remain. No simulations, data generation, ML calls, profiler, full tests or report writing occurred. Deadline remains 23 October 2026 at 23:59 Sydney, and presentation-date planning stays deferred.
+
+## Full brief reconciliation, 2026-10-11
+
+D018 / U021 - Student requested checking the project brief again and reconfirming all steps before choosing a licence. Reread the entire original 15-page brief and compared its requirements with the current repository and prior guidance. Saved SUBMISSION_CHECKLIST.md as an administrative requirements audit, not assessed report prose. No licence choice or permission for report writing/new scientific work is inferred.
+
+The student's follow-up commit/push is now verified: local and GitHub main both point to db1532988a5d5c1409431318367316d45befd28b (Record verified first GitHub upload), tree 8253661c7392d87c51f2a492c3c2a0597cff0ba6. It follows the previously checked 73b1a02 and changes only four setup records. Starting status was clean, with 136 tracked files and 11 commits; private visibility remains. This supersedes revision024's pending-commit wording, without rewriting its historical check.
+
+Confirmed p8 deliverables: README, HTML source documentation, licensing agreement, functional main with comments/docstrings, test functions/report, accessible GitHub link, individual written report and zipped clone through Moodle. Aim for 5-10 main report pages; explicit maximum 10 excludes references/appendices. MIT, public visibility, Desktop, a public HTML website and a specific report typesetting package are not mandated. School-email use remains the student's instruction. Keeping .git inside the clone ZIP is labelled as history-preservation advice, not a separate explicit brief rule.
+
+Existing source, numerical/ML results, 17 HTML pages, ten test modules, seven stage check reports and the saved 433-pass log are present. This is an inventory/requirements review, not fresh proof of every rubric criterion. A licence and assessed report are absent; final student-reviewed AI reflection, verified school-email/assessor access, final-clone reproduction/ZIP and Moodle submission remain unfinished. Page6 explicitly recommends profilers and timing routines; timing exists but no profiler study is recorded, so that recommendation remains to address or clarify. Existing reproduction evidence is same-environment relocation with required course originals restored, not a clean installation or remote clone.
+
+Corrected stale root README/upload-guide publication statements, marked the 5 October repository-review actions historical, updated publication status and saved the ordered checklist. Unit Overview Spreadsheet, current Moodle form and separate teaching clarifications were not found among visible project files; retain the student-supplied deadline 23 October 2026 at 23:59 Sydney without claiming the PDF confirms that date. Topic approval remains user-reported. Presentation requirement remains; date planning is deferred.
+
+Records025, publication004, upload-guide002, repository-review002, README corrections and checklist001 are saved locally, awaiting student review/commit/push. No remote, collaborator, visibility, identity or licence changed; no simulation, new data, ML fit/prediction, profiler run, full test suite or report writing occurred. The verified online checkpoint remains db15329 until a later push is checked.
 
 ## Student upload verified, 2026-10-11
 

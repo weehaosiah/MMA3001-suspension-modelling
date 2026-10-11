@@ -1,6 +1,13 @@
 # Local repository readiness review
 
-Revision: 001 | Checked: 2026-10-05 | Scope: local documentation and reproducibility
+Revision: 002 | Scientific checks: 2026-10-05 | Status note updated: 2026-10-11
+
+This document preserves the 5 October local review and its actual results. The
+student subsequently uploaded the repository and a record update; local/remote
+main were verified at db15329 on 11 October. Historical outstanding items below
+are not all current. Use [SUBMISSION_CHECKLIST.md](SUBMISSION_CHECKLIST.md) for the
+reconfirmed requirements and remaining work. No scientific check was rerun for
+this status update.
 
 The local review is complete. Saved scientific results pass their existing audits
 in a relocated Windows copy after restoring the documented local course files.
@@ -89,7 +96,7 @@ relative-link checks; it does not install pdoc or execute course examples/videos
 Exact source fingerprints and assistance are in [EVIDENCE.md](EVIDENCE.md) and
 [AI_USE_LOG.md](AI_USE_LOG.md).
 
-## Remaining decisions and limitations
+## Decisions and limitations recorded on 5 October 2026
 
 1. Review the physical/code walkthrough and saved results with the student.
    Independent understanding and an honest approximate AI contribution remain

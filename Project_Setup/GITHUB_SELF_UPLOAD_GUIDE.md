@@ -1,8 +1,8 @@
 # Upload this project yourself with GitHub Desktop
 
-Revision: 001 | Prepared: 7 October 2026 | Windows instructions
+Revision: 003 | Updated: 11 October 2026 | Windows instructions
 
-These instructions explain a future upload by you. No repository, remote connection or upload was created by the assistant in this stage. At the start, local checkpoint `bdc41de` was clean and had no remote. Later documentation commits may appear after it. The Desktop interface has not been inspected or tested on this laptop; the steps follow current official documentation.
+You have now completed the first upload and one follow-up commit/push. On 11 October 2026, local and GitHub main matched at `db15329` in the private repository `weehaosiah/MMA3001-suspension-modelling`. Steps 1-5 below are retained as a reference; do not create another repository or repeat publication. Step 6 is the ongoing update workflow, and step 7 is later final packaging. The assistant has not operated or visually inspected Desktop on this laptop; your actions and read-only GitHub checks establish the upload. See [SUBMISSION_CHECKLIST.md](SUBMISSION_CHECKLIST.md) for the full brief reconciliation.
 
 ## What the words mean
 
@@ -49,7 +49,7 @@ You do not need one for this direct upload to your own `main` branch.
 
 ## 1. Check your school-email account
 
-The connected account is `weehaosiah`; its reported email uses the Monash student domain. That does not confirm whether the address is verified or primary. Your school-email instruction is recorded as your requirement; the reviewed brief does not specify it.
+The connected account is `weehaosiah`; its reported email uses the Monash student domain. On 11 October 2026 you confirmed the school email is verified. That confirmation is recorded as your report; the tool does not expose verified/primary flags. Your school-email instruction is your requirement; the reviewed brief does not specify it. The steps below remain a reference if you need to check or change account settings later.
 
 On GitHub.com, open your profile picture → **Settings → Emails**. Check that your school address is present and verified; use the verification message if needed. Check the primary-address setting too. You can associate a school address with the existing account rather than create another account. Account email and the email attached to local commits are separate settings. [Official email instructions](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/adding-an-email-address-to-your-github-account).
 
@@ -79,7 +79,7 @@ Check Desktop's **History** tab for the existing checkpoints. In **Changes**, in
 
 Expected tracked content includes the root README, `Project_Setup`, and `Suspension_Model` code, tests, saved data/results and documentation. Keep `.gitignore` and `.gitattributes`: they exclude course originals/caches and preserve file bytes needed by recorded checks. Original course PDFs/notebooks and temporary copies must remain excluded. Some preserved environment records contain local Windows paths.
 
-A licence is still undecided. Review [PUBLICATION_SETUP.md](PUBLICATION_SETUP.md) before selecting one; neither MIT nor public visibility has been adopted. You may choose a private work-in-progress upload while deciding, but the final submission still needs its required licensing agreement and assessor access.
+You selected MIT and confirmed the school email is verified on 11 October 2026. The [licence](../LICENSE) is prepared locally using your configured author name `weehaosiah`; review, commit and push it with the documentation updates. The repository remains private, and assessor access still needs checking. Details are in [PUBLICATION_SETUP.md](PUBLICATION_SETUP.md).
 
 ## 5. Publish the existing history
 
@@ -92,7 +92,7 @@ Click **Publish repository**. Review these fields:
 | Keep this code private | Checked means private; unchecked means public. Choose deliberately. |
 | Organization | `None` publishes to your personal account. |
 
-Confirm the account, then click **Publish Repository**. This is the step that creates the online repository and uploads the committed history. No remote-removal step is needed in the currently recorded state because none exists. [Official publishing instructions](https://docs.github.com/en/desktop/adding-and-cloning-repositories/adding-an-existing-project-to-github-using-github-desktop).
+For a first upload, confirm the account, then click **Publish Repository**. This creates the online repository and uploads the committed history. Your first upload is now complete and origin is configured; do not remove that connection to repeat this step. [Official publishing instructions](https://docs.github.com/en/desktop/adding-and-cloning-repositories/adding-an-existing-project-to-github-using-github-desktop).
 
 Open the resulting repository on GitHub.com. Verify its owner, visibility, expected folders and latest commit against Desktop's History. Save the actual URL. A private URL alone grants no access: arrange assessor access and verify it before submission. A public repository can be checked while signed out.
 
@@ -108,8 +108,8 @@ The brief requires an accessible GitHub repository, and separately the written r
 
 After the final push, choose **File → Clone repository** in Desktop. Select your uploaded repository or paste its actual URL, then choose a **new, separate folder**, for example `C:\Users\dedvu\Documents\MMA3001_submission_clone`. Never clone over the original workspace. [Official cloning instructions](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop).
 
-Check the clone's files and History against the final online commit. In Windows File Explorer, right-click the cloned folder and choose **Compress to ZIP file** (or **Send to → Compressed (zipped) folder**, depending on Windows). Keep the hidden `.git` folder inside the archive and inspect the ZIP to confirm it is present; enable hidden items when inspecting the clone. GitHub's ordinary **Download ZIP** is a file snapshot without the complete history, so it is different from zipping your clone. [Official archive explanation](https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives).
+Check the clone's files and History against the final online commit. In Windows File Explorer, right-click the cloned folder and choose **Compress to ZIP file** (or **Send to → Compressed (zipped) folder**, depending on Windows). We recommend keeping the hidden `.git` folder inside the archive to preserve history, and inspecting the ZIP to confirm it is present; enable hidden items when inspecting the clone. The brief requires a zipped clone but does not separately name `.git`; retaining it is our packaging recommendation, subject to any later Moodle instructions. GitHub's ordinary **Download ZIP** is a file snapshot without the complete history, so it is different from zipping your clone. [Official archive explanation](https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives).
 
 Do not ZIP the mixed OneDrive workspace: `.gitignore` does not filter a manually created ZIP. Keep course originals out of the submission clone. Strict audits require separately obtained course sources and the recorded environment; read [REPRODUCING.md](../Suspension_Model/REPRODUCING.md) before attempting them. The existing checks do not establish a fresh installation or universal portability.
 
-These instructions were checked against official GitHub documentation on 7 October 2026. They are guidance, not evidence that installation, login, publication, cloning or submission has happened. The deadline remains **23 October 2026 at 23:59 Sydney time**.
+The initial instructions were checked against official GitHub documentation on 7 October 2026; relevant pages were revisited during the guided upload and 11 October brief audit. Publication and one follow-up push are verified; final cloning, ZIP creation and submission are not. The deadline remains the student's supplied **23 October 2026 at 23:59 Sydney time**; the brief refers to the Unit Overview Spreadsheet for dates.
