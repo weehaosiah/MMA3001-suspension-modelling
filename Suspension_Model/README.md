@@ -42,6 +42,9 @@ At the final-evaluation checkpoint, all 385 tests passed. The saved-result audit
 refitting or reopening the original test responses. The test set has now been
 used; it cannot serve as a fresh independent test for changes chosen after seeing
 these scores. Original development models and data remain preserved.
+The README in the saved test folder is a fingerprinted generation-stage record;
+its earlier unevaluated status is superseded by the
+[dated final-test clarification](DATASET.md#final-test-status-on-25-october-2026).
 
 ## ML development stage
 

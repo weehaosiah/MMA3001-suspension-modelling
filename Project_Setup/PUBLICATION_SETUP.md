@@ -1,11 +1,13 @@
 # GitHub setup decisions
 
-Revision: 007 | Updated: 2026-10-25 | Status: Remote checkpoint reverified; final local work awaits student upload
+Revision: 008 | Updated: 2026-10-25 | Status: Public1385cf6 verified; later wording corrections follow the update workflow
 
-Fresh authenticated reads on25 October confirm private repository and main at
-8ba9808f10dcdc84330135870d8b7f92c189f0a8, matching local HEAD. The completed report,
-later profiling supplement and updated records remain local changes awaiting
-student commit/push. No remote setting, access, identity or licence was changed.
+Fresh authenticated reads on25 October confirm public repository and main at
+1385cf6813dc091454353a135029cddc57485a27, matching local HEAD. That revision includes
+the report, profiling supplement and047 records; a clean anonymous clone and
+its ZIP passed verification. Later wording corrections use the normal student
+commit/push and replacement-package workflow. No remote setting, access,
+identity or licence was changed by the assistant.
 The supplied full name was entered in the report; the existing licence notice
 retains the previously accepted Git identifier. Use
 [FINAL_UPLOAD_CHECK.md](FINAL_UPLOAD_CHECK.md) for the current upload handoff.
@@ -16,8 +18,9 @@ repository-local Git author name `weehaosiah` in its 2026 copyright notice. The
 student was unsure which name to use; the assistant used that configured public
 identifier and explained the choice, without inventing a legal name. The email
 verification is student-confirmed; no verification flag was independently read.
-The student uploaded the licence and prior documentation as 8ba9808; that commit
-is verified on GitHub. The subsequent clone-check records are new local edits.
+The student uploaded the licence and prior documentation as8ba9808. These
+11 October actions are historical; the later1385cf6 checkpoint includes the
+subsequent clone-check and report/profiling records.
 
 The student now wants to understand Git and upload independently. Follow
 [GITHUB_SELF_UPLOAD_GUIDE.md](GITHUB_SELF_UPLOAD_GUIDE.md) using the required
@@ -34,10 +37,10 @@ not an extra requirement established by the project brief.
 | Repository URL | https://github.com/weehaosiah/MMA3001-suspension-modelling |
 | Description | Suggested during guidance: MMA3001 quarter-car suspension modelling and machine-learning comparison. Actual remote description not independently checked. |
 | Owner/account | `weehaosiah`, confirmed by remote metadata |
-| Visibility | Private, confirmed; assessor access still needs verification |
+| Visibility | Public, confirmed25 October; a clone with credential helpers disabled succeeds |
 | Licence | MIT selected and uploaded; root LICENSE present in the verified clone |
 | Git name / email | Local author name read as `weehaosiah`; exact commit email not read or recorded. Student confirms school email verified. |
-| Verified uploaded checkpoint | `8ba9808f10dcdc84330135870d8b7f92c189f0a8`, default branch `main` |
+| Verified uploaded checkpoint | `1385cf6813dc091454353a135029cddc57485a27`, default branch `main`; later local corrections are verified after their own push |
 | Connection | Authenticated remote reads succeed; local origin points to the repository URL with `.git` suffix |
 
 At the first-upload check on 11 October 2026, all 136 tracked file entries (path, blob identifier and mode)
@@ -93,12 +96,10 @@ Public means anyone on the internet can view the repository. Private limits acce
 to authorised people; access must be arranged for assessors. Source:
 [GitHub repository visibility](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories).
 
-Next, verify assessor access and later clone the final uploaded revision for the
-submission ZIP. Initial upload, MIT publication and same-environment saved-result
-checks in a real Desktop clone are complete. See [clone results](clone_review_v1/CHECK_RESULTS.md).
-Earlier command-line clone attempts failed, but the student's Desktop clone
-succeeded. The student also reported a second local clone; it was left untouched.
-The verification copy contains four restored, ignored course originals, so final
-packaging needs a new clean clone. The final ZIP
-must not be described as a clone of GitHub until a real remote clone exists.
-No report drafting, new fitting or experiments are part of this setup stage.
+Public readability and a clean clone ZIP were verified for1385cf6 on25 October.
+After further report/documentation changes, publish the corrected revision and
+make its matching clean clone ZIP before Moodle submission. The earlier11 October
+Desktop verification copy contains restored course originals and is not a
+submission source. The student's duplicate clone is also separate from the
+original working folder. Preserve all dated scientific/clone evidence; packaging
+verification does not repeat the scientific experiments.

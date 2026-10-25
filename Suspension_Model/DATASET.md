@@ -16,6 +16,21 @@ development comparison. Reservation instructions below describe the original
 generation/development boundary. Use [REPRODUCING.md](REPRODUCING.md) for current
 saved-result checks and local course-source prerequisites.
 
+## Final-test status on 25 October 2026
+
+The 100 final-test setups were evaluated once after the model choices were
+fixed. The test is now consumed and cannot be treated as an untouched test for
+future choices based on its results. The completed evidence is in
+[FINAL_EVALUATION_GUIDE.md](FINAL_EVALUATION_GUIDE.md) and
+[final_evaluation_v1/CHECK_RESULTS.md](final_evaluation_v1/CHECK_RESULTS.md).
+
+The README inside `dataset_v1/heldout_test` preserves the earlier
+dataset-generation status. Its statement that no test predictions or performance
+have been evaluated describes that earlier stage, not the current project.
+That historical README remains unchanged because its exact bytes form part of
+the recorded dataset evidence. This clarification changes no test data, fitted
+model, metric, access marker or saved fingerprint.
+
 ## What one row means
 
 One row represents **one suspension setup**: one spring stiffness `ks_N_m` and one

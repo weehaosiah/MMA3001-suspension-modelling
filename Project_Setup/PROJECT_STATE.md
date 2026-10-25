@@ -1,6 +1,102 @@
 # MMA3001 project state
 
-Revision: 047 | Updated: 2026-10-25 | Status: Submission PDF and local upload checks ready; student commit/push next
+Revision: 050 | Updated: 2026-10-25 | Status: Status wording corrected; refreshed PDF ready for final reading and student push
+
+## Authorised documentation correction, 25 October 2026
+
+The student said proceed after the proposed status cleanup and final review.
+Read guide003/records049 and rechecked GitHub: public main remains1385cf6. Corrected
+current-facing root/report READMEs, publication/upload guidance and the checklist
+to reflect the verified public upload and the need for a matching package after
+further edits. Dated historical evidence remains intact.
+
+The heldout_test README is fingerprinted in dataset_v1/summary.json, which is
+sealed by downstream stages. Preserved it and every recorded fingerprint. Added
+a dated clarification in DATASET.md, linked from the two current READMEs: the
+100-case final test was subsequently evaluated once and is now consumed. This
+resolves the old generation-stage wording without altering saved scientific data.
+
+Updated six report paragraphs/headings on pages1/7/10: the12 October profiling
+study was published in1385cf6 on25 October; the repository label is now neutral.
+Preserved all numerical results, three native equations, six tables, all20 other
+DOCX package parts and the entire Section9 contribution/reflection. E9 retains
+the046 reflection provenance. Refreshed output/pdf/MMA3001_suspension_report.pdf.
+The report has nine main pages plus references. Changed pages pass visual review;
+pages2-6/8-9 are pixel-identical to the previous reviewed report.
+
+205 preservation paths were checked:203 are unchanged, with only the two
+unprotected current guides changed inside Suspension_Model. The protected test
+README still matches its saved hash. Results and current artifact fingerprints
+are in Project_Setup/status_review_20261025. Saved050 records, checklist021,
+publication008 and upload guide006 locally. No science run, commit/push or Moodle
+submission. The old1385cf6 package is preserved as historical evidence and does
+not include this correction. Next: final student reading, commit/push using
+Clarify final-test and publication status, then verify and prepare the new
+commit's clone ZIP. Deadline remains25 October2026 at23:59 Australia/Sydney.
+
+## Walkthrough of the actual upload, 25 October 2026
+
+The student requested another review and explanation of the upload contents.
+Read the actual sealed clone and PDF, not only current working records. ZIP
+inventory:155 Suspension_Model files,19 Project_Setup files,8 Report_Draft files,
+1 output PDF,4 root files and28 hidden Git metadata files. Explained report
+pages, simulation-to-dataset-to-ML workflow, saved outputs/models, tests/docs,
+AI/source records, reproduction prerequisites and retained history.
+
+Clarifications: the separate Moodle PDF also appears inside the clone by design;
+the400 data rows are simulated setups, not time samples or measured telemetry.
+ML predicts the full-response peak only; post-bump/settling remain diagnostics.
+Final-test responses are included as project evidence after once-only evaluation.
+The retained failed runtime attempt and initial report-building helpers are
+historical artifacts, not the completed result or a current regeneration path.
+
+Found a specific stale statement in dataset_v1/heldout_test/README.md: it says
+no test predictions/performance have been evaluated. DATASET.md and the final
+evaluation guide correctly state that the final test is consumed. Recommend a
+dated clarification without altering data or frozen evaluation evidence. Other
+private/pending-upload statements describe the pre-push047 snapshot; current
+public1385cf6 and package verification are in local048. Explained these openly.
+No claim that the student has read/understood every file or approved a correction.
+
+The sealed clone, ZIP, report and scientific files remain unchanged; PDF/ZIP
+SHA-256 fingerprints still match the verified package. Saved local049 records
+and checklist020 only. No scientific execution, new upload or Moodle submission.
+Next is continued student review and any agreed targeted documentation correction;
+if published files change, a new commit/clone/ZIP must replace the fixed package.
+
+## Published checkpoint and final archive, 25 October 2026
+
+The student reported completion of the commit/push. Fresh GitHub reads and local
+Git agree at1385cf6813dc091454353a135029cddc57485a27, with tree
+902c2b56d723fb2b66f9a012fb68d0be0ac54a66. The working tree was clean before these
+post-publication notes. GitHub now reports PUBLIC visibility; the assistant did
+not change visibility or send invitations. A fresh remote clone succeeded with
+credential helpers disabled, establishing public repository readability.
+
+The fixed submission copy is tmp/submission_clone_1385cf6. All187 tracked path,
+mode and blob identities match local Git and the GitHub tree; all13 commit IDs
+match. The clone and extracted ZIP pass Git integrity checks and are clean.
+179 working files match the original bytes; eight differ only in Git-managed
+line endings. The report PDF/DOCX and sealed scientific files retain their bytes.
+No course original, temporary render or unexpected project file is present.
+
+Prepared tmp/submission_package_1385cf6/MMA3001_project_clone_1385cf6.zip and a
+byte-identical copy of MMA3001_suspension_report.pdf alongside it. ZIP is15,632,418
+bytes and contains215 files:187 project files plus28 hidden Git metadata files.
+CRC, all member hashes, safe extraction, extracted file bytes, HEAD/tree/history
+and Git integrity checks pass. Detailed receipt: checks.json and CHECK_RESULTS.md
+in the same submission package folder. No source originals were restored into
+this clone and no scientific calculation or test suite was run.
+
+The published and packaged project retains records047/checklist018. These048
+records and checklist019 are local post-publication receipts, outside the sealed
+clone/ZIP; no further commit is needed merely to record that the fixed commit
+was verified. Earlier references to private visibility or unuploaded work are
+historical and superseded here. Assessor public readability is established;
+actual Moodle upload/submission confirmation and any field/size limits remain
+unconfirmed. Next: student submits the PDF, clone ZIP and public repository link
+as Moodle requests, then verifies final submitted status. Deadline remains
+25 October2026 at23:59 Australia/Sydney. Presentation-date planning stays deferred.
 
 ## Submission copy and final local upload preparation, 25 October 2026
 

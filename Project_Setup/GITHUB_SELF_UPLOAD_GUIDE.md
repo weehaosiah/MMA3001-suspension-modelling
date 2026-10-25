@@ -1,13 +1,14 @@
 # Upload this project yourself with GitHub Desktop
 
-Revision: 005 | Updated: 25 October 2026 | Windows instructions
+Revision: 006 | Updated: 25 October 2026 | Windows instructions
 
-Current upload checkpoint: the report's R1-R7 input prompts are complete and
-the final local report, profiling supplement and records await commit/push.
-Fresh GitHub reads on25 October still show private main at8ba9808, matching local
-HEAD. Use [FINAL_UPLOAD_CHECK.md](FINAL_UPLOAD_CHECK.md) for the current checklist
-before following Step6. The confirmed extended deadline is25 October2026 at23:59
-Australia/Sydney. Initial publication is complete; do not create another repository.
+Published checkpoint1385cf6 includes the completed report, profiling supplement
+and047 records. On25 October the repository was verified public, with a successful
+anonymous clone and checked ZIP. Later wording corrections follow Step6 and need
+a replacement clone ZIP for their new commit. Use
+[FINAL_UPLOAD_CHECK.md](FINAL_UPLOAD_CHECK.md) for the current checklist. The
+confirmed extended deadline is25 October2026 at23:59 Australia/Sydney.
+Publication is already complete; do not create another repository.
 
 You have now uploaded the MIT licence/records and created a verification clone through Desktop. On 11 October 2026, original workspace, GitHub main and the selected clone matched at `8ba9808` in the private repository `weehaosiah/MMA3001-suspension-modelling`. Its saved-output checks pass; see [clone results](clone_review_v1/CHECK_RESULTS.md). The extra default-directory clone you reported is untouched. Steps 1-5 below remain a reference; do not create another repository or repeat publication. Step 6 is the ongoing update workflow, and step 7 is later final packaging. Keep ongoing edits in the original project folder. The assistant has not operated or visually inspected Desktop; your actions and read-only checks establish the upload/clone. See [SUBMISSION_CHECKLIST.md](SUBMISSION_CHECKLIST.md) for requirements.
 
@@ -86,7 +87,7 @@ Check Desktop's **History** tab for the existing checkpoints. In **Changes**, in
 
 Expected tracked content includes the root README, `Project_Setup`, and `Suspension_Model` code, tests, saved data/results and documentation. Keep `.gitignore` and `.gitattributes`: they exclude course originals/caches and preserve file bytes needed by recorded checks. Original course PDFs/notebooks and temporary copies must remain excluded. Some preserved environment records contain local Windows paths.
 
-You selected MIT and confirmed the school email is verified on 11 October 2026. The [licence](../LICENSE), using your configured author name `weehaosiah`, is uploaded and verified. The repository remains private, and assessor access still needs checking. Details are in [PUBLICATION_SETUP.md](PUBLICATION_SETUP.md).
+You selected MIT and confirmed the school email is verified on 11 October 2026. The [licence](../LICENSE), using your configured author name `weehaosiah`, is uploaded and verified. The repository is now public, with anonymous clone access verified on25 October. Details are in [PUBLICATION_SETUP.md](PUBLICATION_SETUP.md).
 
 ## 5. Publish the existing history
 
@@ -119,4 +120,4 @@ Check the clone's files and History against the final online commit. In Windows 
 
 Do not ZIP the mixed OneDrive workspace: `.gitignore` does not filter a manually created ZIP. Keep course originals out of the submission clone. Strict audits require separately obtained course sources and the recorded environment; read [REPRODUCING.md](../Suspension_Model/REPRODUCING.md) before attempting them. The existing checks do not establish a fresh installation or universal portability.
 
-The initial instructions were checked against official GitHub documentation on 7 October 2026; relevant pages were revisited during guided upload/cloning and the 11 October brief audit. Commit, syncing and cloning pages were rechecked on25 October. Publication, MIT upload and a verification clone are confirmed. That verification copy now contains four restored, ignored course sources; do not ZIP it for submission. The final clean clone, ZIP and submission remain future work. The deadline is the student's confirmed extension: **25 October 2026 at 23:59 Australia/Sydney**; the brief refers to the Unit Overview Spreadsheet for dates.
+The initial instructions were checked against official GitHub documentation on 7 October 2026; relevant pages were revisited during guided upload/cloning and the 11 October brief audit. Commit, syncing and cloning pages were rechecked on25 October. Publication and MIT upload are confirmed. The old verification copy contains restored course sources and must not be zipped for submission. A new clean clone ZIP of1385cf6 was checked on25 October; later corrections require a replacement package for the corrected commit. Moodle submission remains unconfirmed. The deadline is the student's confirmed extension: **25 October 2026 at 23:59 Australia/Sydney**; the brief refers to the Unit Overview Spreadsheet for dates.

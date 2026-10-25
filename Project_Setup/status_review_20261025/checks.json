@@ -1,0 +1,54 @@
+{
+  "before_docx_sha256": "8c9df0aa7924a8f5b50d6bd374f6e6913e214101412b78ee4cc65206d972c239",
+  "docx_sha256": "9e253d0aa3ee89e0757c29974e243d8b2a8bc4bd41330ae5ca1030ca2dcb6ecb",
+  "changed_paragraphs": 6,
+  "other_package_parts_unchanged": 20,
+  "native_equations_unchanged": 3,
+  "scientific_tables_unchanged": 6,
+  "student_AI_reflection_unchanged": true,
+  "pdf_sha256": "0c5f3158ed3c295224c7f8f6af017ae7a16c51d7d65bae0da30f074008b4ab0a",
+  "pdf_pages": 10,
+  "main_pages": 9,
+  "reference_pages": 1,
+  "pixel_identical_pages": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+  ],
+  "changed_pages": [
+    1,
+    7,
+    10
+  ],
+  "preservation_paths_checked": 205,
+  "preserved_paths": 203,
+  "changed_unprotected_guides": [
+    "Suspension_Model/DATASET.md",
+    "Suspension_Model/README.md"
+  ],
+  "protected_test_readme_hash_matches_saved_manifest": true,
+  "docx_unchanged_by_export": true,
+  "visual_review": {
+    "root": [
+      1,
+      7,
+      10
+    ],
+    "independent_page10_review": "Chronology/layout checked; earliest-publication wording narrowed and final repaired page reinspected by root.",
+    "unchanged_pages": "Seven pages match previously visually reviewed images pixel for pixel.",
+    "result": "pass"
+  },
+  "original_1385cf6_package_unchanged": true,
+  "protected_test_readme_sha256": "9f1551891b8050c33f139dfb0600502a92768a2169c1c21d21ad43c025116720",
+  "review_base_commit": "1385cf6813dc091454353a135029cddc57485a27",
+  "remote_publication_of_correction": "pending student push",
+  "scientific_execution": false,
+  "current_markdown_local_links_checked": 87,
+  "markdown_link_anchor_whitespace_checks": "pass",
+  "records_revision": "050",
+  "checklist_revision": "021"
+}

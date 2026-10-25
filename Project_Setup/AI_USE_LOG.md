@@ -1,6 +1,81 @@
 # MMA3001 AI-use log
 
-Revision: 047 | Updated: 2026-10-25 | Status: PDF and upload preparation documented; student publication next
+Revision: 050 | Updated: 2026-10-25 | Status: Authorised status cleanup and refreshed PDF checked
+
+## Correcting status while preserving sealed evidence, 25 October 2026
+
+- Student instruction: proceed with the proposed documentation cleanup, final
+  review and replacement-package workflow. Retained student-led commit/push.
+- Material AI assistance: identified exact stale statements, reviewed scientific
+  fingerprint dependencies, corrected current guides/publication instructions,
+  added a dated consumed-test explanation, edited six report paragraphs/headings,
+  and refreshed/rendered the PDF using documents/PDF skills and the established
+  read-only Word fallback. Independent assistants checked protected files and
+  publication chronology/layout.
+- Important implementation choice: the original test-folder README is sealed
+  in the dataset evidence. AI preserved it and every saved fingerprint; current
+  DATASET.md and README links explain why its earlier unevaluated status is
+  historical. No data or result was changed to make a check pass.
+- Review correction: replaced an unsupported earliest-publication phrase with
+  the narrower statement that scientific outputs were present at the verified
+  checkpoint. Preserved Section9, E9's046 provenance, student judgement, all
+  results, three equations, six tables and20 other DOCX package parts.
+- Actual checks: report remains nine main pages plus references; changed
+  pages1/7/10 pass visual review and seven other pages are pixel-identical.
+  203 of205 science/source paths remain unchanged; the only two changes are
+  the current unprotected model/data guides. Protected test README matches its
+  original manifest. No science execution, new model/test call or publication.
+- Saved050 records/checklist021, publication008/upload guide006, refreshed
+  report and status-review receipt locally. Old1385cf6 package remains historical.
+  Student final reading and commit/push precede replacement clone/ZIP verification;
+  Moodle submission is unconfirmed.
+
+## Explaining the upload contents, 25 October 2026
+
+- Student request: review and clarify the upload contents again through a
+  walkthrough. The assistant inspected the actual sealed clone/PDF/ZIP and
+  explained the report structure, folder roles, scientific workflow, file
+  formats, saved evidence and reproducibility limits for a beginner.
+- Material assistance: connected the physical-model functions to forces,
+  time evolution and peak/settling summaries; distinguished400 setup rows
+  from time samples, development from final models, saved results from tests,
+  and the assessed report from supporting administrative history. An independent
+  assistant reviewed potentially confusing historical folders without edits.
+- Transparency: flagged the stale final-test README sentence and explained
+  pre-push private/pending-upload statements, preserved failed timing attempt
+  and original report builder. Recommended clarification without changing
+  scientific data or treating the consumed test as untouched again.
+- Actual boundary: only reads, inventory and PDF/ZIP hash confirmation occurred.
+  Sealed files remain unchanged. Local049/checklist020 record the discussion;
+  no understanding assessment, publication or Moodle submission is claimed.
+
+## Verifying the student's upload and packaging the clone, 25 October 2026
+
+- Student action: reported done after the Desktop commit/push instructions.
+  GitHub and local Git independently confirm new commit1385cf6. GitHub now
+  reports public visibility. The assistant did not change visibility or invite
+  anyone; the new public state is observed rather than attributed to an
+  uninspected sequence of user-interface actions.
+- Material AI assistance: read current records, checked remote metadata/tree,
+  created a real remote clone, checked all187 committed file identities and13
+  commit IDs, packaged the clone including .git, copied the reviewed PDF beside
+  it and checked ZIP CRC, every member hash and a separate safe extraction.
+  A read-only independent assistant reviewed acceptance criteria and advised
+  keeping post-publication verification receipts outside the fixed clone.
+- Actual outcomes: initial restricted network clone failed before a clone
+  existed; approved retry succeeded with credential helpers disabled. Public
+  read access is established. Git integrity passes in clone and extraction;
+  all187 files and history are preserved. Eight original-to-clone raw-byte
+  differences are line endings only and none affects the sealed science or
+  report. The archive includes no course originals or unexpected project files.
+- Saved output:15,632,418-byte clone ZIP, reviewed PDF copy and verification
+  receipt under tmp/submission_package_1385cf6. The archive contains the actual
+  uploaded047 records. Local048/checklist019 record the verification after that
+  upload; no further upload is required merely to log its success.
+- Boundary: no scientific execution, model call, held-out analysis, source
+  restoration, new test suite, remote mutation or Moodle submission. The
+  student still needs to upload the PDF/ZIP and supply the repository link,
+  follow any Moodle field/size requirements and retain submission confirmation.
 
 ## Preparing the final upload and PDF, 25 October 2026
 

@@ -1,6 +1,68 @@
 # Project requirements checklist and rubric review
 
-Revision: 018 | Checked: 2026-10-25 | Scope: Final local upload preparation; student publication and submission remain
+Revision: 021 | Checked: 2026-10-25 | Scope: Corrected current documentation and refreshed PDF; replacement package pending
+
+## Status correction completed locally, 25 October 2026
+
+The student authorised the correction. Current guides now explain the completed
+once-only final test, public1385cf6 publication and the later correction workflow.
+The test-folder README is part of the sealed dataset record, so its bytes and
+saved hash remain unchanged; DATASET.md supplies a dated clarification linked
+from both current READMEs. Dated histories are preserved.
+
+The refreshed report corrects publication-status wording on pages1/7/10.
+All results and the student/AI contribution narrative remain unchanged. Nine
+main pages plus references remain, with changed pages visually checked and
+seven other pages matching the preceding render. See
+[status-review results](status_review_20261025/CHECK_RESULTS.md).
+
+- [x] Clarify current test/publication status without changing frozen evidence.
+- [x] Refresh and check the corrected report PDF and source preservation.
+- [ ] Student completes final personal reading and commits/pushes corrections.
+- [ ] Verify that new revision and create its matching replacement clone ZIP.
+- [ ] Submit the corrected PDF/ZIP/link through Moodle and confirm submission.
+
+The older1385cf6 archive remains a verified historical package. It does not
+contain these corrections and should not be paired with the refreshed PDF for
+final submission. No new science, commit/push or Moodle action occurred here.
+
+## Content-review clarification, 25 October 2026
+
+The student requested a walkthrough before proceeding. The actual PDF/ZIP and
+sealed clone were read; their hashes are unchanged. One specific documentation
+correction is recommended: dataset_v1/heldout_test/README.md still says the final
+test has never been evaluated, whereas DATASET.md and FINAL_EVALUATION_GUIDE.md
+correctly record the completed once-only evaluation. Preserve the frozen data
+and test evidence when clarifying that historical wording.
+
+Pre-push private/upload-pending notes are explained as historical047 status;
+local048 verifies public1385cf6 and the package. The student has not yet approved
+any package correction or confirmed Moodle submission. If published content is
+changed, create and verify a replacement clone ZIP for the new commit.
+
+## Current submission handoff, 25 October 2026
+
+Student upload is verified at1385cf6813dc091454353a135029cddc57485a27. GitHub is
+now public and a real clone succeeds with credential helpers disabled. All187
+tracked files and13 commits match; clean clone and extracted ZIP pass Git
+integrity checks. The reviewed PDF and clone ZIP are ready under
+tmp/submission_package_1385cf6. Archive contains no course originals and preserves
+the clone's hidden Git history. No scientific work was rerun.
+
+- [x] Student committed/pushed the intended report, PDF, profiling evidence and records.
+- [x] Local Git, GitHub tree and actual final clone agree at1385cf6.
+- [x] Public repository readability verified by the successful remote clone.
+- [x] Clone ZIP created and checked by CRC, all member hashes and extraction.
+- [x] Reviewed PDF copied alongside the ZIP and its bytes verified.
+- [ ] Student uploads PDF and ZIP through Moodle, provides the public repository
+  link as requested, and checks final submitted status/confirmation.
+
+Published/packaged records remain047/checklist018. These local048/checklist019
+receipts are deliberately outside the fixed clone/archive; another commit is
+not needed just to record successful packaging. Earlier private-access and
+pending-upload statements below describe prior checkpoints and are superseded.
+Moodle field/size limits and actual submission remain unverified. The
+student-confirmed deadline is25 October2026 at23:59 Australia/Sydney.
 
 ## Final upload preparation, 25 October 2026
 
@@ -226,10 +288,10 @@ Topic approval remains user-reported, without a separately inspected approval re
 | Licensing agreement (p8) | MIT selected by the student, uploaded and present in verified clone, with configured Git name weehaosiah. | Keep scope explicit: original software and associated authored documentation; third-party/course material retains its own terms. MIT is not a course mandate. |
 | Source code on a functional main branch (p8) | At the 11 October checkpoint, main matched GitHub/clone and three saved-output audits passed. Earlier implementation tests are saved; subsequent profiling work is local. | These audit successes do not establish a clean installation/full rebuild or verify the later local work in a clone; retain the documented scope and prerequisites. |
 | Test functions and test report (p8) | Existing test modules, stage CHECK_RESULTS reports and pytest logs are retained. The historical full-suite result is 433 passed in 6.15 s; 13 new focused profiler tests passed in 0.90 s. | Present each scope accurately. The 433-test suite was not rerun; the 13 new tests check profiling bookkeeping. No specific TEST_REPORT.md filename is required. |
-| Accessible final GitHub link (p8) | Private repository and authenticated assistant access confirmed. | Confirm the actual assessor access method and verify it. The brief does not explicitly require public visibility. |
+| Accessible final GitHub link (p8) | Repository now public; a fresh remote clone with credential helpers disabled succeeds at1385cf6. | Supply the public URL in the requested Moodle field. This verifies readability, not actual assessor review. |
 | Individual written documentation, 5-10 pages maximum (p8) | R1-R7 incorporated25 October and student-required PDF prepared: nine main pages plus one reference page, visually checked. | Final personal reading remains; explicit cap is10 pages excluding references/appendices. |
 | Material AI disclosure and critical reflection (pp6,15) | Section9 covers tools, tasks, qualitative contribution, reasons, checks, decisions, corrections and learning; student judgement/responsibility is explicit. | Read the final wording for personal accuracy. Detailed AI_USE_LOG supports it; guided review is not an unaided examination. |
-| Report and zipped clone through Moodle, plus accessible repository link (p8) | Initial upload and one student update are verified; no final clone ZIP or Moodle completion evidence exists. | Follow the final packaging/submission sequence below. Uploading to GitHub alone is not final submission. |
+| Report and zipped clone through Moodle, plus accessible repository link (p8) | Final upload1385cf6 verified; reviewed PDF and tested clean-clone ZIP are ready. | Student uploads both files, supplies the link and confirms Moodle submission. |
 | Individual presentation/demonstration and questions (pp6,9) | Still required: 5-minute presentation plus 3 minutes of questions; preparation not claimed. | Retain the demonstration/attendance requirement and student's ability to explain the work without AI during questions. Presentation-date planning remains deferred. |
 
 ## Completion checklist
@@ -254,11 +316,11 @@ partly complete work, with the remaining part stated explicitly.
 - [x] Include all eight report areas: problem; inputs/outputs/data; approach; validation/results; comparison/optimisation; limitations/lessons; AI reflection; references (p8).
 - [x] Include the AI reflection's tools, tasks, approximate contribution, reasons, checking, student decisions, errors/limitations and effects on understanding/workflow (p6), supported by the log.
 - [ ] Complete final personal reading of the report and responsibility account before submission.
-- [ ] Review and commit/push pending and final changes, retaining genuine development history (pp8,11).
-- [ ] Verify assessor access to the final repository and the documented prerequisites (p8); private hosting requires an actual access arrangement.
+- [x] Review and commit/push the final project at1385cf6, retaining13 genuine commits (pp8,11). Later local verification receipts are outside that fixed checkpoint.
+- [x] Verify public readability of the final repository through a real anonymous clone (p8). Historical strict-audit source/environment prerequisites remain documented.
 - [x] Record current Moodle format from the student: PDF report and ZIP of the GitHub clone. The extended deadline is student-confirmed.
 - [ ] Confirm exact Moodle fields, any size/naming limits and submission status; live Moodle/Unit Overview sources are unavailable locally.
-- [ ] Create and inspect a ZIP of a new clean clone of the final uploaded revision (p8). The current source-restored verification clone is unsuitable for direct packaging.
+- [x] Create and inspect the ZIP of the new clean clone of1385cf6 (p8), preserving all187 project files and Git history; no course originals included.
 - [ ] Submit the report and clone ZIP through Moodle, supply the accessible repository link as instructed and verify submission completion (p8).
 - [ ] Prepare and deliver the required five-minute presentation plus three-minute questions, demonstrating the repository and explaining validation, choices, limitations and AI use (p9). Booking/attendance remains required; date planning is deferred. AI cannot answer the questions for the student (p6).
 
@@ -362,10 +424,10 @@ clone ZIP and Moodle submission remain separate completion obligations.
   No such rule was found in the brief. The student now confirms the school email is
   verified; the tool does not independently expose that flag or primary status. The brief
   does not require exposing the school email in public commit metadata.
-- **Visibility/access:** private hosting is the student's current setting and was
-  recommended for work in progress. It is not a substitute for assessor access.
-  Agree the assessor's username/access procedure before adding anyone. Accepted
-  invitations grant collaborator access, as described in
+- **Visibility/access:** public hosting and anonymous cloning were verified on
+  25 October at1385cf6. Private hosting describes the earlier project stage.
+  If visibility is changed later, confirm assessor access again; accepted
+  invitations grant private collaborator access, as described in
   [GitHub's access instructions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository).
 - **Desktop/branches:** GitHub Desktop is a beginner-friendly choice, not a required
   application. The rubric allows branching and/or insightful commits; it does not
@@ -385,16 +447,16 @@ clone ZIP and Moodle submission remain separate completion obligations.
 
 1. School-email verification is now student-confirmed. Check the current Moodle/
    Unit Overview instructions and record any actual course clarification separately.
-   Determine how the assessor should access the private repository.
+   Supply the public repository URL; verify readability for the final revision.
 2. MIT using configured author name weehaosiah is now uploaded and verified.
    Student reviews/commits/pushes subsequent documentation and check-result updates.
 3. The guided model, numerical, data-role, engineering-judgement and AI-use review
    is complete and incorporated. Read the final report for personal accuracy and
    retain the distinction between guided reasoning and unaided demonstration.
-4. Real-clone saved-output and static HTML checks now pass at 8ba9808. Preserve
-   this evidence and its source/environment limits; check relevant changes at the
-   final revision. A clean installation/full rebuild is a useful stronger check,
-   not an outcome established by this audit or explicit wording in the brief.
+4. The8ba9808 clone passed saved-output audits; the later1385cf6 clone/archive
+   passed file/history/extraction checks. Preserve these distinct scopes and
+   verify relevant changes at the final revision. A clean installation/full
+   rebuild is not established by either check.
 5. The authorised report is written and checked, with all eight p8 content areas.
    Use the reviewed PDF for the student-confirmed Moodle format; preserve the
    current editable DOCX rather than rerunning the initial-draft builder.

@@ -1,6 +1,130 @@
 # MMA3001 evidence register
 
-Revision: 047 | Updated: 2026-10-25 | Status: PDF and static upload checks verified; publication pending
+Revision: 050 | Updated: 2026-10-25 | Status: Protected history preserved; current status and report corrected
+
+## Bounded status correction and refreshed report, 25 October 2026
+
+Student authorised the proposed documentation cleanup with proceed. Read guide003,
+records049 and current working/source guides. Fresh authenticated metadata/head
+reads confirm public1385cf6813dc091454353a135029cddc57485a27. The assistant changed
+no remote state. Independent source review identified that the test README hash
+is recorded by dataset_v1/summary.json, itself fingerprinted downstream. Preserved
+the original README and all seals. Added a dated current explanation to DATASET.md
+and links from root/Suspension_Model READMEs. No raw test rows were inspected.
+
+Six report paragraphs/headings updated: scope/evidence publication note, profiling
+heading/intro, evidence-index chronology, E7 and repository label. The first
+revision's phrase first published was narrowed to were present for8ba9808, because
+the verified checkpoint does not establish the earliest publication. E9 retains046.
+Section9, all six scientific tables, three native equations and20 other package
+parts are byte-identical within the DOCX structure. Word export opens read-only
+and preserves DOCX bytes. Final DOCX SHA-256:
+9e253d0aa3ee89e0757c29974e243d8b2a8bc4bd41330ae5ca1030ca2dcb6ecb.
+Final PDF SHA-256:
+0c5f3158ed3c295224c7f8f6af017ae7a16c51d7d65bae0da30f074008b4ab0a.
+
+Ten pages remain: nine main plus references. Root visually inspected pages1/7
+and the repaired final page10; independent review checked the preceding page10
+and caught the earliest-publication wording. Pages2-6/8-9 match the preceding
+reviewed render pixel for pixel. No clipping, overlap or missing glyphs observed.
+Backups/preservation snapshot: tmp/status_cleanup_20261025. Internal render QA:
+Report_Draft/rendered/status_cleanup_20261025. Current check receipt:
+Project_Setup/status_review_20261025.
+
+205 pre-edit science/source paths checked:203 unchanged and only README.md and
+DATASET.md under Suspension_Model changed. The heldout_test README still hashes
+to9f1551891b8050c33f139dfb0600502a92768a2169c1c21d21ad43c025116720,
+matching its original dataset manifest. No numerical/ML code, model, data, raw
+result, test record or course source changed. Current administrative guidance
+now distinguishes published1385cf6 from this subsequent local correction.
+
+No scientific module, audit entry point, new prediction/test or benchmark was
+executed. No commit/push or replacement remote clone/ZIP occurred. The previous
+ZIP/PDF pair remains unchanged in its historical package; use the refreshed PDF
+with a replacement clone ZIP after the corrected revision is published. Moodle
+submission and final personal reading remain unconfirmed.
+Final documentation checks pass:87 current-guide local links/anchors, whitespace,
+050/021 record revisions and final report hashes. Old1385cf6 archive/PDF hashes
+also remain unchanged.
+
+## Upload-content walkthrough, 25 October 2026
+
+Read guide003/state048, the sealed1385cf6 clone's README, reproduction/dataset/
+final-evaluation guides, physics function definitions, report-support records,
+heldout_test README and preserved runtime failure note. Read actual submission
+PDF page headings and checked the ZIP member inventory. Independent read-only
+review confirmed the supporting-history distinctions and stale test-folder text.
+
+Actual groups: Suspension_Model155, Project_Setup19, Report_Draft8, output1,
+root files4 and hidden .git28. Total215 entries, including187 project files.
+The PDF has pages1-9 main report and page10 references. Explained the record types
+and why initial/final models, failed/successful timing checkpoints, individual
+test logs and raw numerical outputs are retained rather than counted as new data.
+
+Specific discrepancy: the heldout_test README's final sentence still says no
+predictions or test performance have been evaluated. It is generation-stage
+wording; the final-evaluation guide and DATASET.md explicitly record completion
+and consumed-test status. No raw test-response rows were inspected. Pre-push
+private/upload-pending descriptions in047 are historical relative to verified
+public1385cf6; the report's profiling-upload statement likewise predates the push.
+These are documentation-status issues, not evidence of changed calculations.
+
+ZIP hash rechecked unchanged:
+574f376842e57b60284a5f3034f3dff1e1556ce1a5e2224bf045fc79abe67ff3.
+PDF hash rechecked unchanged:
+1e424555f3abf839893aff9f297b2bd841054946323cf1f54e44490e7541e8b5.
+No report/ZIP/clone edit, code execution, scientific rerun or external operation.
+This walkthrough does not establish independent student mastery or Moodle
+submission. Any correction to published content requires a new checked package.
+
+## Published revision and ZIP verification, 25 October 2026
+
+Read guide003/current047 and the upload/checklist records. Student replied done
+after commit/push guidance. Fresh GitHub get_repo reports public visibility;
+fetch_commit(main) and local HEAD both give
+1385cf6813dc091454353a135029cddc57485a27, message
+Complete report review and add profiling evidence. The local working tree was
+clean. Recursive GitHub tree response is not truncated and contains187 blobs;
+every path/mode/blob matches local Git and the subsequent actual remote clone.
+Git tree identity is902c2b56d723fb2b66f9a012fb68d0be0ac54a66.
+
+The first restricted clone attempt failed at network resolution (exit128,
+getaddrinfo thread failure) and left no destination. The approved network retry
+succeeded into the absent tmp/submission_clone_1385cf6 using the public HTTPS
+URL with credential helpers and interactive prompting disabled. This was an
+actual remote clone, not a local working-copy substitute. No credentials were
+extracted, remote setting changed or invitation sent. Public download succeeds;
+this does not assert that an assessor has personally reviewed the repository.
+
+Clone checks:187 tracked paths,13 commit IDs, clean working tree and git fsck
+--full pass. All required report/source/licence/documentation/dependency/saved
+test files are present. Zero course originals, ignored temporary report files
+or unexpected non-Git files.179 files match original workspace bytes; eight
+differ only in CRLF/LF conversion, listed in checks.json. None is a sealed
+scientific output or the PDF/DOCX. All committed blob identities match exactly.
+
+Created the ZIP directly from this clean clone, retaining its hidden .git
+folder as the documented history-preservation recommendation.215 members:
+187 project files and28 Git metadata files. ZIP CRC and each member's SHA-256
+match; extraction uses checked relative paths within a separate empty folder.
+The extracted copy is clean, matches HEAD/tree/all13 commits, passes Git fsck
+and matches every clone project file byte for byte.
+
+Archive: tmp/submission_package_1385cf6/MMA3001_project_clone_1385cf6.zip
+Size:15,632,418 bytes. SHA-256:
+574f376842e57b60284a5f3034f3dff1e1556ce1a5e2224bf045fc79abe67ff3.
+Report PDF copied alongside it; SHA-256:
+1e424555f3abf839893aff9f297b2bd841054946323cf1f54e44490e7541e8b5.
+The PDF is the reviewed nine-main-plus-reference version; its bytes are unchanged.
+Receipt: checks.json and CHECK_RESULTS.md beside the submission files.
+
+No scientific module/audit entry point, simulation, fit, prediction, benchmark
+or test suite was executed. No source files restored into the clone, and no
+fresh-install/full-rebuild claim. The packaged repository contains047 records;
+048/checklist019 are local post-publication receipts outside the fixed archive.
+No new commit/push is needed merely for these receipts. Moodle PDF/ZIP format
+remains student-confirmed; upload fields/limits and actual submission receipt
+remain uninspected. No Moodle action was performed by the assistant.
 
 ## Final local submission preparation, 25 October 2026
 
