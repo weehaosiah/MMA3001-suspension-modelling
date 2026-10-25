@@ -1,24 +1,28 @@
 # Final upload and replacement package check
 
-Updated: 25 October 2026 | Scope: status corrections following verified public1385cf6
+Updated: 25 October 2026 | Scope: final caption/source-link corrections after verified public 1c1ad1f
 
-The report and profiling supplement were published in1385cf6 on25 October.
-That public revision and its clean clone ZIP were verified. The student then
-requested a content walkthrough and authorised correction of outdated status
-wording. This correction changes documentation and report publication notes;
-scientific code, data, fitted models and results are preserved. It requires an
-updated PDF and a matching replacement clone ZIP after the new commit/push.
-The deadline remains25 October2026 at23:59 Australia/Sydney.
+The report and status correction were published in 1c1ad1f on 25 October.
+Its actual clone ZIP passed integrity checks. The student's final brief/rubric
+review then identified one figure-caption error: the plotted source is the
+refined 10-second trace, while the caption said five seconds. The caption and
+one remaining draft reference are corrected, and three supporting links to
+excluded course originals now give explicit filenames/access notes. Scientific
+code, data, fitted models, results and the student/AI reflection are preserved.
+The corrected PDF is ready locally. Publish this final correction, then create
+the replacement clone ZIP from that same revision. The student confirms Moodle
+is not yet submitted. Deadline: 25 October 2026, 23:59 Australia/Sydney.
 
 ## Files in the documentation correction
 
 | Group | Include |
 | --- | --- |
-| Root | README clarifies public publication and the final-test history. |
-| Project_Setup | Current status/evidence/AI/checklist/publication/upload notes and this correction's check record. Earlier dated histories stay intact. |
-| Report_Draft | DOCX publication-status paragraphs and evidence references, plus README. Section9's student/AI contribution narrative is preserved. Do not rerun the initial report builder. |
+| Project_Setup | Updated status/evidence/AI/checklist, this upload guide, one supporting source-reference clarification and final_review_20261025 evidence. Earlier dated histories stay intact. |
+| Report_Draft | DOCX Figure 2 caption and one draft-to-report word change; AI reflection source references clarified. Section 9 is preserved. Do not rerun the initial report builder. |
 | output/pdf | Refreshed PDF from the corrected editable report. |
-| Suspension_Model | README and DATASET.md add the dated test-status explanation. The fingerprinted README inside heldout_test remains unchanged. |
+
+No root or Suspension_Model file is part of this correction. All 155 model-folder
+files match the verified clone byte-for-byte.
 
 Course originals, tmp, rendered report checks, caches and generated report figures
 are excluded by ignore rules. The embedded figures are already inside the DOCX.
@@ -28,9 +32,9 @@ the original workspace does not apply these rules and is unsuitable.
 ## Actual checks and their limits
 
 The [submission PDF](../output/pdf/MMA3001_suspension_report.pdf) and editable
-DOCX receive new fingerprints after the publication-status correction. Actual
-rendering, preservation and link-check results are recorded in
-[the status-correction check](status_review_20261025/CHECK_RESULTS.md).
+DOCX have new fingerprints after the final caption correction. Actual rendering,
+preservation, numerical-source and link-check results are recorded in
+[the final brief/rubric review](final_review_20261025/FINAL_REVIEW.md).
 Scientific conclusions and final-test status are unchanged; the final test
 remains consumed. No new simulation, fitting, prediction, benchmark or test-suite
 execution is part of this correction.
@@ -57,7 +61,7 @@ obtained course sources as explained in
 3. Click **Fetch origin**. The verified remote matches the current local
    checkpoint; if Desktop shows unexpected remote changes, review them before
    proceeding rather than overwriting either version.
-4. Enter the summary `Clarify final-test and publication status`.
+4. Enter the summary `Correct final figure caption and review submission`.
    Click **Commit to main** to save the selected changes on this computer.
 5. Click **Push origin** to upload that commit. Check that the report and new
    records appear on GitHub at the new commit. The assistant can then compare
@@ -71,7 +75,7 @@ instructions, revisited25 October. No commit or push was performed by the assist
 ## After the verified push
 
 - Use the reviewed PDF and clone ZIP, as the student confirmed Moodle requires.
-  Public readability was verified for1385cf6 by a successful anonymous clone;
+  Public readability was verified for 1c1ad1f by a successful anonymous clone;
   the assistant made no visibility change or invitation. Verify the new revision
   and follow Moodle's actual fields/size limits.
 - Clone the final online revision into a new separate folder using Desktop's
@@ -84,8 +88,9 @@ instructions, revisited25 October. No commit or push was performed by the assist
   where requested and retain the submission confirmation.
 
 See the official [cloning guide](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop)
-and [submission checklist](SUBMISSION_CHECKLIST.md). The earlier1385cf6 archive
-remains an exact historical copy of that revision. It does not include these
-later corrections. Prepare and check a replacement archive after the corrected
-commit is uploaded; do not mix its older PDF with the refreshed report. Moodle
-submission remains unconfirmed.
+and [submission checklist](SUBMISSION_CHECKLIST.md). The earlier 1c1ad1f archive
+remains an exact historical copy of that revision. It lacks the final caption
+correction. Prepare and check a replacement archive after the corrected commit
+is uploaded; do not pair that old ZIP with the refreshed report. Moodle is
+confirmed not yet submitted. The assistant will verify/package after your push;
+it does not commit/push or submit through Moodle on your behalf.

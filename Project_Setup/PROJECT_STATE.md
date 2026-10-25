@@ -1,6 +1,73 @@
 # MMA3001 project state
 
-Revision: 050 | Updated: 2026-10-25 | Status: Status wording corrected; refreshed PDF ready for final reading and student push
+Revision: 052 | Updated: 2026-10-25 | Status: Final brief audit complete; figure caption corrected; final student push and matching ZIP pending
+
+## Final brief and whole-project review, 25 October 2026
+
+The student requested the crucial final check and confirmed Moodle is not yet
+submitted. Reread all 15 pages of the original brief, the 14-cell responsible-AI
+notebook, guide003 and current records051/checklist022. Independent reviews
+covered requirements/rubric/AI, scientific claims and repository documentation.
+All required report content and repository artifact types are present; no grade
+or clean-environment/full-rebuild claim is inferred.
+
+The final figure-source check found a factual caption error: Figure 2 is drawn
+from the refined 10-second nominal trace, not a five-second source. Corrected
+that caption and the remaining p8 draft wording. Replaced three links to excluded
+course originals in supporting notes with explicit filenames/access notes.
+All 155 Suspension_Model files, numerical results, tables, equations, figures
+and Section9 remain unchanged. No scientific execution or raw held-out analysis.
+
+Refreshed output/pdf/MMA3001_suspension_report.pdf. It remains nine main pages
+plus references; pages6/8 pass visual review and the other eight pages are
+pixel-identical. Independent DOCX/PDF review confirms exactly two paragraph
+changes. Markdown/HTML links and static Python syntax pass. Detailed results,
+source access limits and the six-rubric mapping are in
+Project_Setup/final_review_20261025. Saved records052/checklist023.
+
+Fresh remote reads still show public 1c1ad1f; its ZIP integrity was reconfirmed,
+but it is now historical because it lacks this caption correction. Next: student
+commits/pushes the bounded changes using Correct final figure caption and review
+submission, then assistant verifies the new revision and creates its matching
+clone ZIP. Do not pair the corrected PDF with the old 1c1ad1f archive. No commit,
+push, access change or Moodle submission was performed by the assistant.
+
+Remaining qualifications: strict audits need excluded course originals and the
+documented Windows environment; clean install/full rebuild and comprehensive
+helper-docstring depth are not established. Approval/extension remain
+student-reported; exact historical AI versions/Claude session details remain
+unknown. Presentation remains mandatory but its planning stays deferred.
+Deadline: 25 October 2026, 23:59 Australia/Sydney.
+
+## Replacement submission package verified, 25 October 2026
+
+The student reported done after the commit/push guidance. Local Git and fresh
+GitHub reads agree at 1c1ad1f2563779be0bef4adc3c833e1c3274870e, message
+Clarify final-test and publication status. GitHub is public; a new remote clone
+succeeded with credential helpers disabled. The assistant did not commit/push,
+change access, invite anyone or submit through Moodle.
+
+Created tmp/submission_package_1c1ad1f with the matching reviewed PDF and
+MMA3001_project_clone_1c1ad1f.zip. All 189 tracked path/mode/blob identities
+match local Git, GitHub and the clone; all 14 commit IDs agree. Clone and separate
+ZIP extraction are clean and pass Git integrity checks. ZIP CRC, every member
+hash and all extracted project bytes pass. There are 217 archive members:
+189 project files and 28 Git metadata files, with no course originals or
+unexpected project files. The PDF matches the reviewed corrected report exactly.
+
+Independent review confirms that the 15 changed files since 1385cf6 are only
+documentation, records and reports. The protected test README still matches
+its dataset manifest. No science execution, new analysis, prediction or test
+suite occurred. The previous package is preserved as historical evidence and
+is superseded for submission by this new PDF/ZIP pair.
+
+Saved checks.json and CHECK_RESULTS.md beside the new deliverables. Published
+and packaged records remain 050/checklist021. These local 051/checklist022
+verification receipts are outside the fixed clone and ZIP; another push is not
+needed merely to record packaging. Next: student uploads the matching PDF/ZIP
+and supplies the public repository link in Moodle as requested, then verifies
+final submitted status. Actual Moodle fields, size limits and submission remain
+unverified. Deadline: 25 October 2026, 23:59 Australia/Sydney.
 
 ## Authorised documentation correction, 25 October 2026
 

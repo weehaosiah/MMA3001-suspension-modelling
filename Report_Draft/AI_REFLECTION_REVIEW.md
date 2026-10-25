@@ -13,12 +13,14 @@ framework and uses documented project examples.
 
 Sources actually read:
 
-- [Responsible Use of AI notebook](../MMA3001_Notes_Week01_4_Responsible_Use_of_AI.ipynb),
+- Course file `MMA3001_Notes_Week01_4_Responsible_Use_of_AI.ipynb`
+  (available through authorised course access; excluded from the public repository),
   all 14 cells, particularly cells 4-6 and 8/11/13. Cell numbers are one-based
   JSON positions. The notebook is nbformat 4.0 and has no numbered revision
   identified. SHA-256:
   `11f8aed9e9f1a6e5503a06a466424aaddf0eb78818eb50c1b796381a800daef6`.
-- [Project brief](../MMA3001_2026_Project_Brief.pdf), pages 6 and 15. The
+- Course file `MMA3001_2026_Project_Brief.pdf`
+  (available through authorised course access; excluded from the public repository), pages 6 and 15. The
   15-page brief matches the recorded version; SHA-256:
   `1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c`.
 - [AI-use log](../Project_Setup/AI_USE_LOG.md) and

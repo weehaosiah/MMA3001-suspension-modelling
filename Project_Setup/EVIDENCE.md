@@ -1,6 +1,103 @@
 # MMA3001 evidence register
 
-Revision: 050 | Updated: 2026-10-25 | Status: Protected history preserved; current status and report corrected
+Revision: 052 | Updated: 2026-10-25 | Status: Final brief/source audit and bounded caption correction verified; publication pending
+
+## Final requirements audit and caption correction, 25 October 2026
+
+Student requested a final whole-project review and explicitly confirmed Not
+submitted yet for Moodle. Read original brief all15 pages, responsible-AI notebook
+all14 cells, guide003/current051 records and the exact packaged PDF. Brief hash
+remains1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c;
+AI notebook hash remains11f8aed9e9f1a6e5503a06a466424aaddf0eb78818eb50c1b796381a800daef6.
+No newer authoritative brief, live Moodle form or independent approval/extension
+record was identified. Current student directions remain the authority for format
+and extension. Complete requirement/rubric mapping is in final_review_20261025.
+
+Fresh GitHub metadata/head reads verify public main1c1ad1f. Rechecked all189
+tracked identities/14 commits, clean clone and a fresh ZIP extraction, Git
+integrity, CRC and all217 member bytes. An initial comparison with an older
+extraction detected only a Git index stat-cache refresh; the corrected checker
+disables optional Git writes and the fresh extraction passes all bytes. The
+sealed archive remains unchanged. This is packaging evidence, not science.
+
+Independent numerical review found one caption/source discrepancy: Figure2
+labels a five-second response but run_nominal.py samples extended10 for the
+nominal trace, whose final timestamp is10s. Corrected to first2.5s of the refined
+10s response; plotted values and conclusions were already correct. Also changed
+p8 this draft to this report. Exactly two DOCX paragraphs changed; all20 other
+package parts, six tables, three native equations, both plot images and Section9
+are unchanged. All155 Suspension_Model files match the sealed clone byte-for-byte.
+All reported scientific/development/test/runtime/profiling quantities match saved
+summaries to stated rounding. No raw held-out reanalysis or new predictions.
+
+Corrected DOCX SHA-256:
+4bfc7aa7e5330fec839cbdbc05d254fbc8385f9bf323b0c2152f327277da8d32.
+Corrected PDF SHA-256:
+22102e2d34a61667adccd28f11ea6ca7c80453d77a1eb882c20c09a5e3d20524.
+Packaged renderer failed because bundled soffice was unavailable; existing
+read-only Word export succeeded without changing DOCX bytes. Ten pages remain:
+nine main plus references. Pages6/8 are visually clean; the other eight are
+pixel-identical to the reviewed previous export. All pages inspected; no remaining
+report defect found by independent review.
+
+Clarified the three supporting-note links to excluded course originals, preserving
+filenames/hash provenance and authorised-access requirements. Current tracked-file
+audit before saving this receipt:41 Markdown files/220 local targets and19 HTML
+pages/108 local links, zero missing paths/anchors. All32 Python files parse without
+imports/execution. Saved433 implementation tests and separate13 profiler tests
+were inspected, not rerun or reported as a new combined suite.
+
+Official KU Leuven, MathWorks, SciPy1.13.1, scikit-learn1.5 and Python3.12 pages
+were reopened. PLOS article identity/context is accessible; direct DOI/table image
+and PMC full-table retrieval were limited by the browsing tool/challenge. Earlier
+recorded parameter-table verification remains the provenance; no full fresh table
+inspection is claimed. Details/links are in the final review.
+
+No simulation, fitting, benchmark, test suite, source restoration, commit/push or
+Moodle action. The correction now needs a student push and a new matching clone
+ZIP. The old1c1ad1f package is preserved as history; do not mix versions. Reproduction,
+documentation-depth, approval-record and historical AI-version limits remain
+explicit. Presentation planning remains deferred; Moodle is confirmed pending.
+
+## Corrected publication and replacement clone package, 25 October 2026
+
+Read guide003 and state050. Student reported done after commit/push guidance.
+Fresh GitHub metadata and main commit agree with the initially clean local
+checkout: public 1c1ad1f2563779be0bef4adc3c833e1c3274870e. A complete remote
+tree response was compared with local Git and an actual new public HTTPS clone.
+All 189 file paths, modes and blob identities match. Tree identity is
+f29169e8887bd7232a0a8eae4e0d85d6effe9def; all 14 commit IDs agree.
+
+The clone used disabled credential helpers and required the permitted network
+execution path. No credentials were read or copied. Clone and extracted ZIP
+working trees are clean and both pass git fsck --full. All ZIP CRC/member hashes
+and extracted project bytes pass. 180 files match original working bytes;
+nine differ only in Git-managed line endings, listed in checks.json. No course
+originals, report renders or unexpected project files are included.
+
+Replacement ZIP: tmp/submission_package_1c1ad1f/MMA3001_project_clone_1c1ad1f.zip
+Size: 15,696,966 bytes; 217 members (189 project files, 28 Git metadata files).
+SHA-256: 489375f470a20c1a16a680aff3d910f07ac5bf5450ac5eb6f5a979f768faac2e
+Matching PDF: tmp/submission_package_1c1ad1f/MMA3001_suspension_report.pdf
+SHA-256: 0c5f3158ed3c295224c7f8f6af017ae7a16c51d7d65bae0da30f074008b4ab0a
+DOCX SHA-256: 9e253d0aa3ee89e0757c29974e243d8b2a8bc4bd41330ae5ca1030ca2dcb6ecb
+Both report hashes match the prior visual review; no re-export was needed.
+
+Independent read-only diff inspection confirms 15 documentation/record/report
+changes since 1385cf6; six DOCX status-text changes and 20 unchanged other DOCX
+package parts. Protected test README still matches dataset-manifest SHA-256
+9f1551891b8050c33f139dfb0600502a92768a2169c1c21d21ad43c025116720.
+No scientific source, data, model, saved numerical result or test file changed.
+
+Verification helper: tmp/package_submission_1c1ad1f.py; remote tree fixture:
+tmp/published_tree_1c1ad1f.json. The helper refuses existing destination folders.
+Machine-readable and narrative receipts sit beside the two deliverables.
+Published records 050/checklist021 remain fixed inside the clone/ZIP; local
+051/checklist022 receipts are outside it. No further publication is needed just
+for these receipts. No scientific execution, clean dependency installation,
+full rebuild or Moodle submission is claimed. Exact Moodle upload limits and
+final submitted status remain unverified; student deadline is 25 October 2026
+at 23:59 Australia/Sydney.
 
 ## Bounded status correction and refreshed report, 25 October 2026
 

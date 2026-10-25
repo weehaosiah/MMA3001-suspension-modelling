@@ -1,6 +1,67 @@
 # Project requirements checklist and rubric review
 
-Revision: 021 | Checked: 2026-10-25 | Scope: Corrected current documentation and refreshed PDF; replacement package pending
+Revision: 023 | Checked: 2026-10-25 | Scope: Final brief/rubric review complete; caption correction verified locally; new push/ZIP and Moodle pending
+
+## Final audit and corrected report handoff, 25 October 2026
+
+The student requested the final check and confirmed Moodle is not submitted.
+Original brief requirements/rubric and responsible-AI guidance were reread.
+All required report content and repository artifact types are present. See
+[final review and remaining limits](final_review_20261025/FINAL_REVIEW.md).
+
+The independent figure check found that Figure2's source is the refined10s
+trace, while its caption said5s. Corrected the caption and p8 draft wording;
+clarified three supporting references to excluded course originals. No scientific
+file/result changed. Updated PDF has nine main pages plus references. Changed
+pages6/8 are visually checked, with eight other pages pixel-identical. All
+reported numbers and the student/AI reflection remain unchanged.
+
+- [x] Reread the original brief and map all content and six rubric criteria.
+- [x] Verify saved scientific claims, identity, page limit, references and AI account.
+- [x] Correct the factual caption and supporting source-link issues found.
+- [x] Verify all155 model files, tables, equations, figures and reflection preserved.
+- [x] Check current Markdown/HTML links, static syntax and rendered PDF.
+- [ ] Student commits/pushes final correction using the updated upload instructions.
+- [ ] Verify the new public revision and create/check its matching clone ZIP.
+- [ ] Upload the matching PDF/ZIP and repository link in Moodle; confirm Submitted.
+
+The former1c1ad1f ZIP still passes integrity checks but lacks this correction.
+Do not submit it with the corrected PDF. Follow [final upload steps](FINAL_UPLOAD_CHECK.md).
+This section supersedes earlier ready-to-submit package notes below.
+
+Clean installation/full rebuild and uniform detailed helper documentation remain
+rubric limitations, openly documented. Strict audits need authorised course
+originals and the recorded environment. Prior approval/extension remain
+student-reported; presentation remains mandatory with date planning deferred.
+Deadline:25 October2026 at23:59 Australia/Sydney. No new science or assistant push.
+
+## Current replacement submission handoff, 25 October 2026
+
+Student reported done; the corrected publication is verified at
+1c1ad1f2563779be0bef4adc3c833e1c3274870e. Repository is public and a fresh
+clone succeeds without credential helpers. This section supersedes the older
+package and pending-publication statements below, which remain dated history.
+
+- [x] Corrected report and authorised documentation changes reached GitHub.
+- [x] All 189 file identities and 14 commit IDs agree across local Git and clone;
+  the complete remote tree also matches all file identities.
+- [x] Clean clone and separately extracted ZIP pass Git integrity checks.
+- [x] ZIP CRC, every member hash and extracted bytes pass; hidden Git history is
+  included, with no course originals or unexpected project files.
+- [x] Matching separate PDF is identical to the reviewed report inside the clone.
+- [ ] Student uploads the new PDF and ZIP through Moodle, supplies the public
+  repository link as requested, and verifies final submitted status/confirmation.
+
+Use only the matching pair under tmp/submission_package_1c1ad1f:
+MMA3001_suspension_report.pdf and MMA3001_project_clone_1c1ad1f.zip.
+The older 1385cf6 package is superseded. The new ZIP is 15,696,966 bytes;
+checks.json and CHECK_RESULTS.md record fingerprints and actual checks.
+
+No science was rerun. Published/packaged records remain 050/checklist021;
+these local 051/checklist022 receipts are outside the fixed package and do not
+require another push merely to record verification. Moodle field/size limits,
+actual submission and assessor review have not been observed. The deadline
+remains 25 October 2026 at 23:59 Australia/Sydney.
 
 ## Status correction completed locally, 25 October 2026
 

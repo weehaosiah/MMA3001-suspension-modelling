@@ -1,6 +1,63 @@
 # MMA3001 AI-use log
 
-Revision: 050 | Updated: 2026-10-25 | Status: Authorised status cleanup and refreshed PDF checked
+Revision: 052 | Updated: 2026-10-25 | Status: Final independent checks completed; report caption and supporting links corrected
+
+## Final audit and evidence-led correction, 25 October 2026
+
+- Student instruction: reread the brief and check everything before submission.
+  Student confirmed the corrected pair has not yet been submitted in Moodle.
+- Material AI assistance: root and three independent assistants reviewed the
+  brief/rubric, responsible-AI notebook, exact report, source/saved-result claims,
+  repository/docstrings/HTML/test records, external references, current GitHub
+  state and archive. No grade, unaided mastery or fresh full rebuild was inferred.
+- AI review caught a factual Figure2 caption error: its saved source covers10s,
+  while the caption said5s. Root corrected the caption, removed p8 draft wording,
+  replaced three excluded-course links with filenames/access notes and refreshed
+  the PDF. This is a correction to AI-authored report wording, not to simulation
+  data or the student's physical interpretation.
+- Verification: independent comparison confirms exactly two changed report
+  paragraphs and preservation of tables/equations/plots/Section9. All155 model
+  files remain byte-identical. Nine main pages plus references remain; two changed
+  pages pass visual review and eight match pixel-for-pixel. Current documentation
+  links pass,32 Python files parse statically, and saved numerical claims match.
+- Tool/check corrections: packaged renderer lacked soffice; the established
+  read-only Word/PDF rendering fallback succeeded. A package recheck initially
+  saw an older extraction's refreshed Git index cache; a new extraction with
+  optional Git writes disabled passed all217 files. No project-result error was
+  hidden or repaired to pass a scientific test.
+- Disclosed limits: course prerequisites/Windows dependence, no clean full
+  rebuild, some brief helper docstrings, uninspected approval/extension records,
+  unknown historical AI versions/Claude sessions, and source-table retrieval
+  limits. Do not replace these uncertainties with invented evidence.
+- Saved052 records/checklist023, final-review evidence and corrected PDF locally.
+  No scientific execution, raw held-out analysis, publication/access change or
+  Moodle action. Student commit/push precedes the matching replacement clone ZIP;
+  the previous1c1ad1f pair is retained only as historical evidence.
+
+## Verifying and packaging the corrected publication, 25 October 2026
+
+- Student action: reported done after commit/push instructions. Fresh local and
+  remote evidence confirms public commit 1c1ad1f. No claim is made about an
+  unobserved personal reading or the sequence of GitHub interface actions.
+- Material AI assistance: compared local/remote file identities, made an actual
+  public remote clone, adapted the previously inspected packaging helper, built
+  the ZIP including Git history, copied the reviewed PDF and verified both.
+  Independent read-only review checked the bounded publication diff and the
+  protected test README against its recorded fingerprint.
+- Actual checks: 189 file identities and 14 commit IDs agree; clean clone and
+  extraction pass Git integrity checks. ZIP CRC, all 217 member hashes and
+  extracted project bytes pass. PDF/DOCX match the reviewed fingerprints; no
+  course originals or unexpected project files are included. Nine original-to-
+  clone byte differences are solely Git-managed line endings and are listed.
+- Boundary: no scientific execution, new held-out analysis, model adjustment,
+  report rewriting, commit/push, access change or Moodle submission. The
+  assistant prepared and checked files; the student remains responsible for
+  final content decisions and completing submission.
+- Saved local records 051 and checklist022, plus package checks.json and
+  CHECK_RESULTS.md. These receipts deliberately remain outside the fixed
+  1c1ad1f clone/ZIP, whose records are 050/checklist021. No extra push is needed
+  merely to log verification. The new PDF/ZIP pair supersedes the older package;
+  actual Moodle submission and field/size limits remain unverified.
 
 ## Correcting status while preserving sealed evidence, 25 October 2026
 

@@ -1,0 +1,104 @@
+{
+  "before_docx_sha256": "9e253d0aa3ee89e0757c29974e243d8b2a8bc4bd41330ae5ca1030ca2dcb6ecb",
+  "docx_sha256": "4bfc7aa7e5330fec839cbdbc05d254fbc8385f9bf323b0c2152f327277da8d32",
+  "changed_paragraphs": 2,
+  "other_package_parts_unchanged": 20,
+  "native_equations_unchanged": 3,
+  "scientific_tables_unchanged": 6,
+  "student_AI_reflection_unchanged": true,
+  "changes": [
+    {
+      "before": "Figure 2  Saved 1 ms trace. Left shows the first 2.5 s of the 5 s response; right enlarges the \u00b11 mm band and clips earlier peaks. Source E1.",
+      "after": "Figure 2  Saved 1 ms trace. Left shows the first 2.5 s of the refined 10 s response; right enlarges the \u00b11 mm band and clips earlier peaks. Source E1."
+    },
+    {
+      "before": "Future work could refine selected sensitivity locations, measure physical vehicle responses, introduce relevant nonlinearities, and test portability in a clean environment. A future scalar road height optimisation would need an equivalent workload and preserved output checks. If any model or setting is chosen using the consumed test results, genuinely new independent cases are needed for a new generalisation claim. No further experiment is implied by this draft.",
+      "after": "Future work could refine selected sensitivity locations, measure physical vehicle responses, introduce relevant nonlinearities, and test portability in a clean environment. A future scalar road height optimisation would need an equivalent workload and preserved output checks. If any model or setting is chosen using the consumed test results, genuinely new independent cases are needed for a new generalisation claim. No further experiment is implied by this report."
+    }
+  ],
+  "pdf_sha256": "22102e2d34a61667adccd28f11ea6ca7c80453d77a1eb882c20c09a5e3d20524",
+  "pdf_pages": 10,
+  "main_pages": 9,
+  "reference_pages": 1,
+  "changed_pages": [
+    6,
+    8
+  ],
+  "pixel_identical_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10
+  ],
+  "scientific_model_paths_identical": 155,
+  "docx_preserved_during_export": true,
+  "renderer": "Packaged renderer unavailable: missing soffice; read-only Word export with pypdfium2 visual QA used.",
+  "scientific_execution": false,
+  "student_moodle_status": "Not submitted yet; confirmed 25 October 2026",
+  "remote_revision": "1c1ad1f; correction not yet pushed",
+  "visual_review": {
+    "changed_pages": [
+      6,
+      8
+    ],
+    "other_pages": "Pixel-identical to previously inspected pages; all pages reviewed at full-page size.",
+    "result": "pass"
+  },
+  "markdown_files": 42,
+  "markdown_local_targets": 222,
+  "markdown_link_failures": 0,
+  "html_pages": 19,
+  "html_local_links": 108,
+  "html_link_failures": 0,
+  "python_files_static_syntax_checked": 32,
+  "public_functions_documented": 96,
+  "supporting_course_links_clarified": 3,
+  "published_package_recheck": {
+    "date": "2026-10-25",
+    "commit": "1c1ad1f2563779be0bef4adc3c833e1c3274870e",
+    "tree": "f29169e8887bd7232a0a8eae4e0d85d6effe9def",
+    "remote_metadata": "Fresh GitHub reads confirm public main at the same commit",
+    "tracked_paths": 189,
+    "commits": 14,
+    "git_integrity_clone_and_fresh_extraction": "pass",
+    "zip_crc_and_all_217_member_bytes": "pass",
+    "git_metadata_members": 28,
+    "package_hashes_unchanged": true,
+    "archive_sha256": "489375f470a20c1a16a680aff3d910f07ac5bf5450ac5eb6f5a979f768faac2e",
+    "pdf_sha256": "0c5f3158ed3c295224c7f8f6af017ae7a16c51d7d65bae0da30f074008b4ab0a",
+    "docx_sha256": "9e253d0aa3ee89e0757c29974e243d8b2a8bc4bd41330ae5ca1030ca2dcb6ecb",
+    "brief_sha256": "1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c",
+    "protected_test_readme_matches_manifest": true,
+    "pdf_pages": 10,
+    "main_pages": 9,
+    "reference_pages": 1,
+    "identity": "Wee Hao Siah, 33567735",
+    "tracked_changes_or_comment_anchors": 0,
+    "course_originals_in_archive": 0,
+    "scientific_execution": false,
+    "clean_environment_rebuild": false,
+    "moodle_submission_verified": false,
+    "checker_correction": "An initial comparison against the older extraction detected only its refreshed .git/index stat cache after git status. The fixed ZIP was unchanged. This fresh extraction disables optional Git writes and all 217 files remain byte-identical after Git checks."
+  },
+  "overall_status": "Final caption/source-link correction verified locally; new student commit/push and matching clone ZIP pending.",
+  "records_revision": "052",
+  "checklist_revision": "023",
+  "independent_report_review": {
+    "result": "pass",
+    "docx_paragraph_changes": 2,
+    "pdf_pages_with_text_changes": [
+      6,
+      8
+    ],
+    "unchanged": "All other elements, six tables, three equations, both plots, Section 9",
+    "page6_visual_review": "pass"
+  },
+  "final_scientific_diff": "none",
+  "older_package_preserved": true,
+  "markdown_scope": "41 existing tracked files plus new final-review Markdown receipt; current working bytes",
+  "final_upload_wording_check": "pass: corrected files pending push/new matching ZIP; no mixed versions or completed Moodle claim"
+}

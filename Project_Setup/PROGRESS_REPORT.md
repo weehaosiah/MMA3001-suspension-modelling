@@ -56,7 +56,8 @@ No assessed report was written.
 
 ## Basis of the 11 October review
 
-On 11 October, reread all 15 pages of the original [project brief](../MMA3001_2026_Project_Brief.pdf),
+On 11 October, reread all 15 pages of the original course file `MMA3001_2026_Project_Brief.pdf`
+(available through authorised course access; excluded from the public repository),
 HANDOFF001, PROJECT_GUIDE003 and the current sections of state/evidence/AI027.
 The brief has no visible numbered revision. Its SHA-256 is unchanged:
 `1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c`.
