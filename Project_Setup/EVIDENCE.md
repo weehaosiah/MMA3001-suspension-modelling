@@ -1,6 +1,449 @@
 # MMA3001 evidence register
 
-Revision: 026 | Updated: 2026-10-11 | Status: licence/account decisions and clone-attempt outcomes recorded
+Revision: 047 | Updated: 2026-10-25 | Status: PDF and static upload checks verified; publication pending
+
+## Final local submission preparation, 25 October 2026
+
+Read guide003/current046 and checklist017; independent source audit reread brief
+pp8-9/11-12 and confirmed the unchanged hash. The brief requires an accessible
+repository link and written report/zipped clone through Moodle but names no
+report file format. The student's reply supplies current format: PDF plus ZIP
+of the GitHub clone. Assessor access remains unknown; no Moodle page or invitation
+list was independently inspected. Official GitHub commit/sync/clone and
+collaborator instructions were revisited; links are in FINAL_UPLOAD_CHECK.md.
+
+Authenticated get_repo confirms private weehaosiah/MMA3001-suspension-modelling;
+fetch_commit with main resolves to8ba9808f10dcdc84330135870d8b7f92c189f0a8, matching
+local HEAD. All later work is uncommitted locally. No remote writes occurred.
+Root course-PDF ignore rule now covers spaced filenames. All50 root course
+PDF/notebook originals are excluded; none is tracked. Current-facing README,
+submission checklist and upload guide were reconciled with R1-R7 completion and
+the25 October extension. Existing historical entries remain dated records.
+
+Static scientific evidence:426 SHA-256 comparisons across140 unique files pass
+with zero mismatches (109 authored scientific/checkpoint files and31 recorded
+course originals), including120 profiling-protected files and13 sealed profiling
+artifacts. Git clean-filter bytes match all109 checked authored files. HTML:
+19 pages,108 local links/anchors, zero missing targets or absolute-path leaks.
+Independent assistant used only file reads/read-only Git filtering; no scientific
+code or audit entry point was executed and held-out files were only hashed.
+
+Report change is limited to the first-page subtitle, removing draft and changing
+the date to25 October. Final DOCX SHA-256:
+8c9df0aa7924a8f5b50d6bd374f6e6913e214101412b78ee4cc65206d972c239.
+PDF SHA-256:
+1e424555f3abf839893aff9f297b2bd841054946323cf1f54e44490e7541e8b5.
+Word export preserved DOCX bytes. All20 other package parts, three native
+equations and six tables are unchanged. PDF ten pages: nine main plus references.
+Root inspected page1; all pages2-10 match the preceding visually reviewed render
+pixel for pixel. Identity/date/responsibility text checks pass. Backup/edit record:
+tmp/report_submission_20261025; internal render QA:
+Report_Draft/rendered/submission_20261025. The initial title locator stopped
+before editing because the subtitle shares a paragraph with the course name;
+corrected the text-node selection and replaced the preliminary PDF, then verified
+the final artifact. E9 retains the substantive046 reflection checkpoint.
+
+Current candidate hashes, core Markdown link checks, whitespace results and
+excluded-file counts are recorded in upload_review_20261025/inventory.json.
+No simulation, model fit/prediction, benchmark or test-suite run; final test
+remains consumed. No commit/push, final remote clone/ZIP, access change or Moodle
+submission. Format is now known from the student; exact fields/limits, assessor
+access and submission confirmation remain unresolved.
+
+## Human oversight and responsibility review, 25 October 2026
+
+The student supplied identity details and requested a narrative showing their
+judgement and accountability for final decisions and conclusions. Reread
+Responsible Use of AI notebook cells4-6 and brief pages6/15, against guide003
+and records045. The source versions remain the notebook with SHA-256
+11f8aed9e9f1a6e5503a06a466424aaddf0eb78818eb50c1b796381a800daef6 and brief
+1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c.
+No linked video or current provider policy was reviewed in this edit.
+
+Section 9 now leads with student topic/output/scope direction, reasoned review
+and engineering judgement. It connects oversight to the documented stiffness
+interpretation, distinctions between numerical checks and fixed-bump limitation.
+The concluding paragraph explicitly accepts responsibility for the submitted
+conclusions, decisions, code, results and references. AI's substantial technical
+contribution remains disclosed. Claude physics checking remains student-reported;
+no transcripts, independent manual checks or unaided mastery are inferred.
+Independent content review found all eight brief reflection topics covered.
+
+Entered the supplied identity, removed the final R1 marker and updated E9 to046.
+Final DOCX SHA-256:
+f99dc8636e3bad3bdc53d711ab39b7702119c3b982a9d986d333634f4f2aa17f.
+The read-only Word export preserved DOCX bytes. Final layout: ten pages,
+nine main plus references; all20 other package parts, three native equations
+and six scientific tables unchanged; pages2-8 pixel-identical to the prior
+render. Root inspected pages1/9; independent assistants inspected2-3,4-8,9-10.
+All pages pass legibility, clipping and overlap checks. Backup and QA are in
+tmp/report_responsibility_20261025 and Report_Draft/rendered/responsibility_20261025.
+
+Saved current review notes, contribution/source mapping, report README and
+records046/checklist017. Older entries below are historical checkpoints.
+Documentation checks pass: Git diff whitespace check, trailing-whitespace
+checks on all seven edited Markdown files, reflection/README local-link
+resolution, record revisions and final DOCX hash verification.
+No new scientific run, test evaluation, source-method adaptation, publication
+or submission. Final student reading and repository/access/ZIP/Moodle work
+remain outstanding; current report text does not establish submission readiness.
+
+## R7 incorporation and attribution, 25 October 2026
+
+Student reply: "all the physics related questions. allow yourself to find
+wherever most suitable and use it there". This confirms the reported scope of
+Claude checking and authorises inclusion. It does not provide transcripts,
+exact versions/session dates or establish independent personal source or code
+checks. Section 9 identifies ChatGPT/Codex, Claude physics cross-checking,
+substantial AI specification/implementation/testing/analysis/drafting, student
+topic/output/scope/licence decisions and GitHub actions, guided reasoning,
+AI-led error correction and learning/responsibility limits. The walkthrough is
+explicitly AI-assisted. No specific Claude findings or independent validation
+are invented. Independent source/provenance review supported this distinction.
+
+Replaced the R7 scaffold with the condensed reflection, removed its prompt,
+updated R1, and pointed E9 at records045. The initial 11-page export split the
+administrative checklist; removed that duplicate table, its heading and the
+deadline note from the report while preserving all tasks/deadline in the
+project checklist/README. Final read-only Word export is ten pages, nine main
+plus references, with DOCX bytes preserved by export. All 20 other package
+parts, three native equations and six scientific tables remain unchanged.
+Pages 2-8 are pixel-identical to the prior R6 render. Final SHA-256:
+9a38921d4ee86352c6a984b236b2c7159ec389f65063bf5abe9daed0a67a0f35.
+Backup: tmp/report_r7_20261025/before.docx. Internal QA/metadata:
+Report_Draft/rendered/r7_20261025. Only review marker R1 remains.
+
+Root visually inspected pages 1-3 and 9; independent assistants inspected 4-8
+and 9-10. All ten pages pass without unintended clipping, overlap or missing
+glyphs. Independent content review confirmed the eight brief reflection topics
+and conservative attribution. Documentation whitespace and current reflection/
+README local-link checks pass; final report hash and record revisions match.
+
+No new course-method adaptation, scientific execution, model call, test
+evaluation, external validation, publication or submission occurred. Current
+reflection wording does not depend on an assumption that unreported independent
+personal checks took place. The student must still add identity/read the report
+and complete the recorded final repository/access/ZIP/Moodle steps.
+
+## R7 sources and contribution review, 25 October 2026
+
+Read all14 cells of MMA3001_Notes_Week01_4_Responsible_Use_of_AI.ipynb,
+nbformat4.0, no numbered revision identified. SHA-256:
+11f8aed9e9f1a6e5503a06a466424aaddf0eb78818eb50c1b796381a800daef6.
+One-based cells4-6 cover accountability, disclosure, known tool versions/access
+dates/iterations and checking against reliable sources; cells8/11/13 discuss
+privacy, ownership and terms. Cell14 is the teaching author's acknowledgement,
+not evidence that this student personally verified all project content. No
+notebook cell or linked video was executed/viewed, and current linked provider
+policies were not rechecked.
+
+Reread original brief pages6/15. Its 15-page file SHA-256 remains
+1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c.
+The reflection requires tools/tasks, approximate contribution, reasons,
+verification, student decisions, errors/limitations and learning/workflow.
+No exact percentage is prescribed. Independent source audit confirmed these
+requirements; no newer brief or conflicting source record was found.
+
+Compared AI_USE_LOG043 and student R3-R6/earlier responses. Records support
+student output/scope decisions, guided physics/data explanations and corrected
+answers, personal stiffness judgement, MIT selection and GitHub actions. They
+also show substantial AI implementation, automated checking, analysis and
+drafting. They do not establish independent student execution of all tests,
+all-source verification or unaided reproduction of the full project. Examples
+of AI-caught errors retain that attribution. Claude use is newly student-reported;
+its exact tasks/outputs/versions/dates have not been inspected, and the Codex
+review assistants are not being attributed to Claude.
+
+Saved a conservative proposed reflection and contribution table in
+Report_Draft/AI_REFLECTION_REVIEW.md, with provenance and a pending question
+about Claude and outside-chat personal checks. This is a review artifact, not
+an approved autobiographical claim or a report replacement. The DOCX remains
+at SHA-2566065bdeeed9b2119a9812ca6e7a18a7506042bf08ed424968c68fe0f4878f3f5.
+No new render, scientific execution, numerical test, model call, publication
+or submission occurred. R1/R7 remain open.
+
+An independent attribution review prompted tighter wording: the proposed
+reflection now explicitly calls the automated/source checks AI-led instead of
+using "not all personally performed", and attributes the documented runtime
+thread-control and Git line-ending corrections to AI-led checks. This avoids
+implying an unverified subset of technical tests or bug discoveries was the
+student's independent work.
+
+## R6 engineering judgement and report edit, 25 October 2026
+
+Read guide003/records042, report/review notes, PHYSICS_REVIEW and the unchanged
+tail implementation. Independent static review of verification_results/summary.json
+confirmed both ks=24000/30000 N/m at cs=2126.4 N s/m are passing pilots. Their
+baseline-to-tight10s/0.25ms A discrepancies are approximately 0.000000106 and
+0.000110198 mm, compared with the pair's approximately 0.276867 mm baseline
+increase. The refined pair increases by approximately 0.276977 mm. This already
+supports the direction for this pair, without treating refinement differences
+as certified error bars or establishing engineering significance.
+
+For both pilots the saved 5-to-10s comparison changes neither A, A_post nor
+1 mm settling time. Five-second tail bounds are approximately 3.69e-7 and
+5.65e-7 m, below the active 0.0005 m limit. Code requires the bound below
+min(0.0005 m, A/2, A_post/2) plus the chosen settling band. Agreement through an
+extended horizon alone cannot establish behaviour forever. The exact-model
+flat-road energy argument supports a bound for relative displacement; computed
+states do not certify numerical accuracy or all other outputs.
+
+Reread course Week07_5_Higher_Order_ODEs cells 17 and 19 (one-based JSON cells):
+zeta=c/(2*sqrt(k*m)), omega_n=sqrt(k/m) and the underdamped exponential factor
+exp(-zeta*omega_n*t). Thus zeta*omega_n=c/(2m), so decreasing a single-oscillator
+ratio by raising stiffness does not alone establish slower time decay. This
+does not assign one damping ratio to the coupled quarter-car or establish its
+causal mechanism. Relative travel is not body motion alone. No modal analysis,
+notebook execution or method implementation was performed.
+
+Added the AI-refined student expectation/judgement to Section 6, expanded the
+finite-horizon paragraph in Section 8, removed R6 and its review-table row.
+All 20 other DOCX parts, three native equations and six scientific tables are
+unchanged. Read-only Word export preserved bytes and produced ten pages, nine
+main plus references. Pages 1,2,3,4,5,7,10 are pixel-identical to the prior R5
+render. Final SHA-256:
+6065bdeeed9b2119a9812ca6e7a18a7506042bf08ed424968c68fe0f4878f3f5.
+Backup: tmp/report_r6_20261025/before.docx. Internal QA/metadata:
+Report_Draft/rendered/r6_20261025. Remaining review markers: R1/R7.
+
+Root inspected pages 1-3,6,8; independent assistants inspected 6-8 and 4,5,9,10.
+All pages pass without unintended clipping, overlap or missing glyphs. Report
+equations, tables, figures and text remain legible. These are document and
+saved-source checks, not rerun scientific tests. R7 preparation reread original
+brief pages 6 and 15 for tools/tasks, approximate contribution, reasons,
+verification, student decisions, errors and learning reflection; it prescribes
+no exact percentage. No new source version, experiment, held-out inspection,
+upload or submission was introduced.
+
+## R5 report completion, 25 October 2026
+
+Read guide003/records041, the current report/review notes and relevant
+ml_development.py/final_evaluation.py pipeline/fitting boundaries. An
+independent static audit confirmed the student's core explanation. Candidate
+scalers fit only 225 training inputs; validation uses the same transformation.
+The final pipelines refit on the same 300 original development rows after
+choices are frozen, with the 100 test rows excluded. Refined validation labels
+remain a verification reference, not replacement fitting labels.
+
+AI refined two generalisations: more fitting data does not guarantee better
+accuracy, and an independent test assessment is not necessarily a statistically
+unbiased estimate for every metric, including RMSE. The revised report instead
+states the recorded sampling design and finite sample uncertainty, preserving
+the restriction against test-driven tuning without new independent evidence.
+
+Changed Section 4 scaling/selection prose, Section 5 refit/test interpretation
+and the review table; removed R5. The first Word export had two lines spilling
+to an extra page. Section 5 paragraph spacing was reduced to 4 pt after,
+retaining font sizes, margins and figure sizes. Final read-only Word export
+preserved DOCX bytes and produced ten pages, nine main plus references. All
+20 other package parts, three native equations and six scientific tables are
+unchanged. Pages 1,2,3,7,8,10 are pixel-identical to the prior R4 render.
+Final SHA-256:
+a924b0454c42e123c16ef028c8c7d226726ecd7d9d69f71a77b86287a146258d.
+Backup: tmp/report_r5_20261025/before.docx. Internal QA/metadata:
+Report_Draft/rendered/r5_20261025. Remaining markers: R1/R6/R7.
+
+Root visually inspected pages 1-3 and 5; independent assistants inspected 4-6
+and 7-10. All ten pages pass, including the complete final paragraph on page 5
+and the R1/R6/R7 review table. No unintended clipping, overlap or missing
+glyphs were found. Documentation whitespace checks pass.
+
+R6 preparation checked existing report/PHYSICS_REVIEW and saved interpretation
+and nominal summaries, confirming the 24,000 versus 30,000 N/m comparison at
+nominal damping. No raw held-out rows, new scientific execution, course-method
+adaptation, model fitting, prediction, test evaluation, upload or submission.
+The student's personal engineering judgement remains pending.
+
+## R4 report completion, 25 October 2026
+
+The student's corrected answer uses both masses' kinetic energy and both
+springs' energy, the existing flat-road identity and exact-model future bound.
+It distinguishes evidence from computed states from certification, and calls
+an excessive bound inconclusive. AI clarified that numerical state error has
+not been rigorously bounded, rather than asserting unbounded error growth.
+Independent static review supports these distinctions and the incorporated
+solver/observation/horizon explanation. No new method was adapted.
+
+Edited only Section 3 prose/paragraph spacing and the outstanding-review table
+in the existing DOCX, preserving its other 20 package parts, all three native
+equations and six scientific tables. Removed R4; remaining markers are
+R1/R5/R6/R7. Read-only Word export using the established rendering fallback
+preserved DOCX bytes and produced ten pages, nine main plus references. Seven
+pages (1,2,5,6,7,8,10) are pixel-identical to the prior R3 render. Render and
+structural metadata are saved in Report_Draft/rendered/r4_20261025/review.json;
+the pre-edit backup is tmp/report_r4_20261025/before.docx. Final SHA-256:
+8bb9a24ea3c9b7af543d852ec2482ab791c940d00231513526765d655b989e07.
+
+All ten rendered pages pass visual inspection: root checked pages 1-4 and
+independent assistants checked 3-6 and 7-10 at full resolution. The energy
+expression and caveat fit on page 3 without overflow; page 4 spacing is clean,
+and page 9 lists R1/R5-R6/R7. No unintended clipping, overlap or missing glyphs
+were found. Documentation whitespace checks pass. These are report checks,
+not rerun scientific tests.
+
+For R5 teaching, an independent read-only audit of report Sections 4-5, the ML
+guides and fitting code confirmed 225 training/75 validation/100 test roles,
+training-only development scalers, and final refitting on 300 development rows
+after choices were frozen. The 100 test rows remain outside fitting and have
+already been evaluated once. Refined validation labels were not fitting-label
+replacements. No notebook adaptation, raw held-out-row inspection, scientific
+execution, new result, upload or submission occurred. Student R5 reasoning is
+pending.
+
+## R4 response and source check, 25 October 2026
+
+Read guide003, records039, current student-review notes, quarter_car.py
+post_bump_energy/settling_candidate/summarise and run_nominal.py refinement and
+resolution checks. The student's observation/integration distinction and
+velocity/longer-horizon reasoning are supported. Their single-relative-mass
+energy is not the implemented full-system expression. Existing derivation and
+code use H=(ms*vs^2+mu*vu^2+ks*(zs-zu)^2+kt*zu^2)/2 on flat road, with
+Hdot=-cs*(vs-vu)^2. The resulting exact-model future-displacement bound does not
+certify numerical state error when evaluated on computed states. Passing the
+bound is a sufficient tail condition; failure is inconclusive about a later
+excursion. Settling interpolation/sampling error has no universal sign.
+
+An independent assistant's read-only source/derivation review agreed with these
+corrections. This is static review of an existing method; no new course
+method was adapted, external source introduced, simulation or scientific test
+run. The report SHA-256 remains
+312fbaf04b0de886b0a699a9b761756b93ae33e3686d662a2e38a96832916917;
+no new rendering/page-count result is claimed. The response and corrections are
+saved in student-review notes, with R4 open pending a corrected restatement.
+
+## R3 report completion, 25 October 2026
+
+The student's corrected response explicitly identifies bump height as absent from the ML inputs and rejects assuming validity for a changed bump. Combined with their earlier force/equilibrium answers, this supports completing R3 after assistance. Edited the two relevant model/interface paragraphs and review-table row, and removed the R3 prompt. No scientific source, data, model or result was changed.
+
+Final DOCX SHA-256312fbaf04b0de886b0a699a9b761756b93ae33e3686d662a2e38a96832916917. All20 package parts outside document.xml remain identical; three native equations and six scientific tables are unchanged. Read-only Word export preserved DOCX bytes and produced ten pages (nine main plus references). Root visually checked1-2 and independent assistants3-6 and7-10; no unintended clipping or overlap found. PNGs1,3,4,5,6,7,8,10 are pixel-identical to the previously checked R2 render. Internal QA/metadata are in Report_Draft/rendered/r3_20261025; a pre-edit backup is in tmp/report_r3_20261025/before.docx. Review text was refreshed. R1/R4/R5/R6/R7 remain.
+
+For the next R4 explanation, reread the unchanged quarter_car.py energy expression/bound and run_nominal.py solver/grid/horizon/tail comparisons; independent static review confirmed the distinction. On flat road, dH/dt=-cs(vs-vu)^2<=0 and spring energy bounds |zs-zu| by sqrt(2H_end/ks). Decreasing total energy does not imply monotonic relative displacement. Applying the bound to computed states is a numerical consistency check, not certified exact error control or empirical validation. No new check was run and no new notebook method adapted; student R4 responses remain pending.
+
+## R3 force and input review, 25 October 2026
+
+Read current records037/review notes, quarter_car.py rhs and nominal constants, ML_GUIDE and metadata in dataset_v1/generation_plan.json and final_evaluation_v1/frozen_plan.json. Initially queried two assumed plan.json paths that do not exist; file inventory identified these actual plan filenames. No required source record was missing and no raw held-out response was read.
+
+Code supports Fspring,body=-ks(zs-zu) and Fdamper,body=-cs(vs-vu); hence at0.01m displacement and equal velocities the contributions are-0.01ks and0. With ks=24000N/m the first is-240N. This is the dynamic change from equilibrium, not the total preloaded physical spring force. Static equilibrium subtraction removes balanced constant loads; gravity remains part of the physical model.
+
+The saved design fixes bump height0.050m and duration0.50s. Only stiffness/damping are prediction inputs. There is no trained/validated height interval, and changing the intended bump while retaining the same input pair leaves the model prediction unchanged. The assistant clarified this specific limitation after the student's general domain/extrapolation response. Independent static review agreed. No new validation, prediction, simulation, test, report edit or scope extension was performed; student understanding of the correction remains pending.
+
+## Approved R2 report edit, 25 October 2026
+
+Student explicitly accepted the refined motivation with additions1 and2. Edited only the existing report's R2 area, its review-table entry, the stale deadline/page-count sentence, and repeated introductory prose/spacing needed to keep the addition within the existing layout. Independent content review confirmed the condensed scientific claims and retained development-based model selection, warm-query scope, primary/post-bump distinction and real-vehicle limitations. PINNs remain a learning interest beyond the implemented regression methods.
+
+The canonical render_docx.py attempt failed because LibreOffice was unavailable, with additional sandbox temporary-directory cleanup errors. Background Word access was initially denied in the restricted environment; the authorised elevated read-only export succeeded. First renders exposed motivation overflow, corrected by shorter repeated introductory prose and first-page spacing. Final rendering: ten pages, nine main pages plus references. Root reviewed pages1-2 and independent assistants reviewed3-6 and7-10, with no unintended clipping/overlap or unreadable content identified. PNGs and review metadata are internal QA under Report_Draft/rendered/r2_20261025; no scientific run occurred.
+
+Final DOCX SHA-256 c9c5829820555b714b192ab8f7f2ac4ba5cf4332c49e062ec99eb9533c425886. Read-only Word export left its bytes unchanged. Compared with the preserved original: all20 package parts outside document.xml,96 later body paragraphs,three native equations andsix scientific tables are byte-identical at the checked XML scope. The review table change is intentional. R2 is removed; R1/R3/R4/R5/R6/R7 remain. Regenerated the text-for-review companion from the edited DOCX. The original draft is backed up in ignored tmp/report_r2_20261025/before.docx. No model/data/code/result change, commit/push or submission occurred.
+
+## R2 motivation provenance, 25 October 2026
+
+Direct student input establishes passion for motorsport, sim racing and vehicle dynamics; interest in understanding suspension; and learning aims involving numerical methods, AI/ML and PINNs. The student invited extrapolated ideas but reserved selection. Read guide003/current records035, the existing report R2 prompt/review text and ML_GUIDE. Local method records establish RK45 simulation plus linear/RBF-SVR regression; no PINN implementation is established or proposed as a new task here.
+
+Saved the student's words, an AI-refined paragraph and three unconfirmed optional additions in [STUDENT_REVIEW_NOTES.md](../Report_Draft/STUDENT_REVIEW_NOTES.md). Independent AI wording review checked that motivation is not represented as mastery, empirical vehicle validation or implemented PINN work. No new technical literature was needed to refine the supplied motivation; no new method/source claim was introduced. Report DOCX, code, scientific results and test status remain unchanged; no rendering, experiment, publication or submission occurred. Student selection of the final wording is pending.
+
+## Status and deadline reconciliation, 24 October 2026
+
+Student asked the next step and answered the submission-status question with "extension: 23:59 25/10/2026". Retain the established Australia/Sydney timezone. This is direct student confirmation of a new deadline, not independent inspection of Moodle or an extension notice; submission completion remains unconfirmed.
+
+Read guide003, current state/evidence/AI034, checklist008 and Report_Draft README/review text. An independent assistant identified the seven remaining R1-R7 prompts and the report generator's overwrite behaviour. The existing draft and 22 October authorisation supersede older no-report/no-permission summaries. Nine main pages plus one reference page are the earlier rendering result, not a new page-count check today. Refreshed current summaries accordingly; no new brief reread or scientific-method adaptation.
+
+Local Git status shows pending authored edits/untracked report/profiling materials and four untracked course PDFs (Mid Sem 3 practice test and Workshops09-11 slides). Course originals must stay excluded at final upload review. No fresh remote-head, assessor-access or submission verification occurred. Report/source/scientific outputs were not edited or executed; updates are status/deadline documentation only. No new tests, measurements or numerical results are claimed.
+
+## Report draft evidence review 22 October 2026
+
+Read PROJECT_GUIDE003 and current state/evidence/AI033, the complete 15 page brief as text, scientific guides and saved plans, results and check reports. Authenticated read only GitHub fetch confirmed README content at immutable checkpoint 8ba9808f10dcdc84330135870d8b7f92c189f0a8. This is not a fresh remote head or assessor access check. Later local profiling records remain separately labelled.
+
+Created [the report draft](../Report_Draft/MMA3001_suspension_report_draft.docx), nine main report pages and one reference page. Its E1 to E9 index identifies actual source files; public method references were reopened. Physics/numerical and ML/runtime assistants independently audited the evidence and checked draft claims. The report distinguishes numerical consistency, agreement with simulated labels, physical validation and bounded warm timings; the frozen plan contains no engineering acceptance threshold. The 100 final cases remain consumed.
+
+Replotted only results/nominal_trace_1ms.csv and final_evaluation_v1/test_predictions.csv for readable figures. No raw heldout_test/test.csv content was accessed, and no simulation, fitting, prediction, benchmark, scientific audit or test suite was run. Word rendering established ten total pages; page images were checked. The canonical LibreOffice renderer was unavailable, so installed Word supplied the PDF used for internal visual review. Scientific sources and outputs were not edited.
+
+Student review markers R1 to R7 preserve missing identity, personal motivation, independent technical explanations, judgement and AI reflection. Separate topic approval evidence, current Moodle/Unit Overview instructions, private assessor access and final fresh clone packaging still need confirmation. Drafting does not establish final submission, independent student mastery or a new published checkpoint. See the dated AI log entry for substantial AI drafting contribution and checks.
+
+## Settling learning follow-up, 2026-10-12
+
+U029 - Read guide003/records032 and existing quarter_car.py settling_candidate/summarise, run_nominal.py resolution checks and WALKTHROUGH section5. Student correctly rejected the first band entry because a later excursion leaves the band. The assistant clarified the existing one-second confirmation, solver/grid/horizon checks and energy-tail safeguard, and that the band concerns zs-zu rather than each mass separately. Independent static review confirmed these distinctions. This was explanation of the existing adopted method, not a new course-method adaptation or another brief/notebook reread. No simulation, audit, scientific test, fitting, timing or source/result change occurred. Records033 preserve only this demonstrated understanding; the earlier profiling outcomes remain historical measured evidence. The settling question described as pending in the preceding entry has now been answered.
+
+## Bounded profiling evidence, 2026-10-12
+
+U028 / D025 - Student authorised proceeding with the reflected plan. Read guide003/current records031 (newer than the opening prompt and preceding reflection), preserving concept001. Reread original brief p6, not all 15 pages again. Its SHA-256 remains 1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c. The brief expects profiling/timing and improvement where appropriate; it does not require an unsupported optimisation claim. Current Unit Overview/Moodle instructions and actual assessor access remain unresolved.
+
+Course source: MMA3001_Notes_Week02_1_Optimisation_and_Profiling.ipynb, 131 cells, SHA-256 42166ad53117029e35108461b3a4c6607cd2ec38c7aac5ba30e323a3e1640749. Read zero-based cells72-73 (hardware-counter limits), 75-84 (repeated/wall/CPU/warm timing), 90-116 (profiling, overhead and short-sample limits), 127-129 (similar machine load and preserving precision). This entry's indices are explicitly zero-based, unlike some earlier course entries. No notebook or linked video executed/viewed; no package installed. The notebook teaches line_profiler and Scalene, not cProfile. Cell93's prose names Scalene while cell94 installs line_profiler; that mismatch was not copied into the implementation.
+
+S018 - Python Software Foundation, [The Python Profilers, Python 3.12 documentation](https://docs.python.org/3.12/library/profile.html), accessed 12 October 2026. Page displays Python3.12.15; actual runtime is3.12.7. Supports cProfile/pstats, self versus cumulative time and instrumentation limits. Because the two course profiler packages are unavailable, the standard-library profiler is an explicitly attributed extension to the taught principles. Profiler timing is not an unbiased Python/native benchmark; binary profile compatibility depends on Python/platform. Plain function JSON and text exports are retained.
+
+M026 - Implemented profile_nominal.py with predeclared plan, alternating U/P, P/U, U/P order and one excluded warmup around unchanged nominal simulate/summarise. Imports, file operations, parameter construction and result rendering lie outside the callable. Each run includes both bump/post-bump segments, 5 s horizon, 1 ms observations and the existing +/-1 mm settling rule. No model loaded, fit or prediction made; held-out files were read as bytes only for preservation hashes, not parsed for response values. Seven runs, 14 solve_ivp segments and 43372 total derivative evaluations. All non-timing summary fields exactly match results/summary.json baseline_5s_1ms, including 6196 evaluations each and raw settling status candidate. This is reproduction of an already verified setup, not seven new data rows or another numerical-resolution proof.
+
+Five actual checks pass: seven_completed_integrations, exact_saved_physics_and_work, expected_profile_call_counts, numerical_pools_one_thread and protected_files_unchanged. All 120 protected pre-existing scientific/course files remain byte-identical. Three profiles each contain 140 function identities and 229486 calls; road_height has6197 calls (6196 derivative stages plus one vector contact check). Every trial and before/after measurement records one-thread numerical pools. Other assistant experiments were idle during timing; OS/user load was not comprehensively controlled.
+
+Unprofiled times [ms]: 413.608100, 394.276200, 427.101500; median413.608100. Profiled paired times [ms]: 549.411300, 524.978600, 506.943400; median524.978600. Paired ratios: 1.328337864, 1.331499593, 1.186938936; median1.328337864. Excluded warmup425.556700ms. Cumulative integration share90.82-92.32%; road_height self share25.55-25.83%, median self134.148ms; its cumulative share42.45-43.12%. Nested cumulative values overlap. Three observations per mode limit generalisation. These boundaries/conditions differ from the older nine-case warm benchmark; neither a slowdown nor optimisation benefit is inferred by comparing them.
+
+M027 - Focused tests and review: initial 11 passes plus one pytest setup error in4.09s because the default sandbox temporary directory was unavailable. The overwrite test did not run. Using an absent workspace temporary folder gave12passes in0.86s. Independent preflight review then identified delayed numerical-pool discovery and omission of a custom output path from preservation exclusions; both were fixed before measurement. Added a custom-output regression test; final13passes in0.90s. These are bookkeeping/guard tests without new physical integrations. The earlier full433-pass suite was not rerun. See [actual test record](../Suspension_Model/profiling_v1/TEST_RESULTS.md).
+
+The actual run exited0 with all five checks. Saved-only audit exited0 and reconstructs profile exports, summary arithmetic, equality, call counts and hashes without solving/fitting/predicting. Independent review verified all three raw profiles equal JSON exports,120 protected hashes,13 raw checkpoint artifact hashes and frozen runner hash. Raw self-time sums agree with pstats within4.45e-16s. Separate static numerical review found no remaining material correctness issue. These are assistant cross-checks, not external validation. Derived results/plot were rendered from saved evidence; the chart was visually inspected. HTML generation checked19 pages/108 local links/anchors, with no absolute runtime paths or file URLs.
+
+Decision: keep the frozen implementation and diagnostics. Static inspection identifies general NumPy scalar/array processing in road_height as a possible future scalar-path optimisation, with no demonstrated benefit yet. No FLOPS, arithmetic-intensity, hardware saturation or memory claim. Saved [guide](../Suspension_Model/PROFILING_GUIDE.md), [results](../Suspension_Model/profiling_v1/CHECK_RESULTS.md), raw records, test/run/audit transcripts and revised documentation locally. No remote check/commit/push or report drafting occurred. Student walkthrough observations and AI corrections are in U028; no broad mastery is inferred.
+
+M028 - Assessor reproduction review found a material packaging defect before publication: three raw pstats text exports contain CRLF but the general .gitattributes rule normalises .txt to LF, breaking sealed hashes. Added exact -text exceptions for these three exports and binary treatment for .prof files; no sealed source/result was rewritten. Read-only git hash-object comparisons with/without clean filtering confirm the runner and all 13 raw artifacts retain their bytes. No object writing, staging, commit or push occurred.
+
+Copied 172 then-current Git-visible working files into the absent ignored tmp/profiling_relocation_check_20261012 directory, preserving exact bytes and excluding Git metadata/course originals. Existing Anaconda ran profile_nominal.py audit --output profiling_v1 from the relocated Suspension_Model folder: exit0, Audit passed,31 excluded originals absent. All 172 original/copy files stayed unchanged through the audit; later documentation changes are outside that interval. No new integration, fit, prediction or timing. This is a local working snapshot on the same environment, not a GitHub clone, clean installation or whole-project rebuild. See [actual reproduction record](../Suspension_Model/profiling_v1/REPRODUCTION_CHECK.md) and its two transcripts. Final upload/remote clone, assessor access and external course instructions remain pending.
+
+Final local documentation checks found all 86 Markdown targets in 12 reviewed documents present, with git diff --check passing. HTML regenerated successfully: 19 pages, 108 local links/anchors, generated-content SHA-256 7b86a671877addeee4f80e3d221f76f439b9014969da166df981b1a5d7fd01cb. Original saved profiler audit still passes. Independent final read-only review found no material contradiction among records032, the sealed profiling evidence, line-ending exceptions, scoped reproduction claims and the three student walkthrough answers. The settling question remains pending.
+
+## Concept-approval drafting evidence, 2026-10-12
+
+U027 / D024 - Read guide003/current records030 and current simulation/dataset/ML/final-evaluation/runtime documentation to prepare the student's requested ten-section concept statement. An independent assistant checked the adopted specification and flagged that the final test is already consumed and profiling remains outstanding. The draft preserves 400 distinct setups (225/75/100), spring/damping inputs, RK45 simulation labels, linear regression versus RBF SVR, peak absolute relative movement as the sole prediction target, and supporting post-bump/settling diagnostics.
+
+Reopened primary sources: [Soong et al. (2017)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0179485) for the quarter-car formulation/reference parameters, and [MathWorks suspension example](https://www.mathworks.com/help/robust/gs/active-suspension-control-design.html) for the cosine-bump source. The adopted 0.50-second duration and +/-25% parameter ranges are project choices; the 400-row dataset was generated by this project, not downloaded from either source. The draft cites Soong and states the project choices without attributing them to the source.
+
+Saved CONCEPT_APPROVAL001 and records031. No new full-brief reread, numerical verification, dataset generation, model fitting, test prediction, timing, profiling, assessed report drafting or remote operation occurred. Existing evidence supplies the method/status facts; this is concept drafting, not a new scientific result or approval record.
+
+## Seven-requirement reflection, 2026-10-11
+
+U026 / D023 - Student pasted the brief's requirements and asked whether progress meets them. The attachment Pasted text.txt under attachment ID345e0d07-a1a0-4e03-be28-89e5548afbf2 supplies the same seven sections from brief pp4-7. Read guide003/current records029, root/stage READMEs, reproduction guide, model walkthrough, ML/physics/runtime guides and saved verification/final/clone evidence. Requirements themselves were freshly read from the pasted text; no further full-PDF reread is claimed in this turn. No new scientific method or course notebook adaptation occurred.
+
+Assessment: several technical requirements substantially addressed; baseline comparison complete computationally; whole requirement set remains incomplete. Real-clone saved-output reproduction is same-environment and source-dependent, not a clean rebuild. Explicit profiler expectation unfulfilled. Extensive AI disclosure does not establish final reflection/student mastery. Simulation-generated data are permitted by the brief; absent measured-car validation is a scope limit, not an automatic requirement failure. Warm-query ratios exclude preparation and compare peak-only outputs; further model tuning against the consumed test is not justified.
+
+Saved checklist006 and state/evidence/AI030 as administrative reflection. Existing numbers were read from saved outcomes, including final RMSE 0.199436/0.029796 mm, runtime means 222.637844/0.163470 ms and 433 earlier test passes. No scientific command/audit or remote check rerun; no source/result changed. Current local Git status still has uncommitted documentation and clone-review evidence. This review is not a full source-code/docstring audit or a rubric grade.
+
+Independent selected static review supports the qualified input/interface judgement: ml_development.py predict_checked checks nonempty (n,2) shape, finite numbers and inclusive ks 18000-30000 N/m / cs 1594.8-2658 N s/m. The simulator accepts broader parameter inputs; that is not physical-domain validation. Prediction guards do not establish new-query contact/tail validity or a domain-wide positive-output guarantee. No material intended-interface guard defect identified; not every arbitrary Python type is claimed to receive the same exception. Reproduction limits agree with the recorded evidence.
+
+Document checks passed: git diff --check, all four local Markdown targets in the four edited records, consistent revision headers and seven correctly structured requirement rows. These checks do not rerun scientific tests.
+
+## Requirements checklist and rubric review, 2026-10-11
+
+U025 / D022 - Student requested checklist and rubric review. Read guide003, current records028, checklist004, progress report001 and existing repository-review evidence. Root reread all 15 original brief pages; SHA256 unchanged at 1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c. Root rendered/viewed pp10,12,15; independent source assistant read pp10-15 and visually checked pp10,14,15. Table columns confirm Excellent/Good/Satisfactory/Poor for six criteria. No new scientific/course method was adapted or notebook executed.
+
+Source findings: p1 states 25% of unit mark; pp10-15 specify no numeric criterion weights, grade boundaries or equal-weighting rule. Page8 gives no separate report/repository/presentation weighting. Pages4-9 requirements remain as mapped; profiling explicitly expected on p6, operation estimates conditional. AI use is allowed with responsible disclosure/verification; p15 additionally assesses student direction, understanding and critical reflection, which logs alone cannot establish. Existing evidence supports readiness discussion, not an Excellent rating, real-vehicle validation or a full rebuild claim.
+
+Saved checklist005 with tick-box deliverables, paraphrased four-band/six-criterion rubric and project-specific evidence/gaps. No source PDF or scientific artifact changed; no new numerical test, fitting, timing, full documentation-content audit, remote call or submission. Local Git status still shows preceding uncommitted documentation; use the earlier read-only remote verification at 8ba9808 without claiming a new remote check. Unit Overview/current Moodle instructions and assessor access remain unresolved.
+
+Verification: independent source review found no material factual error or overclaim in the new checklist/rubric sections. Static checks passed for whitespace, all four local Markdown link targets in the four edited files, matching revision headers and a six-row/four-level rubric table. Source PDF hash remains unchanged. These are document checks only.
+
+## Progress review, 2026-10-11
+
+U024 / D021 - Student requested checking the brief and reporting completed work/next steps before continuation. Read HANDOFF001, guide003, current records027, checklist003 and saved nominal/dataset/final/runtime/clone evidence. Root reread all 15 original brief pages; independent assistant checked pp6,8,9 and the mapping. SHA256 remains 1029cf7c7c2844161af0c3727bbcbf40fac3913575683defe34ee942f9a9550c. No newer brief found among visible project files; Unit Overview/current Moodle form/separate written approval remain unavailable. No course method was newly adapted or notebook executed.
+
+M025 - Fresh branch API/local Git check: main at 8ba9808f10dcdc84330135870d8b7f92c189f0a8, remote tree d2e55b3f1f309f9d38cf5d7561c88a356cfa4869, private repository and 12 local commits. Initial status has eight modified documentation files plus clone_review_v1's five new files from the preceding stage; latest evidence is not committed/pushed. Read saved test log ending 433 passed in 6.15 s, stage result summaries and clone check results. These are existing outcomes, not new numerical tests or freshly rerun audits.
+
+Findings: core computational stages complete; p6 explicitly expects use of profilers and timing, but only timing is evidenced. Individual understanding/report/AI reflection, assessor access, final packaging and Moodle submission remain. Two undated state sections still claimed revision023/no remote/licence pending; updated them and labelled the pre-implementation progress list historical. Saved PROGRESS_REPORT001, state/evidence/AI028 and checklist004. These are administrative records only. No scientific source/output, course original, remote setting or extra clone was edited; no simulation, training, new timing, profiling or report drafting occurred.
+
+Documentation verification: git diff --check passed; all 13 local Markdown link targets in the five review files exist; revision headers agree; original brief hash remains unchanged. These are static documentation checks, not numerical tests.
+
+Independent review found no factual mismatch in PROGRESS_REPORT001 and caught one ambiguous older state sentence. Corrected it to distinguish SVR's error comparison against linear regression from its runtime comparison against simulation.
+
+## Real remote clone check, 2026-10-11
+
+U023 / D020 - Student reported completing two clones after the guided upload/cloning steps. Root used only tmp/github_clone_check_20261011, as planned, and did not inspect/remove the default-directory copy. Read guide003/state026 and reproduction prerequisites; the previous full-brief audit remains applicable. No new scientific method was adapted or course code executed.
+
+M024 - GitHub branches/main, original local HEAD and clone HEAD agree at 8ba9808f10dcdc84330135870d8b7f92c189f0a8, tree d2e55b3f1f309f9d38cf5d7561c88a356cfa4869. Clone origin is the expected private GitHub URL. All 12 ordered commit IDs and 138 tracked paths agree. Initial working-byte comparison: LICENSE alone differs (original zero CRLF, clone21 CRLF); CRLF-to-LF normalisation makes its content identical. All 137 other files are byte-identical. No rewrite was needed.
+
+Ran existing Anaconda Python with -B from the clone's Suspension_Model directory. Interpretation audit passed all six saved checks/facts with no course original present. Checked the four source hashes in REPRODUCING, copied original brief and Week02_1/Week05_5/Week05_6 files into the clone only, then ran final_evaluation.py audit and runtime_benchmark.py audit. Both exited0 and reproduced their saved metrics/fingerprints or timing statistics/work counts. Raw stdout/stderr, exact commands, before/after hashes and source-copy hashes are in clone_review_v1. Matplotlib's ignored font-cache creation is retained in the runtime transcript.
+
+Independent static call review confirmed the modes do not simulate, fit, predict, load models, time new work, call pytest or read original held-out response contents. Whole-file preservation checks read bytes for hashes only. All 138 cloned tracked hashes and all 138 original tracked hashes remain unchanged by the audits; all four source originals/copies retain expected hashes. Clone status is clean with sources ignored. Subsequent working-record edits are outside this preservation interval.
+
+Independent stdlib HTML review inspected all17 tracked pages: 98 local href occurrences, including32 fragments and34 unique targets; zero missing files/anchors, links escaping the clone, file URLs or unchecked fragments. Index has33 links covering16 documentation/source pairs plus README. Seven expected README/reproduction/dependency/licence/index files are present and tracked. This is a static link check, not browser rendering or a complete prose/docstring audit.
+
+Nine declared checks pass in clone_review_v1/checks.json. This supersedes the earlier failed command-line clone attempts as the current status, while preserving those failures. Limits: same existing Windows/Anaconda environment, source-dependent strict audits, no clean installation/other OS/full rebuild or fresh numerical/test execution. Verification clone now includes ignored course originals and is unsuitable for direct final ZIP packaging. User's extra clone remains uninspected and unchanged. New evidence/records are local, not pushed; last verified remote is 8ba9808.
 
 ## Licence selection and attempted remote clone, 2026-10-11
 
@@ -560,7 +1003,7 @@ Focused reread on 2026-10-02 for P007/P008: a course-audit assistant inspected W
 
 The Week05_5 example starts with a random 60/20/20 split and later cross-validates on development data. P007's grid training plus independent validation/test sets is a project-specific adaptation of the same role separation, not a reproduction of the example's split proportions.
 
-## Current conclusions and limits
+## Historical setup conclusions and limits (2 October; superseded by dated results above)
 
 - Taught ODE and regression methods support the proposed narrow quarter-car/ML project.
 - Extending a single mass-spring-damper example to a quarter-car requires a correctly formulated physical model; course-method coverage alone does not validate that extension.
@@ -568,7 +1011,7 @@ The Week05_5 example starts with a random 60/20/20 split and later cross-validat
 - The numerical simulator needs verification separately from evaluating ML agreement with simulated outputs.
 - A published generic parameter set and raised-cosine road input have now been sourced (S003/S004). Their proposed use and exact test settings remain unaccepted. No vehicle-specific calibration, telemetry validation or project performance result has been established.
 
-## Technical research still required
+## Historical pre-implementation research list (2 October)
 
 - Review and adopt or revise the sourced model assumptions, nominal parameters and road proposal.
 - Review P003's candidate domain and P007's grid/off-grid sampling proposal; their physical validity and sample sufficiency remain unverified.
@@ -597,4 +1040,4 @@ Checks performed:
 Output files and result:
 Limitations/unresolved issues:
 
-No simulation or ML run is recorded yet.
+At the original setup checkpoint no simulation or ML run was recorded. Later dated M001-M028 entries above contain the actual implementation, evaluation, timing, profiling and reproduction evidence.

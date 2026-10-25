@@ -1,0 +1,1262 @@
+[
+  {
+    "source": "<string>",
+    "line": 2,
+    "function": "__init__",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 3.0000000000000004e-07,
+    "cumulative_s": 3.0000000000000004e-07
+  },
+  {
+    "source": "packages/numpy/core/_methods.py",
+    "line": 55,
+    "function": "_any",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 1.7e-06,
+    "cumulative_s": 1.5300000000000003e-05
+  },
+  {
+    "source": "packages/numpy/core/_methods.py",
+    "line": 61,
+    "function": "_all",
+    "primitive_calls": 6198,
+    "calls": 6198,
+    "self_s": 0.0028113,
+    "cumulative_s": 0.019210400000000002
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 53,
+    "function": "_wrapfunc",
+    "primitive_calls": 1036,
+    "calls": 1036,
+    "self_s": 0.000758,
+    "cumulative_s": 0.004627
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 71,
+    "function": "_wrapreduction",
+    "primitive_calls": 12417,
+    "calls": 12417,
+    "self_s": 0.025551300000000002,
+    "cumulative_s": 0.0846876
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 1021,
+    "function": "_argsort_dispatcher",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 6.000000000000001e-07,
+    "cumulative_s": 6.000000000000001e-07
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 1025,
+    "function": "argsort",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 4.4e-06,
+    "cumulative_s": 5.6000000000000006e-05
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 1136,
+    "function": "_argmax_dispatcher",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 3.0000000000000004e-07,
+    "cumulative_s": 3.0000000000000004e-07
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 1140,
+    "function": "argmax",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 4.5e-06,
+    "cumulative_s": 1.4200000000000001e-05
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 1232,
+    "function": "_argmin_dispatcher",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 1.0000000000000001e-07,
+    "cumulative_s": 1.0000000000000001e-07
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 1236,
+    "function": "argmin",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 2.0000000000000003e-06,
+    "cumulative_s": 8.5e-06
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 1328,
+    "function": "_searchsorted_dispatcher",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 5.000000000000001e-07,
+    "cumulative_s": 5.000000000000001e-07
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 1332,
+    "function": "searchsorted",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 2.3e-06,
+    "cumulative_s": 0.000111
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 1764,
+    "function": "_ravel_dispatcher",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 3.0000000000000004e-07,
+    "cumulative_s": 3.0000000000000004e-07
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 1768,
+    "function": "ravel",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 4.5e-06,
+    "cumulative_s": 8.5e-06
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 1877,
+    "function": "_nonzero_dispatcher",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 2.0000000000000002e-07,
+    "cumulative_s": 2.0000000000000002e-07
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 1881,
+    "function": "nonzero",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 1.5e-06,
+    "cumulative_s": 1.93e-05
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 2317,
+    "function": "_any_dispatcher",
+    "primitive_calls": 10,
+    "calls": 10,
+    "self_s": 2.2e-06,
+    "cumulative_s": 2.2e-06
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 2322,
+    "function": "any",
+    "primitive_calls": 10,
+    "calls": 10,
+    "self_s": 1.7100000000000002e-05,
+    "cumulative_s": 0.0001162
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 2416,
+    "function": "_all_dispatcher",
+    "primitive_calls": 12404,
+    "calls": 12404,
+    "self_s": 0.0020146,
+    "cumulative_s": 0.0020146
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 2421,
+    "function": "all",
+    "primitive_calls": 12404,
+    "calls": 12404,
+    "self_s": 0.013795600000000002,
+    "cumulative_s": 0.0983649
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 2687,
+    "function": "_max_dispatcher",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 2.0000000000000002e-07,
+    "cumulative_s": 2.0000000000000002e-07
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 2692,
+    "function": "max",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 2.5e-06,
+    "cumulative_s": 1.06e-05
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 2831,
+    "function": "_min_dispatcher",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 3.0000000000000004e-07,
+    "cumulative_s": 3.0000000000000004e-07
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 2836,
+    "function": "min",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 2.7e-06,
+    "cumulative_s": 1.3800000000000002e-05
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 3104,
+    "function": "_cumprod_dispatcher",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.0001327,
+    "cumulative_s": 0.0001327
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 3108,
+    "function": "cumprod",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.0008264,
+    "cumulative_s": 0.0052591
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 3172,
+    "function": "_ndim_dispatcher",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 4.0000000000000003e-07,
+    "cumulative_s": 4.0000000000000003e-07
+  },
+  {
+    "source": "packages/numpy/core/fromnumeric.py",
+    "line": 3176,
+    "function": "ndim",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 1.1e-06,
+    "cumulative_s": 1.1e-06
+  },
+  {
+    "source": "packages/numpy/core/function_base.py",
+    "line": 19,
+    "function": "_linspace_dispatcher",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 3.0000000000000004e-07,
+    "cumulative_s": 3.0000000000000004e-07
+  },
+  {
+    "source": "packages/numpy/core/function_base.py",
+    "line": 24,
+    "function": "linspace",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 5.8800000000000006e-05,
+    "cumulative_s": 8.1e-05
+  },
+  {
+    "source": "packages/numpy/core/multiarray.py",
+    "line": 85,
+    "function": "empty_like",
+    "primitive_calls": 6199,
+    "calls": 6199,
+    "self_s": 0.0007674,
+    "cumulative_s": 0.0007674
+  },
+  {
+    "source": "packages/numpy/core/multiarray.py",
+    "line": 153,
+    "function": "concatenate",
+    "primitive_calls": 5,
+    "calls": 5,
+    "self_s": 7.000000000000001e-07,
+    "cumulative_s": 7.000000000000001e-07
+  },
+  {
+    "source": "packages/numpy/core/multiarray.py",
+    "line": 669,
+    "function": "result_type",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 2.0000000000000002e-07,
+    "cumulative_s": 2.0000000000000002e-07
+  },
+  {
+    "source": "packages/numpy/core/multiarray.py",
+    "line": 741,
+    "function": "dot",
+    "primitive_calls": 8251,
+    "calls": 8251,
+    "self_s": 0.0013322000000000002,
+    "cumulative_s": 0.0013322000000000002
+  },
+  {
+    "source": "packages/numpy/core/multiarray.py",
+    "line": 1080,
+    "function": "copyto",
+    "primitive_calls": 6197,
+    "calls": 6197,
+    "self_s": 0.0009641000000000001,
+    "cumulative_s": 0.0009641000000000001
+  },
+  {
+    "source": "packages/numpy/core/numeric.py",
+    "line": 63,
+    "function": "_zeros_like_dispatcher",
+    "primitive_calls": 6197,
+    "calls": 6197,
+    "self_s": 0.0009213,
+    "cumulative_s": 0.0009213
+  },
+  {
+    "source": "packages/numpy/core/numeric.py",
+    "line": 67,
+    "function": "zeros_like",
+    "primitive_calls": 6197,
+    "calls": 6197,
+    "self_s": 0.022652400000000003,
+    "cumulative_s": 0.028132200000000003
+  },
+  {
+    "source": "packages/numpy/core/numeric.py",
+    "line": 611,
+    "function": "_flatnonzero_dispatcher",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 3.0000000000000004e-07,
+    "cumulative_s": 3.0000000000000004e-07
+  },
+  {
+    "source": "packages/numpy/core/numeric.py",
+    "line": 615,
+    "function": "flatnonzero",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 8.6e-06,
+    "cumulative_s": 3.69e-05
+  },
+  {
+    "source": "packages/numpy/core/numeric.py",
+    "line": 1855,
+    "function": "isscalar",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 1.1e-06,
+    "cumulative_s": 1.6000000000000001e-06
+  },
+  {
+    "source": "packages/numpy/core/numerictypes.py",
+    "line": 283,
+    "function": "issubclass_",
+    "primitive_calls": 4,
+    "calls": 4,
+    "self_s": 9.4e-06,
+    "cumulative_s": 1.58e-05
+  },
+  {
+    "source": "packages/numpy/core/numerictypes.py",
+    "line": 357,
+    "function": "issubdtype",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 1.1700000000000001e-05,
+    "cumulative_s": 2.83e-05
+  },
+  {
+    "source": "packages/numpy/core/shape_base.py",
+    "line": 19,
+    "function": "_atleast_1d_dispatcher",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 2.0000000000000002e-07,
+    "cumulative_s": 2.0000000000000002e-07
+  },
+  {
+    "source": "packages/numpy/core/shape_base.py",
+    "line": 23,
+    "function": "atleast_1d",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 0.0003321,
+    "cumulative_s": 0.0005848
+  },
+  {
+    "source": "packages/numpy/core/shape_base.py",
+    "line": 77,
+    "function": "_atleast_2d_dispatcher",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 3.0000000000000004e-07,
+    "cumulative_s": 3.0000000000000004e-07
+  },
+  {
+    "source": "packages/numpy/core/shape_base.py",
+    "line": 81,
+    "function": "atleast_2d",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 0.0007909000000000001,
+    "cumulative_s": 0.0010811
+  },
+  {
+    "source": "packages/numpy/core/shape_base.py",
+    "line": 207,
+    "function": "_arrays_for_stack_dispatcher",
+    "primitive_calls": 4,
+    "calls": 4,
+    "self_s": 2.71e-05,
+    "cumulative_s": 3.0200000000000002e-05
+  },
+  {
+    "source": "packages/numpy/core/shape_base.py",
+    "line": 215,
+    "function": "_vhstack_dispatcher",
+    "primitive_calls": 4,
+    "calls": 4,
+    "self_s": 6.300000000000001e-06,
+    "cumulative_s": 3.65e-05
+  },
+  {
+    "source": "packages/numpy/core/shape_base.py",
+    "line": 219,
+    "function": "vstack",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 0.0005827,
+    "cumulative_s": 0.0016653000000000002
+  },
+  {
+    "source": "packages/numpy/core/shape_base.py",
+    "line": 292,
+    "function": "hstack",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 0.0005319000000000001,
+    "cumulative_s": 0.0011181000000000001
+  },
+  {
+    "source": "packages/numpy/lib/function_base.py",
+    "line": 1320,
+    "function": "_diff_dispatcher",
+    "primitive_calls": 4,
+    "calls": 4,
+    "self_s": 7.000000000000001e-07,
+    "cumulative_s": 7.000000000000001e-07
+  },
+  {
+    "source": "packages/numpy/lib/function_base.py",
+    "line": 1324,
+    "function": "diff",
+    "primitive_calls": 4,
+    "calls": 4,
+    "self_s": 8.170000000000001e-05,
+    "cumulative_s": 8.88e-05
+  },
+  {
+    "source": "packages/numpy/lib/shape_base.py",
+    "line": 1181,
+    "function": "_tile_dispatcher",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.0001276,
+    "cumulative_s": 0.0001276
+  },
+  {
+    "source": "packages/numpy/lib/shape_base.py",
+    "line": 1185,
+    "function": "tile",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.0060818,
+    "cumulative_s": 0.0111067
+  },
+  {
+    "source": "packages/numpy/lib/shape_base.py",
+    "line": 1257,
+    "function": "<genexpr>",
+    "primitive_calls": 2054,
+    "calls": 2054,
+    "self_s": 0.0006263,
+    "cumulative_s": 0.0006263
+  },
+  {
+    "source": "packages/numpy/lib/shape_base.py",
+    "line": 1267,
+    "function": "<genexpr>",
+    "primitive_calls": 3081,
+    "calls": 3081,
+    "self_s": 0.0005041000000000001,
+    "cumulative_s": 0.0005041000000000001
+  },
+  {
+    "source": "packages/numpy/linalg/linalg.py",
+    "line": 140,
+    "function": "isComplexType",
+    "primitive_calls": 1038,
+    "calls": 1038,
+    "self_s": 0.0003819,
+    "cumulative_s": 0.0005575
+  },
+  {
+    "source": "packages/numpy/linalg/linalg.py",
+    "line": 2379,
+    "function": "_norm_dispatcher",
+    "primitive_calls": 1038,
+    "calls": 1038,
+    "self_s": 0.0001734,
+    "cumulative_s": 0.0001734
+  },
+  {
+    "source": "packages/numpy/linalg/linalg.py",
+    "line": 2383,
+    "function": "norm",
+    "primitive_calls": 1038,
+    "calls": 1038,
+    "self_s": 0.0048011,
+    "cumulative_s": 0.0088026
+  },
+  {
+    "source": "packages/scipy/_lib/_util.py",
+    "line": 858,
+    "function": "__getattr__",
+    "primitive_calls": 18,
+    "calls": 18,
+    "self_s": 9.7e-06,
+    "cumulative_s": 9.7e-06
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/base.py",
+    "line": 4,
+    "function": "check_arguments",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 3.08e-05,
+    "cumulative_s": 8.48e-05
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/base.py",
+    "line": 22,
+    "function": "fun_wrapped",
+    "primitive_calls": 6196,
+    "calls": 6196,
+    "self_s": 0.0055312,
+    "cumulative_s": 0.3411004
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/base.py",
+    "line": 131,
+    "function": "__init__",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 2.12e-05,
+    "cumulative_s": 0.000106
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/base.py",
+    "line": 152,
+    "function": "fun",
+    "primitive_calls": 6196,
+    "calls": 6196,
+    "self_s": 0.0049564000000000006,
+    "cumulative_s": 0.3460568
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/base.py",
+    "line": 175,
+    "function": "step",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.0018503,
+    "cumulative_s": 0.4503317
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/base.py",
+    "line": 208,
+    "function": "dense_output",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.0008313000000000001,
+    "cumulative_s": 0.0108955
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/base.py",
+    "line": 245,
+    "function": "__init__",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.0007876000000000001,
+    "cumulative_s": 0.001771
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/base.py",
+    "line": 251,
+    "function": "__call__",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.0010328000000000002,
+    "cumulative_s": 0.0318685
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/common.py",
+    "line": 19,
+    "function": "validate_max_step",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 1.1e-06,
+    "cumulative_s": 1.1e-06
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/common.py",
+    "line": 26,
+    "function": "warn_extraneous",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 9.000000000000001e-07,
+    "cumulative_s": 9.000000000000001e-07
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/common.py",
+    "line": 44,
+    "function": "validate_tol",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 6e-05,
+    "cumulative_s": 0.0001373
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/common.py",
+    "line": 63,
+    "function": "norm",
+    "primitive_calls": 1038,
+    "calls": 1038,
+    "self_s": 0.0030507000000000004,
+    "cumulative_s": 0.012026700000000001
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/common.py",
+    "line": 68,
+    "function": "select_initial_step",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 5.3e-05,
+    "cumulative_s": 0.0002976
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/common.py",
+    "line": 163,
+    "function": "__init__",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 4.19e-05,
+    "cumulative_s": 0.00011310000000000001
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/common.py",
+    "line": 203,
+    "function": "__call__",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 0.0036377000000000002,
+    "cumulative_s": 0.037339000000000004
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/ivp.py",
+    "line": 159,
+    "function": "solve_ivp",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 0.0027454000000000003,
+    "cumulative_s": 0.4677852
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/ivp.py",
+    "line": 592,
+    "function": "fun",
+    "primitive_calls": 6196,
+    "calls": 6196,
+    "self_s": 0.007288800000000001,
+    "cumulative_s": 0.33345470000000005
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/rk.py",
+    "line": 14,
+    "function": "rk_step",
+    "primitive_calls": 1032,
+    "calls": 1032,
+    "self_s": 0.06195200000000001,
+    "cumulative_s": 0.4086114
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/rk.py",
+    "line": 85,
+    "function": "__init__",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 8.71e-05,
+    "cumulative_s": 0.0008988000000000001
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/rk.py",
+    "line": 105,
+    "function": "_estimate_error",
+    "primitive_calls": 1032,
+    "calls": 1032,
+    "self_s": 0.0051333,
+    "cumulative_s": 0.005325000000000001
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/rk.py",
+    "line": 108,
+    "function": "_estimate_error_norm",
+    "primitive_calls": 1032,
+    "calls": 1032,
+    "self_s": 0.0021185,
+    "cumulative_s": 0.019373
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/rk.py",
+    "line": 111,
+    "function": "_step_impl",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.019409000000000003,
+    "cumulative_s": 0.44848140000000003
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/rk.py",
+    "line": 178,
+    "function": "_dense_output_impl",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.0023087000000000003,
+    "cumulative_s": 0.0100642
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/rk.py",
+    "line": 553,
+    "function": "__init__",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.002386,
+    "cumulative_s": 0.004157
+  },
+  {
+    "source": "packages/scipy/integrate/_ivp/rk.py",
+    "line": 560,
+    "function": "_call_impl",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.0139231,
+    "cumulative_s": 0.030679
+  },
+  {
+    "source": "project/profile_nominal.py",
+    "line": 67,
+    "function": "nominal_workload",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 0.0005768,
+    "cumulative_s": 0.5068662
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 15,
+    "function": "_positive",
+    "primitive_calls": 4,
+    "calls": 4,
+    "self_s": 3.6700000000000004e-05,
+    "cumulative_s": 3.6700000000000004e-05
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 77,
+    "function": "road_height",
+    "primitive_calls": 6197,
+    "calls": 6197,
+    "self_s": 0.1309128,
+    "cumulative_s": 0.21856940000000002
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 92,
+    "function": "rhs",
+    "primitive_calls": 6196,
+    "calls": 6196,
+    "self_s": 0.051463,
+    "cumulative_s": 0.3261659
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 122,
+    "function": "nfev",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 2.9e-06,
+    "cumulative_s": 6.6e-06
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 125,
+    "function": "<genexpr>",
+    "primitive_calls": 3,
+    "calls": 3,
+    "self_s": 1.4000000000000001e-06,
+    "cumulative_s": 1.9e-06
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 127,
+    "function": "state_at",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 0.00021160000000000002,
+    "cumulative_s": 0.0376197
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 146,
+    "function": "sample",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 2.9e-05,
+    "cumulative_s": 0.0377334
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 161,
+    "function": "simulate",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 8.910000000000001e-05,
+    "cumulative_s": 0.46798140000000005
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 192,
+    "function": "post_bump_energy",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 4.92e-05,
+    "cumulative_s": 4.9500000000000004e-05
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 202,
+    "function": "contact_force",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 1.2e-05,
+    "cumulative_s": 7.26e-05
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 212,
+    "function": "settling_candidate",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 6.87e-05,
+    "cumulative_s": 0.0001441
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 244,
+    "function": "summarise",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 0.0001852,
+    "cumulative_s": 0.038308
+  },
+  {
+    "source": "project/quarter_car.py",
+    "line": 288,
+    "function": "<genexpr>",
+    "primitive_calls": 3,
+    "calls": 3,
+    "self_s": 2.8000000000000003e-06,
+    "cumulative_s": 5.600000000000001e-06
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method _operator.index>",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 7.000000000000001e-07,
+    "cumulative_s": 7.000000000000001e-07
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method builtins.abs>",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 9.000000000000001e-07,
+    "cumulative_s": 9.000000000000001e-07
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method builtins.all>",
+    "primitive_calls": 1028,
+    "calls": 1028,
+    "self_s": 0.00042750000000000004,
+    "cumulative_s": 0.0006013
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method builtins.callable>",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 8.000000000000001e-07,
+    "cumulative_s": 8.000000000000001e-07
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method builtins.getattr>",
+    "primitive_calls": 7234,
+    "calls": 7234,
+    "self_s": 0.0030422,
+    "cumulative_s": 0.0030422
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method builtins.hasattr>",
+    "primitive_calls": 4,
+    "calls": 4,
+    "self_s": 3.1000000000000004e-06,
+    "cumulative_s": 3.1000000000000004e-06
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method builtins.isinstance>",
+    "primitive_calls": 8,
+    "calls": 8,
+    "self_s": 3.8e-06,
+    "cumulative_s": 3.8e-06
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method builtins.issubclass>",
+    "primitive_calls": 2082,
+    "calls": 2082,
+    "self_s": 0.0005052,
+    "cumulative_s": 0.0005052
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method builtins.len>",
+    "primitive_calls": 2064,
+    "calls": 2064,
+    "self_s": 0.0003459,
+    "cumulative_s": 0.0003459
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method builtins.max>",
+    "primitive_calls": 1036,
+    "calls": 1036,
+    "self_s": 0.00040770000000000004,
+    "cumulative_s": 0.00040770000000000004
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method builtins.min>",
+    "primitive_calls": 2062,
+    "calls": 2062,
+    "self_s": 0.0016724,
+    "cumulative_s": 0.0016724
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method builtins.sum>",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 1.8000000000000001e-06,
+    "cumulative_s": 3.7e-06
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method numpy.arange>",
+    "primitive_calls": 4,
+    "calls": 4,
+    "self_s": 2.4200000000000002e-05,
+    "cumulative_s": 2.4200000000000002e-05
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method numpy.array>",
+    "primitive_calls": 7225,
+    "calls": 7225,
+    "self_s": 0.009182500000000001,
+    "cumulative_s": 0.009182500000000001
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method numpy.asanyarray>",
+    "primitive_calls": 2066,
+    "calls": 2066,
+    "self_s": 0.00021170000000000002,
+    "cumulative_s": 0.00021170000000000002
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method numpy.asarray>",
+    "primitive_calls": 20667,
+    "calls": 20667,
+    "self_s": 0.0085246,
+    "cumulative_s": 0.0085246
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method numpy.core._multiarray_umath.normalize_axis_index>",
+    "primitive_calls": 4,
+    "calls": 4,
+    "self_s": 2.8000000000000003e-06,
+    "cumulative_s": 2.8000000000000003e-06
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method numpy.empty>",
+    "primitive_calls": 3,
+    "calls": 3,
+    "self_s": 4.5e-06,
+    "cumulative_s": 4.5e-06
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method numpy.zeros>",
+    "primitive_calls": 6198,
+    "calls": 6198,
+    "self_s": 0.0037517,
+    "cumulative_s": 0.0037517
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<built-in method time.perf_counter>",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 1.5e-06,
+    "cumulative_s": 1.5e-06
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'all' of 'numpy.generic' objects>",
+    "primitive_calls": 6196,
+    "calls": 6196,
+    "self_s": 0.0116129,
+    "cumulative_s": 0.0308075
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'all' of 'numpy.ndarray' objects>",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 5.500000000000001e-06,
+    "cumulative_s": 2.1300000000000003e-05
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'any' of 'numpy.generic' objects>",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 9.3e-06,
+    "cumulative_s": 2.46e-05
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'append' of 'list' objects>",
+    "primitive_calls": 6170,
+    "calls": 6170,
+    "self_s": 0.0016211,
+    "cumulative_s": 0.0016211
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'argmax' of 'numpy.ndarray' objects>",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 5.3e-06,
+    "cumulative_s": 5.3e-06
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'argmin' of 'numpy.ndarray' objects>",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 2.7e-06,
+    "cumulative_s": 2.7e-06
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'argsort' of 'numpy.ndarray' objects>",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 4.6200000000000005e-05,
+    "cumulative_s": 4.6200000000000005e-05
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'astype' of 'numpy.ndarray' objects>",
+    "primitive_calls": 4,
+    "calls": 4,
+    "self_s": 4.6e-06,
+    "cumulative_s": 4.6e-06
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'copy' of 'numpy.ndarray' objects>",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 3.4e-06,
+    "cumulative_s": 3.4e-06
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'cumprod' of 'numpy.ndarray' objects>",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.0034814000000000004,
+    "cumulative_s": 0.0034814000000000004
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'disable' of '_lsprof.Profiler' objects>",
+    "primitive_calls": 1,
+    "calls": 1,
+    "self_s": 2.4e-05,
+    "cumulative_s": 2.4e-05
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'dot' of 'numpy.ndarray' objects>",
+    "primitive_calls": 2065,
+    "calls": 2065,
+    "self_s": 0.0056737,
+    "cumulative_s": 0.0056737
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'get' of 'dict' objects>",
+    "primitive_calls": 4,
+    "calls": 4,
+    "self_s": 3.7e-06,
+    "cumulative_s": 3.7e-06
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'items' of 'dict' objects>",
+    "primitive_calls": 12417,
+    "calls": 12417,
+    "self_s": 0.0041275,
+    "cumulative_s": 0.0041275
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'nonzero' of 'numpy.ndarray' objects>",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 1.1700000000000001e-05,
+    "cumulative_s": 1.1700000000000001e-05
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'ravel' of 'numpy.ndarray' objects>",
+    "primitive_calls": 1040,
+    "calls": 1040,
+    "self_s": 0.0008088,
+    "cumulative_s": 0.0008088
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'reduce' of 'numpy.ufunc' objects>",
+    "primitive_calls": 12419,
+    "calls": 12419,
+    "self_s": 0.037764700000000005,
+    "cumulative_s": 0.037764700000000005
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'repeat' of 'numpy.ndarray' objects>",
+    "primitive_calls": 1027,
+    "calls": 1027,
+    "self_s": 0.0014591,
+    "cumulative_s": 0.0014591
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'reshape' of 'numpy.ndarray' objects>",
+    "primitive_calls": 2056,
+    "calls": 2056,
+    "self_s": 0.001397,
+    "cumulative_s": 0.001397
+  },
+  {
+    "source": "~",
+    "line": 0,
+    "function": "<method 'searchsorted' of 'numpy.ndarray' objects>",
+    "primitive_calls": 2,
+    "calls": 2,
+    "self_s": 0.00010420000000000001,
+    "cumulative_s": 0.00010420000000000001
+  }
+]

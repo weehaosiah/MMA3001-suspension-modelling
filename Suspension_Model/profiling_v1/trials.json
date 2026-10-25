@@ -1,0 +1,373 @@
+[
+  {
+    "pair": 0,
+    "mode": "warmup",
+    "wall_s": 0.4255566999781877,
+    "result": {
+      "end_time_s": 5.0,
+      "observation_dt_s": 0.001,
+      "A_m": 0.040571154662916026,
+      "A_time_s": 0.442,
+      "A_signed_m": 0.040571154662916026,
+      "A_post_m": 0.03189162062672921,
+      "A_post_time_s": 0.5,
+      "settling_status": "candidate",
+      "settling_after_exit_s": 1.2693317520720664,
+      "settling_entry_s": 1.7693317520720664,
+      "band_m": 0.001,
+      "confirmation_s": 1.0,
+      "tail_bound_m": 3.6873115652325535e-07,
+      "tail_limit_m": 0.0005,
+      "tail_pass": true,
+      "minimum_contact_N": 2626.595334967723,
+      "minimum_contact_time_s": 0.366,
+      "contact_positive_on_grid": true,
+      "post_bump_energy_start_J": 33.158630197230735,
+      "final_energy_J": 1.6315519894917296e-09,
+      "maximum_energy_increase_J": 0.0,
+      "energy_increase_allowance_J": 3.3158630197230736e-09,
+      "energy_pass": true,
+      "finite_states": true,
+      "solver_success": true,
+      "derivative_evaluations": 6196,
+      "integration_runtime_s": 0.3870482000056654
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "mkl",
+        "num_threads": 1,
+        "prefix": "mkl_rt",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\mkl_rt.2.dll",
+        "version": "2023.1-Product",
+        "threading_layer": "intel"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\libiomp5md.dll",
+        "version": null
+      }
+    ]
+  },
+  {
+    "pair": 1,
+    "mode": "unprofiled",
+    "wall_s": 0.41360810003243387,
+    "result": {
+      "end_time_s": 5.0,
+      "observation_dt_s": 0.001,
+      "A_m": 0.040571154662916026,
+      "A_time_s": 0.442,
+      "A_signed_m": 0.040571154662916026,
+      "A_post_m": 0.03189162062672921,
+      "A_post_time_s": 0.5,
+      "settling_status": "candidate",
+      "settling_after_exit_s": 1.2693317520720664,
+      "settling_entry_s": 1.7693317520720664,
+      "band_m": 0.001,
+      "confirmation_s": 1.0,
+      "tail_bound_m": 3.6873115652325535e-07,
+      "tail_limit_m": 0.0005,
+      "tail_pass": true,
+      "minimum_contact_N": 2626.595334967723,
+      "minimum_contact_time_s": 0.366,
+      "contact_positive_on_grid": true,
+      "post_bump_energy_start_J": 33.158630197230735,
+      "final_energy_J": 1.6315519894917296e-09,
+      "maximum_energy_increase_J": 0.0,
+      "energy_increase_allowance_J": 3.3158630197230736e-09,
+      "energy_pass": true,
+      "finite_states": true,
+      "solver_success": true,
+      "derivative_evaluations": 6196,
+      "integration_runtime_s": 0.3828279000008479
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "mkl",
+        "num_threads": 1,
+        "prefix": "mkl_rt",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\mkl_rt.2.dll",
+        "version": "2023.1-Product",
+        "threading_layer": "intel"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\libiomp5md.dll",
+        "version": null
+      }
+    ]
+  },
+  {
+    "pair": 1,
+    "mode": "profiled",
+    "wall_s": 0.5494112999876961,
+    "result": {
+      "end_time_s": 5.0,
+      "observation_dt_s": 0.001,
+      "A_m": 0.040571154662916026,
+      "A_time_s": 0.442,
+      "A_signed_m": 0.040571154662916026,
+      "A_post_m": 0.03189162062672921,
+      "A_post_time_s": 0.5,
+      "settling_status": "candidate",
+      "settling_after_exit_s": 1.2693317520720664,
+      "settling_entry_s": 1.7693317520720664,
+      "band_m": 0.001,
+      "confirmation_s": 1.0,
+      "tail_bound_m": 3.6873115652325535e-07,
+      "tail_limit_m": 0.0005,
+      "tail_pass": true,
+      "minimum_contact_N": 2626.595334967723,
+      "minimum_contact_time_s": 0.366,
+      "contact_positive_on_grid": true,
+      "post_bump_energy_start_J": 33.158630197230735,
+      "final_energy_J": 1.6315519894917296e-09,
+      "maximum_energy_increase_J": 0.0,
+      "energy_increase_allowance_J": 3.3158630197230736e-09,
+      "energy_pass": true,
+      "finite_states": true,
+      "solver_success": true,
+      "derivative_evaluations": 6196,
+      "integration_runtime_s": 0.4989759000018239
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "mkl",
+        "num_threads": 1,
+        "prefix": "mkl_rt",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\mkl_rt.2.dll",
+        "version": "2023.1-Product",
+        "threading_layer": "intel"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\libiomp5md.dll",
+        "version": null
+      }
+    ]
+  },
+  {
+    "pair": 2,
+    "mode": "profiled",
+    "wall_s": 0.5249785999767482,
+    "result": {
+      "end_time_s": 5.0,
+      "observation_dt_s": 0.001,
+      "A_m": 0.040571154662916026,
+      "A_time_s": 0.442,
+      "A_signed_m": 0.040571154662916026,
+      "A_post_m": 0.03189162062672921,
+      "A_post_time_s": 0.5,
+      "settling_status": "candidate",
+      "settling_after_exit_s": 1.2693317520720664,
+      "settling_entry_s": 1.7693317520720664,
+      "band_m": 0.001,
+      "confirmation_s": 1.0,
+      "tail_bound_m": 3.6873115652325535e-07,
+      "tail_limit_m": 0.0005,
+      "tail_pass": true,
+      "minimum_contact_N": 2626.595334967723,
+      "minimum_contact_time_s": 0.366,
+      "contact_positive_on_grid": true,
+      "post_bump_energy_start_J": 33.158630197230735,
+      "final_energy_J": 1.6315519894917296e-09,
+      "maximum_energy_increase_J": 0.0,
+      "energy_increase_allowance_J": 3.3158630197230736e-09,
+      "energy_pass": true,
+      "finite_states": true,
+      "solver_success": true,
+      "derivative_evaluations": 6196,
+      "integration_runtime_s": 0.47667649999493733
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "mkl",
+        "num_threads": 1,
+        "prefix": "mkl_rt",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\mkl_rt.2.dll",
+        "version": "2023.1-Product",
+        "threading_layer": "intel"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\libiomp5md.dll",
+        "version": null
+      }
+    ]
+  },
+  {
+    "pair": 2,
+    "mode": "unprofiled",
+    "wall_s": 0.3942761999787763,
+    "result": {
+      "end_time_s": 5.0,
+      "observation_dt_s": 0.001,
+      "A_m": 0.040571154662916026,
+      "A_time_s": 0.442,
+      "A_signed_m": 0.040571154662916026,
+      "A_post_m": 0.03189162062672921,
+      "A_post_time_s": 0.5,
+      "settling_status": "candidate",
+      "settling_after_exit_s": 1.2693317520720664,
+      "settling_entry_s": 1.7693317520720664,
+      "band_m": 0.001,
+      "confirmation_s": 1.0,
+      "tail_bound_m": 3.6873115652325535e-07,
+      "tail_limit_m": 0.0005,
+      "tail_pass": true,
+      "minimum_contact_N": 2626.595334967723,
+      "minimum_contact_time_s": 0.366,
+      "contact_positive_on_grid": true,
+      "post_bump_energy_start_J": 33.158630197230735,
+      "final_energy_J": 1.6315519894917296e-09,
+      "maximum_energy_increase_J": 0.0,
+      "energy_increase_allowance_J": 3.3158630197230736e-09,
+      "energy_pass": true,
+      "finite_states": true,
+      "solver_success": true,
+      "derivative_evaluations": 6196,
+      "integration_runtime_s": 0.36481739999726415
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "mkl",
+        "num_threads": 1,
+        "prefix": "mkl_rt",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\mkl_rt.2.dll",
+        "version": "2023.1-Product",
+        "threading_layer": "intel"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\libiomp5md.dll",
+        "version": null
+      }
+    ]
+  },
+  {
+    "pair": 3,
+    "mode": "unprofiled",
+    "wall_s": 0.42710149998310953,
+    "result": {
+      "end_time_s": 5.0,
+      "observation_dt_s": 0.001,
+      "A_m": 0.040571154662916026,
+      "A_time_s": 0.442,
+      "A_signed_m": 0.040571154662916026,
+      "A_post_m": 0.03189162062672921,
+      "A_post_time_s": 0.5,
+      "settling_status": "candidate",
+      "settling_after_exit_s": 1.2693317520720664,
+      "settling_entry_s": 1.7693317520720664,
+      "band_m": 0.001,
+      "confirmation_s": 1.0,
+      "tail_bound_m": 3.6873115652325535e-07,
+      "tail_limit_m": 0.0005,
+      "tail_pass": true,
+      "minimum_contact_N": 2626.595334967723,
+      "minimum_contact_time_s": 0.366,
+      "contact_positive_on_grid": true,
+      "post_bump_energy_start_J": 33.158630197230735,
+      "final_energy_J": 1.6315519894917296e-09,
+      "maximum_energy_increase_J": 0.0,
+      "energy_increase_allowance_J": 3.3158630197230736e-09,
+      "energy_pass": true,
+      "finite_states": true,
+      "solver_success": true,
+      "derivative_evaluations": 6196,
+      "integration_runtime_s": 0.3924267000402324
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "mkl",
+        "num_threads": 1,
+        "prefix": "mkl_rt",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\mkl_rt.2.dll",
+        "version": "2023.1-Product",
+        "threading_layer": "intel"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\libiomp5md.dll",
+        "version": null
+      }
+    ]
+  },
+  {
+    "pair": 3,
+    "mode": "profiled",
+    "wall_s": 0.5069434000179172,
+    "result": {
+      "end_time_s": 5.0,
+      "observation_dt_s": 0.001,
+      "A_m": 0.040571154662916026,
+      "A_time_s": 0.442,
+      "A_signed_m": 0.040571154662916026,
+      "A_post_m": 0.03189162062672921,
+      "A_post_time_s": 0.5,
+      "settling_status": "candidate",
+      "settling_after_exit_s": 1.2693317520720664,
+      "settling_entry_s": 1.7693317520720664,
+      "band_m": 0.001,
+      "confirmation_s": 1.0,
+      "tail_bound_m": 3.6873115652325535e-07,
+      "tail_limit_m": 0.0005,
+      "tail_pass": true,
+      "minimum_contact_N": 2626.595334967723,
+      "minimum_contact_time_s": 0.366,
+      "contact_positive_on_grid": true,
+      "post_bump_energy_start_J": 33.158630197230735,
+      "final_energy_J": 1.6315519894917296e-09,
+      "maximum_energy_increase_J": 0.0,
+      "energy_increase_allowance_J": 3.3158630197230736e-09,
+      "energy_pass": true,
+      "finite_states": true,
+      "solver_success": true,
+      "derivative_evaluations": 6196,
+      "integration_runtime_s": 0.46787530003348365
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "mkl",
+        "num_threads": 1,
+        "prefix": "mkl_rt",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\mkl_rt.2.dll",
+        "version": "2023.1-Product",
+        "threading_layer": "intel"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\libiomp5md.dll",
+        "version": null
+      }
+    ]
+  }
+]

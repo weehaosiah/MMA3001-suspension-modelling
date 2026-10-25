@@ -1,0 +1,1 @@
+PASS: Git clean-filter bytes equal working bytes for runner and 13 sealed artifacts. No objects written, staging, commit, push or clone performed.

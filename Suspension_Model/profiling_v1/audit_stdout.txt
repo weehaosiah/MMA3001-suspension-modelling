@@ -1,0 +1,1 @@
+Audit passed: saved profiles, physics, timing and work reproduce; no new solve. 0 excluded course originals unavailable for current-file hashing.

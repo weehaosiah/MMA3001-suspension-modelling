@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "checks": {
+    "seven_completed_integrations": true,
+    "exact_saved_physics_and_work": true,
+    "expected_profile_call_counts": true,
+    "numerical_pools_one_thread": true,
+    "protected_files_unchanged": true
+  },
+  "timing": {
+    "unprofiled": {
+      "median_s": 0.41360810003243387,
+      "min_s": 0.3942761999787763,
+      "max_s": 0.42710149998310953,
+      "observations": 3
+    },
+    "profiled": {
+      "median_s": 0.5249785999767482,
+      "min_s": 0.5069434000179172,
+      "max_s": 0.5494112999876961,
+      "observations": 3
+    },
+    "paired_profile_to_unprofiled_ratios": [
+      1.328337863655506,
+      1.3314995934449192,
+      1.1869389361497562
+    ],
+    "median_paired_ratio": 1.328337863655506
+  },
+  "integrations": 7,
+  "derivative_evaluations": 43372,
+  "threadpools_after": [
+    {
+      "user_api": "blas",
+      "internal_api": "mkl",
+      "num_threads": 1,
+      "prefix": "mkl_rt",
+      "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\mkl_rt.2.dll",
+      "version": "2023.1-Product",
+      "threading_layer": "intel"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libiomp",
+      "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\libiomp5md.dll",
+      "version": null
+    }
+  ],
+  "artifact_sha256": {
+    "pair_1.prof": "72026536f8ae6a507962859efbba60202f5b25ed2bd1bb0a878b494ff00bed8e",
+    "pair_1_functions.json": "e897716583c06c960952963535eb9842977a6d2b0621c67ae61645a025d219a8",
+    "pair_1_pstats.txt": "9e50a4270a2ced52eaca048fb3e5f713c66a49f4c2ba5bc2eb6a861ad19f48ac",
+    "pair_2.prof": "bb1853d262ae17ee6f850cc331caddf1686f5bd699842251c5eca35a320d2ca0",
+    "pair_2_functions.json": "ed4ca2e12569d89206e8600d33140d44ae9d6595f70f19e81c318d708e95cc70",
+    "pair_2_pstats.txt": "c55560d160b642f2f66e40b89a52fbf35bbe74f735ecc1de32a1fd3aee0badba",
+    "pair_3.prof": "3f273586c862fdfed86c56a946c4f61169f18eb65262f5cd9519bb254ad37b51",
+    "pair_3_functions.json": "da647bc80308878bb2b9196a6a4c36780dd8c909495b602e397fe768e3a72ceb",
+    "pair_3_pstats.txt": "e1fe3a5c6fdc0bf0758dbaad2cb99c77947dd55c0625182b173cb5fa37d45c77",
+    "plan.json": "4284d61946d97ac5b40a711f29ed790f050749412e213b8f93e052be3e3c00a0",
+    "preservation_after.json": "d7332ee4cadeab4a3e9c2edf1a615f4cae06a80f3689a521c427e77e56082970",
+    "preservation_before.json": "d7332ee4cadeab4a3e9c2edf1a615f4cae06a80f3689a521c427e77e56082970",
+    "trials.json": "4752f4ffe6154724ed98d7433776b7edb101f5ff58a1c309dda6f8c6f630f5bd"
+  }
+}

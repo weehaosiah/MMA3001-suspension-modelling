@@ -1,0 +1,135 @@
+{
+  "created_utc": "2026-10-12T08:59:28.041530+00:00",
+  "parameters": {
+    "ms": 365.4,
+    "mu": 43.0,
+    "ks": 24000.0,
+    "cs": 2126.4,
+    "kt": 350000.0,
+    "g": 9.81
+  },
+  "bump": {
+    "height_m": 0.05,
+    "duration_s": 0.5
+  },
+  "settings": {
+    "rtol": 1e-06,
+    "atol": [
+      1e-09,
+      1e-08,
+      1e-09,
+      1e-08
+    ],
+    "max_step_s": 0.005
+  },
+  "end_time_s": 5.0,
+  "observation_dt_s": 0.001,
+  "band_m": 0.001,
+  "confirmation_s": 1.0,
+  "schedule": [
+    [
+      0,
+      "warmup"
+    ],
+    [
+      1,
+      "unprofiled"
+    ],
+    [
+      1,
+      "profiled"
+    ],
+    [
+      2,
+      "profiled"
+    ],
+    [
+      2,
+      "unprofiled"
+    ],
+    [
+      3,
+      "unprofiled"
+    ],
+    [
+      3,
+      "profiled"
+    ]
+  ],
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "threadpoolctl": "3.5.0"
+  },
+  "timer": {
+    "implementation": "QueryPerformanceCounter()",
+    "monotonic": true,
+    "adjustable": false,
+    "resolution": 1e-07
+  },
+  "discovered_pools": [
+    {
+      "user_api": "blas",
+      "internal_api": "mkl",
+      "num_threads": 8,
+      "prefix": "mkl_rt",
+      "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\mkl_rt.2.dll",
+      "version": "2023.1-Product",
+      "threading_layer": "intel"
+    }
+  ],
+  "threadpools_before": [
+    {
+      "user_api": "blas",
+      "internal_api": "mkl",
+      "num_threads": 1,
+      "prefix": "mkl_rt",
+      "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\mkl_rt.2.dll",
+      "version": "2023.1-Product",
+      "threading_layer": "intel"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libiomp",
+      "filepath": "C:\\Users\\dedvu\\anaconda3\\Library\\bin\\libiomp5md.dll",
+      "version": null
+    }
+  ],
+  "runner_sha256": "bb6be856abc337aa2845a2192c25f5447089e0b83c41a209c940b7a9d6adf71c",
+  "baseline": {
+    "end_time_s": 5.0,
+    "observation_dt_s": 0.001,
+    "A_m": 0.040571154662916026,
+    "A_time_s": 0.442,
+    "A_signed_m": 0.040571154662916026,
+    "A_post_m": 0.03189162062672921,
+    "A_post_time_s": 0.5,
+    "settling_status": "candidate",
+    "settling_after_exit_s": 1.2693317520720664,
+    "settling_entry_s": 1.7693317520720664,
+    "band_m": 0.001,
+    "confirmation_s": 1.0,
+    "tail_bound_m": 3.6873115652325535e-07,
+    "tail_limit_m": 0.0005,
+    "tail_pass": true,
+    "minimum_contact_N": 2626.595334967723,
+    "minimum_contact_time_s": 0.366,
+    "contact_positive_on_grid": true,
+    "post_bump_energy_start_J": 33.158630197230735,
+    "final_energy_J": 1.6315519894917296e-09,
+    "maximum_energy_increase_J": 0.0,
+    "energy_increase_allowance_J": 3.3158630197230736e-09,
+    "energy_pass": true,
+    "finite_states": true,
+    "solver_success": true,
+    "derivative_evaluations": 6196,
+    "integration_runtime_s": 0.21972009999808506
+  },
+  "course_basis": "Week02_1 cells75-84,91-116,127-129; cProfile is an extension",
+  "profiler_api": "https://docs.python.org/3.12/library/profile.html",
+  "comparison_rule": "All summary fields exactly equal except integration_runtime_s"
+}

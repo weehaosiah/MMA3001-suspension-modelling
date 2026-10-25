@@ -12,6 +12,9 @@
 *.png binary
 *.npz binary
 *.joblib binary
+*.prof binary
+*.docx binary
+*.pdf binary
 
 # These early saved records were hashed with CRLF endings. Preserve those exact
 # original bytes; normalising them breaks the later frozen input fingerprints.
@@ -20,3 +23,9 @@
 /Suspension_Model/results/nominal_trace_1ms.csv -text whitespace=cr-at-eol
 /Suspension_Model/results/summary.json -text whitespace=cr-at-eol
 /Suspension_Model/results/unit_tests.txt -text whitespace=cr-at-eol
+
+# These profiler text exports were sealed with CRLF endings in summary.json.
+# Preserve their exact bytes so a clone passes the saved-profile audit.
+/Suspension_Model/profiling_v1/pair_1_pstats.txt -text whitespace=cr-at-eol
+/Suspension_Model/profiling_v1/pair_2_pstats.txt -text whitespace=cr-at-eol
+/Suspension_Model/profiling_v1/pair_3_pstats.txt -text whitespace=cr-at-eol

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: profile_outputs</title>
+</head><body>
+<p class="portable-note">Portable display: &lt;project&gt; means the Suspension_Model directory. Displayed Path values, including ROOT/HERE and path defaults, abbreviate the absolute paths resolved at runtime; the Python values are unchanged. Dependency names without bundled pages are plain text.</p>
+
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">profile_outputs</strong></td>
+<td class="extra"><a href="index.html">Documentation index</a><br><a href="../profile_outputs.py">profile_outputs.py</a></td></tr></table>
+    <p><span class="code">Render&nbsp;saved&nbsp;nominal&nbsp;profiling&nbsp;evidence;&nbsp;no&nbsp;simulation&nbsp;or&nbsp;ML&nbsp;calls.<br>
+&nbsp;<br>
+Run:&nbsp;python&nbsp;profile_outputs.py&nbsp;--output&nbsp;profiling_v1<br>
+Regenerates&nbsp;only&nbsp;derived&nbsp;analysis.json,&nbsp;CHECK_RESULTS.md&nbsp;and&nbsp;self_time.png&nbsp;after<br>
+the&nbsp;recorded&nbsp;source/raw-data&nbsp;audit&nbsp;passes.&nbsp;Raw&nbsp;profiles&nbsp;and&nbsp;trial&nbsp;data&nbsp;are&nbsp;untouched.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn">argparse<br>
+</td><td class="multicolumn">json<br>
+</td><td class="multicolumn">os<br>
+</td><td class="multicolumn">statistics<br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-analyse"><strong>analyse</strong></a>(output)</dt><dd><span class="code">Return&nbsp;per-function&nbsp;medians/ranges&nbsp;from&nbsp;the&nbsp;three&nbsp;saved&nbsp;profiler&nbsp;exports.<br>
+&nbsp;<br>
+Self&nbsp;shares&nbsp;use&nbsp;the&nbsp;sum&nbsp;of&nbsp;self&nbsp;times&nbsp;for&nbsp;that&nbsp;profile.&nbsp;Cumulative&nbsp;shares&nbsp;use<br>
+the&nbsp;same&nbsp;denominator&nbsp;but&nbsp;overlap&nbsp;between&nbsp;caller&nbsp;and&nbsp;callee;&nbsp;do&nbsp;not&nbsp;add&nbsp;them.<br>
+Missing&nbsp;identities&nbsp;across&nbsp;runs&nbsp;raise&nbsp;ValueError.</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">Select&nbsp;the&nbsp;completed&nbsp;checkpoint;&nbsp;render&nbsp;only&nbsp;its&nbsp;derived&nbsp;presentation.</span></dd></dl>
+ <dl><dt><a name="-render"><strong>render</strong></a>(output)</dt><dd><span class="code">Audit&nbsp;and&nbsp;save&nbsp;derived&nbsp;Markdown/table/plot&nbsp;evidence&nbsp;from&nbsp;an&nbsp;existing&nbsp;run.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>ROOT</strong> = Path(&#x27;&lt;project&gt;&#x27;)</td></tr></table>
+</body></html>

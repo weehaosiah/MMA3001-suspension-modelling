@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: profile_nominal</title>
+</head><body>
+<p class="portable-note">Portable display: &lt;project&gt; means the Suspension_Model directory. Displayed Path values, including ROOT/HERE and path defaults, abbreviate the absolute paths resolved at runtime; the Python values are unchanged. Dependency names without bundled pages are plain text.</p>
+
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">profile_nominal</strong></td>
+<td class="extra"><a href="index.html">Documentation index</a><br><a href="../profile_nominal.py">profile_nominal.py</a></td></tr></table>
+    <p><span class="code">Profile&nbsp;unchanged&nbsp;nominal&nbsp;integration&nbsp;plus&nbsp;physical&nbsp;diagnostics.<br>
+&nbsp;<br>
+Run:&nbsp;python&nbsp;profile_nominal.py&nbsp;run&nbsp;--output&nbsp;profiling_v1<br>
+Read-only&nbsp;check:&nbsp;python&nbsp;profile_nominal.py&nbsp;audit&nbsp;--output&nbsp;profiling_v1<br>
+Uses&nbsp;cProfile&nbsp;as&nbsp;a&nbsp;standard-library&nbsp;extension&nbsp;to&nbsp;Week02_1&nbsp;profiling&nbsp;principles.<br>
+No&nbsp;model&nbsp;loading,&nbsp;fitting,&nbsp;dataset&nbsp;generation&nbsp;or&nbsp;original&nbsp;test-response&nbsp;parsing.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn">argparse<br>
+cProfile<br>
+hashlib<br>
+</td><td class="multicolumn">importlib<br>
+io<br>
+json<br>
+</td><td class="multicolumn">math<br>
+platform<br>
+pstats<br>
+</td><td class="multicolumn">statistics<br>
+sys<br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-audit"><strong>audit</strong></a>(output)</dt><dd><span class="code">Check&nbsp;saved&nbsp;profiles/results&nbsp;without&nbsp;simulation,&nbsp;timing,&nbsp;fitting&nbsp;or&nbsp;prediction.<br>
+&nbsp;<br>
+Requires&nbsp;this&nbsp;runner,&nbsp;unchanged&nbsp;authored&nbsp;scientific&nbsp;files&nbsp;and&nbsp;saved&nbsp;checkpoint.<br>
+Course&nbsp;originals&nbsp;are&nbsp;checked&nbsp;if&nbsp;present;&nbsp;absence&nbsp;is&nbsp;disclosed,&nbsp;not&nbsp;hidden.<br>
+Binary&nbsp;.prof&nbsp;files&nbsp;need&nbsp;a&nbsp;compatible&nbsp;Python&nbsp;profiler&nbsp;version;&nbsp;JSON&nbsp;exports&nbsp;remain<br>
+readable&nbsp;independently.&nbsp;Missing/changed&nbsp;evidence&nbsp;raises&nbsp;an&nbsp;exception.</span></dd></dl>
+ <dl><dt><a name="-call_count"><strong>call_count</strong></a>(rows, source, function)</dt><dd><span class="code">Count&nbsp;calls&nbsp;using&nbsp;both&nbsp;module&nbsp;identity&nbsp;and&nbsp;name;&nbsp;reject&nbsp;an&nbsp;absent&nbsp;function.</span></dd></dl>
+ <dl><dt><a name="-digest"><strong>digest</strong></a>(path)</dt><dd><span class="code">Return&nbsp;SHA-256&nbsp;of&nbsp;file&nbsp;bytes,&nbsp;without&nbsp;interpreting&nbsp;their&nbsp;contents.</span></dd></dl>
+ <dl><dt><a name="-get_clock_info"><strong>get_clock_info</strong></a>(...)</dt><dd><span class="code"><a href="#-get_clock_info">get_clock_info</a>(name:&nbsp;str)&nbsp;-&gt;&nbsp;dict<br>
+&nbsp;<br>
+Get&nbsp;information&nbsp;of&nbsp;the&nbsp;specified&nbsp;clock.</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">Parse&nbsp;run/audit&nbsp;mode&nbsp;and&nbsp;checkpoint&nbsp;path;&nbsp;propagate&nbsp;failures&nbsp;as&nbsp;nonzero&nbsp;exit.</span></dd></dl>
+ <dl><dt><a name="-nominal_workload"><strong>nominal_workload</strong></a>()</dt><dd><span class="code">Return&nbsp;the&nbsp;unchanged&nbsp;5&nbsp;s&nbsp;nominal&nbsp;summary&nbsp;at&nbsp;1&nbsp;ms&nbsp;observation&nbsp;spacing.<br>
+&nbsp;<br>
+Includes&nbsp;integration,&nbsp;dense&nbsp;sampling,&nbsp;peak,&nbsp;post-bump,&nbsp;settling/contact/energy<br>
+diagnostics.&nbsp;Parameter&nbsp;construction,&nbsp;imports&nbsp;and&nbsp;file&nbsp;I/O&nbsp;are&nbsp;outside&nbsp;this&nbsp;call.<br>
+Exceptions&nbsp;from&nbsp;the&nbsp;existing&nbsp;simulation/diagnostics&nbsp;propagate&nbsp;unchanged.</span></dd></dl>
+ <dl><dt><a name="-one_thread"><strong>one_thread</strong></a>(pools)</dt><dd><span class="code">Require&nbsp;at&nbsp;least&nbsp;one&nbsp;discovered&nbsp;numerical&nbsp;pool&nbsp;and&nbsp;one&nbsp;thread&nbsp;in&nbsp;each.</span></dd></dl>
+ <dl><dt><a name="-perf_counter"><strong>perf_counter</strong></a>(...)</dt><dd><span class="code"><a href="#-perf_counter">perf_counter</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Performance&nbsp;counter&nbsp;for&nbsp;benchmarking.</span></dd></dl>
+ <dl><dt><a name="-physics_only"><strong>physics_only</strong></a>(result)</dt><dd><span class="code">Exclude&nbsp;only&nbsp;variable&nbsp;integration&nbsp;time;&nbsp;retain&nbsp;every&nbsp;physical/work&nbsp;field.</span></dd></dl>
+ <dl><dt><a name="-profile_rows"><strong>profile_rows</strong></a>(stats)</dt><dd><span class="code">Export&nbsp;function&nbsp;identity,&nbsp;call&nbsp;counts&nbsp;and&nbsp;self/cumulative&nbsp;seconds.<br>
+&nbsp;<br>
+Cumulative&nbsp;time&nbsp;includes&nbsp;callees;&nbsp;its&nbsp;rows&nbsp;overlap&nbsp;and&nbsp;must&nbsp;not&nbsp;be&nbsp;summed.</span></dd></dl>
+ <dl><dt><a name="-protected_files"><strong>protected_files</strong></a>(exclude=None)</dt><dd><span class="code">Fingerprint&nbsp;existing&nbsp;scientific&nbsp;files&nbsp;and&nbsp;original&nbsp;local&nbsp;course&nbsp;sources.<br>
+&nbsp;<br>
+Excludes&nbsp;documentation,&nbsp;caches,&nbsp;this&nbsp;new&nbsp;runner/test&nbsp;and&nbsp;profiling&nbsp;outputs.<br>
+Held-out&nbsp;files&nbsp;are&nbsp;read&nbsp;only&nbsp;as&nbsp;uninterpreted&nbsp;bytes&nbsp;for&nbsp;preservation&nbsp;hashes.</span></dd></dl>
+ <dl><dt><a name="-require_equivalent"><strong>require_equivalent</strong></a>(result, reference)</dt><dd><span class="code">Raise&nbsp;on&nbsp;any&nbsp;non-timing&nbsp;discrepancy,&nbsp;including&nbsp;work&nbsp;counts&nbsp;or&nbsp;status.</span></dd></dl>
+ <dl><dt><a name="-run"><strong>run</strong></a>(output)</dt><dd><span class="code">Create&nbsp;one&nbsp;bounded&nbsp;checkpoint;&nbsp;refuse&nbsp;overwrite&nbsp;and&nbsp;retain&nbsp;failed&nbsp;attempts.<br>
+&nbsp;<br>
+Seven&nbsp;actual&nbsp;integrations&nbsp;are&nbsp;prescribed.&nbsp;Existing&nbsp;output&nbsp;raises&nbsp;FileExistsError<br>
+before&nbsp;any&nbsp;workload.&nbsp;Any&nbsp;failure&nbsp;writes&nbsp;failure.json&nbsp;and&nbsp;is&nbsp;re-raised.</span></dd></dl>
+ <dl><dt><a name="-source_label"><strong>source_label</strong></a>(filename)</dt><dd><span class="code">Make&nbsp;profiler&nbsp;identities&nbsp;readable&nbsp;without&nbsp;publishing&nbsp;absolute&nbsp;host&nbsp;paths.</span></dd></dl>
+ <dl><dt><a name="-timing_summary"><strong>timing_summary</strong></a>(records)</dt><dd><span class="code">Compute&nbsp;medians/ranges&nbsp;and&nbsp;pair-specific&nbsp;profiler&nbsp;wall-time&nbsp;ratios.<br>
+&nbsp;<br>
+The&nbsp;ratios&nbsp;describe&nbsp;instrumentation&nbsp;overhead&nbsp;plus&nbsp;timing&nbsp;noise,&nbsp;not&nbsp;speedup.<br>
+Requires&nbsp;the&nbsp;exact&nbsp;seven-call&nbsp;schedule&nbsp;and&nbsp;positive&nbsp;finite&nbsp;wall&nbsp;times.</span></dd></dl>
+ <dl><dt><a name="-validate_profile"><strong>validate_profile</strong></a>(rows, nfev)</dt><dd><span class="code">Check&nbsp;actual&nbsp;profiler&nbsp;counts&nbsp;against&nbsp;the&nbsp;prescribed&nbsp;physical&nbsp;workload.</span></dd></dl>
+ <dl><dt><a name="-write_json"><strong>write_json</strong></a>(path, value)</dt><dd><span class="code">Write&nbsp;readable&nbsp;finite&nbsp;JSON&nbsp;to&nbsp;a&nbsp;new&nbsp;checkpoint&nbsp;file.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>BUMP</strong> = Bump(height_m=0.05, duration_s=0.5)<br>
+<strong>PARAMETERS</strong> = Parameters(ms=365.4, mu=43.0, ks=24000.0, cs=2126.4, kt=350000.0, g=9.81)<br>
+<strong>ROOT</strong> = Path(&#x27;&lt;project&gt;&#x27;)<br>
+<strong>SCHEDULE</strong> = [(0, 'warmup'), (1, 'unprofiled'), (1, 'profiled'), (2, 'profiled'), (2, 'unprofiled'), (3, 'unprofiled'), (3, 'profiled')]<br>
+<strong>SETTINGS</strong> = SolverSettings(rtol=1e-06, atol=(1e-09, 1e-08, 1e-09, 1e-08), max_step_s=0.005)</td></tr></table>
+</body></html>

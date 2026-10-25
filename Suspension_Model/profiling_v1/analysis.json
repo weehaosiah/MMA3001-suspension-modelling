@@ -1,0 +1,4214 @@
+{
+  "profile_self_totals_s": [
+    0.5491372,
+    0.5249303000000001,
+    0.5068902000000001
+  ],
+  "functions": [
+    {
+      "source": "<string>",
+      "line": 2,
+      "function": "__init__",
+      "self_s": {
+        "median": 3.0000000000000004e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 5.000000000000001e-07
+      },
+      "cumulative_s": {
+        "median": 3.0000000000000004e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 5.000000000000001e-07
+      },
+      "self_percent": {
+        "median": 5.918441508634414e-05,
+        "min": 5.463115592970209e-05,
+        "max": 9.525074090788815e-05
+      },
+      "cumulative_percent": {
+        "median": 5.918441508634414e-05,
+        "min": 5.463115592970209e-05,
+        "max": 9.525074090788815e-05
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "packages/numpy/core/_methods.py",
+      "line": 55,
+      "function": "_any",
+      "self_s": {
+        "median": 1.4000000000000001e-06,
+        "min": 1.3e-06,
+        "max": 1.7e-06
+      },
+      "cumulative_s": {
+        "median": 1.2e-05,
+        "min": 9.9e-06,
+        "max": 1.5300000000000003e-05
+      },
+      "self_percent": {
+        "median": 0.0002667020745420868,
+        "min": 0.00023673500902870906,
+        "max": 0.0003353783521559501
+      },
+      "cumulative_percent": {
+        "median": 0.0021852462371880835,
+        "min": 0.0018859646699761852,
+        "max": 0.0030184051694035516
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/_methods.py",
+      "line": 61,
+      "function": "_all",
+      "self_s": {
+        "median": 0.0028811,
+        "min": 0.0028113,
+        "max": 0.0029811
+      },
+      "cumulative_s": {
+        "median": 0.019688300000000002,
+        "min": 0.019210400000000002,
+        "max": 0.020788
+      },
+      "self_percent": {
+        "median": 0.5488538192594331,
+        "min": 0.5428697964734496,
+        "max": 0.5546171537741309
+      },
+      "cumulative_percent": {
+        "median": 3.785574898222157,
+        "min": 3.7506503244335487,
+        "max": 3.789854291915685
+      },
+      "calls": {
+        "median": 6198,
+        "min": 6198,
+        "max": 6198
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 53,
+      "function": "_wrapfunc",
+      "self_s": {
+        "median": 0.0009357,
+        "min": 0.000758,
+        "max": 0.0009708000000000001
+      },
+      "cumulative_s": {
+        "median": 0.005772800000000001,
+        "min": 0.004627,
+        "max": 0.005956100000000001
+      },
+      "self_percent": {
+        "median": 0.17678642058851599,
+        "min": 0.14953928878482953,
+        "max": 0.17825223653502187
+      },
+      "cumulative_percent": {
+        "median": 1.0846287594429955,
+        "min": 0.9128209620150477,
+        "max": 1.0997269542261132
+      },
+      "calls": {
+        "median": 1036,
+        "min": 1036,
+        "max": 1036
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 71,
+      "function": "_wrapreduction",
+      "self_s": {
+        "median": 0.025867800000000003,
+        "min": 0.025551300000000002,
+        "max": 0.027245400000000003
+      },
+      "cumulative_s": {
+        "median": 0.08531820000000001,
+        "min": 0.0846876,
+        "max": 0.089868
+      },
+      "self_percent": {
+        "median": 4.961492319223685,
+        "min": 4.9278542313141385,
+        "max": 5.040795817319016
+      },
+      "cumulative_percent": {
+        "median": 16.365309070301556,
+        "min": 16.253243525854767,
+        "max": 16.70728690355426
+      },
+      "calls": {
+        "median": 12417,
+        "min": 12417,
+        "max": 12417
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 1021,
+      "function": "_argsort_dispatcher",
+      "self_s": {
+        "median": 5.000000000000001e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 6.000000000000001e-07
+      },
+      "cumulative_s": {
+        "median": 5.000000000000001e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 6.000000000000001e-07
+      },
+      "self_percent": {
+        "median": 9.10519265495035e-05,
+        "min": 5.7150444544732893e-05,
+        "max": 0.00011836883017268829
+      },
+      "cumulative_percent": {
+        "median": 9.10519265495035e-05,
+        "min": 5.7150444544732893e-05,
+        "max": 0.00011836883017268829
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 1025,
+      "function": "argsort",
+      "self_s": {
+        "median": 4.4e-06,
+        "min": 3.2000000000000003e-06,
+        "max": 4.4e-06
+      },
+      "cumulative_s": {
+        "median": 5.6000000000000006e-05,
+        "min": 5.2900000000000005e-05,
+        "max": 6.99e-05
+      },
+      "self_percent": {
+        "median": 0.0008012569536356306,
+        "min": 0.0006096047418104842,
+        "max": 0.0008680380879330474
+      },
+      "cumulative_percent": {
+        "median": 0.01104775748278424,
+        "min": 0.010077528388054566,
+        "max": 0.012729059331620588
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 1136,
+      "function": "_argmax_dispatcher",
+      "self_s": {
+        "median": 4.0000000000000003e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 4.0000000000000003e-07
+      },
+      "cumulative_s": {
+        "median": 4.0000000000000003e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 4.0000000000000003e-07
+      },
+      "self_percent": {
+        "median": 7.28415412396028e-05,
+        "min": 5.918441508634414e-05,
+        "max": 7.620059272631052e-05
+      },
+      "cumulative_percent": {
+        "median": 7.28415412396028e-05,
+        "min": 5.918441508634414e-05,
+        "max": 7.620059272631052e-05
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 1140,
+      "function": "argmax",
+      "self_s": {
+        "median": 5.9e-06,
+        "min": 4.5e-06,
+        "max": 5.9e-06
+      },
+      "cumulative_s": {
+        "median": 1.9200000000000003e-05,
+        "min": 1.4200000000000001e-05,
+        "max": 1.9200000000000003e-05
+      },
+      "self_percent": {
+        "median": 0.0010744127332841412,
+        "min": 0.000887766226295162,
+        "max": 0.00112395874271308
+      },
+      "cumulative_percent": {
+        "median": 0.003496393979500934,
+        "min": 0.002801395647420289,
+        "max": 0.003657628450862905
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 1232,
+      "function": "_argmin_dispatcher",
+      "self_s": {
+        "median": 1.0000000000000001e-07,
+        "min": 1.0000000000000001e-07,
+        "max": 2.0000000000000002e-07
+      },
+      "cumulative_s": {
+        "median": 1.0000000000000001e-07,
+        "min": 1.0000000000000001e-07,
+        "max": 2.0000000000000002e-07
+      },
+      "self_percent": {
+        "median": 1.9728138362114712e-05,
+        "min": 1.82103853099007e-05,
+        "max": 3.810029636315526e-05
+      },
+      "cumulative_percent": {
+        "median": 1.9728138362114712e-05,
+        "min": 1.82103853099007e-05,
+        "max": 3.810029636315526e-05
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 1236,
+      "function": "argmin",
+      "self_s": {
+        "median": 2.1000000000000002e-06,
+        "min": 2.0000000000000003e-06,
+        "max": 2.8000000000000003e-06
+      },
+      "cumulative_s": {
+        "median": 9.100000000000001e-06,
+        "min": 8.5e-06,
+        "max": 1.18e-05
+      },
+      "self_percent": {
+        "median": 0.0003945627672422943,
+        "min": 0.0003824180915079146,
+        "max": 0.0005334041490841736
+      },
+      "cumulative_percent": {
+        "median": 0.0016768917607797504,
+        "min": 0.0016571450632009634,
+        "max": 0.00224791748542616
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 1328,
+      "function": "_searchsorted_dispatcher",
+      "self_s": {
+        "median": 3.0000000000000004e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 5.000000000000001e-07
+      },
+      "cumulative_s": {
+        "median": 3.0000000000000004e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 5.000000000000001e-07
+      },
+      "self_percent": {
+        "median": 5.7150444544732893e-05,
+        "min": 5.463115592970209e-05,
+        "max": 9.864069181057358e-05
+      },
+      "cumulative_percent": {
+        "median": 5.7150444544732893e-05,
+        "min": 5.463115592970209e-05,
+        "max": 9.864069181057358e-05
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 1332,
+      "function": "searchsorted",
+      "self_s": {
+        "median": 2.2e-06,
+        "min": 2.2e-06,
+        "max": 2.3e-06
+      },
+      "cumulative_s": {
+        "median": 0.000111,
+        "min": 0.00011070000000000001,
+        "max": 0.0001121
+      },
+      "self_percent": {
+        "median": 0.0004191032599947078,
+        "min": 0.0004006284768178153,
+        "max": 0.00045374718232863836
+      },
+      "cumulative_percent": {
+        "median": 0.02135521611154852,
+        "min": 0.02015889653806007,
+        "max": 0.02189823358194733
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 1764,
+      "function": "_ravel_dispatcher",
+      "self_s": {
+        "median": 5.000000000000001e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 6.000000000000001e-07
+      },
+      "cumulative_s": {
+        "median": 5.000000000000001e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 6.000000000000001e-07
+      },
+      "self_percent": {
+        "median": 9.10519265495035e-05,
+        "min": 5.918441508634414e-05,
+        "max": 0.00011430088908946579
+      },
+      "cumulative_percent": {
+        "median": 9.10519265495035e-05,
+        "min": 5.918441508634414e-05,
+        "max": 0.00011430088908946579
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 1768,
+      "function": "ravel",
+      "self_s": {
+        "median": 4.5e-06,
+        "min": 4.4e-06,
+        "max": 5.1e-06
+      },
+      "cumulative_s": {
+        "median": 9.9e-06,
+        "min": 8.5e-06,
+        "max": 1.1200000000000001e-05
+      },
+      "self_percent": {
+        "median": 0.000887766226295162,
+        "min": 0.0008012569536356306,
+        "max": 0.0009715575572604591
+      },
+      "cumulative_percent": {
+        "median": 0.001802828145680169,
+        "min": 0.0016768917607797504,
+        "max": 0.0021336165963366945
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 1877,
+      "function": "_nonzero_dispatcher",
+      "self_s": {
+        "median": 4.0000000000000003e-07,
+        "min": 2.0000000000000002e-07,
+        "max": 5.000000000000001e-07
+      },
+      "cumulative_s": {
+        "median": 4.0000000000000003e-07,
+        "min": 2.0000000000000002e-07,
+        "max": 5.000000000000001e-07
+      },
+      "self_percent": {
+        "median": 7.28415412396028e-05,
+        "min": 3.9456276724229424e-05,
+        "max": 9.525074090788815e-05
+      },
+      "cumulative_percent": {
+        "median": 7.28415412396028e-05,
+        "min": 3.9456276724229424e-05,
+        "max": 9.525074090788815e-05
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 1881,
+      "function": "nonzero",
+      "self_s": {
+        "median": 2.0000000000000003e-06,
+        "min": 1.5e-06,
+        "max": 2.2e-06
+      },
+      "cumulative_s": {
+        "median": 2.37e-05,
+        "min": 1.93e-05,
+        "max": 2.65e-05
+      },
+      "self_percent": {
+        "median": 0.000364207706198014,
+        "min": 0.0002959220754317207,
+        "max": 0.0004191032599947078
+      },
+      "cumulative_percent": {
+        "median": 0.004315861318446465,
+        "min": 0.0038075307038881396,
+        "max": 0.005048289268118071
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 2317,
+      "function": "_any_dispatcher",
+      "self_s": {
+        "median": 2.1000000000000002e-06,
+        "min": 2.1000000000000002e-06,
+        "max": 2.2e-06
+      },
+      "cumulative_s": {
+        "median": 2.1000000000000002e-06,
+        "min": 2.1000000000000002e-06,
+        "max": 2.2e-06
+      },
+      "self_percent": {
+        "median": 0.0004000531118131302,
+        "min": 0.0003824180915079146,
+        "max": 0.0004340190439665237
+      },
+      "cumulative_percent": {
+        "median": 0.0004000531118131302,
+        "min": 0.0003824180915079146,
+        "max": 0.0004340190439665237
+      },
+      "calls": {
+        "median": 10,
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 2322,
+      "function": "any",
+      "self_s": {
+        "median": 1.7100000000000002e-05,
+        "min": 1.6400000000000002e-05,
+        "max": 1.73e-05
+      },
+      "cumulative_s": {
+        "median": 0.0001084,
+        "min": 0.0001004,
+        "max": 0.0001162
+      },
+      "self_percent": {
+        "median": 0.0031503966586128203,
+        "min": 0.0031242243017787314,
+        "max": 0.003373511659921616
+      },
+      "cumulative_percent": {
+        "median": 0.019740057675932354,
+        "min": 0.01912634877430394,
+        "max": 0.022924096776777297
+      },
+      "calls": {
+        "median": 10,
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 2416,
+      "function": "_all_dispatcher",
+      "self_s": {
+        "median": 0.0020371,
+        "min": 0.0020146,
+        "max": 0.0021796000000000003
+      },
+      "cumulative_s": {
+        "median": 0.0020371,
+        "min": 0.0020146,
+        "max": 0.0021796000000000003
+      },
+      "self_percent": {
+        "median": 0.3969135582145956,
+        "min": 0.38807056860691785,
+        "max": 0.397443075443163
+      },
+      "cumulative_percent": {
+        "median": 0.3969135582145956,
+        "min": 0.38807056860691785,
+        "max": 0.397443075443163
+      },
+      "calls": {
+        "median": 12404,
+        "min": 12404,
+        "max": 12404
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 2421,
+      "function": "all",
+      "self_s": {
+        "median": 0.0141548,
+        "min": 0.013795600000000002,
+        "max": 0.014709100000000001
+      },
+      "cumulative_s": {
+        "median": 0.0993624,
+        "min": 0.0983649,
+        "max": 0.104466
+      },
+      "self_percent": {
+        "median": 2.6965103748059502,
+        "min": 2.6785837856186037,
+        "max": 2.7216150558838974
+      },
+      "cumulative_percent": {
+        "median": 19.02366111784086,
+        "min": 18.92868443677189,
+        "max": 19.405563571755778
+      },
+      "calls": {
+        "median": 12404,
+        "min": 12404,
+        "max": 12404
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 2687,
+      "function": "_max_dispatcher",
+      "self_s": {
+        "median": 2.0000000000000002e-07,
+        "min": 2.0000000000000002e-07,
+        "max": 3.0000000000000004e-07
+      },
+      "cumulative_s": {
+        "median": 2.0000000000000002e-07,
+        "min": 2.0000000000000002e-07,
+        "max": 3.0000000000000004e-07
+      },
+      "self_percent": {
+        "median": 3.9456276724229424e-05,
+        "min": 3.64207706198014e-05,
+        "max": 5.7150444544732893e-05
+      },
+      "cumulative_percent": {
+        "median": 3.9456276724229424e-05,
+        "min": 3.64207706198014e-05,
+        "max": 5.7150444544732893e-05
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 2692,
+      "function": "max",
+      "self_s": {
+        "median": 2.5e-06,
+        "min": 1.9e-06,
+        "max": 3.2000000000000003e-06
+      },
+      "cumulative_s": {
+        "median": 1.06e-05,
+        "min": 1.0300000000000001e-05,
+        "max": 1.41e-05
+      },
+      "self_percent": {
+        "median": 0.0004932034590528678,
+        "min": 0.00034599732088811324,
+        "max": 0.0006096047418104842
+      },
+      "cumulative_percent": {
+        "median": 0.0020911826663841592,
+        "min": 0.0018756696869197719,
+        "max": 0.0026860708936024455
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 2831,
+      "function": "_min_dispatcher",
+      "self_s": {
+        "median": 3.0000000000000004e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 4.0000000000000003e-07
+      },
+      "cumulative_s": {
+        "median": 3.0000000000000004e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 4.0000000000000003e-07
+      },
+      "self_percent": {
+        "median": 5.918441508634414e-05,
+        "min": 5.463115592970209e-05,
+        "max": 7.620059272631052e-05
+      },
+      "cumulative_percent": {
+        "median": 5.918441508634414e-05,
+        "min": 5.463115592970209e-05,
+        "max": 7.620059272631052e-05
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 2836,
+      "function": "min",
+      "self_s": {
+        "median": 2.7e-06,
+        "min": 2.5e-06,
+        "max": 3.7e-06
+      },
+      "cumulative_s": {
+        "median": 1.41e-05,
+        "min": 1.3800000000000002e-05,
+        "max": 1.94e-05
+      },
+      "self_percent": {
+        "median": 0.0005326597357770972,
+        "min": 0.00045525963274751737,
+        "max": 0.0007048554827183722
+      },
+      "cumulative_percent": {
+        "median": 0.0027224830939718307,
+        "min": 0.0025676643286959983,
+        "max": 0.00369572874722606
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 3104,
+      "function": "_cumprod_dispatcher",
+      "self_s": {
+        "median": 0.000161,
+        "min": 0.0001327,
+        "max": 0.0001638
+      },
+      "cumulative_s": {
+        "median": 0.000161,
+        "min": 0.0001327,
+        "max": 0.0001638
+      },
+      "self_percent": {
+        "median": 0.02931872034894012,
+        "min": 0.026179239606526225,
+        "max": 0.03120414272142415
+      },
+      "cumulative_percent": {
+        "median": 0.02931872034894012,
+        "min": 0.026179239606526225,
+        "max": 0.03120414272142415
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 3108,
+      "function": "cumprod",
+      "self_s": {
+        "median": 0.0010205000000000001,
+        "min": 0.0008264,
+        "max": 0.0010456
+      },
+      "cumulative_s": {
+        "median": 0.0065871,
+        "min": 0.0052591,
+        "max": 0.0067857
+      },
+      "self_percent": {
+        "median": 0.19040778880032166,
+        "min": 0.16303333542451598,
+        "max": 0.1944067621929997
+      },
+      "cumulative_percent": {
+        "median": 1.2357021159739314,
+        "min": 1.0375225246019748,
+        "max": 1.2548523108687
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 3172,
+      "function": "_ndim_dispatcher",
+      "self_s": {
+        "median": 3.0000000000000004e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 4.0000000000000003e-07
+      },
+      "cumulative_s": {
+        "median": 3.0000000000000004e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 4.0000000000000003e-07
+      },
+      "self_percent": {
+        "median": 5.7150444544732893e-05,
+        "min": 5.463115592970209e-05,
+        "max": 7.891255344845885e-05
+      },
+      "cumulative_percent": {
+        "median": 5.7150444544732893e-05,
+        "min": 5.463115592970209e-05,
+        "max": 7.891255344845885e-05
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/fromnumeric.py",
+      "line": 3176,
+      "function": "ndim",
+      "self_s": {
+        "median": 1.2000000000000002e-06,
+        "min": 1.1e-06,
+        "max": 1.8000000000000001e-06
+      },
+      "cumulative_s": {
+        "median": 1.2000000000000002e-06,
+        "min": 1.1e-06,
+        "max": 1.8000000000000001e-06
+      },
+      "self_percent": {
+        "median": 0.00022860177817893157,
+        "min": 0.00021700952198326184,
+        "max": 0.00032778693557821255
+      },
+      "cumulative_percent": {
+        "median": 0.00022860177817893157,
+        "min": 0.00021700952198326184,
+        "max": 0.00032778693557821255
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/function_base.py",
+      "line": 19,
+      "function": "_linspace_dispatcher",
+      "self_s": {
+        "median": 4.0000000000000003e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 4.0000000000000003e-07
+      },
+      "cumulative_s": {
+        "median": 4.0000000000000003e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 4.0000000000000003e-07
+      },
+      "self_percent": {
+        "median": 7.28415412396028e-05,
+        "min": 5.918441508634414e-05,
+        "max": 7.620059272631052e-05
+      },
+      "cumulative_percent": {
+        "median": 7.28415412396028e-05,
+        "min": 5.918441508634414e-05,
+        "max": 7.620059272631052e-05
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/function_base.py",
+      "line": 24,
+      "function": "linspace",
+      "self_s": {
+        "median": 6.1000000000000005e-05,
+        "min": 5.8800000000000006e-05,
+        "max": 7.230000000000001e-05
+      },
+      "cumulative_s": {
+        "median": 8.44e-05,
+        "min": 8.1e-05,
+        "max": 9.84e-05
+      },
+      "self_percent": {
+        "median": 0.011600145356923452,
+        "min": 0.011108335039039425,
+        "max": 0.013773257135280628
+      },
+      "cumulative_percent": {
+        "median": 0.015979792073312914,
+        "min": 0.01536956520155619,
+        "max": 0.018745345810672387
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/multiarray.py",
+      "line": 85,
+      "function": "empty_like",
+      "self_s": {
+        "median": 0.0007855000000000001,
+        "min": 0.0007674,
+        "max": 0.0008407000000000001
+      },
+      "cumulative_s": {
+        "median": 0.0007855000000000001,
+        "min": 0.0007674,
+        "max": 0.0008407000000000001
+      },
+      "self_percent": {
+        "median": 0.1513937337908683,
+        "min": 0.14963891396629228,
+        "max": 0.15309470930033517
+      },
+      "cumulative_percent": {
+        "median": 0.1513937337908683,
+        "min": 0.14963891396629228,
+        "max": 0.15309470930033517
+      },
+      "calls": {
+        "median": 6199,
+        "min": 6199,
+        "max": 6199
+      }
+    },
+    {
+      "source": "packages/numpy/core/multiarray.py",
+      "line": 153,
+      "function": "concatenate",
+      "self_s": {
+        "median": 8.000000000000001e-07,
+        "min": 7.000000000000001e-07,
+        "max": 1.1e-06
+      },
+      "cumulative_s": {
+        "median": 8.000000000000001e-07,
+        "min": 7.000000000000001e-07,
+        "max": 1.1e-06
+      },
+      "self_percent": {
+        "median": 0.00015240118545262104,
+        "min": 0.000138096968534803,
+        "max": 0.00020031423840890765
+      },
+      "cumulative_percent": {
+        "median": 0.00015240118545262104,
+        "min": 0.000138096968534803,
+        "max": 0.00020031423840890765
+      },
+      "calls": {
+        "median": 5,
+        "min": 5,
+        "max": 5
+      }
+    },
+    {
+      "source": "packages/numpy/core/multiarray.py",
+      "line": 669,
+      "function": "result_type",
+      "self_s": {
+        "median": 2.0000000000000002e-07,
+        "min": 2.0000000000000002e-07,
+        "max": 3.0000000000000004e-07
+      },
+      "cumulative_s": {
+        "median": 2.0000000000000002e-07,
+        "min": 2.0000000000000002e-07,
+        "max": 3.0000000000000004e-07
+      },
+      "self_percent": {
+        "median": 3.9456276724229424e-05,
+        "min": 3.64207706198014e-05,
+        "max": 5.7150444544732893e-05
+      },
+      "cumulative_percent": {
+        "median": 3.9456276724229424e-05,
+        "min": 3.64207706198014e-05,
+        "max": 5.7150444544732893e-05
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/multiarray.py",
+      "line": 741,
+      "function": "dot",
+      "self_s": {
+        "median": 0.0013620000000000001,
+        "min": 0.0013322000000000002,
+        "max": 0.0014208
+      },
+      "cumulative_s": {
+        "median": 0.0013620000000000001,
+        "min": 0.0013322000000000002,
+        "max": 0.0014208
+      },
+      "self_percent": {
+        "median": 0.2594630182330873,
+        "min": 0.2587331544830691,
+        "max": 0.2628182592600922
+      },
+      "cumulative_percent": {
+        "median": 0.2594630182330873,
+        "min": 0.2587331544830691,
+        "max": 0.2628182592600922
+      },
+      "calls": {
+        "median": 8251,
+        "min": 8251,
+        "max": 8251
+      }
+    },
+    {
+      "source": "packages/numpy/core/multiarray.py",
+      "line": 1080,
+      "function": "copyto",
+      "self_s": {
+        "median": 0.0009641000000000001,
+        "min": 0.0009413000000000001,
+        "max": 0.0010166
+      },
+      "cumulative_s": {
+        "median": 0.0009641000000000001,
+        "min": 0.0009413000000000001,
+        "max": 0.0010166
+      },
+      "self_percent": {
+        "median": 0.1851267770604505,
+        "min": 0.17931904483319022,
+        "max": 0.19019898194914794
+      },
+      "cumulative_percent": {
+        "median": 0.1851267770604505,
+        "min": 0.17931904483319022,
+        "max": 0.19019898194914794
+      },
+      "calls": {
+        "median": 6197,
+        "min": 6197,
+        "max": 6197
+      }
+    },
+    {
+      "source": "packages/numpy/core/numeric.py",
+      "line": 63,
+      "function": "_zeros_like_dispatcher",
+      "self_s": {
+        "median": 0.0009935,
+        "min": 0.0009213,
+        "max": 0.0010398
+      },
+      "cumulative_s": {
+        "median": 0.0009935,
+        "min": 0.0009213,
+        "max": 0.0010398
+      },
+      "self_percent": {
+        "median": 0.18175533873016284,
+        "min": 0.18092017805386343,
+        "max": 0.19808344079204418
+      },
+      "cumulative_percent": {
+        "median": 0.18175533873016284,
+        "min": 0.18092017805386343,
+        "max": 0.19808344079204418
+      },
+      "calls": {
+        "median": 6197,
+        "min": 6197,
+        "max": 6197
+      }
+    },
+    {
+      "source": "packages/numpy/core/numeric.py",
+      "line": 67,
+      "function": "zeros_like",
+      "self_s": {
+        "median": 0.022830700000000002,
+        "min": 0.022652400000000003,
+        "max": 0.0239773
+      },
+      "cumulative_s": {
+        "median": 0.0284025,
+        "min": 0.028132200000000003,
+        "max": 0.0298822
+      },
+      "self_percent": {
+        "median": 4.36635871691082,
+        "min": 4.349282180891445,
+        "max": 4.468896814339674
+      },
+      "cumulative_percent": {
+        "median": 5.441663759075146,
+        "min": 5.410718337272586,
+        "max": 5.5499593403068355
+      },
+      "calls": {
+        "median": 6197,
+        "min": 6197,
+        "max": 6197
+      }
+    },
+    {
+      "source": "packages/numpy/core/numeric.py",
+      "line": 611,
+      "function": "_flatnonzero_dispatcher",
+      "self_s": {
+        "median": 6.000000000000001e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 6.000000000000001e-07
+      },
+      "cumulative_s": {
+        "median": 6.000000000000001e-07,
+        "min": 3.0000000000000004e-07,
+        "max": 6.000000000000001e-07
+      },
+      "self_percent": {
+        "median": 0.00010926231185940418,
+        "min": 5.918441508634414e-05,
+        "max": 0.00011430088908946579
+      },
+      "cumulative_percent": {
+        "median": 0.00010926231185940418,
+        "min": 5.918441508634414e-05,
+        "max": 0.00011430088908946579
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/numeric.py",
+      "line": 615,
+      "function": "flatnonzero",
+      "self_s": {
+        "median": 1.1200000000000001e-05,
+        "min": 8.6e-06,
+        "max": 1.2600000000000001e-05
+      },
+      "cumulative_s": {
+        "median": 4.71e-05,
+        "min": 3.69e-05,
+        "max": 5e-05
+      },
+      "self_percent": {
+        "median": 0.0021336165963366945,
+        "min": 0.0016966198991418655,
+        "max": 0.002294508549047488
+      },
+      "cumulative_percent": {
+        "median": 0.008577091480963228,
+        "min": 0.007279683055620329,
+        "max": 0.009525074090788814
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/numeric.py",
+      "line": 1855,
+      "function": "isscalar",
+      "self_s": {
+        "median": 1.3e-06,
+        "min": 1.1e-06,
+        "max": 1.4000000000000001e-06
+      },
+      "cumulative_s": {
+        "median": 1.8000000000000001e-06,
+        "min": 1.6000000000000001e-06,
+        "max": 2.2e-06
+      },
+      "self_percent": {
+        "median": 0.00023673500902870906,
+        "min": 0.00021700952198326184,
+        "max": 0.0002667020745420868
+      },
+      "cumulative_percent": {
+        "median": 0.00032778693557821255,
+        "min": 0.0003156502137938354,
+        "max": 0.0004191032599947078
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/numerictypes.py",
+      "line": 283,
+      "function": "issubclass_",
+      "self_s": {
+        "median": 7.5e-06,
+        "min": 7.4e-06,
+        "max": 9.4e-06
+      },
+      "cumulative_s": {
+        "median": 1.23e-05,
+        "min": 1.22e-05,
+        "max": 1.58e-05
+      },
+      "self_percent": {
+        "median": 0.0014287611136183222,
+        "min": 0.0013475685129326514,
+        "max": 0.001854445006038783
+      },
+      "cumulative_percent": {
+        "median": 0.0023241180781524706,
+        "min": 0.002239877393117786,
+        "max": 0.0031170458612141245
+      },
+      "calls": {
+        "median": 4,
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "source": "packages/numpy/core/numerictypes.py",
+      "line": 357,
+      "function": "issubdtype",
+      "self_s": {
+        "median": 1.01e-05,
+        "min": 9.100000000000001e-06,
+        "max": 1.1700000000000001e-05
+      },
+      "cumulative_s": {
+        "median": 2.33e-05,
+        "min": 2.2000000000000003e-05,
+        "max": 2.83e-05
+      },
+      "self_percent": {
+        "median": 0.0018392489162999703,
+        "min": 0.0017335634845235643,
+        "max": 0.0023081921883674216
+      },
+      "cumulative_percent": {
+        "median": 0.004243019777206862,
+        "min": 0.004191032599947078,
+        "max": 0.005583063156478463
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/shape_base.py",
+      "line": 19,
+      "function": "_atleast_1d_dispatcher",
+      "self_s": {
+        "median": 3.0000000000000004e-07,
+        "min": 2.0000000000000002e-07,
+        "max": 4.0000000000000003e-07
+      },
+      "cumulative_s": {
+        "median": 3.0000000000000004e-07,
+        "min": 2.0000000000000002e-07,
+        "max": 4.0000000000000003e-07
+      },
+      "self_percent": {
+        "median": 5.7150444544732893e-05,
+        "min": 3.9456276724229424e-05,
+        "max": 7.28415412396028e-05
+      },
+      "cumulative_percent": {
+        "median": 5.7150444544732893e-05,
+        "min": 3.9456276724229424e-05,
+        "max": 7.28415412396028e-05
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/shape_base.py",
+      "line": 23,
+      "function": "atleast_1d",
+      "self_s": {
+        "median": 0.0003661,
+        "min": 0.0003321,
+        "max": 0.0005552
+      },
+      "cumulative_s": {
+        "median": 0.0006411,
+        "min": 0.0005848,
+        "max": 0.0009831
+      },
+      "self_percent": {
+        "median": 0.0697425924927557,
+        "min": 0.06551714750058295,
+        "max": 0.10110405924056867
+      },
+      "cumulative_percent": {
+        "median": 0.12213049999209417,
+        "min": 0.11537015314164684,
+        "max": 0.17902629798163372
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/shape_base.py",
+      "line": 77,
+      "function": "_atleast_2d_dispatcher",
+      "self_s": {
+        "median": 3.0000000000000004e-07,
+        "min": 2.0000000000000002e-07,
+        "max": 3.0000000000000004e-07
+      },
+      "cumulative_s": {
+        "median": 3.0000000000000004e-07,
+        "min": 2.0000000000000002e-07,
+        "max": 3.0000000000000004e-07
+      },
+      "self_percent": {
+        "median": 5.463115592970209e-05,
+        "min": 3.810029636315526e-05,
+        "max": 5.918441508634414e-05
+      },
+      "cumulative_percent": {
+        "median": 5.463115592970209e-05,
+        "min": 3.810029636315526e-05,
+        "max": 5.918441508634414e-05
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/shape_base.py",
+      "line": 81,
+      "function": "atleast_2d",
+      "self_s": {
+        "median": 0.0007909000000000001,
+        "min": 0.0007476000000000001,
+        "max": 0.0008385
+      },
+      "cumulative_s": {
+        "median": 0.0010811,
+        "min": 0.0010085,
+        "max": 0.0011278
+      },
+      "self_percent": {
+        "median": 0.15269408082351735,
+        "min": 0.14241890780547437,
+        "max": 0.15602984630596528
+      },
+      "cumulative_percent": {
+        "median": 0.20537672552506003,
+        "min": 0.19212074441121038,
+        "max": 0.21328090383282214
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/shape_base.py",
+      "line": 207,
+      "function": "_arrays_for_stack_dispatcher",
+      "self_s": {
+        "median": 2.71e-05,
+        "min": 2.58e-05,
+        "max": 2.9100000000000003e-05
+      },
+      "cumulative_s": {
+        "median": 3.0200000000000002e-05,
+        "min": 2.85e-05,
+        "max": 3.19e-05
+      },
+      "self_percent": {
+        "median": 0.005299222125181103,
+        "min": 0.004914938230847028,
+        "max": 0.005346325496133088
+      },
+      "cumulative_percent": {
+        "median": 0.005809112913858322,
+        "min": 0.005429292231749624,
+        "max": 0.005957897785358643
+      },
+      "calls": {
+        "median": 4,
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "source": "packages/numpy/core/shape_base.py",
+      "line": 215,
+      "function": "_vhstack_dispatcher",
+      "self_s": {
+        "median": 6.300000000000001e-06,
+        "min": 6.200000000000001e-06,
+        "max": 6.900000000000001e-06
+      },
+      "cumulative_s": {
+        "median": 3.65e-05,
+        "min": 3.47e-05,
+        "max": 3.88e-05
+      },
+      "self_percent": {
+        "median": 0.001242872716813227,
+        "min": 0.001181109187257813,
+        "max": 0.001256516586383148
+      },
+      "cumulative_percent": {
+        "median": 0.00706562950024147,
+        "min": 0.006610401419007437,
+        "max": 0.00720077050217187
+      },
+      "calls": {
+        "median": 4,
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "source": "packages/numpy/core/shape_base.py",
+      "line": 219,
+      "function": "vstack",
+      "self_s": {
+        "median": 0.0004305,
+        "min": 0.0003847,
+        "max": 0.0005827
+      },
+      "cumulative_s": {
+        "median": 0.0015598,
+        "min": 0.0013946000000000002,
+        "max": 0.0016653000000000002
+      },
+      "self_percent": {
+        "median": 0.0783957087591225,
+        "min": 0.07328592005452914,
+        "max": 0.11495586223604243
+      },
+      "cumulative_percent": {
+        "median": 0.28404559006383107,
+        "min": 0.2656733665402817,
+        "max": 0.3285326881442963
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/core/shape_base.py",
+      "line": 292,
+      "function": "hstack",
+      "self_s": {
+        "median": 0.0005319000000000001,
+        "min": 0.0004890000000000001,
+        "max": 0.0007477
+      },
+      "cumulative_s": {
+        "median": 0.0011316,
+        "min": 0.0011181000000000001,
+        "max": 0.0017330000000000002
+      },
+      "self_percent": {
+        "median": 0.10493396794808817,
+        "min": 0.09315522460791462,
+        "max": 0.1361590509621275
+      },
+      "cumulative_percent": {
+        "median": 0.2205803150268046,
+        "min": 0.21557147682273242,
+        "max": 0.3155859774205791
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/numpy/lib/function_base.py",
+      "line": 1320,
+      "function": "_diff_dispatcher",
+      "self_s": {
+        "median": 8.000000000000001e-07,
+        "min": 7.000000000000001e-07,
+        "max": 9.000000000000001e-07
+      },
+      "cumulative_s": {
+        "median": 8.000000000000001e-07,
+        "min": 7.000000000000001e-07,
+        "max": 9.000000000000001e-07
+      },
+      "self_percent": {
+        "median": 0.0001456830824792056,
+        "min": 0.000138096968534803,
+        "max": 0.00017145133363419867
+      },
+      "cumulative_percent": {
+        "median": 0.0001456830824792056,
+        "min": 0.000138096968534803,
+        "max": 0.00017145133363419867
+      },
+      "calls": {
+        "median": 4,
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "source": "packages/numpy/lib/function_base.py",
+      "line": 1324,
+      "function": "diff",
+      "self_s": {
+        "median": 6.71e-05,
+        "min": 6.400000000000001e-05,
+        "max": 8.170000000000001e-05
+      },
+      "cumulative_s": {
+        "median": 7.37e-05,
+        "min": 7.060000000000001e-05,
+        "max": 8.88e-05
+      },
+      "self_percent": {
+        "median": 0.012219168542943368,
+        "min": 0.012192094836209684,
+        "max": 0.01611788904184772
+      },
+      "cumulative_percent": {
+        "median": 0.013449404616193808,
+        "min": 0.013421053973396812,
+        "max": 0.017518586865557864
+      },
+      "calls": {
+        "median": 4,
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "source": "packages/numpy/lib/shape_base.py",
+      "line": 1181,
+      "function": "_tile_dispatcher",
+      "self_s": {
+        "median": 0.0001482,
+        "min": 0.0001276,
+        "max": 0.000153
+      },
+      "cumulative_s": {
+        "median": 0.0001482,
+        "min": 0.0001276,
+        "max": 0.000153
+      },
+      "self_percent": {
+        "median": 0.027861889524148066,
+        "min": 0.025173104550058372,
+        "max": 0.028232319605098043
+      },
+      "cumulative_percent": {
+        "median": 0.027861889524148066,
+        "min": 0.025173104550058372,
+        "max": 0.028232319605098043
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "packages/numpy/lib/shape_base.py",
+      "line": 1185,
+      "function": "tile",
+      "self_s": {
+        "median": 0.007405800000000001,
+        "min": 0.0060818,
+        "max": 0.0076573000000000006
+      },
+      "cumulative_s": {
+        "median": 0.013640000000000001,
+        "min": 0.0111067,
+        "max": 0.014081600000000001
+      },
+      "self_percent": {
+        "median": 1.394423834335026,
+        "min": 1.1998259189070926,
+        "max": 1.410815874031276
+      },
+      "cumulative_percent": {
+        "median": 2.5643136177989763,
+        "min": 2.1911451434649947,
+        "max": 2.5984402119671888
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "packages/numpy/lib/shape_base.py",
+      "line": 1257,
+      "function": "<genexpr>",
+      "self_s": {
+        "median": 0.0007674,
+        "min": 0.0006263,
+        "max": 0.0007892000000000001
+      },
+      "cumulative_s": {
+        "median": 0.0007674,
+        "min": 0.0006263,
+        "max": 0.0007892000000000001
+      },
+      "self_percent": {
+        "median": 0.1437163608657363,
+        "min": 0.12355733056192444,
+        "max": 0.14619083714542672
+      },
+      "cumulative_percent": {
+        "median": 0.1437163608657363,
+        "min": 0.12355733056192444,
+        "max": 0.14619083714542672
+      },
+      "calls": {
+        "median": 2054,
+        "min": 2054,
+        "max": 2054
+      }
+    },
+    {
+      "source": "packages/numpy/lib/shape_base.py",
+      "line": 1267,
+      "function": "<genexpr>",
+      "self_s": {
+        "median": 0.0006321,
+        "min": 0.0005041000000000001,
+        "max": 0.0006507
+      },
+      "cumulative_s": {
+        "median": 0.0006321,
+        "min": 0.0005041000000000001,
+        "max": 0.0006507
+      },
+      "self_percent": {
+        "median": 0.11849497721152383,
+        "min": 0.09944954548342026,
+        "max": 0.12041598665575219
+      },
+      "cumulative_percent": {
+        "median": 0.11849497721152383,
+        "min": 0.09944954548342026,
+        "max": 0.12041598665575219
+      },
+      "calls": {
+        "median": 3081,
+        "min": 3081,
+        "max": 3081
+      }
+    },
+    {
+      "source": "packages/numpy/linalg/linalg.py",
+      "line": 140,
+      "function": "isComplexType",
+      "self_s": {
+        "median": 0.0003751,
+        "min": 0.0003643,
+        "max": 0.0003819
+      },
+      "cumulative_s": {
+        "median": 0.0005575,
+        "min": 0.0005461,
+        "max": 0.0005577000000000001
+      },
+      "self_percent": {
+        "median": 0.0693996898254873,
+        "min": 0.06830715529743751,
+        "max": 0.0753417604049161
+      },
+      "cumulative_percent": {
+        "median": 0.10403285921959542,
+        "min": 0.10155931887331619,
+        "max": 0.10998437136878954
+      },
+      "calls": {
+        "median": 1038,
+        "min": 1038,
+        "max": 1038
+      }
+    },
+    {
+      "source": "packages/numpy/linalg/linalg.py",
+      "line": 2379,
+      "function": "_norm_dispatcher",
+      "self_s": {
+        "median": 0.00017490000000000002,
+        "min": 0.0001734,
+        "max": 0.0001809
+      },
+      "cumulative_s": {
+        "median": 0.00017490000000000002,
+        "min": 0.0001734,
+        "max": 0.0001809
+      },
+      "self_percent": {
+        "median": 0.033318709169579276,
+        "min": 0.03294258702561036,
+        "max": 0.03420859191990691
+      },
+      "cumulative_percent": {
+        "median": 0.033318709169579276,
+        "min": 0.03294258702561036,
+        "max": 0.03420859191990691
+      },
+      "calls": {
+        "median": 1038,
+        "min": 1038,
+        "max": 1038
+      }
+    },
+    {
+      "source": "packages/numpy/linalg/linalg.py",
+      "line": 2383,
+      "function": "norm",
+      "self_s": {
+        "median": 0.0048014,
+        "min": 0.0048011,
+        "max": 0.0050098
+      },
+      "cumulative_s": {
+        "median": 0.008811600000000001,
+        "min": 0.0088026,
+        "max": 0.0092469
+      },
+      "self_percent": {
+        "median": 0.9146738147902682,
+        "min": 0.912303883255405,
+        "max": 0.9471676509034894
+      },
+      "cumulative_percent": {
+        "median": 1.6838961192212074,
+        "min": 1.6786228571678943,
+        "max": 1.7365891074635098
+      },
+      "calls": {
+        "median": 1038,
+        "min": 1038,
+        "max": 1038
+      }
+    },
+    {
+      "source": "packages/scipy/_lib/_util.py",
+      "line": 858,
+      "function": "__getattr__",
+      "self_s": {
+        "median": 9.4e-06,
+        "min": 9.3e-06,
+        "max": 9.7e-06
+      },
+      "cumulative_s": {
+        "median": 9.4e-06,
+        "min": 9.3e-06,
+        "max": 9.7e-06
+      },
+      "self_percent": {
+        "median": 0.0017716637808867196,
+        "min": 0.0017117762191306654,
+        "max": 0.0019136294211251272
+      },
+      "cumulative_percent": {
+        "median": 0.0017716637808867196,
+        "min": 0.0017117762191306654,
+        "max": 0.0019136294211251272
+      },
+      "calls": {
+        "median": 18,
+        "min": 18,
+        "max": 18
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/base.py",
+      "line": 4,
+      "function": "check_arguments",
+      "self_s": {
+        "median": 2.5900000000000003e-05,
+        "min": 2.1300000000000003e-05,
+        "max": 3.08e-05
+      },
+      "cumulative_s": {
+        "median": 7.010000000000001e-05,
+        "min": 5.92e-05,
+        "max": 8.48e-05
+      },
+      "self_percent": {
+        "median": 0.004716489795264281,
+        "min": 0.004057681562676036,
+        "max": 0.006076266615531332
+      },
+      "cumulative_percent": {
+        "median": 0.012765480102240389,
+        "min": 0.011277687723493955,
+        "max": 0.016729461331073274
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/base.py",
+      "line": 22,
+      "function": "fun_wrapped",
+      "self_s": {
+        "median": 0.005653200000000001,
+        "min": 0.0055312,
+        "max": 0.0056703000000000005
+      },
+      "cumulative_s": {
+        "median": 0.34861440000000005,
+        "min": 0.3411004,
+        "max": 0.36514
+      },
+      "self_percent": {
+        "median": 1.0769429770009464,
+        "min": 1.0325834782272991,
+        "max": 1.0912027890852891
+      },
+      "cumulative_percent": {
+        "median": 66.4934009205714,
+        "min": 66.41155978231777,
+        "max": 67.29275886572674
+      },
+      "calls": {
+        "median": 6196,
+        "min": 6196,
+        "max": 6196
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/base.py",
+      "line": 131,
+      "function": "__init__",
+      "self_s": {
+        "median": 1.93e-05,
+        "min": 1.66e-05,
+        "max": 2.12e-05
+      },
+      "cumulative_s": {
+        "median": 8.94e-05,
+        "min": 7.58e-05,
+        "max": 0.000106
+      },
+      "self_percent": {
+        "median": 0.0035146043648108345,
+        "min": 0.003162324598141886,
+        "max": 0.0041823653327683185
+      },
+      "cumulative_percent": {
+        "median": 0.01628008446705122,
+        "min": 0.014440012321635842,
+        "max": 0.020911826663841594
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/base.py",
+      "line": 152,
+      "function": "fun",
+      "self_s": {
+        "median": 0.005133400000000001,
+        "min": 0.0049564000000000006,
+        "max": 0.0052265
+      },
+      "cumulative_s": {
+        "median": 0.3537478,
+        "min": 0.3460568,
+        "max": 0.37036650000000004
+      },
+      "self_percent": {
+        "median": 0.9778054497798537,
+        "min": 0.95176578822196,
+        "max": 0.9779203067531059
+      },
+      "cumulative_percent": {
+        "median": 67.44516670879337,
+        "min": 67.38948008907087,
+        "max": 68.27056431550658
+      },
+      "calls": {
+        "median": 6196,
+        "min": 6196,
+        "max": 6196
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/base.py",
+      "line": 175,
+      "function": "step",
+      "self_s": {
+        "median": 0.0018602000000000002,
+        "min": 0.0018503,
+        "max": 0.0019019000000000002
+      },
+      "cumulative_s": {
+        "median": 0.45964590000000005,
+        "min": 0.4503317,
+        "max": 0.4812362
+      },
+      "self_percent": {
+        "median": 0.3543708564737071,
+        "min": 0.3463433182090014,
+        "max": 0.3650297441142085
+      },
+      "cumulative_percent": {
+        "median": 87.63496627072433,
+        "min": 87.56322506054613,
+        "max": 88.84206086446333
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/base.py",
+      "line": 208,
+      "function": "dense_output",
+      "self_s": {
+        "median": 0.0008415,
+        "min": 0.0008313000000000001,
+        "max": 0.0008772000000000001
+      },
+      "cumulative_s": {
+        "median": 0.011087900000000001,
+        "min": 0.0108955,
+        "max": 0.0114286
+      },
+      "self_percent": {
+        "median": 0.16030699694797573,
+        "min": 0.1597414999384489,
+        "max": 0.1640000142042596
+      },
+      "cumulative_percent": {
+        "median": 2.112261380225146,
+        "min": 2.0811920955273107,
+        "max": 2.1494793152442084
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/base.py",
+      "line": 245,
+      "function": "__init__",
+      "self_s": {
+        "median": 0.0007876000000000001,
+        "min": 0.000759,
+        "max": 0.0007923
+      },
+      "cumulative_s": {
+        "median": 0.001771,
+        "min": 0.0017323000000000002,
+        "max": 0.0018208
+      },
+      "self_percent": {
+        "median": 0.14459062469817419,
+        "min": 0.1442808828103432,
+        "max": 0.1553788177400155
+      },
+      "cumulative_percent": {
+        "median": 0.33157469572267184,
+        "min": 0.3300057169494693,
+        "max": 0.3493853303930516
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/base.py",
+      "line": 251,
+      "function": "__call__",
+      "self_s": {
+        "median": 0.0011741,
+        "min": 0.0010328000000000002,
+        "max": 0.0012656
+      },
+      "cumulative_s": {
+        "median": 0.03969,
+        "min": 0.0318685,
+        "max": 0.041014
+      },
+      "self_percent": {
+        "median": 0.22366778979990293,
+        "min": 0.20375221300392077,
+        "max": 0.23047063648210322
+      },
+      "cumulative_percent": {
+        "median": 7.468807431002671,
+        "min": 6.287061773930527,
+        "max": 7.561003813268161
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/common.py",
+      "line": 19,
+      "function": "validate_max_step",
+      "self_s": {
+        "median": 1.1e-06,
+        "min": 1.1e-06,
+        "max": 1.4000000000000001e-06
+      },
+      "cumulative_s": {
+        "median": 1.1e-06,
+        "min": 1.1e-06,
+        "max": 1.4000000000000001e-06
+      },
+      "self_percent": {
+        "median": 0.00021700952198326184,
+        "min": 0.0002095516299973539,
+        "max": 0.00025494539433860975
+      },
+      "cumulative_percent": {
+        "median": 0.00021700952198326184,
+        "min": 0.0002095516299973539,
+        "max": 0.00025494539433860975
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/common.py",
+      "line": 26,
+      "function": "warn_extraneous",
+      "self_s": {
+        "median": 9.000000000000001e-07,
+        "min": 8.000000000000001e-07,
+        "max": 9.000000000000001e-07
+      },
+      "cumulative_s": {
+        "median": 9.000000000000001e-07,
+        "min": 8.000000000000001e-07,
+        "max": 9.000000000000001e-07
+      },
+      "self_percent": {
+        "median": 0.00016389346778910628,
+        "min": 0.00015240118545262104,
+        "max": 0.00017755324525903243
+      },
+      "cumulative_percent": {
+        "median": 0.00016389346778910628,
+        "min": 0.00015240118545262104,
+        "max": 0.00017755324525903243
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/common.py",
+      "line": 44,
+      "function": "validate_tol",
+      "self_s": {
+        "median": 4.61e-05,
+        "min": 4.6e-05,
+        "max": 6e-05
+      },
+      "cumulative_s": {
+        "median": 0.0001049,
+        "min": 9.900000000000001e-05,
+        "max": 0.0001373
+      },
+      "self_percent": {
+        "median": 0.00876306816352571,
+        "min": 0.008394987627864222,
+        "max": 0.011836883017268826
+      },
+      "cumulative_percent": {
+        "median": 0.01910269419008583,
+        "min": 0.018859646699761853,
+        "max": 0.0270867339711835
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/common.py",
+      "line": 63,
+      "function": "norm",
+      "self_s": {
+        "median": 0.0029496,
+        "min": 0.0029263,
+        "max": 0.0030507000000000004
+      },
+      "cumulative_s": {
+        "median": 0.012026700000000001,
+        "min": 0.011912800000000001,
+        "max": 0.0123774
+      },
+      "self_percent": {
+        "median": 0.5574644862375061,
+        "min": 0.5371335251008309,
+        "max": 0.6018463170130336
+      },
+      "cumulative_percent": {
+        "median": 2.26940605257498,
+        "min": 2.2539722313476487,
+        "max": 2.37264401639645
+      },
+      "calls": {
+        "median": 1038,
+        "min": 1038,
+        "max": 1038
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/common.py",
+      "line": 68,
+      "function": "select_initial_step",
+      "self_s": {
+        "median": 4.74e-05,
+        "min": 4.13e-05,
+        "max": 5.3e-05
+      },
+      "cumulative_s": {
+        "median": 0.00026450000000000003,
+        "min": 0.00022190000000000003,
+        "max": 0.0002976
+      },
+      "self_percent": {
+        "median": 0.009029770238067796,
+        "min": 0.007520889132988987,
+        "max": 0.010455913331920797
+      },
+      "cumulative_percent": {
+        "median": 0.050387641940272836,
+        "min": 0.04040884500266965,
+        "max": 0.058710939765653385
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/common.py",
+      "line": 163,
+      "function": "__init__",
+      "self_s": {
+        "median": 4.05e-05,
+        "min": 2.8400000000000003e-05,
+        "max": 4.19e-05
+      },
+      "cumulative_s": {
+        "median": 0.000106,
+        "min": 7.76e-05,
+        "max": 0.00011310000000000001
+      },
+      "self_percent": {
+        "median": 0.007375206050509781,
+        "min": 0.005410242083568047,
+        "max": 0.008266089973726064
+      },
+      "cumulative_percent": {
+        "median": 0.019303008428494736,
+        "min": 0.01478291498890424,
+        "max": 0.02231252448755174
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/common.py",
+      "line": 203,
+      "function": "__call__",
+      "self_s": {
+        "median": 0.004346200000000001,
+        "min": 0.0036377000000000002,
+        "max": 0.0045236
+      },
+      "cumulative_s": {
+        "median": 0.0460186,
+        "min": 0.037339000000000004,
+        "max": 0.0481972
+      },
+      "self_percent": {
+        "median": 0.8237649898786679,
+        "min": 0.7176504891986469,
+        "max": 0.8279575402677269
+      },
+      "cumulative_percent": {
+        "median": 8.766611491087483,
+        "min": 7.366289583030013,
+        "max": 8.776895828583458
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/ivp.py",
+      "line": 159,
+      "function": "solve_ivp",
+      "self_s": {
+        "median": 0.0027454000000000003,
+        "min": 0.0027140000000000003,
+        "max": 0.0028804
+      },
+      "cumulative_s": {
+        "median": 0.47661270000000006,
+        "min": 0.4677852,
+        "max": 0.49889350000000005
+      },
+      "self_percent": {
+        "median": 0.5245319384663797,
+        "min": 0.5170210216480169,
+        "max": 0.5416163105934974
+      },
+      "cumulative_percent": {
+        "median": 90.85042863604944,
+        "min": 90.79542560221805,
+        "max": 92.28531149349503
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/ivp.py",
+      "line": 592,
+      "function": "fun",
+      "self_s": {
+        "median": 0.0075808,
+        "min": 0.007288800000000001,
+        "max": 0.008036900000000001
+      },
+      "cumulative_s": {
+        "median": 0.3407721,
+        "min": 0.33345470000000005,
+        "max": 0.3571879
+      },
+      "self_percent": {
+        "median": 1.444153633349037,
+        "min": 1.4379445489378173,
+        "max": 1.4635504569714093
+      },
+      "cumulative_percent": {
+        "median": 65.04529287034278,
+        "min": 64.91759001147389,
+        "max": 65.78440459097453
+      },
+      "calls": {
+        "median": 6196,
+        "min": 6196,
+        "max": 6196
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/rk.py",
+      "line": 14,
+      "function": "rk_step",
+      "self_s": {
+        "median": 0.0632528,
+        "min": 0.06195200000000001,
+        "max": 0.0666678
+      },
+      "cumulative_s": {
+        "median": 0.41773560000000004,
+        "min": 0.4086114,
+        "max": 0.4378519
+      },
+      "self_percent": {
+        "median": 12.140463257633977,
+        "min": 12.049752128996932,
+        "max": 12.221976278097308
+      },
+      "cumulative_percent": {
+        "median": 79.73451807672109,
+        "min": 79.5792508072024,
+        "max": 80.61142235537399
+      },
+      "calls": {
+        "median": 1032,
+        "min": 1032,
+        "max": 1032
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/rk.py",
+      "line": 85,
+      "function": "__init__",
+      "self_s": {
+        "median": 3.3e-05,
+        "min": 2.7000000000000002e-05,
+        "max": 8.71e-05
+      },
+      "cumulative_s": {
+        "median": 0.0006450000000000001,
+        "min": 0.0006123000000000001,
+        "max": 0.0008988000000000001
+      },
+      "self_percent": {
+        "median": 0.00600942715226723,
+        "min": 0.00514354000902596,
+        "max": 0.017183208513401917
+      },
+      "cumulative_percent": {
+        "median": 0.1228734557711757,
+        "min": 0.11150218925252196,
+        "max": 0.17731650759868703
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/rk.py",
+      "line": 105,
+      "function": "_estimate_error",
+      "self_s": {
+        "median": 0.0052474,
+        "min": 0.0051333,
+        "max": 0.005445200000000001
+      },
+      "cumulative_s": {
+        "median": 0.0054126,
+        "min": 0.005325000000000001,
+        "max": 0.0056226
+      },
+      "self_percent": {
+        "median": 0.9996374756801044,
+        "min": 0.9915919008947128,
+        "max": 1.0127045265424346
+      },
+      "cumulative_percent": {
+        "median": 1.0311083204760707,
+        "min": 1.0238971244344766,
+        "max": 1.0505233677826085
+      },
+      "calls": {
+        "median": 1032,
+        "min": 1032,
+        "max": 1032
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/rk.py",
+      "line": 108,
+      "function": "_estimate_error_norm",
+      "self_s": {
+        "median": 0.0022197000000000002,
+        "min": 0.0021185,
+        "max": 0.0022471
+      },
+      "cumulative_s": {
+        "median": 0.019463300000000003,
+        "min": 0.019373,
+        "max": 0.0201746
+      },
+      "self_percent": {
+        "median": 0.4179406112014002,
+        "min": 0.4092055682987786,
+        "max": 0.4228561391864787
+      },
+      "cumulative_percent": {
+        "median": 3.707787491024999,
+        "min": 3.673872394731226,
+        "max": 3.821932244892483
+      },
+      "calls": {
+        "median": 1032,
+        "min": 1032,
+        "max": 1032
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/rk.py",
+      "line": 111,
+      "function": "_step_impl",
+      "self_s": {
+        "median": 0.0195209,
+        "min": 0.019409000000000003,
+        "max": 0.020164400000000002
+      },
+      "cumulative_s": {
+        "median": 0.4577857,
+        "min": 0.44848140000000003,
+        "max": 0.47933430000000005
+      },
+      "self_percent": {
+        "median": 3.7187603763775874,
+        "min": 3.6720149354296163,
+        "max": 3.829034374702845
+      },
+      "cumulative_percent": {
+        "median": 87.28862295251533,
+        "min": 87.20885420407242,
+        "max": 88.47703112034912
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/rk.py",
+      "line": 178,
+      "function": "_dense_output_impl",
+      "self_s": {
+        "median": 0.0023741,
+        "min": 0.0023087000000000003,
+        "max": 0.0024937
+      },
+      "cumulative_s": {
+        "median": 0.010246400000000001,
+        "min": 0.0100642,
+        "max": 0.0105514
+      },
+      "self_percent": {
+        "median": 0.4541123784729937,
+        "min": 0.4522695679788345,
+        "max": 0.4554635303661424
+      },
+      "cumulative_percent": {
+        "median": 1.95195438327717,
+        "min": 1.9214505955888619,
+        "max": 1.985479301039949
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/rk.py",
+      "line": 553,
+      "function": "__init__",
+      "self_s": {
+        "median": 0.0024882000000000003,
+        "min": 0.002386,
+        "max": 0.0024963000000000003
+      },
+      "cumulative_s": {
+        "median": 0.0042205,
+        "min": 0.004157,
+        "max": 0.0043171
+      },
+      "self_percent": {
+        "median": 0.470713381320057,
+        "min": 0.45458584849105116,
+        "max": 0.47400578705401464
+      },
+      "cumulative_percent": {
+        "median": 0.8040115040034839,
+        "min": 0.7861605442137228,
+        "max": 0.8200987117131086
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "packages/scipy/integrate/_ivp/rk.py",
+      "line": 560,
+      "function": "_call_impl",
+      "self_s": {
+        "median": 0.0176286,
+        "min": 0.0139231,
+        "max": 0.0181768
+      },
+      "cumulative_s": {
+        "median": 0.038324300000000006,
+        "min": 0.030679,
+        "max": 0.0395213
+      },
+      "self_percent": {
+        "median": 3.3100653170100296,
+        "min": 2.746768432295594,
+        "max": 3.358274422337594
+      },
+      "cumulative_percent": {
+        "median": 7.196981009481784,
+        "min": 6.052395568113173,
+        "max": 7.300835939552356
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "project/profile_nominal.py",
+      "line": 67,
+      "function": "nominal_workload",
+      "self_s": {
+        "median": 0.0006276000000000001,
+        "min": 0.0005768,
+        "max": 0.0008598000000000001
+      },
+      "cumulative_s": {
+        "median": 0.5248964,
+        "min": 0.5068662,
+        "max": 0.5491098
+      },
+      "self_percent": {
+        "median": 0.11428837820493679,
+        "min": 0.11379190207267766,
+        "max": 0.16379317406520447
+      },
+      "cumulative_percent": {
+        "median": 99.99501035442508,
+        "min": 99.99354199976644,
+        "max": 99.99526524679308
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 15,
+      "function": "_positive",
+      "self_s": {
+        "median": 3.6700000000000004e-05,
+        "min": 3.62e-05,
+        "max": 3.71e-05
+      },
+      "cumulative_s": {
+        "median": 3.6700000000000004e-05,
+        "min": 3.62e-05,
+        "max": 3.71e-05
+      },
+      "self_percent": {
+        "median": 0.006896153641731101,
+        "min": 0.0067560529499731585,
+        "max": 0.0072402267788961
+      },
+      "cumulative_percent": {
+        "median": 0.006896153641731101,
+        "min": 0.0067560529499731585,
+        "max": 0.0072402267788961
+      },
+      "calls": {
+        "median": 4,
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 77,
+      "function": "road_height",
+      "self_s": {
+        "median": 0.13414800000000002,
+        "min": 0.1309128,
+        "max": 0.14031100000000002
+      },
+      "cumulative_s": {
+        "median": 0.22281640000000003,
+        "min": 0.21856940000000002,
+        "max": 0.23356030000000003
+      },
+      "self_percent": {
+        "median": 25.555392782622757,
+        "min": 25.551173732174767,
+        "max": 25.826658317718508
+      },
+      "cumulative_percent": {
+        "median": 42.53223056096,
+        "min": 42.44685437285674,
+        "max": 43.11967364924396
+      },
+      "calls": {
+        "median": 6197,
+        "min": 6197,
+        "max": 6197
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 92,
+      "function": "rhs",
+      "self_s": {
+        "median": 0.053429700000000004,
+        "min": 0.051463,
+        "max": 0.0558422
+      },
+      "cumulative_s": {
+        "median": 0.3331913,
+        "min": 0.3261659,
+        "max": 0.34915100000000004
+      },
+      "self_percent": {
+        "median": 10.169079785525366,
+        "min": 10.152691845295095,
+        "max": 10.178437022972382
+      },
+      "cumulative_percent": {
+        "median": 63.58174241337138,
+        "min": 63.47343637812486,
+        "max": 64.34646004203671
+      },
+      "calls": {
+        "median": 6196,
+        "min": 6196,
+        "max": 6196
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 122,
+      "function": "nfev",
+      "self_s": {
+        "median": 2.9e-06,
+        "min": 2.7e-06,
+        "max": 4.3e-06
+      },
+      "cumulative_s": {
+        "median": 6.6e-06,
+        "min": 6.5000000000000004e-06,
+        "max": 9.2e-06
+      },
+      "self_percent": {
+        "median": 0.0005721160125013267,
+        "min": 0.0004916804033673188,
+        "max": 0.0008191563718078381
+      },
+      "cumulative_percent": {
+        "median": 0.001302057131899571,
+        "min": 0.0011836750451435453,
+        "max": 0.0017526136327051418
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 125,
+      "function": "<genexpr>",
+      "self_s": {
+        "median": 1.4000000000000001e-06,
+        "min": 1.0000000000000002e-06,
+        "max": 1.8000000000000001e-06
+      },
+      "cumulative_s": {
+        "median": 1.9e-06,
+        "min": 1.6000000000000001e-06,
+        "max": 2.6e-06
+      },
+      "self_percent": {
+        "median": 0.000276193937069606,
+        "min": 0.000182103853099007,
+        "max": 0.00034290266726839735
+      },
+      "cumulative_percent": {
+        "median": 0.00037483462888017954,
+        "min": 0.0002913661649584112,
+        "max": 0.0004953038527210184
+      },
+      "calls": {
+        "median": 3,
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 127,
+      "function": "state_at",
+      "self_s": {
+        "median": 0.00021160000000000002,
+        "min": 0.0001888,
+        "max": 0.0002836
+      },
+      "cumulative_s": {
+        "median": 0.046274,
+        "min": 0.0376197,
+        "max": 0.0485569
+      },
+      "self_percent": {
+        "median": 0.041744740774234734,
+        "min": 0.03596667976681856,
+        "max": 0.051644652738878374
+      },
+      "cumulative_percent": {
+        "median": 8.815265569543232,
+        "min": 7.421666467412468,
+        "max": 8.84239858454317
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 146,
+      "function": "sample",
+      "self_s": {
+        "median": 2.9e-05,
+        "min": 2.6600000000000003e-05,
+        "max": 3.2000000000000005e-05
+      },
+      "cumulative_s": {
+        "median": 0.0464023,
+        "min": 0.0377334,
+        "max": 0.0486776
+      },
+      "self_percent": {
+        "median": 0.005721160125013266,
+        "min": 0.00506733941629965,
+        "max": 0.005827323299168224
+      },
+      "cumulative_percent": {
+        "median": 8.839706909660196,
+        "min": 7.444097360730193,
+        "max": 8.864378519612222
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 161,
+      "function": "simulate",
+      "self_s": {
+        "median": 8.14e-05,
+        "min": 6.170000000000001e-05,
+        "max": 8.910000000000001e-05
+      },
+      "cumulative_s": {
+        "median": 0.4767656,
+        "min": 0.46798140000000005,
+        "max": 0.4990697
+      },
+      "self_percent": {
+        "median": 0.014823253642259166,
+        "min": 0.011753941428033399,
+        "max": 0.01757777128064421
+      },
+      "cumulative_percent": {
+        "median": 90.88251533496548,
+        "min": 90.82455327878768,
+        "max": 92.32401810096151
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 192,
+      "function": "post_bump_energy",
+      "self_s": {
+        "median": 6.96e-05,
+        "min": 4.92e-05,
+        "max": 0.00013120000000000002
+      },
+      "cumulative_s": {
+        "median": 7.000000000000001e-05,
+        "min": 4.9500000000000004e-05,
+        "max": 0.0001316
+      },
+      "self_percent": {
+        "median": 0.012674428175690883,
+        "min": 0.00970624407416044,
+        "max": 0.02499379441422985
+      },
+      "cumulative_percent": {
+        "median": 0.01274726971693049,
+        "min": 0.009765428489246783,
+        "max": 0.02506999500695616
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 202,
+      "function": "contact_force",
+      "self_s": {
+        "median": 1.32e-05,
+        "min": 1.2e-05,
+        "max": 1.86e-05
+      },
+      "cumulative_s": {
+        "median": 8.71e-05,
+        "min": 7.26e-05,
+        "max": 0.00011480000000000001
+      },
+      "self_percent": {
+        "median": 0.0024037708609068917,
+        "min": 0.0023673766034537657,
+        "max": 0.003543327561773439
+      },
+      "cumulative_percent": {
+        "median": 0.015861245604923507,
+        "min": 0.01432262845089528,
+        "max": 0.02186957011245112
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 212,
+      "function": "settling_candidate",
+      "self_s": {
+        "median": 0.0001028,
+        "min": 6.87e-05,
+        "max": 0.0001071
+      },
+      "cumulative_s": {
+        "median": 0.00018930000000000002,
+        "min": 0.0001441,
+        "max": 0.00019720000000000002
+      },
+      "self_percent": {
+        "median": 0.018720276098577918,
+        "min": 0.013553231054772807,
+        "max": 0.02040270870246964
+      },
+      "cumulative_percent": {
+        "median": 0.03447225939164202,
+        "min": 0.0284282473798073,
+        "max": 0.037566892214071085
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 244,
+      "function": "summarise",
+      "self_s": {
+        "median": 0.0002462,
+        "min": 0.0001852,
+        "max": 0.0002516
+      },
+      "cumulative_s": {
+        "median": 0.047271,
+        "min": 0.038308,
+        "max": 0.049412500000000005
+      },
+      "self_percent": {
+        "median": 0.044833968632975514,
+        "min": 0.03653651224663645,
+        "max": 0.04793017282484931
+      },
+      "cumulative_percent": {
+        "median": 8.998206641254681,
+        "min": 7.557455243758904,
+        "max": 9.00519554691356
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "project/quarter_car.py",
+      "line": 288,
+      "function": "<genexpr>",
+      "self_s": {
+        "median": 3.1000000000000004e-06,
+        "min": 2.8000000000000003e-06,
+        "max": 5.3e-06
+      },
+      "cumulative_s": {
+        "median": 5.600000000000001e-06,
+        "min": 5.4e-06,
+        "max": 8.200000000000001e-06
+      },
+      "self_percent": {
+        "median": 0.0005645219446069217,
+        "min": 0.000552387874139212,
+        "max": 0.0010096578536236142
+      },
+      "cumulative_percent": {
+        "median": 0.001104775748278424,
+        "min": 0.0009833608067346376,
+        "max": 0.0015621121508893657
+      },
+      "calls": {
+        "median": 3,
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method _operator.index>",
+      "self_s": {
+        "median": 9.000000000000001e-07,
+        "min": 7.000000000000001e-07,
+        "max": 1.0000000000000002e-06
+      },
+      "cumulative_s": {
+        "median": 9.000000000000001e-07,
+        "min": 7.000000000000001e-07,
+        "max": 1.0000000000000002e-06
+      },
+      "self_percent": {
+        "median": 0.00017145133363419867,
+        "min": 0.000138096968534803,
+        "max": 0.000182103853099007
+      },
+      "cumulative_percent": {
+        "median": 0.00017145133363419867,
+        "min": 0.000138096968534803,
+        "max": 0.000182103853099007
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.abs>",
+      "self_s": {
+        "median": 1.0000000000000002e-06,
+        "min": 9.000000000000001e-07,
+        "max": 1.3e-06
+      },
+      "cumulative_s": {
+        "median": 1.0000000000000002e-06,
+        "min": 9.000000000000001e-07,
+        "max": 1.3e-06
+      },
+      "self_percent": {
+        "median": 0.000182103853099007,
+        "min": 0.00017755324525903243,
+        "max": 0.0002476519263605092
+      },
+      "cumulative_percent": {
+        "median": 0.000182103853099007,
+        "min": 0.00017755324525903243,
+        "max": 0.0002476519263605092
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.all>",
+      "self_s": {
+        "median": 0.00047440000000000004,
+        "min": 0.00042750000000000004,
+        "max": 0.00048360000000000005
+      },
+      "cumulative_s": {
+        "median": 0.0006892000000000001,
+        "min": 0.0006013,
+        "max": 0.0006963000000000001
+      },
+      "self_percent": {
+        "median": 0.08806542335867977,
+        "min": 0.0843377914980404,
+        "max": 0.09037390297340427
+      },
+      "cumulative_percent": {
+        "median": 0.12679891291283857,
+        "min": 0.11862529597139576,
+        "max": 0.13129362126743302
+      },
+      "calls": {
+        "median": 1028,
+        "min": 1028,
+        "max": 1028
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.callable>",
+      "self_s": {
+        "median": 7.000000000000001e-07,
+        "min": 7.000000000000001e-07,
+        "max": 8.000000000000001e-07
+      },
+      "cumulative_s": {
+        "median": 7.000000000000001e-07,
+        "min": 7.000000000000001e-07,
+        "max": 8.000000000000001e-07
+      },
+      "self_percent": {
+        "median": 0.0001333510372710434,
+        "min": 0.00012747269716930487,
+        "max": 0.0001578251068969177
+      },
+      "cumulative_percent": {
+        "median": 0.0001333510372710434,
+        "min": 0.00012747269716930487,
+        "max": 0.0001578251068969177
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.getattr>",
+      "self_s": {
+        "median": 0.0021878,
+        "min": 0.0020635000000000002,
+        "max": 0.0030422
+      },
+      "cumulative_s": {
+        "median": 0.0021878,
+        "min": 0.0020635000000000002,
+        "max": 0.0030422
+      },
+      "self_percent": {
+        "median": 0.3984068098100075,
+        "min": 0.39309980772685443,
+        "max": 0.6001694252522537
+      },
+      "cumulative_percent": {
+        "median": 0.3984068098100075,
+        "min": 0.39309980772685443,
+        "max": 0.6001694252522537
+      },
+      "calls": {
+        "median": 7234,
+        "min": 7234,
+        "max": 7234
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.hasattr>",
+      "self_s": {
+        "median": 2.8000000000000003e-06,
+        "min": 2.7e-06,
+        "max": 3.1000000000000004e-06
+      },
+      "cumulative_s": {
+        "median": 2.8000000000000003e-06,
+        "min": 2.7e-06,
+        "max": 3.1000000000000004e-06
+      },
+      "self_percent": {
+        "median": 0.000514354000902596,
+        "min": 0.0005098907886772195,
+        "max": 0.0006115722892255562
+      },
+      "cumulative_percent": {
+        "median": 0.000514354000902596,
+        "min": 0.0005098907886772195,
+        "max": 0.0006115722892255562
+      },
+      "calls": {
+        "median": 4,
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.isinstance>",
+      "self_s": {
+        "median": 4.6e-06,
+        "min": 3.8e-06,
+        "max": 4.800000000000001e-06
+      },
+      "cumulative_s": {
+        "median": 4.6e-06,
+        "min": 3.8e-06,
+        "max": 4.800000000000001e-06
+      },
+      "self_percent": {
+        "median": 0.000837677724255432,
+        "min": 0.0007496692577603591,
+        "max": 0.0009144071127157263
+      },
+      "cumulative_percent": {
+        "median": 0.000837677724255432,
+        "min": 0.0007496692577603591,
+        "max": 0.0009144071127157263
+      },
+      "calls": {
+        "median": 8,
+        "min": 8,
+        "max": 8
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.issubclass>",
+      "self_s": {
+        "median": 0.0005052,
+        "min": 0.0004972,
+        "max": 0.0005077
+      },
+      "cumulative_s": {
+        "median": 0.0005052,
+        "min": 0.0004972,
+        "max": 0.0005077
+      },
+      "self_percent": {
+        "median": 0.09471733675880398,
+        "min": 0.09245412621836584,
+        "max": 0.09966655500540353
+      },
+      "cumulative_percent": {
+        "median": 0.09471733675880398,
+        "min": 0.09245412621836584,
+        "max": 0.09966655500540353
+      },
+      "calls": {
+        "median": 2082,
+        "min": 2082,
+        "max": 2082
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.len>",
+      "self_s": {
+        "median": 0.0004291,
+        "min": 0.0003459,
+        "max": 0.0004803
+      },
+      "cumulative_s": {
+        "median": 0.0004291,
+        "min": 0.0003459,
+        "max": 0.0004803
+      },
+      "self_percent": {
+        "median": 0.08174418584714961,
+        "min": 0.06823963059455479,
+        "max": 0.08746448064345305
+      },
+      "cumulative_percent": {
+        "median": 0.08174418584714961,
+        "min": 0.06823963059455479,
+        "max": 0.08746448064345305
+      },
+      "calls": {
+        "median": 2064,
+        "min": 2064,
+        "max": 2064
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.max>",
+      "self_s": {
+        "median": 0.0004085,
+        "min": 0.00040770000000000004,
+        "max": 0.00043840000000000003
+      },
+      "cumulative_s": {
+        "median": 0.0004085,
+        "min": 0.00040770000000000004,
+        "max": 0.00043840000000000003
+      },
+      "self_percent": {
+        "median": 0.07983432919860466,
+        "min": 0.07781985532174461,
+        "max": 0.0804316201023417
+      },
+      "cumulative_percent": {
+        "median": 0.07983432919860466,
+        "min": 0.07781985532174461,
+        "max": 0.0804316201023417
+      },
+      "calls": {
+        "median": 1036,
+        "min": 1036,
+        "max": 1036
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.min>",
+      "self_s": {
+        "median": 0.0016724,
+        "min": 0.0016391,
+        "max": 0.0017410000000000001
+      },
+      "cumulative_s": {
+        "median": 0.0016724,
+        "min": 0.0016391,
+        "max": 0.0017410000000000001
+      },
+      "self_percent": {
+        "median": 0.3170428082453711,
+        "min": 0.3122509788442389,
+        "max": 0.3299333859680064
+      },
+      "cumulative_percent": {
+        "median": 0.3170428082453711,
+        "min": 0.3122509788442389,
+        "max": 0.3299333859680064
+      },
+      "calls": {
+        "median": 2062,
+        "min": 2062,
+        "max": 2062
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.sum>",
+      "self_s": {
+        "median": 2.2e-06,
+        "min": 1.8000000000000001e-06,
+        "max": 2.3e-06
+      },
+      "cumulative_s": {
+        "median": 3.8e-06,
+        "min": 3.7e-06,
+        "max": 4.9000000000000005e-06
+      },
+      "self_percent": {
+        "median": 0.0004006284768178153,
+        "min": 0.00035510649051806486,
+        "max": 0.00043815340817628546
+      },
+      "cumulative_percent": {
+        "median": 0.0007299411193982443,
+        "min": 0.0006919946417762265,
+        "max": 0.0009334572608973039
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method numpy.arange>",
+      "self_s": {
+        "median": 2.65e-05,
+        "min": 2.4200000000000002e-05,
+        "max": 2.65e-05
+      },
+      "cumulative_s": {
+        "median": 2.65e-05,
+        "min": 2.4200000000000002e-05,
+        "max": 2.65e-05
+      },
+      "self_percent": {
+        "median": 0.004825752107123684,
+        "min": 0.004774209483631761,
+        "max": 0.005048289268118071
+      },
+      "cumulative_percent": {
+        "median": 0.004825752107123684,
+        "min": 0.004774209483631761,
+        "max": 0.005048289268118071
+      },
+      "calls": {
+        "median": 4,
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method numpy.array>",
+      "self_s": {
+        "median": 0.0094362,
+        "min": 0.009182500000000001,
+        "max": 0.009836300000000001
+      },
+      "cumulative_s": {
+        "median": 0.0094362,
+        "min": 0.009182500000000001,
+        "max": 0.009836300000000001
+      },
+      "self_percent": {
+        "median": 1.797610082710028,
+        "min": 1.7912281302377624,
+        "max": 1.8115363051011837
+      },
+      "cumulative_percent": {
+        "median": 1.797610082710028,
+        "min": 1.7912281302377624,
+        "max": 1.8115363051011837
+      },
+      "calls": {
+        "median": 7225,
+        "min": 7225,
+        "max": 7225
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method numpy.asanyarray>",
+      "self_s": {
+        "median": 0.00021170000000000002,
+        "min": 0.0002079,
+        "max": 0.0002703
+      },
+      "cumulative_s": {
+        "median": 0.00021170000000000002,
+        "min": 0.0002079,
+        "max": 0.0002703
+      },
+      "self_percent": {
+        "median": 0.041764468912596844,
+        "min": 0.039605258069499896,
+        "max": 0.04922267149266158
+      },
+      "cumulative_percent": {
+        "median": 0.041764468912596844,
+        "min": 0.039605258069499896,
+        "max": 0.04922267149266158
+      },
+      "calls": {
+        "median": 2066,
+        "min": 2066,
+        "max": 2066
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method numpy.asarray>",
+      "self_s": {
+        "median": 0.0088721,
+        "min": 0.0085246,
+        "max": 0.009324200000000001
+      },
+      "cumulative_s": {
+        "median": 0.0088721,
+        "min": 0.0085246,
+        "max": 0.009324200000000001
+      },
+      "self_percent": {
+        "median": 1.6901481968177487,
+        "min": 1.6817448828168307,
+        "max": 1.6979727470657608
+      },
+      "cumulative_percent": {
+        "median": 1.6901481968177487,
+        "min": 1.6817448828168307,
+        "max": 1.6979727470657608
+      },
+      "calls": {
+        "median": 20667,
+        "min": 20667,
+        "max": 20667
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method numpy.core._multiarray_umath.normalize_axis_index>",
+      "self_s": {
+        "median": 2.6e-06,
+        "min": 2.6e-06,
+        "max": 2.8000000000000003e-06
+      },
+      "cumulative_s": {
+        "median": 2.6e-06,
+        "min": 2.6e-06,
+        "max": 2.8000000000000003e-06
+      },
+      "self_percent": {
+        "median": 0.0004953038527210184,
+        "min": 0.0004734700180574181,
+        "max": 0.000552387874139212
+      },
+      "cumulative_percent": {
+        "median": 0.0004953038527210184,
+        "min": 0.0004734700180574181,
+        "max": 0.000552387874139212
+      },
+      "calls": {
+        "median": 4,
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method numpy.empty>",
+      "self_s": {
+        "median": 4.4e-06,
+        "min": 4.3e-06,
+        "max": 4.5e-06
+      },
+      "cumulative_s": {
+        "median": 4.4e-06,
+        "min": 4.3e-06,
+        "max": 4.5e-06
+      },
+      "self_percent": {
+        "median": 0.0008191563718078381,
+        "min": 0.0008012569536356306,
+        "max": 0.000887766226295162
+      },
+      "cumulative_percent": {
+        "median": 0.0008191563718078381,
+        "min": 0.0008012569536356306,
+        "max": 0.000887766226295162
+      },
+      "calls": {
+        "median": 3,
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method numpy.zeros>",
+      "self_s": {
+        "median": 0.0038478,
+        "min": 0.0037517,
+        "max": 0.0040507
+      },
+      "cumulative_s": {
+        "median": 0.0038478,
+        "min": 0.0037517,
+        "max": 0.0040507
+      },
+      "self_percent": {
+        "median": 0.7376480777481474,
+        "min": 0.733011601730744,
+        "max": 0.7401405669314577
+      },
+      "cumulative_percent": {
+        "median": 0.7376480777481474,
+        "min": 0.733011601730744,
+        "max": 0.7401405669314577
+      },
+      "calls": {
+        "median": 6198,
+        "min": 6198,
+        "max": 6198
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method time.perf_counter>",
+      "self_s": {
+        "median": 1.5e-06,
+        "min": 1.5e-06,
+        "max": 1.6000000000000001e-06
+      },
+      "cumulative_s": {
+        "median": 1.5e-06,
+        "min": 1.5e-06,
+        "max": 1.6000000000000001e-06
+      },
+      "self_percent": {
+        "median": 0.0002913661649584112,
+        "min": 0.00028575222272366445,
+        "max": 0.0002959220754317207
+      },
+      "cumulative_percent": {
+        "median": 0.0002913661649584112,
+        "min": 0.00028575222272366445,
+        "max": 0.0002959220754317207
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'all' of 'numpy.generic' objects>",
+      "self_s": {
+        "median": 0.011916600000000001,
+        "min": 0.0116129,
+        "max": 0.012558600000000001
+      },
+      "cumulative_s": {
+        "median": 0.0315961,
+        "min": 0.0308075,
+        "max": 0.033334300000000004
+      },
+      "self_percent": {
+        "median": 2.286969449529189,
+        "min": 2.27012995820588,
+        "max": 2.29100897985402
+      },
+      "cumulative_percent": {
+        "median": 6.070304470358228,
+        "min": 6.01910386959945,
+        "max": 6.0777462259084905
+      },
+      "calls": {
+        "median": 6196,
+        "min": 6196,
+        "max": 6196
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'all' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 4.6e-06,
+        "min": 3.8e-06,
+        "max": 5.500000000000001e-06
+      },
+      "cumulative_s": {
+        "median": 1.69e-05,
+        "min": 1.2600000000000001e-05,
+        "max": 2.1300000000000003e-05
+      },
+      "self_percent": {
+        "median": 0.000837677724255432,
+        "min": 0.0007239056308999499,
+        "max": 0.0010850476099163093
+      },
+      "cumulative_percent": {
+        "median": 0.0030775551173732175,
+        "min": 0.002400318670878781,
+        "max": 0.004202093471130435
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'any' of 'numpy.generic' objects>",
+      "self_s": {
+        "median": 8.8e-06,
+        "min": 6.8e-06,
+        "max": 9.3e-06
+      },
+      "cumulative_s": {
+        "median": 2.08e-05,
+        "min": 1.67e-05,
+        "max": 2.46e-05
+      },
+      "self_percent": {
+        "median": 0.0016025139072712612,
+        "min": 0.0012954100763472789,
+        "max": 0.0018347168676766683
+      },
+      "cumulative_percent": {
+        "median": 0.003787760144459345,
+        "min": 0.003181374746323464,
+        "max": 0.00485312203708022
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'append' of 'list' objects>",
+      "self_s": {
+        "median": 0.001677,
+        "min": 0.0016211,
+        "max": 0.0018474000000000001
+      },
+      "cumulative_s": {
+        "median": 0.001677,
+        "min": 0.0016211,
+        "max": 0.0018474000000000001
+      },
+      "self_percent": {
+        "median": 0.3198128509882416,
+        "min": 0.31947098500505683,
+        "max": 0.33641865821510547
+      },
+      "cumulative_percent": {
+        "median": 0.3198128509882416,
+        "min": 0.31947098500505683,
+        "max": 0.33641865821510547
+      },
+      "calls": {
+        "median": 6170,
+        "min": 6170,
+        "max": 6170
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'argmax' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 7.100000000000001e-06,
+        "min": 5.3e-06,
+        "max": 7.2000000000000005e-06
+      },
+      "cumulative_s": {
+        "median": 7.100000000000001e-06,
+        "min": 5.3e-06,
+        "max": 7.2000000000000005e-06
+      },
+      "self_percent": {
+        "median": 0.0013111477423128502,
+        "min": 0.0010455913331920796,
+        "max": 0.0013525605208920116
+      },
+      "cumulative_percent": {
+        "median": 0.0013111477423128502,
+        "min": 0.0010455913331920796,
+        "max": 0.0013525605208920116
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'argmin' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 3.2000000000000003e-06,
+        "min": 2.7e-06,
+        "max": 3.9e-06
+      },
+      "cumulative_s": {
+        "median": 3.2000000000000003e-06,
+        "min": 2.7e-06,
+        "max": 3.9e-06
+      },
+      "self_percent": {
+        "median": 0.0005827323299168224,
+        "min": 0.0005326597357770972,
+        "max": 0.0007429557790815275
+      },
+      "cumulative_percent": {
+        "median": 0.0005827323299168224,
+        "min": 0.0005326597357770972,
+        "max": 0.0007429557790815275
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'argsort' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 4.6200000000000005e-05,
+        "min": 4.4000000000000006e-05,
+        "max": 5.9900000000000006e-05
+      },
+      "cumulative_s": {
+        "median": 4.6200000000000005e-05,
+        "min": 4.4000000000000006e-05,
+        "max": 5.9900000000000006e-05
+      },
+      "self_percent": {
+        "median": 0.009114399923296998,
+        "min": 0.008382065199894156,
+        "max": 0.010908020800630518
+      },
+      "cumulative_percent": {
+        "median": 0.009114399923296998,
+        "min": 0.008382065199894156,
+        "max": 0.010908020800630518
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'astype' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 4.5e-06,
+        "min": 4.1000000000000006e-06,
+        "max": 4.6e-06
+      },
+      "cumulative_s": {
+        "median": 4.5e-06,
+        "min": 4.1000000000000006e-06,
+        "max": 4.6e-06
+      },
+      "self_percent": {
+        "median": 0.0008194673389455313,
+        "min": 0.0007810560754446829,
+        "max": 0.0009074943646572767
+      },
+      "cumulative_percent": {
+        "median": 0.0008194673389455313,
+        "min": 0.0007810560754446829,
+        "max": 0.0009074943646572767
+      },
+      "calls": {
+        "median": 4,
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'copy' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 3.2000000000000003e-06,
+        "min": 3.1000000000000004e-06,
+        "max": 3.4e-06
+      },
+      "cumulative_s": {
+        "median": 3.2000000000000003e-06,
+        "min": 3.1000000000000004e-06,
+        "max": 3.4e-06
+      },
+      "self_percent": {
+        "median": 0.0005905545936289065,
+        "min": 0.0005827323299168224,
+        "max": 0.0006707567043119003
+      },
+      "cumulative_percent": {
+        "median": 0.0005905545936289065,
+        "min": 0.0005827323299168224,
+        "max": 0.0006707567043119003
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'cumprod' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 0.0043813,
+        "min": 0.0034814000000000004,
+        "max": 0.0045058
+      },
+      "cumulative_s": {
+        "median": 0.0043813,
+        "min": 0.0034814000000000004,
+        "max": 0.0045058
+      },
+      "self_percent": {
+        "median": 0.8205235412935055,
+        "min": 0.6868154089386617,
+        "max": 0.8346441422794606
+      },
+      "cumulative_percent": {
+        "median": 0.8205235412935055,
+        "min": 0.6868154089386617,
+        "max": 0.8346441422794606
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'disable' of '_lsprof.Profiler' objects>",
+      "self_s": {
+        "median": 2.7400000000000002e-05,
+        "min": 2.4e-05,
+        "max": 3.3900000000000004e-05
+      },
+      "cumulative_s": {
+        "median": 2.7400000000000002e-05,
+        "min": 2.4e-05,
+        "max": 3.3900000000000004e-05
+      },
+      "self_percent": {
+        "median": 0.004989645574912791,
+        "min": 0.0047347532069075314,
+        "max": 0.006458000233554816
+      },
+      "cumulative_percent": {
+        "median": 0.004989645574912791,
+        "min": 0.0047347532069075314,
+        "max": 0.006458000233554816
+      },
+      "calls": {
+        "median": 1,
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'dot' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 0.0057638,
+        "min": 0.0056737,
+        "max": 0.0059579
+      },
+      "cumulative_s": {
+        "median": 0.0057638,
+        "min": 0.0056737,
+        "max": 0.0059579
+      },
+      "self_percent": {
+        "median": 1.0980124408897713,
+        "min": 1.0849565463785735,
+        "max": 1.1193153862513026
+      },
+      "cumulative_percent": {
+        "median": 1.0980124408897713,
+        "min": 1.0849565463785735,
+        "max": 1.1193153862513026
+      },
+      "calls": {
+        "median": 2065,
+        "min": 2065,
+        "max": 2065
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'get' of 'dict' objects>",
+      "self_s": {
+        "median": 2.5e-06,
+        "min": 2.5e-06,
+        "max": 3.7e-06
+      },
+      "cumulative_s": {
+        "median": 2.5e-06,
+        "min": 2.5e-06,
+        "max": 3.7e-06
+      },
+      "self_percent": {
+        "median": 0.0004762537045394407,
+        "min": 0.00045525963274751737,
+        "max": 0.0007299411193982443
+      },
+      "cumulative_percent": {
+        "median": 0.0004762537045394407,
+        "min": 0.00045525963274751737,
+        "max": 0.0007299411193982443
+      },
+      "calls": {
+        "median": 4,
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'items' of 'dict' objects>",
+      "self_s": {
+        "median": 0.0042275,
+        "min": 0.0041275,
+        "max": 0.0043853
+      },
+      "cumulative_s": {
+        "median": 0.0042275,
+        "min": 0.0041275,
+        "max": 0.0043853
+      },
+      "self_percent": {
+        "median": 0.8053450143761942,
+        "min": 0.7985800269950751,
+        "max": 0.8142789108962848
+      },
+      "cumulative_percent": {
+        "median": 0.8053450143761942,
+        "min": 0.7985800269950751,
+        "max": 0.8142789108962848
+      },
+      "calls": {
+        "median": 12417,
+        "min": 12417,
+        "max": 12417
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'nonzero' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 1.43e-05,
+        "min": 1.1700000000000001e-05,
+        "max": 1.6000000000000003e-05
+      },
+      "cumulative_s": {
+        "median": 1.43e-05,
+        "min": 1.1700000000000001e-05,
+        "max": 1.6000000000000003e-05
+      },
+      "self_percent": {
+        "median": 0.0026040850993157994,
+        "min": 0.0023081921883674216,
+        "max": 0.003048023709052421
+      },
+      "cumulative_percent": {
+        "median": 0.0026040850993157994,
+        "min": 0.0023081921883674216,
+        "max": 0.003048023709052421
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'ravel' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 0.0008088,
+        "min": 0.000805,
+        "max": 0.0008968
+      },
+      "cumulative_s": {
+        "median": 0.0008088,
+        "min": 0.000805,
+        "max": 0.0008968
+      },
+      "self_percent": {
+        "median": 0.1595611830727838,
+        "min": 0.15335369286169992,
+        "max": 0.16331073545918942
+      },
+      "cumulative_percent": {
+        "median": 0.1595611830727838,
+        "min": 0.15335369286169992,
+        "max": 0.16331073545918942
+      },
+      "calls": {
+        "median": 1040,
+        "min": 1040,
+        "max": 1040
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'reduce' of 'numpy.ufunc' objects>",
+      "self_s": {
+        "median": 0.0386417,
+        "min": 0.037764700000000005,
+        "max": 0.0408026
+      },
+      "cumulative_s": {
+        "median": 0.0386417,
+        "min": 0.037764700000000005,
+        "max": 0.0408026
+      },
+      "self_percent": {
+        "median": 7.430310676457541,
+        "min": 7.361301109880682,
+        "max": 7.450272268037536
+      },
+      "cumulative_percent": {
+        "median": 7.430310676457541,
+        "min": 7.361301109880682,
+        "max": 7.450272268037536
+      },
+      "calls": {
+        "median": 12419,
+        "min": 12419,
+        "max": 12419
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'repeat' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 0.0018541,
+        "min": 0.0014591,
+        "max": 0.0019358
+      },
+      "cumulative_s": {
+        "median": 0.0018541,
+        "min": 0.0014591,
+        "max": 0.0019358
+      },
+      "self_percent": {
+        "median": 0.35251663882905765,
+        "min": 0.2878532668416158,
+        "max": 0.3532087974346308
+      },
+      "cumulative_percent": {
+        "median": 0.35251663882905765,
+        "min": 0.2878532668416158,
+        "max": 0.3532087974346308
+      },
+      "calls": {
+        "median": 1027,
+        "min": 1027,
+        "max": 1027
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'reshape' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 0.0017645,
+        "min": 0.001397,
+        "max": 0.0017726
+      },
+      "cumulative_s": {
+        "median": 0.0017645,
+        "min": 0.001397,
+        "max": 0.0017726
+      },
+      "self_percent": {
+        "median": 0.3227972900032997,
+        "min": 0.2756020929187425,
+        "max": 0.33613986466393725
+      },
+      "cumulative_percent": {
+        "median": 0.3227972900032997,
+        "min": 0.2756020929187425,
+        "max": 0.33613986466393725
+      },
+      "calls": {
+        "median": 2056,
+        "min": 2056,
+        "max": 2056
+      }
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'searchsorted' of 'numpy.ndarray' objects>",
+      "self_s": {
+        "median": 0.0001043,
+        "min": 0.00010420000000000001,
+        "max": 0.0001054
+      },
+      "cumulative_s": {
+        "median": 0.0001043,
+        "min": 0.00010420000000000001,
+        "max": 0.0001054
+      },
+      "self_percent": {
+        "median": 0.020078856183382822,
+        "min": 0.018993431878226424,
+        "max": 0.02055672017332353
+      },
+      "cumulative_percent": {
+        "median": 0.020078856183382822,
+        "min": 0.018993431878226424,
+        "max": 0.02055672017332353
+      },
+      "calls": {
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    }
+  ],
+  "source_sha256": {
+    "pair_1_functions.json": "e897716583c06c960952963535eb9842977a6d2b0621c67ae61645a025d219a8",
+    "pair_2_functions.json": "ed4ca2e12569d89206e8600d33140d44ae9d6595f70f19e81c318d708e95cc70",
+    "pair_3_functions.json": "da647bc80308878bb2b9196a6a4c36780dd8c909495b602e397fe768e3a72ceb"
+  }
+}

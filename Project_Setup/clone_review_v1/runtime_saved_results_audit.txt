@@ -1,0 +1,2 @@
+Audit passed: saved timings, work counts, ratios and fingerprints reproduce; no new timing or fitting.
+Matplotlib is building the font cache; this may take a moment.

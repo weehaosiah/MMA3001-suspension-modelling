@@ -1,6 +1,14 @@
 # GitHub setup decisions
 
-Revision: 005 | Updated: 2026-10-11 | Status: MIT selected and prepared locally; school email confirmed by student
+Revision: 007 | Updated: 2026-10-25 | Status: Remote checkpoint reverified; final local work awaits student upload
+
+Fresh authenticated reads on25 October confirm private repository and main at
+8ba9808f10dcdc84330135870d8b7f92c189f0a8, matching local HEAD. The completed report,
+later profiling supplement and updated records remain local changes awaiting
+student commit/push. No remote setting, access, identity or licence was changed.
+The supplied full name was entered in the report; the existing licence notice
+retains the previously accepted Git identifier. Use
+[FINAL_UPLOAD_CHECK.md](FINAL_UPLOAD_CHECK.md) for the current upload handoff.
 
 The student selected MIT on 11 October 2026 and confirmed that their school email
 is verified. Added the standard root LICENSE locally, using the existing
@@ -8,7 +16,8 @@ repository-local Git author name `weehaosiah` in its 2026 copyright notice. The
 student was unsure which name to use; the assistant used that configured public
 identifier and explained the choice, without inventing a legal name. The email
 verification is student-confirmed; no verification flag was independently read.
-The licence and pending documentation edits still need student review/commit/push.
+The student uploaded the licence and prior documentation as 8ba9808; that commit
+is verified on GitHub. The subsequent clone-check records are new local edits.
 
 The student now wants to understand Git and upload independently. Follow
 [GITHUB_SELF_UPLOAD_GUIDE.md](GITHUB_SELF_UPLOAD_GUIDE.md) using the required
@@ -26,9 +35,9 @@ not an extra requirement established by the project brief.
 | Description | Suggested during guidance: MMA3001 quarter-car suspension modelling and machine-learning comparison. Actual remote description not independently checked. |
 | Owner/account | `weehaosiah`, confirmed by remote metadata |
 | Visibility | Private, confirmed; assessor access still needs verification |
-| Licence | MIT selected; root LICENSE prepared locally, not yet uploaded |
+| Licence | MIT selected and uploaded; root LICENSE present in the verified clone |
 | Git name / email | Local author name read as `weehaosiah`; exact commit email not read or recorded. Student confirms school email verified. |
-| Verified uploaded checkpoint | `db1532988a5d5c1409431318367316d45befd28b`, default branch `main` |
+| Verified uploaded checkpoint | `8ba9808f10dcdc84330135870d8b7f92c189f0a8`, default branch `main` |
 | Connection | Authenticated remote reads succeed; local origin points to the repository URL with `.git` suffix |
 
 At the first-upload check on 11 October 2026, all 136 tracked file entries (path, blob identifier and mode)
@@ -84,11 +93,12 @@ Public means anyone on the internet can view the repository. Private limits acce
 to authorised people; access must be arranged for assessors. Source:
 [GitHub repository visibility](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories).
 
-Next, review/commit/push the prepared licence and documentation, verify assessor
-access, and later clone the final uploaded revision for the submission ZIP.
-Initial upload and MIT selection are complete; assessor access and final packaging
-remain. A separate verification-clone attempt through command-line Git failed to
-authenticate; use the signed-in Desktop app to create that copy. No clone audit has
-yet run. The final ZIP
+Next, verify assessor access and later clone the final uploaded revision for the
+submission ZIP. Initial upload, MIT publication and same-environment saved-result
+checks in a real Desktop clone are complete. See [clone results](clone_review_v1/CHECK_RESULTS.md).
+Earlier command-line clone attempts failed, but the student's Desktop clone
+succeeded. The student also reported a second local clone; it was left untouched.
+The verification copy contains four restored, ignored course originals, so final
+packaging needs a new clean clone. The final ZIP
 must not be described as a clone of GitHub until a real remote clone exists.
 No report drafting, new fitting or experiments are part of this setup stage.

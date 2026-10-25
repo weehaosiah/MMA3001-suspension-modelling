@@ -18,6 +18,11 @@ The corresponding warm ratios are about 1760 (linear) and 1362 (SVR) for a singl
 
 The full diagnostic workflow averages 222.277811 ms across its nine case medians. Its small difference from A-only timing should not be interpreted as the cost of diagnostics being negative: these are separate noisy observations/phases, not a controlled subtraction of the extra operations. Both are approximately 0.22 s per setup here. No profiling or optimisation claim is made.
 
+That sentence describes this 5 October benchmark. A separate bounded nominal
+profiling study was completed on 12 October; see [PROFILING_GUIDE.md](PROFILING_GUIDE.md).
+Its new instrumented/full-diagnostic timings do not replace or extend these
+nine-case ratios, and no optimisation of the model source has been made.
+
 The laptop reported AC power and 100% battery at the start and end. MKL, Microsoft OpenMP and Intel OpenMP all reported one thread before and after measurement. Other assistant experiments were idle, but user/OS background load was not comprehensively measured or controlled. The shortest measured 1000-call ML block was 0.1238523 s, compared with a recorded timer resolution of 1e-7 s. The schedule took 50.9708593 s including between-query bookkeeping; this is not a model build time.
 
 The first attempt stopped before benchmark calls because a lazily loaded Intel OpenMP pool escaped the initial thread-limit discovery. Its 429 passing tests, plan, failure note and exact old-runner snapshot remain in [runtime_benchmark_v1](runtime_benchmark_v1/FAILURE_NOTE.md). Explicit library discovery before applying the limit, plus four new guard tests, fixed this without changing physical/model settings or repetitions. Older short timing records requested a one-thread limit but lack these complete before/after pool snapshots; they remain a separate historical cost ledger, not a controlled comparison with this run.

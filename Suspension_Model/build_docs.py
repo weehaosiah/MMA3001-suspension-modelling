@@ -25,7 +25,7 @@ MODULE_NAMES = (
     "quarter_car", "run_nominal", "rk4_check", "verify_reduced_case",
     "run_verification", "dataset_design", "generate_dataset", "ml_development",
     "ml_plots", "ml_reference_check", "final_evaluation", "final_plots",
-    "runtime_benchmark", "runtime_outputs", "build_docs",
+    "runtime_benchmark", "runtime_outputs", "profile_nominal", "profile_outputs", "build_docs",
 )
 PATH_NOTE = (
     "Portable display: <project> means the Suspension_Model directory. "

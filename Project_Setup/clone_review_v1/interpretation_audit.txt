@@ -1,0 +1,1 @@
+Audit passed: all six checks and all saved interpretation facts reproduce exactly.

@@ -1,0 +1,66 @@
+         229486 function calls in 0.525 seconds
+
+   Ordered by: cumulative time
+   List reduced from 140 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.001    0.001    0.525    0.525 profile_nominal.py:67(nominal_workload)
+        1    0.000    0.000    0.477    0.477 quarter_car.py:161(simulate)
+        2    0.003    0.001    0.477    0.238 ivp.py:159(solve_ivp)
+     1027    0.002    0.000    0.460    0.000 base.py:175(step)
+     1027    0.020    0.000    0.458    0.000 rk.py:111(_step_impl)
+     1032    0.063    0.000    0.418    0.000 rk.py:14(rk_step)
+     6196    0.005    0.000    0.354    0.000 base.py:152(fun)
+     6196    0.006    0.000    0.349    0.000 base.py:22(fun_wrapped)
+     6196    0.008    0.000    0.341    0.000 ivp.py:592(fun)
+     6196    0.053    0.000    0.333    0.000 quarter_car.py:92(rhs)
+     6197    0.134    0.000    0.223    0.000 quarter_car.py:77(road_height)
+    12404    0.014    0.000    0.099    0.000 fromnumeric.py:2421(all)
+    12417    0.026    0.000    0.085    0.000 fromnumeric.py:71(_wrapreduction)
+        1    0.000    0.000    0.047    0.047 quarter_car.py:244(summarise)
+        1    0.000    0.000    0.046    0.046 quarter_car.py:146(sample)
+        1    0.000    0.000    0.046    0.046 quarter_car.py:127(state_at)
+        2    0.004    0.002    0.046    0.023 common.py:203(__call__)
+     1027    0.001    0.000    0.040    0.000 base.py:251(__call__)
+    12419    0.039    0.000    0.039    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+     1027    0.018    0.000    0.038    0.000 rk.py:560(_call_impl)
+     6196    0.012    0.000    0.032    0.000 {method 'all' of 'numpy.generic' objects}
+     6197    0.023    0.000    0.028    0.000 numeric.py:67(zeros_like)
+     6198    0.003    0.000    0.020    0.000 _methods.py:61(_all)
+     1032    0.002    0.000    0.019    0.000 rk.py:108(_estimate_error_norm)
+     1027    0.007    0.000    0.014    0.000 shape_base.py:1185(tile)
+
+
+         229486 function calls in 0.525 seconds
+
+   Ordered by: internal time
+   List reduced from 140 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     6197    0.134    0.000    0.223    0.000 quarter_car.py:77(road_height)
+     1032    0.063    0.000    0.418    0.000 rk.py:14(rk_step)
+     6196    0.053    0.000    0.333    0.000 quarter_car.py:92(rhs)
+    12419    0.039    0.000    0.039    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+    12417    0.026    0.000    0.085    0.000 fromnumeric.py:71(_wrapreduction)
+     6197    0.023    0.000    0.028    0.000 numeric.py:67(zeros_like)
+     1027    0.020    0.000    0.458    0.000 rk.py:111(_step_impl)
+     1027    0.018    0.000    0.038    0.000 rk.py:560(_call_impl)
+    12404    0.014    0.000    0.099    0.000 fromnumeric.py:2421(all)
+     6196    0.012    0.000    0.032    0.000 {method 'all' of 'numpy.generic' objects}
+     7225    0.009    0.000    0.009    0.000 {built-in method numpy.array}
+    20667    0.009    0.000    0.009    0.000 {built-in method numpy.asarray}
+     6196    0.008    0.000    0.341    0.000 ivp.py:592(fun)
+     1027    0.007    0.000    0.014    0.000 shape_base.py:1185(tile)
+     2065    0.006    0.000    0.006    0.000 {method 'dot' of 'numpy.ndarray' objects}
+     6196    0.006    0.000    0.349    0.000 base.py:22(fun_wrapped)
+     1032    0.005    0.000    0.005    0.000 rk.py:105(_estimate_error)
+     6196    0.005    0.000    0.354    0.000 base.py:152(fun)
+     1038    0.005    0.000    0.009    0.000 linalg.py:2383(norm)
+     1027    0.004    0.000    0.004    0.000 {method 'cumprod' of 'numpy.ndarray' objects}
+        2    0.004    0.002    0.046    0.023 common.py:203(__call__)
+    12417    0.004    0.000    0.004    0.000 {method 'items' of 'dict' objects}
+     6198    0.004    0.000    0.004    0.000 {built-in method numpy.zeros}
+     1038    0.003    0.000    0.012    0.000 common.py:63(norm)
+     6198    0.003    0.000    0.020    0.000 _methods.py:61(_all)
+
+

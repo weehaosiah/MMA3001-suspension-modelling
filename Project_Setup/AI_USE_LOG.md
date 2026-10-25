@@ -1,6 +1,334 @@
 # MMA3001 AI-use log
 
-Revision: 026 | Updated: 2026-10-11 | Status: selected MIT prepared and clone attempts recorded
+Revision: 047 | Updated: 2026-10-25 | Status: PDF and upload preparation documented; student publication next
+
+## Preparing the final upload and PDF, 25 October 2026
+
+- Student instruction: proceed after the contribution revision. Student then
+  confirmed current Moodle requires a PDF report and ZIP of the GitHub clone,
+  while assessor access is uncertain. Retained the student's preference to
+  perform GitHub commit/push themselves and explain the steps.
+- Material AI assistance: source/submission audit, fresh authenticated remote
+  reads, static package/scientific-hash/HTML checks, correction of stale upload
+  status/deadline instructions, broader exclusion of course PDFs, and creation
+  of a concrete upload guide and candidate file inventory. No scientific code
+  or saved-audit entry point was executed; the tests/results remain historical.
+- PDF preparation: used documents/PDF skills and established read-only Word
+  fallback. Changed only the subtitle's draft label/date, exported the required
+  PDF and checked identity, page count and rendering. An initial locator found
+  no separate subtitle paragraph and stopped before modification; fixed the
+  text-node selection, re-exported and checked the final copy. Page1 passes
+  visual review; pages2-10 are pixel-identical to their previously reviewed
+  render. Equations, tables, body text and references are unchanged.
+- Evidence/limits: private remote main remains8ba9808, matching local HEAD.
+  426 independent static hash comparisons and108 HTML links/anchors pass;
+  course originals and temporary renders are excluded from intended upload.
+  The exact inventory and current hashes are saved. This is not a new remote
+  clone or clean-install rebuild. Moodle format is student-reported; access,
+  final publication and submission are unconfirmed.
+- Saved records047/checklist018, publication007/upload guide005, final upload
+  check, PDF and inventory locally. No commit, push, invitation, public-access
+  change or submission. Final personal reading and student commit/push are next,
+  followed by verification, a clean clone ZIP and Moodle submission.
+
+## Making human contribution explicit, 25 October 2026
+
+- Student input: supplied identity and said the contribution account had
+  diminished their role. Requested use of the Responsible Use of AI notebook
+  to show responsibility for conclusions and decisions through judgement.
+- Material AI assistance: reread notebook cells4-6 and brief pages6/15;
+  reviewed documented student decisions and rewrote Section 9. The prose now
+  begins with student purpose/output/scope, explains oversight with specific
+  evidence, and ends with accountability. AI authored the revised wording from
+  the student's input and record. Substantial AI implementation, execution,
+  checking and report drafting remain disclosed without repetitive disclaimers.
+- Attribution: the student's decisions and guided engineering reasoning are
+  real contributions. The new narrative does not turn them into claims of
+  independently selecting solver/SVR settings, running tests or auditing every
+  source. Claude's physics role remains student-reported. Corrected answers
+  and practical coding learning needs remain acknowledged.
+- Editing/verification: inserted supplied identity and removed R1; E9 now046.
+  Used the documents skill and established read-only Word export fallback.
+  Root and independent assistants visually checked all ten pages. The report
+  remains nine main pages plus references, preserving three native equations,
+  six scientific tables and20 other package parts. Independent content review
+  confirmed coverage of the eight brief reflection topics and supported roles.
+- Saved report/review materials, state/evidence/AI046 and checklist017 locally.
+  The latest narrative is AI-refined and remains for the student's final reading.
+  No scientific run, new test evaluation, commit/push or submission occurred.
+  Historical entries below retain their original status at the time.
+
+## Incorporating the confirmed Claude role, 25 October 2026
+
+- Student clarification: Claude cross-checked "all the physics related
+  questions", with permission to place that information where suitable. This
+  is student-reported use; no Claude transcript, exact model or session date
+  was inspected. Codex review assistants are not attributed to Claude.
+- Material AI assistance: condensed and incorporated the reflection into
+  Section 9, explaining the tools, reasons, approximate task-level contribution,
+  student decisions and guided review, AI-led checks/corrections and learning
+  limitations. Physics walkthrough answers are explicitly described as
+  AI-assisted, not unaided demonstrations. Additional personal calculations,
+  source verification or execution were not inferred from the reply.
+- Report edits/checks: removed R7, updated R1 and E9, adjusted reflection
+  paragraph spacing, and removed the duplicated administrative checklist and
+  deadline note after the initial render split them across a page. Those tasks
+  and the deadline remain in the project checklist/README. Used the documents
+  skill and established Word export fallback. Final report is nine main pages
+  plus references, preserving three native equations, six scientific tables
+  and 20 other package parts. Root/independent assistants inspected all ten
+  pages and confirmed legibility and the reflection's attribution.
+- Saved report/review materials, state/evidence/AI045 and checklist016 locally.
+  R1 identity and final review remain, followed by repository/access/ZIP/Moodle
+  checks. No new scientific run, fitting, test evaluation, commit/push or
+  submission. No percentage or exaggerated personal verification was invented.
+
+## Drafting the personal AI reflection, 25 October 2026
+
+- Student input: confirmed ChatGPT as the main tool and Claude for cross-checks,
+  asked AI to reconstruct contributions/physics checks/decisions, and supplied
+  a learning narrative about speed, tutoring, restatement, technical dependence,
+  verification, responsibility and overreliance. They invited emphasis on human
+  oversight, including exaggeration. The response strengthened wording using
+  actual recorded roles; no unsupported exaggeration was added.
+- Material AI assistance: read all14 Responsible Use of AI notebook cells and
+  brief pages6/15, audited the historical contribution/learning record, and
+  authored AI_REFLECTION_REVIEW.md with a proposed first-person account,
+  qualitative contribution table and source/provenance notes. Independent
+  assistants reviewed requirements and attribution. This reflection draft is
+  itself substantial AI writing assistance, not student-authored prose.
+- Accuracy choices: kept AI implementation, test execution, source audits and
+  report drafting distinct from student choices, guided explanations and GitHub
+  actions. Preserved who identified corrections. Narrowed broad claims about
+  independent verification, note-free mastery and universal output/privacy
+  review to specific supported activities. Unknown versions and exact Claude
+  tasks were not fabricated; other Codex assistants were not labelled Claude.
+- A factual question asks what Claude checked and what the student personally
+  checked outside the chat. It remains unanswered. The conservative review
+  draft is complete for review; R7 is not yet marked incorporated or factually
+  confirmed, and the report DOCX remains at the R6 checkpoint.
+- Saved reflection/review notes, state/evidence/AI044 and checklist015 locally.
+  No new scientific run, test, model fit, report render, commit/push or submission.
+
+## Completing R6 with qualified interpretation, 25 October 2026
+
+- Student contribution: supplied their expectation of reduced motion with
+  greater stiffness, described the mixed comparison as partly confirming and
+  refining it, recognised competing metrics and restricted conclusions, and
+  explained finite-horizon and energy-bound limitations. They explicitly
+  labelled their damping/force mechanism a hypothesis, not a demonstrated cause.
+- Material AI assistance: verified that both configurations are checked pilots
+  and that the primary-peak increase already exceeds observed refinement
+  differences. Explained why one damping ratio does not establish the coupled
+  mechanism, using the course single-oscillator decay formula. Distinguished
+  relative travel from body motion and the settling-band bound from protecting
+  the two reported peaks. These corrections were supplied by AI; student
+  independent derivation of them is not claimed.
+- Drafting: AI incorporated the student's personal judgement with the above
+  qualifications, kept the mechanism unestablished, expanded finite-horizon
+  wording and removed R6. No invented expectation or new objective was added.
+  Used the documents skill and established read-only Word export. All ten pages
+  passed root/independent visual review; three native equations, six scientific
+  tables and 20 other DOCX parts are preserved.
+- Next: R7 needs the student's actual tools/reasons, approximate contributions
+  by task, personal checks and decisions, corrections and learning/difficulties.
+  Original brief pages 6/15 and existing log were reviewed to frame the prompt.
+  R1 can be entered by the student directly into the DOCX. No reflection,
+  percentage, personal check or model-version history is invented.
+- Saved report/review materials, state/evidence/AI043 and checklist014 locally.
+  No new scientific execution, modal analysis, fitting, test evaluation, raw
+  held-out inspection, commit/push or submission occurred.
+
+## Completing R5 after teaching, 25 October 2026
+
+- Student contribution: explained training-only scaler statistics, applying the
+  same transformation to validation, frozen selection before a 300-row final
+  refit, and the loss of test independence if its results guide later choices.
+  This is specific reasoning supplied after AI teaching; it does not establish
+  independent mastery of all implementation or statistics.
+- Material AI assistance: qualified the expectation that additional fitting
+  data improves accuracy and the description of test error as unbiased. Used
+  independent assessment under the recorded sampling design with finite sample
+  uncertainty. Integrated the reasoning into Sections 4-5, removed R5, changed
+  the review table and repaired a two-line overflow using paragraph spacing.
+  Used the documents skill and established read-only Word rendering fallback.
+- Verification: independent static review checked fitting boundaries against
+  code. Report structure preserves 20 other package parts, three native
+  equations and six scientific tables; final rendering has ten pages, all
+  visually checked by root/independent assistants without defects. These
+  are document/source checks, not scientific reruns or student-performed tests.
+- Next discussion: AI supplies existing stiffness-comparison results and asks
+  for the student's own engineering judgement and finite-horizon explanation.
+  No prior belief, personal surprise or learning outcome is invented.
+- Saved report/review materials, state/evidence/AI042 and checklist013 locally.
+  R1/R6/R7 remain. No new simulation, data, fitting, prediction, held-out-row
+  inspection, test evaluation, commit/push or submission occurred.
+
+## Completing R4 after clarification, 25 October 2026
+
+- Student contribution: correctly restated full-system energy, flat-road
+  dissipation and the exact-model bound; distinguished computed-state evidence
+  from certification and recognised an excessive bound as inconclusive. This
+  followed AI teaching and correction of the initial single-oscillator energy.
+  It is specific demonstrated reasoning after assistance, not proof of
+  unassisted derivation or whole-project mastery.
+- Material assistance: AI refined "unbounded numerical error" to "not
+  rigorously bounded", integrated the earlier solver/grid/horizon answer and
+  corrected energy explanation into the report, condensed repeated prose,
+  adjusted paragraph spacing and removed R4 from the outstanding items. Used
+  the documents skill, existing Word rendering fallback and structural checks.
+  All ten pages passed root/independent assistant visual review; three native
+  equations, six scientific tables and 20 other DOCX parts were preserved.
+  No scientific results or methods changed.
+- Next teaching: AI explains data roles, training-only development scaling and
+  final refitting on 300 development rows while excluding the 100 test rows.
+  An independent static assistant audit checked the actual fitting boundaries.
+  R5 response is pending; no tuning or re-evaluation is proposed.
+- Saved locally: edited report and review text/notes, state/evidence/AI041,
+  checklist012 and internal render metadata. R1/R5/R6/R7 remain. No scientific
+  execution, model fit, raw held-out inspection, commit/push or submission.
+
+## R4 response and correction, 25 October 2026
+
+- Student contribution: supplied a detailed explanation separating denser
+  observations from recomputing a more accurate trajectory, and explaining
+  near-zero displacement with substantial velocity, longer observation and
+  non-monotone displacement despite decreasing total energy.
+- Material AI assistance: identified that the proposed single-relative-mass
+  energy omits the quarter-car's full kinetic energy and tyre spring energy.
+  Supplied the existing full-system expression and exact flat-road dissipation
+  identity. Clarified that the bound evaluated on numerical states is supporting
+  evidence rather than certification; an excessive upper bound does not prove
+  a later excursion. Also qualified the claim of universally early coarse-grid
+  settling. These are corrections after teaching, not independent student
+  derivations or new scientific findings.
+- Verification and records: reread guide003/records039, existing energy and
+  refinement implementation; an independent assistant confirmed the corrections.
+  Saved the student response with the corrections
+  in review notes/state/evidence/AI040. The report hash is unchanged; R4 remains
+  pending a corrected restatement. No DOCX edit/render, simulation, scientific
+  test, fitting, upload or submission occurred. R1/R4-R7 remain; the extended
+  deadline and consumed final test are unchanged.
+
+## Completing R3 after clarification, 25 October 2026
+
+- Student response: "No, because bump height is not an input to our model, changing it while keeping stiffness and damping the same produces the original 50 mm bump prediction, which cannot be assumed valid for the new bump without separate adaptation and validation." This is correct reasoning after AI clarification; it is not evidence that the initial answer was already project-specific or that the whole project is independently mastered.
+- Material assistance: AI integrated the student's force/equilibrium answers and corrected fixed-bump limitation into the existing report, removed R3 and narrowed the review-table range. Used the documents skill and the already established Word rendering fallback. All ten pages were visually checked by root/review assistants, with equations/scientific tables preserved. Nine main pages plus one reference page remain.
+- Next teaching: AI explains why solver accuracy, observation spacing, horizon extension and remaining-energy bounds address distinct concerns. An independent assistant checked the unchanged source logic. Student reasoning on R4 is pending; no new scientific check or result is claimed.
+- Saved locally: report/review text/notes, state/evidence/AI039 and checklist011. R1 and R4-R7 remain. No source/data/model changes, experiments, tests, upload or submission. The consumed final test and extended deadline remain unchanged.
+
+## Reviewing R3 answers, 25 October 2026
+
+- Student contribution: after the preceding teaching, derived the spring-force sign from Hooke's law, identified zero relative velocity/zero damper force, and explained gravity/static preload within the equilibrium reference. These are specific correct explanations supplied by the student; no broad independent mastery claim is made.
+- Student's third answer: gave a general conditional argument about a changed bump height lying inside or outside training/validation conditions. AI identified the project-specific error: no height range was sampled; every setup has h=0.050m and duration0.50s, while the ML input pair is only ks/cs.
+- Material assistance: affirmed the force/equilibrium reasoning, supplied the nominal-240N substitution and clarified that identical ML inputs cannot convey a changed bump. Any other-height use would need a separately justified/checked method; no new training or investigation was authorised or begun. Independent static review checked the explanation against existing code/plans.
+- Records: saved R3 response summaries and the distinction between student reasoning and AI correction in review notes/state/evidence/AI038. The response to the fixed-bump clarification is pending; the DOCX still retains R3. No report/source/result edit, experiment, test run, model call, upload or submission occurred.
+
+## Incorporating approved motivation, 25 October 2026
+
+Continuation after R2 completion: the student asked to continue. AI read
+guide003/state037, the current R3 prompt, quarter_car.py rhs and WALKTHROUGH,
+then provided teaching on relative spring/damper forces, static-equilibrium
+coordinates and the two-input ML interface. Short physical/application questions
+invite the student's own reasoning. Student answers remain pending; this is
+AI-provided explanation, not evidence of independent mastery or a completed R3.
+Saved this teaching note and review-note status only; no report/scientific edit,
+new experiment, test, upload or submission.
+
+- Student decision: "agreed, add points 1 and 2". This confirms the proposed motivation and those two additions; point3 remains unselected. AI integrated the accepted wording into the existing report without inventing further personal experience or mastery.
+- Material assistance: used the documents skill to replace the R2 prompt, update the review table, correct the already-confirmed deadline, and tighten repeated introductory prose/spacing after the new text overflowed. Independent AI reviewed the shortened claims and all final page images were checked across root/review assistants. The report remains nine main pages plus one reference page; R1 and R3-R7 remain.
+- Corrections/tool limitations: an initial helper validation caught reused ZIP metadata before writing the DOCX; copying that metadata fixed the issue. The canonical renderer was unavailable and its sandbox cleanup failed. Word export initially lacked sandbox access; authorised background read-only export then succeeded. Layout iterations removed an extra nearly empty page. No numerical result was altered to make the edit fit.
+- Verification:20 other package parts,96 later body paragraphs,three equations andsix scientific tables unchanged; the approved motivation is present and R2 removed. Word export did not change the DOCX. Kept a pre-edit backup and regenerated review text. No scientific execution, model change, upload or submission. Exact checks are recorded in EVIDENCE037.
+- Saved locally: updated report and review notes/text, state/evidence/AI037 and checklist010. Student approval applies to motivation, not independent completion of the remaining technical/AI reflection prompts. The final test and25 October2026 23:59 Sydney deadline are unchanged.
+
+## Refining student motivation R2, 25 October 2026
+
+- Student input/authority: supplied passions for motorsport, sim racing and vehicle dynamics; desired understanding of suspension, numerical dynamic-system modelling, AI/ML and PINNs. Explicitly asked AI to refine the answer and extrapolate extra points, with the student deciding which to adopt.
+- Material assistance: AI wrote a polished first-person draft from those interests and suggested three optional aims: connecting settings to peak/settling, understanding simplified-model assumptions, and comparing prediction accuracy/computational cost. These additions remain proposals, not confirmed personal motivations or demonstrated learning outcomes.
+- Verification/clarification: read guide003/records035, the report's R2 prompt and current ML guide; independent AI reviewed wording boundaries. Kept PINNs as a future learning interest because this project implements numerical simulation, linear regression and RBF SVR. No racing-performance, empirical-validation, independent-authorship or mastery claim was inferred.
+- Saved: STUDENT_REVIEW_NOTES.md preserves original student words, AI wording and optional ideas separately; state/evidence/AI036 record status. The report DOCX was not edited because wording selection is pending. No source/code/results change, numerical experiment, report render, Git upload or submission occurred. The deadline remains25 October2026 at23:59 Sydney.
+
+## Next-step review and deadline extension, 24 October 2026
+
+- Student request/input: asked what comes next, then confirmed "extension: 23:59 25/10/2026". AI recorded 25 October 2026 at23:59 Australia/Sydney using the established timezone. Submission completion was not inferred.
+- Material assistance: read guide003/latest records034/checklist008 and report review materials; reconciled the newer authorised report draft with stale no-report/no-permission summaries. An independent assistant extracted R1-R7 and warned that rebuilding the initial draft overwrites personal DOCX edits. Recommended reviewing the existing draft with real student responses before final upload, clone packaging and submission.
+- Limits/checks: read local Git status, confirming pending work and four untracked course PDFs to exclude from the authored upload. No fresh remote, assessor-access, extension-document or Moodle check; no report rewrite, source/scientific change, experiment, test suite, commit/push or submission. No motivation, technical understanding, AI percentage or completed submission was invented.
+- Saved locally: state/evidence/AI035, checklist009 and current deadline summaries. Prior historical dates remain as chronology. The 22 October report authorisation already applies; no renewed drafting approval is requested. Presentation-date planning remains deferred.
+
+## Assessed report drafting 22 October 2026
+
+- Student request and authority: explicitly requested a coherent 5 to 10 page report draft from repository evidence, preserving the consumed test and distinguishing the primary peak from settling. This supersedes historical restrictions on starting report writing.
+- Material assistance and purpose: Codex wrote the report structure and substantive draft prose, tables, native Word equations, evidence index and student review prompts. Two AI assistants independently audited physics and numerical evidence, ML and runtime evidence, then checked the draft. AI contribution to this report drafting is substantial. Whole project contribution and the student's personal learning remain for honest student review; no percentage or personal motivation was invented.
+- Sources and tools: PROJECT_GUIDE003 and state/evidence/AI033; all 15 brief pages read as text; local saved guides, plans, summaries and checks; read only GitHub fetch at checkpoint 8ba9808; primary formulation, parameter, solver, SVR and profiler reference pages. Used bundled document tools and installed Word for rendering after the standard renderer could not find LibreOffice. Word ran in the background and changed only the authored report.
+- Actual work: created Report_Draft/MMA3001_suspension_report_draft.docx with nine main pages and one reference page. Two report figures replot the saved nominal trace and saved final predictions; no new model predictions or response labels were produced. Existing 12 October local profiling is explicitly separated from the 11 October published scientific checkpoint.
+- Verification and corrections: independent reviews found no material numerical or test-boundary errors; clarified nonempty query inputs, evidence paths, and the separation of numerical checks, prediction accuracy and timing. Fixed an authoring helper error, removed title border residue, shortened overflow and improved figure readability. Checked the ten rendered pages, including equations, figures and student prompts. Existing scientific tests were read, not rerun.
+- Preserved boundary: no simulation, fitting, benchmark, final evaluation, raw held-out response-content access, model selection change, commit, push or submission occurred. R1 to R7 flag identity, motivation, technical explanation, engineering judgement and personal AI reflection. Approval evidence, private assessor access, current Moodle instructions and final clone ZIP remain unresolved.
+- Saved locally: report and its generation/review materials; brief drafting status updates in README, state, evidence and checklist, plus this disclosure. Prior local changes were preserved. The student must review and replace prompts before submission; the working deadline remains 23 October 2026 at 23:59 Australia/Sydney.
+
+## Settling walkthrough follow-up, 2026-10-12
+
+- U029, student answer: "no as it later swings out of the limit. settling should only count if it enters the 1mm band and stays there for the rest of the sim". This correctly rejects temporary entry and states the sustained-entry rule for the example; the earlier question explicitly defined the band as +/-1 mm.
+- Material AI assistance: affirmed the reasoning, clarified that the code also requires at least one second of further observation and numerical/tail confirmation, and distinguished relative-displacement settling from both masses being stationary. These safeguards were supplied by AI, not independently explained by the student. The next learning step is the spring-force direction about equilibrium.
+- Verification: read guide003/current records032 and relevant unchanged implementation/walkthrough sections; independent static assistant review confirmed the one-second rule, refinement/horizon agreement and energy-tail check. No new external source, course method, simulation, scientific test/audit or model change. No assessed report, publication or new scope decision.
+- Contribution/limits: specific correct learning response recorded; broader force/numerical/ML understanding and approximate overall AI contribution remain to be reviewed. Saved state/evidence/AI033 locally. Scientific artifacts and earlier test outcomes are unchanged.
+
+## Bounded profiling and initial walkthrough, 2026-10-12
+
+- U028 / D025, student direction: authorised proceeding with the plan after the requirements reflection. This includes bounded profiling and understanding/reproduction review; no new dataset, ML tuning, assessed report or automatic publication. The newer records031 and concept001 draft were preserved rather than reverting to the opening prompt's historical revision013.
+- Material AI assistance/reason: AI designed and wrote the complete initial profiling runner, focused tests, saved-output renderer, guide, interpretation and documentation updates. It selected a bounded unchanged nominal workload to address the brief's profiling expectation while preserving existing scientific conclusions. Independent assistants checked course/brief attribution, numerical bookkeeping and saved statistics. This is substantial implementation and analytical assistance, not merely proofreading. Exact serving model/version is not independently established; no contribution percentage is invented.
+- Sources and extension: read guide003/records031, brief p6, relevant Week02_1 cells and current scientific/reproduction sources. Applied taught timing/profiling principles using standard-library cProfile/pstats; the notebook itself teaches line_profiler/Scalene, unavailable here. Official Python3.12 profiler documentation supports the extension and its limitations. No course notebook executed, original changed or package installed.
+- Actual checks: seven nominal integrations exactly reproduce all non-timing saved baseline fields; all five study checks pass;120 protected files unchanged. Thirteen focused tests pass in0.90s. Saved-only audit and independent raw-profile/hash/statistics reviews pass. HTML regenerated with19 pages/108 checked local links/anchors; plot visually checked. Earlier433 tests were not rerun. No model loaded/refitted or final-test response analysed. See EVIDENCE M026-M027 and profiling_v1 for actual output and scope.
+- AI mistakes/corrections: initial pytest default temporary directory was inaccessible (11passes/one setup error); used a fresh workspace-local directory. Preflight review caught numerical library discovery occurring too late for the thread controller and custom output not excluded from preservation scans. Both were corrected before measurement, with an added regression test. Clarified overlapping cumulative timings, profiler overhead and lack of direct comparability with the earlier runtime benchmark. No performance improvement is claimed.
+- Interpretation/decision supplied by AI: integration dominates the profile; general scalar/array road-height handling is a possible later optimisation target. Retain the verified code, precision, solver settings and diagnostics at this stage; no optimisation was implemented. The student has authorised the stage, not independently supplied this technical interpretation.
+- Student's first walkthrough answer: "inertia. the velocities do not simply vanish, instead they continue moving". This correctly explains velocity continuity at bump exit. AI connected it to carrying positions/velocities into the flat-road segment, spring forces and damper energy removal.
+- Student's second answer: "zs-zu = original difference. this does not tell us anything about whether or not the mass is moving, it simply tells us the displacements relative to their original static positions are equal". The distinction between displacement equality and motion is correct. AI clarified the coordinate convention:20mm minus20mm equals0mm; the actual separation equals the equilibrium separation at that instant. Numerical notation required this clarification. These two responses do not establish independent mastery of force signs, the target, settling, numerical methods, ML splits or the whole codebase.
+- Student's third answer: for+30mm during the bump and-40mm afterwards, "it would be 40mm if we do not look at total travel, but if we look at total travel, 70mm. if we stop it after the bump, we could miss the true value of maximum displacement". Correctly identified40mm as the primary output and why post-bump simulation matters. AI clarified that70mm is the peak-to-peak range, distinct from adding every back-and-forth movement. This supports understanding of the specific example; broader numerical/ML understanding remains unassessed.
+- Remaining reflection: continue short explanations in the student's own words, review the actual approximate AI contribution and the student's decisions/learning honestly. Logs and automated tests do not replace this assessment. No assessed report, final reflection, assessor-access confirmation or clean-install/full-rebuild claim is supplied.
+- Saved locally: profiling runner/tests/results/guide/plot, generated HTML, reproduction/runtime/README notes, state/evidence/AI032, checklist007 and progress report002. Student review/commit/push remains pending; no remote or identity change. Deadline and deferred presentation-date planning unchanged.
+
+- Reproduction correction/review: independent AI review identified that Git would normalise three sealed profiler text exports, invalidating their hashes. Added exact line-ending exceptions plus explicit binary .prof handling; preserved raw files and the frozen runner. Read-only Git filtering checks passed for the runner/13 artifacts. A separate local172-file snapshot passed the saved profiler audit without31 course originals, with all original/copy bytes unchanged. This is local same-environment evidence, not a new GitHub clone or clean installation. AI also put the saved audit before fresh-run instructions and explained portable paths. Actual assessor access and final uploaded revision remain unverified.
+
+## Concept-approval statement, 2026-10-12
+
+- Student request: produce a suspension-project concept statement following the supplied example's format. This authorises that specific draft, not a final report, new experiment or external submission.
+- Material assistance/reason: AI supplied the complete initial wording in CONCEPT_APPROVAL001, translating the adopted model, dataset and comparison into plain language. The student supplied the requested format and earlier scope decisions; review and approval of this new wording remain pending.
+- Checks/sources: read guide003/records030 and relevant working guides; independent assistant cross-checked current method/status facts. Reopened the Soong primary paper and MathWorks bump example. Kept sourced reference parameters separate from project-chosen ranges/bump duration and simulated verification separate from real-vehicle validation.
+- Corrections/boundaries: historical setup-only records do not describe the current completed scientific stage. The final test is consumed; the draft's proposal format does not imply it is untouched or authorise reuse. Supporting settling analysis is not an ML target. No results, new claims of profiling or end-to-end speedup, new code, simulations, training, evaluation, assessed report or remote changes were introduced.
+- Saved locally: concept001 and state/evidence/AI031. Overall AI contribution and independent student understanding still require honest review; no percentage or student authorship claim is invented.
+
+## Reflecting on requirement fulfilment, 2026-10-11
+
+- Student request: after restating the original requirements, assess whether current progress meets them. AI previously restated the pasted text without implementation; this turn evaluates evidence and remaining work.
+- Material assistance/reason: root compared seven requirements with current documentation, saved verification/ML/runtime outcomes and reproduction evidence; independent assistant was assigned a selected static input/interface review. AI drafted qualified judgements and priorities in checklist006 rather than inferring completion from test/file counts or approvals.
+- Main conclusions: numerical evidence and baseline comparison are substantive strengths. Profiling, assessor reproduction/access, final report/AI reflection and demonstrated student understanding remain. The brief permits simulation data; empirical validation must not be falsely claimed or invented as a universal requirement. Warm timing does not establish whole-project benefit; frozen-test boundaries remain.
+- Scope/limits: read guide003/records029 and the pasted requirements, existing stage guides/reports and selected source code. No full function audit, experiment, new test run, model fit, timing, profiler, remote verification or assessed report draft. Earlier AI supplied much implementation/documentation; student understanding and approximate overall contribution remain to be reviewed honestly.
+- Verification: independent selected static review supports intended input guards with explicit format/domain limits, and confirms that broader simulator acceptance is not validation. No material intended-interface defect identified; no complete API audit claimed. Whitespace, four local links and seven-row table checks passed.
+- Saved locally: checklist006 and state/evidence/AI030. Existing pending edits remain for student review/commit/push. No automatic upload, new scientific scope or presentation-date planning occurred.
+
+## Requirements and rubric explanation, 2026-10-11
+
+- Student request: checklist of project requirements and review of the rubric, not additional scientific work or assessed report drafting.
+- Material assistance: root reread the brief/current records and expanded the checklist with completion boxes, paraphrases of all six criteria/four levels and an evidence-versus-gaps review. An independent assistant checked original rubric text/table layout. AI supplied the interpretation and explanation; no grade or student-understanding claim was invented.
+- Verification: brief hash unchanged; root visually checked pp10,12,15 and independent assistant checked pp10,14,15. Distinguished the 25% project unit weighting from absent category weights. Kept profiler expectation, conditional performance analyses, report/ZIP/access requirements and student-confirmed deadline separate. Explained why file/test counts and extensive AI logs do not themselves meet the highest rubric descriptors.
+- Boundaries/learning: substantial earlier AI implementation and documentation assistance remains disclosed. The student must critically evaluate that assistance and explain the work; responsible AI use is allowed, but quantity alone neither awards nor removes a rubric level. No notebook adaptation, experiment, test run, new training, profiling, report writing, grade prediction or automatic publication occurred.
+- Saved locally: SUBMISSION_CHECKLIST005 and state/evidence/AI029. Independent review found no material mismatch; static document/link checks passed. Prior local edits remain for student review/commit/push. No new remote verification is claimed, and presentation-date planning remains deferred.
+
+## Progress report and brief recheck, 2026-10-11
+
+- Student request: pause continuation to check the brief and explain completed work and next steps. This is not authorisation for profiling, new experiments, assessed report drafting or publication.
+- Material AI assistance: root reread the full 15-page brief and current records, checked saved outcomes and read-only GitHub/local status, then drafted PROGRESS_REPORT001 and reconciled current records. Independent assistant checked requirement wording and identified stale lower state summaries. AI provided the requirements mapping and plain-language explanations; the student retains responsibility for understanding and final submission decisions.
+- Verification/corrections: original brief hash unchanged; local/remote main remains 8ba9808, private, with 12 local commits. Existing saved evidence distinguishes 433 earlier passing tests and preceding clone-audit successes from new execution. Corrected stale revision023/no-remote/licence-pending summaries; described profiling as an explicit brief expectation outstanding, not a completed timing result or merely optional enhancement. Static checks confirm no whitespace errors and all 13 local Markdown targets exist.
+- Limits: no fresh scientific run/audit, no new course-method adaptation, no independent student-understanding assessment or invented AI percentage. Unit Overview/Moodle instructions and actual marker access remain unavailable. Clean installation/full rebuild remain unverified. Source originals, scientific artifacts and remote settings unchanged; extra clones untouched.
+- Saved locally: administrative progress report, state/evidence/AI028 and checklist004. Student will review/commit/push together with preceding clone records. No assessed report prose, automatic upload, profiler run or presentation-date planning occurred.
+
+## Verifying the student's GitHub Desktop clone, 2026-10-11
+
+- Student actions/scope: pushed the MIT/record commit and created two clones, then reported the accidental extra copy. AI explained that two clones are local copies, used only the previously requested temporary clone and left the other untouched. No cleanup, remote duplication, identity change or new report/scientific scope was requested or performed.
+- Material assistance/reason: main assistant checked Git identities/history and exact file hashes, executed the previously reviewed saved-output audits, restored their four authorised source prerequisites only in the clone, recorded results and explained the difference between verification and final ZIP copies. Independent assistant checked HTML links/presence without importing project modules. AI was used to verify that uploaded artifacts survived a real clone and retain honest limits.
+- Sources/tools: guide003/state026, REPRODUCING, existing audit implementations and earlier full-brief requirements audit; GitHub read-only branch API, local Git, Python stdlib hashes/subprocess/copy operations and existing Anaconda audit scripts. Original course files were hashed/copied but not executed. Exact serving model identifier remains unverified.
+- Actual outcomes: original/remote/clone at8ba9808, 138 tracked paths and12 commit IDs agree. All scientific bytes agree; LICENSE has only a Git LF/CRLF difference. Interpretation audit passes with tracked files alone; strict final/runtime audits pass after four exact course sources are restored. All138 original and clone tracked files stay unchanged through audits; sources unchanged; clone status clean. Independent17-page HTML review has98 local links/32 anchors and zero broken targets. Nine declared checks pass; transcripts and fingerprints are saved in clone_review_v1.
+- Limits/corrections: no new simulation, fit, prediction, timing, pytest run or original test-response parsing. Runtime's ignored Matplotlib font cache is recorded. Passing is same-environment saved-artifact reproduction, not clean installation/full rebuilding/real-vehicle validation or independent student mastery. The source-restored clone is not the final ZIP copy. Earlier command-line authentication failures remain in history; the successful Desktop clone is now the current evidence.
+- Saved: check JSON, three transcripts, CHECK_RESULTS, reproduction note, records027/publication006/checklist003/upload-guide004. AI drafted the evidence and explanations; student performed the upload/clone. Whole-project AI contribution and understanding remain to be assessed honestly. Files await a later student commit/push; no automatic upload, extra-clone deletion, report drafting or presentation-date planning occurred.
 
 ## Implementing the licence choice and preparing clone verification, 2026-10-11
 

@@ -1,6 +1,256 @@
 # MMA3001 project state
 
-Revision: 026 | Updated: 2026-10-11 | Status: MIT prepared; school email student-confirmed; verification clone awaits Desktop
+Revision: 047 | Updated: 2026-10-25 | Status: Submission PDF and local upload checks ready; student commit/push next
+
+## Submission copy and final local upload preparation, 25 October 2026
+
+The student said to proceed and confirmed Moodle asks for a PDF report and a
+ZIP of the project GitHub clone. They are unsure whether the assessor has access.
+These are student-reported Moodle instructions; the live submission form and
+actual assessor access have not been independently inspected.
+
+Prepared output/pdf/MMA3001_suspension_report.pdf from the reviewed DOCX using
+read-only Word export. Only the first-page subtitle changed: removed draft and
+dated the report25 October. All other content, three native equations, six tables
+and20 other DOCX package parts are unchanged. PDF has nine main pages plus one
+reference page; page1 passes visual review and pages2-10 are pixel-identical to
+the previously reviewed pages. E9 retains046 as the substantive reflection
+checkpoint;047 adds administrative packaging evidence rather than new analysis.
+
+Fresh GitHub reads confirm private main and local HEAD still agree at8ba9808.
+The report, profiling supplement and later records are local, awaiting student
+commit/push. Added the PDF to intended upload files, broadened course-PDF ignore
+coverage to names with spaces, and corrected stale current status/deadline
+wording. All50 root course PDF/notebook files are excluded from the candidate
+package. No scientific source/result change, rerun, fitting or test evaluation.
+
+Independent static checks passed426 hash comparisons across140 files,109 Git
+byte-preservation comparisons and108 local HTML link/anchor checks over19 pages.
+The exact candidate inventory and checks are in
+Project_Setup/upload_review_20261025. Follow Project_Setup/FINAL_UPLOAD_CHECK.md
+from the original working folder. Saved state/evidence/AI047, checklist018,
+upload guide005 and publication007. Deadline remains25 October2026 at23:59 Sydney.
+Next is final personal reading, student commit/push, remote verification, assessor
+access check, clean final clone/ZIP and Moodle submission. No commit, push,
+invitation, visibility change, final clone ZIP or submission was performed.
+
+## Contribution and responsibility revised, 25 October 2026
+
+The student supplied their name/student ID and asked for the reflection to
+recognise their responsibility for conclusions and decisions through judgement.
+Entered the supplied identity and rewrote Section 9 to lead with the student's
+purpose, primary output, post-bump priorities, scope decisions and interpretation.
+Concrete oversight examples include reconsidering the stiffness trade-off,
+distinguishing the numerical checks, and limiting conclusions to the fixed-road
+simulation study. Substantial AI implementation, execution and drafting remain
+clearly disclosed. No independent personal source audit or code execution was
+invented. The current report has no remaining R1-R7 review markers; final student
+reading remains necessary before submission.
+
+Reread guide003/records045, Responsible Use of AI cells4-6 and brief pages6/15.
+The notebook's human-oversight statement guides the new emphasis; it does not
+require minimising a student's judgement because technical work used AI.
+The source hashes match the previously recorded notebook/brief versions.
+E9 now points to records046. Historical entries below retain their status at
+the time and are superseded by this current update where they conflict.
+
+The report remains nine main pages plus one reference page. All ten pages pass
+visual review; 20 other DOCX parts, three native equations and six scientific
+tables are unchanged. Pages2-8 are pixel-identical to the preceding render.
+Backup: tmp/report_responsibility_20261025/before.docx. Internal QA:
+Report_Draft/rendered/responsibility_20261025. Saved report/review materials,
+state/evidence/AI046 and checklist017 locally. No scientific execution, new data,
+model fitting/test evaluation, commit/push or submission occurred. Final test
+remains consumed; deadline remains25 October2026 at23:59 Australia/Sydney.
+Final reading, intended upload, assessor access, fresh-clone ZIP and current
+Moodle details remain outstanding; publication was not begun during this review.
+
+## Claude clarification and R7 incorporation, 25 October 2026
+
+The student clarified Claude's role as cross-checking all physics-related
+questions and authorised using that information where suitable. Incorporated
+it in Section 9 alongside ChatGPT/Codex, and explicitly treated the walkthrough
+as AI-assisted rather than an unaided assessment. The reply does not establish
+independent outside-chat source checks, calculations or code/test execution;
+the report does not claim those. Unknown Claude versions/session details remain
+unknown rather than blocking the conservative reflection.
+
+R7 now covers tools/reasons, qualitative contributions, actual decisions and
+guided reasoning, AI-led checks/corrections, learning limits and responsibility.
+Only R1 name/student ID remains as a report prompt. The student should read the
+final text. Administrative tasks and the confirmed deadline remain in the
+submission checklist/README; their duplicate report table/note were removed
+to avoid a split checklist page. E9 now points to records045.
+
+Final rendering remains nine main pages plus one reference page. All 20 other
+DOCX parts, three native equations and six scientific tables are preserved.
+Backup and internal QA: tmp/report_r7_20261025 and
+Report_Draft/rendered/r7_20261025. Saved report/review materials,
+state/evidence/AI045 and checklist016 locally. No scientific run, new data,
+fit/test evaluation, commit/push or submission. Assessor access, final uploaded
+revision, clean final clone ZIP and current Moodle details remain outstanding.
+Deadline remains25 October2026 at23:59 Australia/Sydney; final test consumed.
+
+## R7 reflection refinement, 25 October 2026
+
+The student confirmed ChatGPT as their main tool and Claude for supplementary
+cross-checking, supplied a learning reflection and asked AI to reconstruct
+contributions, physics checks and decisions against Responsible Use of AI.
+Created Report_Draft/AI_REFLECTION_REVIEW.md with a proposed reflection,
+qualitative contribution table, sources and factual limits. Stronger oversight
+wording uses documented decisions and reasoning; no unsupported exaggeration
+of authorship, checks or mastery was added.
+
+Read guide003/records043, all14 Responsible Use of AI notebook cells and brief
+pages6/15. Independent reviews confirmed the disclosure requirements and
+student-versus-AI provenance. The draft acknowledges substantial AI coding,
+checking and report authorship alongside student topic/output priorities,
+guided physics/data reasoning, judgement, licence and GitHub actions. Specific
+Claude tasks and checks personally performed outside this chat remain asked
+but unanswered; unknown model versions are not invented.
+
+R1/R7 remain open in the report. Its DOCX is unchanged from the R6 checkpoint;
+the existing nine-main-plus-reference page count is the prior rendering result,
+not a new render. Saved review draft/notes and state/evidence/AI044,
+checklist015 locally. No scientific execution, report DOCX edit, new test,
+commit/push or submission. Final test remains consumed and deadline remains
+25 October2026 at23:59 Australia/Sydney. Next is factual review of R7 and then
+incorporation of the completed personal account, identity and final submission
+checks already recorded.
+
+## R6 completed and personal reflection next, 25 October 2026
+
+The student explained an expectation that greater stiffness would reduce
+motion, how the post-bump/full-response/settling comparison partly confirmed
+and refined it, and why judging a setup requires stated priorities. They also
+explained the finite-horizon and exact-model energy-bound limitations. AI
+checked the saved pilots: the approximately 0.277 mm primary-peak increase
+already exceeds the observed refinement changes, and its sign persists in
+the tighter results. A single-oscillator damping-ratio argument does not
+establish the coupled response's mechanism. The report preserves the student's
+judgement while leaving causation unestablished and adding the separate tail
+requirements for settling and both peaks.
+
+Inserted the personal interpretation in Section 6, expanded the Section 8
+horizon paragraph and removed R6 from the prompt/review table. Only R1 and R7
+remain: identity and the student's honest personal AI-use reflection. No prior
+belief, personal checks or contribution percentages were invented. The primary
+output and fixed-road scope remain unchanged.
+
+Read guide003/records042 before editing. The report remains nine main pages
+plus references, all visually checked. Three native equations, six scientific
+tables and 20 other DOCX parts are preserved. Backup and QA are under
+tmp/report_r6_20261025 and Report_Draft/rendered/r6_20261025. Saved report/review
+materials, state/evidence/AI043 and checklist014 locally. No scientific run,
+modal analysis, new dataset, fit/test evaluation, commit/push or submission.
+The final test remains consumed; deadline remains25 October2026 at23:59 Sydney.
+
+## R5 completed and R6 next, 25 October 2026
+
+The student correctly explained training-only candidate scaling, use of the
+same transformation on validation inputs, and final refitting on 300 original
+development rows after selection while excluding the 100 test rows. They
+recognised that test-driven tuning would consume the test's independence.
+AI qualified the claims about more fitting data and unbiased test error: better
+accuracy is not guaranteed, and the test is an independent assessment under
+the recorded sampling design with finite sample uncertainty.
+
+Incorporated this reasoning into report Sections 4-5, removed R5 and narrowed
+the review-table item to R6. R1/R6/R7 remain. The final report has nine main
+pages plus one reference page after correcting a two-line overflow through
+paragraph spacing. Three native equations, six scientific tables and all 20
+other DOCX parts are preserved. Backup and QA are in tmp/report_r5_20261025
+and Report_Draft/rendered/r5_20261025. Next is the student's own engineering
+judgement about peak/settling tradeoffs and the finite observation horizon.
+
+Read guide003 and records041 before editing. Saved report/review materials,
+state/evidence/AI042 and checklist013 locally. No new scientific execution,
+test evaluation, model tuning, data generation, commit/push or submission.
+The final test remains consumed and the confirmed extended deadline remains
+25 October2026 at23:59 Australia/Sydney.
+
+## R4 completed and R5 next, 25 October 2026
+
+The student correctly restated the full quarter-car energy, flat-road
+dissipation identity, exact-model displacement bound and computed-state
+limitation. They also recognised that a bound above the band is inconclusive.
+AI refined "unbounded numerical error" to "has not been rigorously bounded".
+Together with the earlier solver/grid/horizon reasoning, this completes R4
+after teaching. Incorporated the explanation into the report's numerical
+section, removed R4 and narrowed the review table to R5-R6. R1/R5/R6/R7 remain.
+
+The report still has nine main pages and one reference page. Structural checks
+preserve all 20 package parts outside document.xml, three native equations and
+six scientific tables. Internal render/QA is in Report_Draft/rendered/r4_20261025,
+with a pre-edit backup under tmp/report_r4_20261025. Section 3 prose/spacing was
+adjusted to fit the explanation without changing font sizes or page margins.
+The next discussion is training/validation/test roles and fitting scalers only
+on permitted rows. R5 reasoning is pending; no independent mastery is inferred.
+
+Read guide003 and records040 before the edit. Saved report/review materials,
+state/evidence/AI041 and checklist012 locally. No new scientific execution,
+model tuning, dataset, commit/push or submission occurred. The consumed final
+test and student-confirmed25 October2026 23:59 Sydney deadline are unchanged.
+
+## R4 numerical reasoning review, 25 October 2026
+
+The student correctly explained finer observations versus solver refinement,
+possible missed peaks/band excursions, and why near-zero displacement with
+substantial velocity is insufficient for settling. Their proposed relative
+single-oscillator energy and unqualified numerical guarantee need correction:
+the quarter-car uses both masses' kinetic energy and both spring energies.
+After bump exit, Hdot=-cs*(vs-vu)^2 and the exact-model bound is
+sqrt(2*H(T)/ks); using computed states is a numerical consistency check, not
+certification. An excessive bound is inconclusive about an actual future band
+crossing. Coarse observations can report settling early, but the error direction
+is not universal.
+
+Saved the response and AI clarifications in student review notes; a corrected
+restatement is next. R4 remains open alongside R1/R5/R6/R7. The report DOCX is
+unchanged from revision039 and no new scientific run, test, method, result,
+commit/push or submission occurred. Guide003 and records039 were read before
+this update; historical pending-response statements below describe earlier
+stages. The extended deadline and consumed final test are unchanged.
+
+## R3 completed and R4 next, 25 October 2026
+
+The student correctly restated that bump height is absent from the ML inputs, so unchanged stiffness/damping give the original50mm prediction, which cannot be assumed valid for another bump without adaptation/validation. This resolves the specific clarification after teaching. Incorporated the student's force, equilibrium and corrected input-domain explanations into the report's existing model/interface paragraphs, removed R3 and updated the review table to R4-R6. No new method or validation result is claimed.
+
+Read-only Word rendering and all-ten-page visual review pass: nine main pages plus one reference page. Eight page images are pixel-identical to the prior R2 version; the changed model page2 and review-table page9 are clean. Three native equations, six scientific tables and all20 package parts outside document.xml are unchanged. R1 and R4-R7 remain. Next is explaining solver/grid/horizon/energy-tail checks; no R4 answer or broad independent mastery is inferred. Saved report/review materials and records039 locally; no scientific execution, commit/push or submission occurred.
+
+## R3 student responses, 25 October 2026
+
+Following the explanation, the student correctly derived the downward dynamic spring contribution -0.01ks for10mm body-wheel displacement and zero damper force for equal velocities. They also explained cancellation of gravity/static-preload terms when motion is expressed relative to equilibrium. These demonstrate the specific force and coordinate reasoning in the example.
+
+For a changed bump height, the student correctly raised general training-domain/extrapolation concerns but assumed a possible height range. Clarified the project-specific limitation: all ML setups have h=0.050m and duration0.50s, and only ks/cs are inputs. The same inputs produce the same prediction regardless of an intended unrepresented bump change. There is no tested height interpolation range. Student response to this correction is pending; R3 remains in the DOCX. Saved answers/provenance in the review notes and records038. No scientific execution, report edit, method expansion or upload occurred; R2 stays complete and the deadline unchanged.
+
+## Approved motivation inserted, 25 October 2026
+
+The student accepted the refined motivation and additions1 and2: connecting stiffness/damping to movement and peak/settling, and using the restricted quarter-car model to understand assumptions. Incorporated the approved ideas into the existing report DOCX, replaced the R2 prompt and removed R2 from the outstanding-review table. Point3 was not selected. PINNs remain a future interest, with no implementation/method change.
+
+Updated the report's old deadline to the already student-confirmed25 October2026 at23:59 Sydney. Condensed repeated introductory wording and adjusted first-page paragraph spacing to accommodate the motivation; the numerical claims and scope were preserved and independently reviewed. Final Word rendering has nine main pages plus one reference page; all ten page images were inspected. Structural checks preserve20 other DOCX package parts,96 later body paragraphs,three native equations andsix scientific tables. R1 and R3-R7 remain unresolved. The editable report/review text/notes are updated locally; no scientific source/results, commit/push or submission changed.
+
+## Motivation review R2, 25 October 2026
+
+The student supplied personal interests in motorsport, sim racing and vehicle dynamics, a desire to understand suspension behaviour, and learning interests in numerical representation of dynamic mechanical systems, AI/ML and PINNs. They requested refined wording and explicitly invited extrapolated extra points to choose from. Saved [student review notes](../Report_Draft/STUDENT_REVIEW_NOTES.md) containing their original ideas, an AI-refined draft and three clearly optional additions. Selection/approval of that wording remains pending; the DOCX has not been changed.
+
+Clarified that the implemented methods are numerical simulation, linear regression and RBF SVR; PINNs are a future learning interest, not an implemented method or new scope commitment. Motorsport motivation does not establish racing or real-vehicle performance claims. No scientific run, code change, report rendering, commit/push or submission occurred. R2 now has genuine student input; R1 and R3-R7 still require review/input, and the extended deadline remains25 October2026 at23:59 Sydney.
+
+## Current priority and extended deadline, 24 October 2026
+
+The student asked for the next step and confirmed an extension to **25 October 2026 at 23:59 Australia/Sydney**. This supersedes the original 23 October deadline in historical entries. The extension is student-confirmed; no Moodle or teaching-team extension record was independently inspected. Submission completion remains unconfirmed.
+
+Read guide003, authoritative state/evidence/AI034, checklist008 and the report review materials. The 22 October report authorisation/draft supersede earlier statements that report writing had not begun or needed another approval. The draft still has R1-R7 for identity, motivation, force/model explanation, numerical checks, data-split reasoning, engineering judgement and personal AI reflection. Next: work through those items with the student and incorporate their actual responses. Preserve the editable DOCX; rerunning build_report.py would overwrite personal edits with the initial draft.
+
+Then check the revised report against the brief and saved evidence, review/push the intended final repository revision, verify assessor access, and prepare/check a fresh-clone ZIP and Moodle submission. Current Git status shows local modified/untracked work, including Report_Draft and profiling records; no new remote status is inferred. Four additional course PDFs are currently visible as untracked files and must be excluded from the authored-project upload. No report/code/scientific artifact, Git commit/push, experiment or submission was changed/performed in this status review. Updated current records and deadline summaries locally.
+
+## Assessed report draft 22 October 2026
+
+The student explicitly authorised a 5 to 10 page evidence based report draft. Created [the editable report](../Report_Draft/MMA3001_suspension_report_draft.docx): nine main pages and one reference page, including the engineering question, model and interface, numerical verification, data and model selection, once only final evaluation, physical diagnostics, timing, limitations and AI disclosure. R1 to R7 require the student's own identity, motivation, technical explanations, judgement and personal AI reflection. The draft is not ready for submission until reviewed.
+
+Two independent AI source audits and draft reviews checked quantitative claims and the consumed test boundary. Document pages, equations and derived figures were rendered and inspected. No new simulation, fit, prediction, timing, test suite, final evaluation or raw held-out response read occurred; scientific artifacts were unchanged. The 12 October local profiler supplement is labelled separately from the 11 October published scientific checkpoint. Current source records read were revision033; this report session is recorded as034.
+
+Saved report materials and additive status/disclosure updates locally. No commit, push, remote head recheck, access change, clone ZIP or submission occurred. The student must confirm personal explanations, AI contribution, topic approval evidence if available, current Moodle details and assessor access, then review and publish the intended final revision. The supplied deadline remains 23 October 2026 at 23:59 Australia/Sydney. Historical statements that report drafting was not authorised or had not begun are superseded by this entry.
 
 ## Current stage
 
@@ -10,7 +260,69 @@ The subsequent physical interpretation and runtime-planning stage is complete. T
 
 D003 / U010, 2026-10-04: the student explicitly adopted the consolidated specification as the starting plan and authorised coding the nominal simulation and initial checks, without another approval request. D004 later authorised bounded verification, D006 dataset generation, D008 the ML development comparison and D010 final refitting/evaluation. Assessed report writing remains outside this completed scientific stage. The student's subsequent GitHub upload is verified below. Adoption makes the values starting decisions, not verified physical facts or a validated parameter domain.
 
-Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D019 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+Historical sections below retain their original proposal/review chronology. Their statements about unaccepted settings, unrun checks and missing permission describe those earlier stages; this current-stage section and D003-D025 supersede them. PROJECT_GUIDE 003 and HANDOFF 001 are preserved as read. Their historical boundaries yield to the student's current instructions.
+
+## Settling walkthrough follow-up, 2026-10-12
+
+U029 - The student correctly rejected an early entry into the +/-1 mm band when a later excursion reaches 3 mm, explaining that settling requires remaining inside the band for the rest of the simulation. This demonstrates the final-entry rule in this example. The assistant added the existing safeguards: at least one second observed after entry, numerical refinement and longer-horizon agreement, and an energy-based bound on remaining motion. These added safeguards were explained by AI; the student has not yet independently explained them. Settling refers to relative displacement zs-zu, not both masses being motionless.
+
+Read guide003/current records032 and the existing settling/force code and walkthrough. Independent static review confirmed the explanation. No new simulation, scientific audit/test, model change or report drafting occurred. State/evidence/AI033 are saved locally; the profiling checkpoint and pending student commit/push are unchanged. Next learning step: spring-force direction about static equilibrium, then damping and numerical/data checks.
+
+## Bounded nominal profiling and walkthrough, 2026-10-12
+
+D025 / U028 - The student authorised proceeding with the plan after the requirements reflection. Read guide003 and authoritative records031, preserving the intervening concept001 draft and its limited purpose. Reread original brief p6 and relevant Week02_1 profiling/timing sections before adapting their principles. No newer brief was identified; current Moodle/Unit Overview instructions and actual assessor access remain unavailable. See EVIDENCE M026/S018 for source and method detail.
+
+Implemented a separate cProfile runner around the unchanged nominal simulate/summarise workload: one warmup and three alternating unprofiled/profiled pairs, seven integrations total. All five study checks pass, with exactly 6196 derivative evaluations per run (43372 total), exact agreement with every non-timing saved nominal summary field, one-thread numerical pools and all 120 protected scientific/course files byte-identical. Thirteen focused bookkeeping tests pass in 0.90 s; the earlier full 433-test suite was not rerun. Saved-only audit passes without another solve. No new dataset row, fitting, prediction, model loading or final-test response analysis occurred.
+
+Actual unprofiled median: 413.608100 ms (394.276200-427.101500 ms); profiled median: 524.978600 ms (506.943400-549.411300 ms). Median paired ratio: 1.328338. Integration accounts for 90.82-92.32% of profile time cumulatively; road_height is the largest self-time contributor at 25.55-25.83%, with 6197 calls per profile. Cumulative costs overlap. Profiling overhead and three local observations limit interpretation; these times are not directly comparable with the earlier nine-case benchmark.
+
+Decision: retain the correct frozen model, precision, tolerances and post-bump diagnostics. A specialised scalar road-height path is a possible later optimisation, not an implemented or measured improvement. No FLOPS, memory-bandwidth or overall speedup claim is made. Raw records, readable results, plot and reproduction instructions are in [PROFILING_GUIDE.md](../Suspension_Model/PROFILING_GUIDE.md) and [profiling_v1](../Suspension_Model/profiling_v1/CHECK_RESULTS.md). Generated HTML now has 19 pages and 108 checked local links/anchors; this is a local check, separate from the earlier clone's 17 pages/98 links.
+
+Student walkthrough: the student correctly explained that inertia means velocities do not vanish at bump exit. For equal 20 mm body/wheel equilibrium-relative displacements, the student correctly said equality does not establish whether either mass is moving, but described zs-zu as the original difference. The assistant clarified that these coordinates give zs-zu = 0 mm; the physical separation equals its equilibrium value at that instant. For +30 mm during the bump and -40 mm afterwards, the student correctly identified the primary peak as40 mm and explained that stopping at bump exit could miss it. The assistant clarified that70 mm is the peak-to-peak range, not accumulated travel. These are narrow learning observations, not evidence of complete independent understanding. Force signs, settling, numerical checks, data roles and AI contribution still need review.
+
+Saved state/evidence/AI032, checklist007, progress report002 and profiling artifacts locally. No commit, push, remote verification, access/identity change or assessed report occurred. Last remotely verified checkpoint remains 8ba9808; latest local files await student review/commit/push. The consumed final test, 23 October 2026 23:59 Sydney deadline and deferred presentation-date planning are unchanged.
+
+Assessor-reproduction follow-up: independent review caught three sealed profiler text exports whose CRLF endings would be changed by Git's general LF rule. Added exact .gitattributes exceptions and explicit binary treatment for .prof files. Read-only clean-filter comparisons confirm identical stored bytes for the runner and all 13 sealed artifacts. A separate local snapshot of 172 Git-visible working files passed the profiler audit without the 31 excluded course originals; all original/copy bytes stayed unchanged through that audit. This is same-environment local relocation, not a fresh remote clone or clean installation. See [reproduction check](../Suspension_Model/profiling_v1/REPRODUCTION_CHECK.md). The guide now puts the saved-only audit first and explains replacing laptop paths.
+
+## Concept-approval draft, 2026-10-12
+
+D024 / U027 - Student requested a concept-approval statement following a supplied example's ten sections. Read guide003/current records030 and the relevant model, dataset, ML, final-evaluation and runtime guides. Prepared [CONCEPT_APPROVAL.md](CONCEPT_APPROVAL.md), revision001, from the adopted specification. It is a draft for student review, not evidence of new teaching-team approval or submission. Current scientific work is already complete and the final test remains consumed; the proposal format does not reset those boundaries.
+
+The draft identifies the simulated dataset, linear-regression baseline, SVR alternative, primary peak-travel target and supporting post-bump diagnostics. It distinguishes project assumptions from sourced vehicle parameters and numerical agreement from measured-car validation. No new scientific scope, simulation, fitting, final-test access, timing, profiler, report draft or remote change occurred. Saved concept001 and state/evidence/AI031 locally; student review is the next step.
+
+## Reflection against the seven requirements, 2026-10-11
+
+D023 / U026 - After pasting the requirements, the student asked whether current progress meets them. Read guide003/records029, the pasted source, working scientific/reproduction guides and saved check reports; performed only selected static interface inspection. Expanded checklist006 with a seven-requirement judgement. Substantial evidence exists for model definition, inputs/outputs, baseline comparison and numerical/ML validation within the simulation scope. Complete fulfilment is not claimed: profiling, broad/assessor reproducibility, final report/AI reflection and student understanding remain outstanding.
+
+No new simulation, dataset, fitting, prediction, timing, profiler, test suite, source-code repair or assessed report draft occurred. The previous remote verification remains the reference; current local documentation is still uncommitted. No new model/dataset or retuning on the consumed test is recommended solely to satisfy these requirements. Saved state/evidence/AI030 and checklist006; deadline and deferred presentation-date planning unchanged.
+
+## Requirements checklist and rubric review, 2026-10-11
+
+D022 / U025 - Student requested a project-requirements checklist and review of the brief's rubric. Reread the unchanged 15-page brief and records028; independently checked the six rubric tables. Expanded SUBMISSION_CHECKLIST to revision005 with completion boxes, all four performance levels for each of six criteria, and project evidence versus remaining demonstration. This is administrative guidance, not assessed report prose or a predicted grade. No numerical criterion weights or grade boundaries are specified in the brief; project weight is 25% of the unit.
+
+Main gaps remain student understanding/report/AI reflection, profiling, assessor access and final submission, with source/environment reproduction limits clearly stated. Counts of files, tests and commits do not establish Excellent performance. No new scientific method, code audit of every function, experiment, test run, model change, report draft or remote operation occurred. Existing uncommitted updates remain for student review/commit/push. Deadline and deferred presentation-date planning are unchanged.
+
+## Progress review against the brief, 2026-10-11
+
+D021 / U024 - Student requested a brief check, progress report and next steps before continuing. Reread the complete 15-page original brief, guide003/handoff001 and current records027; brief hash unchanged. Saved [PROGRESS_REPORT.md](PROGRESS_REPORT.md), an administrative review, not assessed report text. Independent review confirms the remaining explicit profiler expectation (p6) and catches stale undated summaries below; those summaries are now reconciled. No new scientific/course method was adapted.
+
+Fresh read-only GitHub and local checks agree at 8ba9808f10dcdc84330135870d8b7f92c189f0a8; repository remains private on main, with 12 local commits. The eight modified documents and five clone-review files from the preceding stage are still uncommitted. This review adds its own local documentation updates; none is automatically uploaded. Existing saved evidence confirms completed scientific stages, 433 previously passing tests and the preceding real-clone audit successes, with their documented limits. No new test run, simulation, fit, prediction, timing or profiler run occurred.
+
+Next: student reviews/commits/pushes pending evidence; address profiling using a bounded existing workload; review student understanding and AI contribution; write the assessed report only when authorised; verify Moodle instructions/assessor access and prepare the final fresh-clone ZIP/submission. Unit Overview/current Moodle form/separate approval record remain unavailable. Deadline remains student-supplied 23 October 2026 at 23:59 Sydney. Presentation-date planning stays deferred.
+
+## Real GitHub clone verification, 2026-10-11
+
+D020 / U023 - After uploading the MIT licence/records, the student followed the Desktop cloning guidance and reported two local clones: one in a default GitHub directory and the requested tmp/github_clone_check_20261011. Used only the specified temporary clone; the other was left untouched. No duplicate online repository, deletion or reset is inferred or performed.
+
+Original workspace, GitHub main and specified clone all point to 8ba9808f10dcdc84330135870d8b7f92c189f0a8, tree d2e55b3f1f309f9d38cf5d7561c88a356cfa4869. Licence upload is confirmed. All 138 tracked paths and 12 commit identifiers match. At entry both working folders were clean. All 137 non-LICENSE files match byte for byte; LICENSE differs only by LF/CRLF conversion, with identical text. This does not affect scientific fingerprints.
+
+Completed the three planned saved-output audits in the real clone using existing Anaconda Python with -B. Interpretation passed all six checks/facts using tracked files alone. After checking/copying the four exact authorised course originals locally, final and runtime audits both passed. No simulation, fit, prediction, new timing, pytest or original held-out response-content read occurred. All 138 cloned tracked files and original tracked files stayed byte-identical through the audits; source originals stayed unchanged. Runtime created an ignored Matplotlib font cache. Clone Git status remains clean because restored course files/caches are ignored.
+
+Independent static documentation review: 17 HTML pages, 98 local links (32 anchor links), zero broken targets/anchors or escaping links; required entry/dependency/licence files present. All nine declared checks pass in clone_review_v1/checks.json, with three command transcripts and CHECK_RESULTS.md. This is real-clone saved-artifact reproduction on the existing Windows/Anaconda environment, not clean installation, full rebuilding, a rerun of 433 tests or new physical validation.
+
+The verification clone now contains four excluded course originals and must not be used directly for the final ZIP. Keep ordinary edits in the original project; the extra default-directory clone can remain untouched. Final packaging needs a new clean clone of the final uploaded revision. Assessor access, current Moodle/Unit Overview details, profiling, report/AI reflection and final submission remain. No report writing or presentation-date planning occurred; deadline remains 23 October 2026 at 23:59 Sydney.
+
+Saved clone_review_v1 evidence, a reproduction-guide note and current records027/publication006/checklist003/upload-guide004 locally. These new documentation/check-result files await the student's later commit/push; remote remains at verified 8ba9808. No automatic upload or student identity change occurred.
 
 ## Licence and account confirmation, 2026-10-11
 
@@ -446,7 +758,9 @@ Primary authority: MMA3001_2026_Project_Brief.pdf. The checklist below is a work
 - Assessment emphasises individual learning, organised computational work, valid evaluation, justified decisions, lessons and clear communication (p1). The brief states that the mark is based on the presentation and answers about the work (p8); it supplies no separate report/repository/presentation percentage split.
 - Check the separate Unit Overview Spreadsheet/Moodle for exact dates and presentation arrangements.
 
-## Progress and evidence status
+## Historical setup progress through the original handoff
+
+The following bullets describe the pre-implementation setup stage. Use the current stage and dated later entries above for present completion status.
 
 - Project brief explained in the previous discussion.
 - Topic selection completed at the broad level of suspension modelling.
@@ -470,10 +784,16 @@ Primary authority: MMA3001_2026_Project_Brief.pdf. The checklist below is a work
 ## Current setup files
 
 - PROJECT_GUIDE.md — revision 003: working instructions and opening prompt.
-- PROJECT_STATE.md — revision 023: completed checkpoints and student-led GitHub upload instructions.
-- EVIDENCE.md — revision 023: sources, scientific/reproduction evidence and checked Git/account guidance.
-- AI_USE_LOG.md — revision 023: implementation, documentation/teaching assistance and outstanding student contribution review.
+- PROJECT_STATE.md — revision 039: R2/R3 incorporated; R4 explanation and remaining report/submission tasks.
+- EVIDENCE.md — revision 039: corrected student response, R3 report checks and existing R4 numerical sources.
+- AI_USE_LOG.md — revision 039: student reasoning after clarification and AI report-editing/teaching assistance.
+- CONCEPT_APPROVAL.md — revision 001: requested concept-approval draft based on the adopted specification; not submitted.
 - HANDOFF.md — revision 001: new-chat reading instructions, scope, completion criteria and copyable prompt; does not grant coding permission.
+- PROGRESS_REPORT.md — revision 002: 12 October update and preserved 11 October administrative snapshot.
+- SUBMISSION_CHECKLIST.md — revision 011: R2/R3 complete; remaining report/submission steps and extended deadline.
+- Report_Draft/MMA3001_suspension_report_draft.docx: R2/R3 updated25 October; R1 and R4-R7 remain for review/input.
+- Report_Draft/STUDENT_REVIEW_NOTES.md: original R2 input, accepted additions1/2 and wording inserted into the report; point3 remains unselected.
+- Suspension_Model/PROFILING_GUIDE.md and profiling_v1: bounded seven-run protocol, raw evidence, actual checks and readable results.
 
 These local files are in Project_Setup under the existing MMA3001 notebook folder. Uploaded copies must be refreshed when their authoritative local versions change.
 
@@ -481,12 +801,13 @@ These local files are in Project_Setup under the existing MMA3001 notebook folde
 
 1. All 400 sampled setups pass the adopted per-row checks; exact label error and contact between sampled times are not certified. Further sampled setups still need their own checks.
 2. Will P003 maintain tyre contact throughout the continuous domain, and will P007's 400 setups be sufficient for ML? These remain open despite the completed dataset screening.
-3. Selected SVR has lower sampled prediction error and much shorter warm A-only query time than simulation. Do complete preparation costs justify it for the intended number of queries, and are results robust to other samples or refined training labels? Those claims remain untested.
-4. Can the student explain the state, force signs, equilibrium convention, full-response maximum, settling rule and checks independently? Understanding and the overall AI contribution estimate remain to be reviewed.
-5. Licence choice, student Git identity and GitHub publication remain future repository work; no remote has been created.
+3. Selected SVR has lower sampled prediction error than the linear comparator and much shorter warm A-only query time than simulation. Do complete preparation costs justify it for the intended number of queries, and are results robust to other samples or refined training labels? Those claims remain untested.
+4. Can the student explain the state, force signs, equilibrium convention, full-response maximum, settling rule and checks independently? Initial answers support inertia/velocity continuity, the difference between equal displacement and being stationary, retaining the larger absolute post-bump peak, and rejecting temporary band entry as settling. Equilibrium-coordinate/peak-to-peak terminology and extra settling safeguards were clarified; broader understanding and the overall AI contribution estimate remain to be reviewed.
+5. MIT is uploaded, the student has configured local authorship and confirms school-email verification, and private GitHub main is verified at 8ba9808. Actual assessor access and current Moodle instructions remain unverified; latest local evidence awaits student commit/push.
+6. Timing and bounded nominal profiling are complete; measured optimisation benefit is not established. The assessed report draft exists, but its student inputs/AI reflection and final review remain unfinished. Clean installation/other-OS/full-rebuild reproduction and Moodle submission are not established.
 
 ## Next three actions
 
-1. Review PHYSICS_REVIEW and RUNTIME_GUIDE with the student: lower A_post can coexist with longer settling; fast peak prediction does not supply post-bump dynamics; warm query time excludes preparation. Student understanding/reproduction remain unassessed.
-2. Review REPOSITORY_REVIEW and REPRODUCING: local readiness review is complete; licence/identity choices, course-source prerequisites and Windows/build limitations remain relevant to eventual submission.
-3. Follow GITHUB_SELF_UPLOAD_GUIDE: student verifies the school-linked account, adds the existing repository to Desktop, chooses licence/name/email/visibility and performs publication themselves. Preserve exclusions and AI attribution; verify assessor access and a real clone before ZIP packaging. No automatic upload, renewed fitting, consumed-test tuning, report drafting or presentation planning.
+1. Review the existing report's R1-R7 with the student, integrate their own explanations/reflection, and check the final wording, evidence and page count. Report drafting was already authorised on 22 October; no repeat approval is needed. Preserve the consumed-test boundary.
+2. Student reviews/commits/pushes the intended authored files from the original workspace, excluding course originals. Verify actual assessor access/current Moodle instructions and the final uploaded revision; leave extra clones untouched.
+3. Create/check a fresh clone and ZIP of that final revision, submit the report/ZIP/repository link as instructed, and confirm receipt by the student-confirmed extended deadline of 25 October 2026 at 23:59 Sydney. The source-restored verification copy is not the final ZIP source. Automatic publication/submission has not been authorised or performed.

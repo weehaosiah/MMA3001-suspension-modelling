@@ -1,6 +1,6 @@
 # Preserve course originals on disk; do not redistribute them in the authored repo.
 /MMA3001_*.ipynb
-/MMA3001_*.pdf
+/MMA3001*.pdf
 /tmp/
 **/__pycache__/
 **/.pytest_cache/

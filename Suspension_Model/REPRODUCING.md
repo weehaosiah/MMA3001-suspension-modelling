@@ -39,7 +39,30 @@ error. The latest implementation test evidence remains 433 passing tests in
 full-suite execution. Actual relocation-check outcomes are in
 [the repository review](../Project_Setup/REPOSITORY_REVIEW.md).
 
+A real GitHub Desktop clone was subsequently checked on 11 October 2026 at
+commit `8ba9808`. All three saved-output audits passed in that separate copy using
+the existing Anaconda environment; strict final/runtime checks required the four
+course originals below. Tracked files remained unchanged. See the
+[clone check results](../Project_Setup/clone_review_v1/CHECK_RESULTS.md) for exact
+commands, file hashes and limitations. This was not a clean dependency installation
+or full scientific rebuild.
+
 ## Course files required for a strict audit
+
+The later nominal profiling study is documented separately in
+[PROFILING_GUIDE.md](PROFILING_GUIDE.md). Its saved-only audit is
+`python profile_nominal.py audit --output profiling_v1`; this does not solve the
+model. `python profile_outputs.py --output profiling_v1` audits then recreates
+the derived table/plot. Its new audit records absent excluded course originals
+explicitly and checks them if present. The older final/runtime audit prerequisites
+below are unchanged. Profiling run mode performs seven repeated solves in a new
+output directory; it is not a full-project rebuild or model training.
+
+On 12 October its audit passed in a separate local working snapshot with all 31
+excluded originals absent. Git byte-preservation checks also pass after exact
+line-ending exceptions for the three sealed profiler text exports. See the
+[profiler reproduction record](profiling_v1/REPRODUCTION_CHECK.md). That check
+used the existing environment; it was not a remote clone or clean installation.
 
 The Git repository intentionally excludes the original course PDF and notebooks.
 Obtain the following matching copies through your authorised course access and
@@ -105,6 +128,9 @@ force a different environment through.
 | `ml_reference_check.py --output NEW_FOLDER` | Repeats refined validation calculations; refuses an existing output folder |
 | `final_evaluation.py prepare/evaluate` | Fits/evaluates the fixed final models with checkpoint guards; use the stage guide |
 | `runtime_benchmark.py run --output NEW_FOLDER` | Performs the timing workload; refuses an existing output folder |
+| `profile_nominal.py run --output NEW_FOLDER` | Repeats the existing nominal simulation seven times; refuses an existing output folder |
+| `profile_nominal.py audit --output profiling_v1` | Checks the saved profiler records without a new solve or timing experiment |
+| `profile_outputs.py --output profiling_v1` | Audits saved profiles and rewrites only derived tables/plot; no simulation |
 | `python -m pytest -q tests` | Runs all current tests, including small numerical/synthetic fits and checkpoint-dependent checks |
 | `build_docs.py` | Regenerates function HTML; no simulation, fitting or saved scientific output changes |
 

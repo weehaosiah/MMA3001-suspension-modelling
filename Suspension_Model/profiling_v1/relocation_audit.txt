@@ -1,0 +1,3 @@
+Copied 172 Git-visible working files byte-for-byte to C:\Users\dedvu\OneDrive\Documents\MMA3001 Jupiter notebooks\tmp\profiling_relocation_check_20261012; excluded course originals and Git metadata absent. This is a local working snapshot, not a GitHub clone.
+Audit passed: saved profiles, physics, timing and work reproduce; no new solve. 31 excluded course originals unavailable for current-file hashing.
+PASS: all 172 original/copy working files unchanged through audit; no new solve, fit, prediction or timing.
